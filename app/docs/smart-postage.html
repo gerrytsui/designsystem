@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PB Design System</title>
+
+  <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <!-- docs mods for pb -->
+  <link rel="stylesheet" href="/css/docs-pb.css">
+  <link rel="stylesheet" href="/css/theme.css">
+
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+  <!-- docs stuff from BS site -->
+  <link rel="stylesheet" href="http://getbootstrap.com/assets/css/docs.min.css">
+  <script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+</head>
+<body>
+
+	<header class="navbar navbar-static-top bs-docs-nav" role="banner">
+  <div class="container">
+	<div class="navbar-header">
+	  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a href="/" class="navbar-brand">PB Design System</a>
+	</div>
+	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+		<ul class="nav navbar-nav">
+			<li><a href="index.html">Bootstrap Components</a></li>
+			<li><a href="typography.html">Color/Typography</a></li>
+			<li class="active"><a href="smart-postage.html">Smart Postage</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<!--  <li><a href="http://expo.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Community links', 'Expo']);">Expo</a></li>
+			<li><a href="http://blog.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Community links', 'Blog']);">Blog</a></li> -->
+		</ul>
+	</nav>
+  </div>
+</header>
+
+	<!-- Docs page layout -->
+	<div class="bs-docs-header" id="content">
+	  <div class="container">
+		<h1>Smart Postage</h1>
+		<p>Components as used in the Smart Postage re-design.</p>
+	  </div>
+	</div>
+
+
+
+<div class="container bs-docs-container">
+
+	<div class="row">
+		<div class="col-md-9" role="main">
+		<!-- begin left column -->
+
+
+
+		<div class="bs-docs-section">
+
+
+			<h1 id="carousel" class="page-header">Carousel</h1>
+
+
+			  <h2 id="button-group">Button Group for Carousel</h2>
+
+			  <div class="bs-example">
+				  <!-- carousel button group -->
+					<div class="pb-btn-group-container text-center">
+								  <div id="carousel-buttons" class="pb-btn-group">
+									  <a class="btn active" href="#">Print Shipping Labels</a>
+									  <a class="btn" href="#">Print Stamps</a>
+									  <a class="btn" href="#">One Click Shipping</a>
+
+								  </div>
+					</div>
+					<!-- /button group -->
+				</div>
+
+			<h2 id="carousel-bootstrap">Bootstrap Default</h2>
+
+			<p>Simple, straightforward version of carousel.</p>
+
+			<div class="bs-example">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+				  </ol>
+				  <div class="carousel-inner">
+					<div class="item">
+						<img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide" >
+						<div class="carousel-caption">
+							<h3>First slide label</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+
+					<div class="item">
+					  <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide" >
+					  <div class="carousel-caption">
+						<h3>Second slide label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					  </div>
+					</div>
+					<div class="item active">
+					  <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide" >
+					  <div class="carousel-caption">
+						<h3>Third slide label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					  </div>
+					</div>
+				  </div>
+				  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+				</div>
+			  </div>
+
+
+
+
+
+		</div>
+
+
+
+
+		<div class="bs-docs-section">
+			<h2 id="carousel-smartpostage" class="page-header">Smart Postage Example</h2>
+
+			<p>The main carousel used on the Smart Postage home page.</p>
+
+				<div class="carousel-outer pb-carousel">
+				<!-- Carousel items -->
+				<div class="carousel-inner">
+
+					<!-- Each grouping of choices is an "item" -->
+					<!-- Item 1: Print Shipping Label -->
+
+					<div class="item active">
+
+						<h4 class="carousel-title">To begin, select the item you are shipping</h4>
+
+						<div class="col-sm-3 text-center carousel-image">
+							<a class="outer-link " href="#" >
+								<div class="item-thumbnail usps-flat-rate" ></div>
+								<h5>Priority Mail<sup>®</sup> Boxes</h5>
+							</a>
+						</div>
+
+						<div class="col-sm-3 text-center carousel-image">
+							<a class="outer-link " href="#" >
+								<div class="item-thumbnail usps-envelopes" ></div>
+								<h5>Priority Mail<sup>®</sup> Envelopes</h5>
+							</a>
+						</div>
+
+						<div class="col-sm-3 text-center carousel-image">
+							<a class="outer-link " href="#" >
+								<div class="item-thumbnail my-package" ></div>
+								<h5>My Boxes</h5>
+							</a>
+						</div>
+
+						<div class="col-sm-3 text-center carousel-image">
+							<a class="outer-link large-envelope " href="#" >
+								<div class="item-thumbnail large-envelope" ></div>
+								<h5>My Large Envelopes</h5>
+							</a>
+						</div>
+
+				</div>
+
+				</div><!-- /carousel inner -->
+			</div><!-- /carousel outer -->
+		</div><!-- /docs section -->
+
+		<div class="bs-docs-section">
+			<h1 id="header" class="page-header">Header</h1>
+			<p>Two versions of the header:</p>
+			<p><a href="header.html">Three-row (as in Smart Postage)</a></p>
+			<p><a href="header-compact.html">Two-row</a></p>
+		</div>
+
+
+		<div class="bs-docs-section">
+
+			<h1 id="footer" class="page-header">Footer</h1>
+
+			<p>A 5-pixel brand color border on top and brand-light-gray background.</p>
+
+			<div class="bs-example">
+				<footer>
+				  <div class="container">
+					<div class="row">
+					  <div class="col-md-8 left-column">
+						<span class="pblogo-sm"></span>©2014 Pitney Bowes Inc. All rights reserved.
+					  </div>
+
+					  <div class="col-md-4 text-right">
+						<ul class="list-unstyled list-inline social">
+						  <li>Follow us:</li>
+						  <li>
+							<a href="https://twitter.com/pbsmallbusiness" class="fa-stack" target="pbSPWindow" >
+							  <i class="fa fa-stop fa-stack-2x"></i>
+							  <i class="fa fa-twitter fa-stack-1x fa-inverse" ></i>
+							</a>
+						  </li>
+						  <li>
+							<a href="https://www.facebook.com/Pbsmallbusiness" class="fa-stack" target="pbSPWindow" >
+							  <i class="fa fa-stop fa-stack-2x"></i>
+							  <i class="fa fa-facebook fa-stack-1x fa-inverse" ></i>
+							</a>
+						  </li>
+						  <li>
+							<a href="http://www.linkedin.com/company/2503?trk=tyah" class="fa-stack" target="pbSPWindow" >
+							  <i class="fa fa-stop fa-stack-2x"></i>
+							  <i class="fa fa-linkedin fa-stack-1x fa-inverse" ></i>
+							</a>
+						  </li>
+						  <li>
+							<a href="http://www.youtube.com/pbsmallbusiness" class="fa-stack" target="pbSPWindow" >
+							  <i class="fa fa-stop fa-stack-2x"></i>
+							  <i class="fa fa-youtube-play fa-stack-1x fa-inverse" ></i>
+							</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+				</footer>
+
+			</div>
+
+		</div>
+
+
+
+
+
+		<!-- end left column -->
+		</div>
+
+		<div class="col-md-3">
+		<!--    begin right column/nav      -->
+		  <div class="bs-docs-sidebar hidden-print" role="complementary">
+			<ul class="nav bs-docs-sidenav">
+				<li>
+				  <a href="#button-group">Button Group </a>
+				</li>
+				<li>
+				  <a href="#carousel">Carousel</a>
+				  <ul class="nav">
+					<li><a href="#carousel-bootstrap">Bootstrap Default</a></li>
+					<li><a href="#carousel-smartpostage">Smart Postage</a></li>
+				  </ul>
+				</li>
+				<li><a href="#header">Header</a></li>
+				<li><a href="#footer">Footer</a></li>
+			</ul>
+		  </div>
+		<!--  end right column/nav  -->
+		</div>
+	  </div>
+
+</div>
+
+
+
+</body>
+</html>

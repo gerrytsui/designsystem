@@ -1,0 +1,284 @@
+<div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
+
+	<div class="row page-header">
+		<div class="col-md-12">
+			<h1>Dashboard</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 col-xs-6"><h2>Activity</h2></div>
+	  <div class="col-md-10 col-xs-6 text-right">
+		<button class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal">EDIT</button>
+
+		<label for="live-switch"><i class="fa fa-clock-o"></i> Realtime </label>
+		<div class="switch-small" toggle-switch model="switchStatus.isOn"></div>
+
+	  </div>
+	</div><!-- /row -->
+
+	<div class="row">
+
+	<div class="col-md-10">
+		<div dataset="flot.series" options="flot.options" width="100%" height="400" flot></div>
+	</div>
+
+	<div class="col-sm-12 col-md-2 text-center">
+
+
+		   <div class="row">
+			  <div class="col-sm-2 col-sm-offset-3 col-xs-4 col-md-12 col-md-offset-0">
+			   <h4 class="text-center">Statistic</h4>
+			   <div class="piechart" ng-model="sample">
+				 <div easypiechart options="sample.options" percent="sample.percent"></div>
+				 <span>{{sample.percent}}%</span>
+			   </div>
+			 </div>
+			 <div class="col-sm-2 col-xs-4 col-md-12">
+				   <h4 class="text-center">Statistic</h4>
+				   <div class="piechart" ng-model="sample2">
+					 <div easypiechart options="sample2.options" percent="sample2.percent"></div>
+					 <span>{{sample2.percent}}%</span>
+				   </div>
+			 </div>
+			 <div class="col-sm-2 col-xs-4 col-md-12">
+				   <h4 class="text-center">Statistic</h4>
+				   <div class="piechart" ng-model="sample3">
+					 <div easypiechart options="sample3.options" percent="sample3.percent"></div>
+					 <span>{{sample3.percent}}%</span>
+				   </div>
+			 </div>
+		   </div>
+
+
+	</div>
+	</div><!-- /row -->
+
+  <div class="row">
+	<div class="col-md-12 col-sm-12">
+
+		 <div class="row">
+		  <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-4 sparkline">
+			<div class="chart col-md-5" jq-sparkline ng-model="sparkline" data="sparkline.data" options="sparkline.options" ></div>
+			<div class="caption col-md-7">
+			  <h6>Statistics</h6>
+			  <h2>{{sparkline.data[0]}}%</h2>
+			</div>
+		  </div>
+
+		  <div class="col-md-3 col-sm-4 col-xs-4 sparkline">
+			<div class="chart col-md-4" jq-sparkline data="sparkline3.data" options="sparkline3.options" ></div>
+			<div class="caption col-md-8">
+			  <h6>Statistics</h6>
+			  <h2>{{sparkline3.data[0]}}%</h2>
+			</div>
+		  </div>
+
+
+		  <div class="col-md-3 col-sm-4 col-xs-4 sparkline">
+			<div class="chart col-md-5" jq-sparkline data="sparkline2.data" options="sparkline2.options" ></div>
+			<div class="caption col-md-7">
+			  <h6>Statistics</h6>
+			  <h2>{{sparkline2.data[2]}}%</h2>
+			</div>
+		  </div>
+		</div>
+
+
+	</div>
+  </div><!-- /row -->
+
+
+
+  <div class="row">
+	<div class="col-md-8">
+	  <h2>User List</h2>
+	  <div class="table-responsive">
+		<table class="table table-hover table-striped table-condensed">
+		  <thead>
+			<tr>
+			  <th>Document</th>
+			  <th>Status</th>
+			  <th>First Name</th>
+			  <th>Last Name</th>
+			  <th>Address</th>
+			  <th>User ID</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr ng-repeat="t in tabledata">
+			  <td><img ng-src="images/{{t.image}}" alt="" /></td>
+			  <!-- <td><i class="fa fa-{{t.type}}"></i></td> -->
+			  <td>00{{t.id}}</td>
+			  <td>{{t.firstName}}</td>
+			  <td>{{t.lastName}}</td>
+			  <td ng-bind-html="t.address"></td>
+			  <td><a href="">{{t.userName}}</a></td>
+			</tr>
+		  </tbody>
+		</table>
+	  </div>
+	</div>
+
+
+
+	<div class="col-md-4">
+	<h3>Team Leaders</h3>
+	  <table class="table table-hover">
+	  <thead>
+		<tr>
+		  <th>User ID</th>
+		  <th>Last Name</th>
+		</tr>
+	  </thead>
+	   <tbody>
+		  <tr ng-repeat="t in tabledata">
+		   <td>{{t.userName}}</td>
+		   <td>{{t.lastName}}</td>
+		 </tr>
+
+	   </tbody>
+	  </table>
+
+	</div>
+  </div><!-- /row -->
+
+
+
+<!-- scrolling panels-->
+  <div class="row">
+
+	<!-- scrolling panel: horizontal-->
+	<div class="col-md-6">
+
+		<h3>Carousel</h3>
+		  <!-- <div class="panel-body panel-scroll-h">
+			<div ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]" class="thumbnail thumbnail-block text-center">
+			  <img class="img-responsive" src="http://placehold.it/150x150" alt="" />
+			  <strong>Saved File Title</strong><br />
+			  <span class="small">Lorem ipsum dolor</span>
+			</div>
+		  </div> -->
+
+	  <div carousel interval="3000">
+		<div slide>
+		  <img src="images/carousel2.jpg" alt="" />
+		  <div class="carousel-caption">
+			<h3>First slide label</h3>
+			<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+		  </div>
+		</div>
+
+		<div slide>
+		  <img src="images/carousel1.jpg" alt="" />
+		  <div class="carousel-caption">
+			<h3>Second slide label</h3>
+			<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+		  </div>
+		</div>
+
+		<div slide>
+		  <img src="images/carousel4.jpg" alt="" />
+		  <div class="carousel-caption">
+			<h3>Third slide label</h3>
+			<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+		  </div>
+		</div>
+
+	  </div>
+
+	</div>
+
+	<!-- scrolling panel: vertical-->
+	<div class="col-md-6">
+
+	  <h3>Thumbnail Grid</h3>
+	  <div class="panel">
+		<div class="panel-body panel-scroll-v" style="height: 308px;">
+		  <div ng-repeat="i in [1,2,3,4,5,6,7,8]" class="thumbnail thumbnail-block text-center">
+			<img ng-src="images/icon_{{i}}.png" width="100" height="100" alt="" />
+			  <strong>Saved File Title</strong><br />
+			  <span class="small">Lorem ipsum dolor</span>
+		  </div>
+		</div>
+	  </div>
+
+	</div>
+
+  </div><!-- /row -->
+
+  <div class="row">
+	<!-- panel-tabbed-->
+	<div class="col-md-8 col-sm-8">
+	  <h3>Tabset</h3>
+	  <div tabset ng-class="{scroll:true, tabScrollSample: true}" >
+		<div tab class="tab-scrollable" heading="Tab 1">
+			<div class="media" ng-repeat="i in [1,2,3,4,5,6,7,8]" ng-class="{first:$first}">
+				<a class="pull-left" href="#">
+				<img class="media-object" data-src="holder.js/80x80" alt="64x64" src="https://s3.amazonaws.com/uifaces/faces/twitter/ooomz/128.jpg" style="width: 80px;height: 80px;">
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading">Media heading</h4>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+				</div>
+			</div>
+
+		</div>
+		<div tab heading="Tab 2">
+		  <p>Nam interdum augue arcu, non dapibus odio interdum non. Aliquam ligula neque, scelerisque eget tempus et, vulputate semper arcu. Quisque eu dignissim ligula. Integer rutrum rhoncus dui a aliquam. Quisque venenatis ornare nibh, quis consequat nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sit amet sodales tortor. Aenean vitae eros quis est molestie rhoncus. Fusce auctor feugiat orci, quis lacinia metus sagittis sed. Morbi mollis quam nisl, et iaculis leo aliquam ut.</p>
+		</div>
+	  </div>
+
+	</div>
+
+	<!-- panel: form -->
+	  <div class="col-md-4 col-sm-4">
+
+		<h3>Sample Form</h3>
+
+		<div class="" ng-form name="name" novalidate>
+		  <h4>Titled Section</h4>
+
+		  <div class="form-group" ng-class="{'has-error': name.firstName.$error.required && name.firstName.$dirty}">
+			<label for="firstname">First Name <i class="fa fa-question-circle" tooltip="Please enter your first name" tooltip-trigger="click" tooltip-placement="right"></i></label>
+			<input type="text" name="firstName" class="form-control" ng-model="firstName" required />
+			<span class="help-block" ng-show="name.firstName.$error.required && name.firstName.$dirty">Please enter a first name</span>
+		  </div>
+
+		  <div class="form-group" ng-class="{'has-error': name.lastName.$error.required && name.lastName.$dirty}">
+			<label for="lastname">Last Name <i class="fa fa-question-circle" tooltip="Please enter your last name" tooltip-trigger="click"></i></label>
+			<input type="text" name="lastName" class="form-control" ng-model="lastName" required />
+			<span class="help-block" ng-show="name.lastName.$error.required && name.lastName.$dirty">Please enter a last name</span>
+		  </div>
+
+		  <a class="btn btn-default" ng-click="nameValidate()">Default Button</a>
+
+		</div>
+
+	  </div>
+
+	</div><!-- /row -->
+
+
+  </div><!-- /container -->
+
+  <div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h4 class="modal-title">Modal title</h4>
+	  </div>
+	  <div class="modal-body">
+		<p>Sample modal dialog&hellip;</p>
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+	  </div>
+	</div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+

@@ -1,0 +1,222 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' type='text/css'>
+
+    <!-- build:css({.tmp,.tmp/live_preview,dist,app}) styles/main.css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/bower_components/nvd3/nv.d3.css"/>
+    <link rel="stylesheet" href="/dist/css/theme.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body ng-app="designSystemApp" ng-cloak ng-controller="MainCtrl">
+
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+ <header>
+  <div class="container">
+    <!-- utility nav
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="list-unstyled list-inline text-right utility-nav">
+          <li>Welcome, enterpriseadmin
+              (Enterprise Admin Role)</li>
+          <li><a id="lnkMyAccount" target="_blank" href="" >My Account</a></li>
+          <li class="signout"><a id="lnkSignOut" href="javascript:;" >Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+    -->
+
+    <!-- logo and menu row -->
+    <div class="row">
+      <div class="col-md-3 col-sm-4">
+      <span class="pblogo-sm"></span><br>
+         <a href="#/" class="logo" >Design System <span style="color:#D1D2D4;">Beta</span></a>
+      </div>
+
+
+          <!-- NAV -->
+          <div class="col-md-9 col-sm-8">
+            <nav class="navbar navbar-default compact" role="navigation">
+                <ul class="nav navbar-nav">
+                  <li ng-class="{'dropdown':(n.children.length)}" ng-repeat="n in navData"><a data-target="{{n.value}}" data-toggle="{{n.toggle}}">{{n.label}} <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li ng-repeat="p in n.children"><a href="#/{{p.value}}">{{p.label}}</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown"><a data-target="#" data-toggle="{{n.toggle}}"><i class="fa fa-user"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li ng-repeat="p in n.children"><a href="#/{{p.value}}">{{p.label}}</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </nav>
+
+
+
+          </div>
+<!--
+          <div class="col-md-3 col-sm-2 text-right">
+            <div class="header-right">
+              <i class="fa fa-user" data-content-id="popover-account" bs-popover></i>
+
+              <div id="popover-account" class="hidden">
+                <div id="popover-account" class="form-group">
+                  <label>Username</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <div>
+                  <button class="btn btn-default">Sign In</button>
+                  <button class="btn btn-link">Cancel</button>
+                </div>
+                <hr />
+                <a class="link" href="">Create Account</a>
+              </div>
+
+              <i class="fa fa-search" data-content-id="sample" bs-popover></i>
+
+              <div id="sample" class="hidden">
+                <input type="text" class="form-control" placeholder="Search" />
+              </div>
+            </div>
+          </div> -->
+
+          </div><!-- /row -->
+          </div><!-- /container -->
+          <!-- <div class="stripe">&nbsp;</div> -->
+    </header>
+
+
+    <!-- Add your site or application content here -->
+    <div ng-view=""></div>
+
+
+    <!-- FOOTER -->
+    <footer>
+    <!-- <div class="stripe">&nbsp;</div> -->
+      <div class="container">
+        <div class="row">
+
+          <!-- Copyright -->
+          <div class="col-md-6 col-xs-6">
+            <span class="pblogo-sm"></span>&copy;2014 Pitney Bowes Inc. All rights reserved.
+          </div>
+
+          <!-- Social -->
+          <div class="col-md-6 col-xs-6 text-right">
+            <ul class="list-unstyled list-inline social">
+              <li>Follow us:</li>
+              <li>
+                <a target="_blank" class="fa-stack" href="https://twitter.com/pbsmallbusiness">
+                  <i class="fa fa-stop fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" class="fa-stack" href="https://www.facebook.com/Pbsmallbusiness">
+                  <i class="fa fa-stop fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" class="fa-stack" href="http://www.linkedin.com/company/2503?trk=tyah">
+                  <i class="fa fa-stop fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" class="fa-stack" href="http://www.youtube.com/pbsmallbusiness">
+                  <i class="fa fa-stop fa-stack-2x"></i>
+                  <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script> -->
+
+
+    <!--[if lt IE 9]>
+      <script src="../../../bower_components/es5-shim/es5-shim.js"></script>
+      <script src="../../../bower_components/respondJs/dest/respond.min.js"></script>
+      <script src="../../../bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+
+    <!-- build:js({.tmp/live_preview,app}) scripts/vendor.js -->
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
+    <script src="/bower_components/nvd3/nv.d3.js"></script>
+    <script src="/bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+    <script src="/bower_components/jquery.easy-pie-chart/dist/angular.easypiechart.js"></script>
+    <script src="/bower_components/moment/moment.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/bower_components/kapusta-jquery.sparkline/dist/jquery.sparkline.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:js({.tmp,app/live_preview}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/leftnav.js"></script>
+    <script src="scripts/controllers/two_panel_selector.js"></script>
+    <script src="scripts/controllers/temp.js"></script>
+    <script src="scripts/controllers/elements.js"></script>
+    <script src="scripts/controllers/lists_tables.js"></script>
+    <script src="scripts/services/tabledata.js"></script>
+    <script src="scripts/services/navmodel.js"></script>
+    <script src="scripts/directives/bs_popover.js"></script>
+    <script src="scripts/filters/capitalize.js"></script>
+    <script src="scripts/vendor/sparkline-directive.js"></script>
+    <!-- endbuild -->
+
+
+
+</body>
+</html>

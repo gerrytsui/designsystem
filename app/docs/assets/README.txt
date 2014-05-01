@@ -1,0 +1,1 @@
+this assets folder is only for the purpose of the documentation.

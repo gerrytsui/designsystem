@@ -1,0 +1,120 @@
+
+/* smart postage example carousel */
+.pb-carousel {
+	h4.carousel-title {
+		font-family: @font-family-serif;
+		font-size: 14px;
+		color: @text-color;
+	}
+	&.carousel-outer {
+		//background-color: @brand-light-color;
+		padding: 10px;
+		margin-top: 40px;
+	}
+	.carousel-inner {
+		background-color: @gray-light;
+		margin-top: 0;
+		.item {
+			padding: 10px;
+
+		}
+	}
+	.carousel-image {
+		text-align: center;
+		.item-thumbnail {
+			height: 150px;
+			margin: 5px 0;
+			background-repeat: no-repeat;
+			background-position: center bottom !important;
+			background-image: url('http://placehold.it/150x150');
+		}
+		.carousel-image a:link,
+		.carousel-image a:visited {
+				text-decoration: none;
+		}
+		a {
+			// these are the package links. captions are the H5s
+			h5 {
+				font-size: 14px;
+				font-family: @font-family-sans-serif;
+				color: @text-color;
+			}
+
+			&.outer-link {
+				border: 1px solid transparent;
+				display: block;
+				color: @text-color;
+				text-decoration: none;
+				font-family: @font-family-sans-serif;
+				font-weight: 700;
+				-webkit-transition: all .5s ease;
+				-moz-transition: all .5s ease;
+				-ms-transition: all .5s ease;
+				-o-transition: all .5s ease;
+				transition: all .5s ease;
+
+				&:hover {
+					color: #fff;
+					background-color: lighten(@brand-primary, 25%);
+					text-decoration: none;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+				}
+				&.disabled {
+					.lh-opacity(0.4);
+					&:hover {
+						background-color: transparent;
+						color: @text-color;
+						cursor: default;
+					}
+				}
+			}
+		}
+	}
+	.carousel-indicators {
+		margin: -20px 0 0;
+		border-bottom: 1px solid #cc436e;
+		// BS resets
+		top: 0px;
+		bottom: auto;
+		left: 0;
+		width: 100%;
+		position: relative;
+		li {
+			// remove the BS "bullet" look
+			text-indent: 0;
+			width: auto;
+			height: auto;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			margin: 0 20px 0 0;
+			padding-bottom: 1px;
+			background-color: none;
+			color: @brand-primary;
+			background: transparent;
+			font-family: @font-family-sans-serif;
+			font-size: 18px;
+			-webkit-transition: border-bottom-color .25s, color .25s;
+			-moz-transition: border-bottom-color .25s, color .25s;
+			-ms-transition: border-bottom-color .25s, color .25s;
+			-o-transition: border-bottom-color .25s, color .25s;
+			transition: border-bottom-color .25s, color .25s;
+			&:hover {
+				background: transparent;
+				color: darken(@brand-primary, 10%);
+			}
+			&.active {
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				color: darken(@brand-primary, 10%);
+			}
+
+		}
+	}
+}

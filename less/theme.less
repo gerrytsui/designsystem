@@ -1,0 +1,1050 @@
+
+//
+// Load core variables and mixins
+// --------------------------------------------------
+
+@import "_variables.less";
+@import "_lesshat-prefixed";
+//@import "_form-elements";
+// @import "_mixins.less";
+@import "pbfont.less";
+// @import "_block-grid";
+
+.clearfix{
+  zoom:1;
+  &:before, &:after{ content:""; display:table; }
+  &:after{ clear: both; }
+}
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+ // -ms-overflow-style: scrollbar; // prevents auto-hide scrollbars from overlapping content in IE10+
+}
+
+
+
+p.lead {
+	font-weight: bold;
+}
+
+
+// for the demo only
+.grid-sample .panel {
+	border: none;
+	border-top: 3px solid @gray;
+	border-radius: 0;
+}
+
+
+// only used in the design system pages
+.pb-example {
+	position: relative;
+	padding: 45px 15px 15px;
+	margin: 0 -15px 15px;
+	box-shadow: none;
+	&:after {
+		content: "Example";
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		font-size: 12px;
+		font-weight: 700;
+		color: #bbb;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
+
+/* classes per view */
+
+.headers {
+	footer { display: none;}
+}
+
+
+
+/* bootstrap overrides */
+
+.badge {
+	background-color: @brand-primary;
+}
+.fa-active {
+	color: @brand-primary;
+}
+
+// lists
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	padding-left: 1em;
+}
+// overflow hidden by default, was cropping the chart on home page
+// svg:not(:root) {
+// 	overflow: visible;
+// }
+
+.btn:focus {
+outline: none !important;
+// outline: 5px auto -webkit-focus-ring-color;
+// outline-offset: -2px;
+}
+
+
+/* PANELS */
+// flush left and right
+//assign this class to the row
+.flush-panel-group {
+	margin-bottom: 20px;
+	height: 300px;
+
+	.panel {
+		height: 100%;
+		overflow-y: auto;
+	}
+}
+// assign classes to  enclosing columns
+// first
+.alpha {
+	padding-right: 0;
+	height: 100%;
+	.panel-default {
+		border-right: none;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		.panel-heading {
+			border-top-right-radius: 0;
+		}
+	}
+}
+// last
+.omega {
+	padding-left: 0;
+	height: 100%;
+
+	.panel-default {
+		border-left: none;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		.panel-heading {
+			border-top-left-radius: 0;
+		}
+	}
+}
+// all inside ones
+.inner {
+	padding-left: 0;
+	padding-right: 0;
+	height: 100%;
+
+	.panel-default {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		.panel-heading {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+	}
+}
+
+.panel-title {
+	font-weight: bold;
+}
+
+
+
+// D3 SVG override
+.nvd3 .nv-axis .nv-axisMaxMin text {
+	font-weight: normal;
+}
+
+// popover
+.popover {
+	-webkit-box-shadow: none   ;
+	-moz-box-shadow: none   ;
+	box-shadow: none   ;
+	border-radius: 0;
+	background-color: white;
+	&.bottom .arrow:after {
+		border-bottom-color: white;
+	}
+	&.top .arrow:after {
+		border-top-color: white;
+	}
+
+}
+.panel {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.navbar-form .input-group {
+	max-width: 220px;
+	.fa-search {
+		font-size: 16px;
+	}
+}
+.navbar-brand {
+	padding: 15px 0;
+}
+
+
+// all paragraphs in a grouping with a "lead" paragraph
+p.lead ~ p {
+	font-family: @font-family-serif;
+}
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+    background-color: @table-bg-hover;
+}
+th {
+	font-weight: normal;
+	color: @gray;
+}
+label {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.help-block {
+	font-size: @font-size-small;
+}
+
+a.read-more {
+	font-size: @font-size-base - 2; // 2 px smaller
+	white-space: nowrap;
+	&:after {
+		content: '\2026'; // ellipsis
+	}
+}
+
+
+// tabs
+.tabbable.scroll>.tab-content  {
+	padding: 20px;
+}
+.tab-content .panel-default {
+	border: none;
+	padding: 0;
+	max-width: 90%;
+	.panel-body {
+		padding: 0;
+	}
+}
+
+.thumb-detail h4 {
+	font-weight: bold;
+}
+
+// table transitions for hovers
+.table> tbody > tr > td, .table > tbody > tr > th {
+	-webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+	-ms-transition: background-color .3s;
+	-o-transition: background-color .3s;
+	transition: background-color .3s;
+
+}
+
+/* LIST GROUP */
+a.list-group-item {
+	border: none;
+	border-radius: 0;
+	-webkit-transition: background-color .3s, color .2s;
+	-moz-transition: background-color .3s, color .2s;
+	-ms-transition: background-color .3s, color .2s;
+	-o-transition: background-color .3s, color .2s;
+	transition: background-color .3s, color .2s;
+	&:hover {
+		color: @brand-primary;
+		background-color: @gray-light;
+	}
+	&:first-child {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+	&.active {
+		background-color: @gray-light;
+		border-color: @gray-light;
+		color: @brand-primary;
+		&:hover, &:focus {
+			background-color: @gray;
+			border-color: @gray;
+			color: @brand-primary;
+		}
+	}
+}
+
+
+/* CALLOUTS (from the BS docs, but useful) */
+.bs-callout {
+    margin: 20px 0px;
+    padding: 20px;
+    border-left: 3px solid #EEE;
+	&.bs-callout-info {
+	    background-color: lighten(@brand-primary, 40%);
+	    border-color: @brand-primary;
+		h4 {
+			color: @brand-primary;
+		}
+	}
+	&.bs-callout-danger {
+	    background-color: lighten(@brand-danger, 45%);
+	    border-color: @brand-danger;
+		h4 {
+			color: @brand-danger;
+		}
+	}
+}
+
+// alerts
+.alert-danger {
+    color: @brand-danger;
+    // color: #A94442;
+	background-color: lighten(@brand-danger, 45%);
+    border-color: lighten(@brand-danger, 40%);
+}
+
+/* MODALS */
+.modal-dialog {
+	@modal-padding: 30px;
+	.modal-header {
+		border-bottom: none;
+		margin: 0;
+		padding: @modal-padding;
+		h3 {
+			color: @brand-primary;
+			margin: 0;
+		}
+	}
+	.modal-body {
+		padding: 0 @modal-padding;
+	}
+	.modal-footer {
+		border-top: none;
+	}
+	.bs-callout {
+		background-color: @gray-light;
+		border: none;
+	}
+}
+
+
+/* THUMBNAILS */
+.thumbnail {
+	display: block;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	& > img {
+		margin-bottom: 5px;
+	}
+}
+
+/* MEDIA OBJECT */
+// when using an angular loop, first-child (BS default) is appplied to ALL items in loop
+// so we turn it off and use our own class for the first
+.media {
+	background-color: @gray-light;
+	padding: 20px;
+	&:first-child {
+		margin-top: auto;
+	}
+	margin-top: 15px;
+	&.first {
+		margin-top: 0;
+	}
+}
+.media-heading {
+	font-weight: bold;
+}
+
+
+
+
+
+
+.sparkline {
+	h6 {
+		font-size: 1em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
+
+
+/*
+	TREE MENU
+*/
+.leftnav {
+	padding: 10px;
+	-webkit-transition: width .8s;
+	-moz-transition: width .8s;
+	-ms-transition: width .8s;
+	-o-transition: width .8s;
+	transition: width .8s;
+	-webkit-transition-delay: width .3s;
+	-moz-transition-delay: width .3s;
+	-ms-transition-delay: width .3s;
+	-o-transition-delay: width .3s;
+	transition-delay: width .3s;
+}
+.nav.nav-list.tree-menu {
+	@indent: 10px;
+	a {
+		padding: 3px;
+	}
+	ul.nav.nav-list.tree {
+		display: none;
+	}
+	> li {
+		padding-top: 5px;
+
+	}
+	ul {
+		li {
+			padding-left: @indent;
+			&:hover {
+				color: @brand-primary;
+			}
+		}
+	}
+	.nav-header {
+		margin-top: 5px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		cursor: pointer;
+		display: inline-block;
+		&:before {
+			content: '\25B8';
+			padding-right: 3px;
+			font-weight: normal;
+			display: inline-block;
+			color: @brand-primary;
+			-webkit-transition: all .3s;
+			-moz-transition: all .3s;
+			-ms-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+			-webkit-transform-origin: 40% center;
+			-moz-transform-origin: 40% center;
+			-ms-transform-origin: 40% center;
+			-o-transform-origin: 40% center;
+			transform-origin: 40% center;
+		}
+		&.open {
+			&:before {
+				color: @brand-primary;
+				-webkit-transform: rotate(90deg);
+				-moz-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+		}
+	}
+	a {
+		color: @text-color;
+		&:hover {
+			color: @brand-primary;
+		}
+	}
+
+	// utility nav tree menu. no triangles. BYO icons.
+	&.utility-nav {
+		// caret at right of  header row
+
+		.nav-header {
+			width: 100%;
+			&:before { content: '';}
+			&:hover {
+				color: @brand-primary;
+			}
+		}
+		li {
+			b.fa:before {
+			  content: "\f105";
+			}
+			&.open {
+				b.fa:before {
+				  content: "\f107";
+				}
+				.minified & ul {
+					position: absolute;
+					background-color: @gray-light;
+					min-width: 150px;
+					left: 30px;
+					top: 13px;
+					z-index: 20;
+					-webkit-box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+					box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+					li {
+						padding-left: 10px;
+						padding-bottom: 5px;
+					}
+				}
+			}
+		}
+		// submenus
+		ul {
+
+			li {
+				padding-left: @indent+17px;
+				padding-top: 5px;
+				width: 100%;
+				&:hover {
+					//color: @brand-primary;
+					background: @gray-light;
+				}
+			}
+
+		}
+	}
+	// end utility nav version
+
+}
+
+// menu collapsing button (circle arrow)
+#menu-collapse {
+	margin-left: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	// the icon itself
+	i.menu-collapse {
+		font-size: 18px;
+		display: inline-block;
+		-webkit-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+		&:hover {
+			color: @brand-primary;
+		}
+
+		&:before {
+		  content: "\f0a8";
+		}
+	}
+	.minified & {
+		margin-left: 5px;
+		.menu-collapse {
+			-webkit-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+		// ie8
+		.no-csstransforms &:before {
+			content: "\f0a9";
+		}
+	}
+
+}
+
+
+
+#fluid-main {
+	-webkit-transition: margin-left .6s;
+	transition: margin-left .6s;
+	-webkit-transition-delay: margin-left .5s;
+	transition-delay: margin-left .5s;
+}
+
+
+.minified {
+  #fluid-left {
+    width: 50px;
+    x-overflow: hidden;
+  }
+  #fluid-main {
+    margin-left: 50px;
+  }
+}
+
+
+
+
+
+//
+/* Buttons */
+// --------------------------------------------------
+// just to remove the BS inset shadows
+ .btn:active, .btn.active {
+	outline: 0;
+	background-image: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+// Button variants
+// outline and solid
+.outline-button (@color) {
+             color: @color;
+  background-color: transparent;
+      border-color: @color;
+  -webkit-transition: background-color .3s, color .3s;
+  -moz-transition: background-color .3s, color .3s;
+  -ms-transition: background-color .3s, color .3s;
+  -o-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+               color: #fff;
+    background-color: @color;
+        border-color: @color;
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: transparent;
+          border-color: @gray-mid;
+          color: @gray-mid;
+          // border-color: lighten(@color, 15%);
+          // color: lighten(@color, 15%);
+    }
+  }
+}
+
+.solid-button (@color) {
+  color: #fff;
+  background-color: @color;
+  border-color: @color;
+  -webkit-transition: background-color .3s, color .3s;
+  -moz-transition: background-color .3s, color .3s;
+  -ms-transition: background-color .3s, color .3s;
+  -o-transition: background-color .3s, color .3s;
+  transition: background-color .3s, color .3s;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: #fff;
+    background-color: darken(@color, 15%);
+        border-color: darken(@color, 15%);
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @gray-mid;
+          border-color: @gray-mid;
+      // background-color: lighten(@color, 20%);
+      //     border-color: lighten(@color, 20%);
+          color: #fff;
+    }
+  }
+}
+
+// set up our two types of buttons
+.btn-default {
+	.outline-button(@button-color);
+}
+
+.btn-primary {
+	.solid-button(@button-color);
+}
+
+
+
+.btn-group {
+	&-sm {
+		.btn {
+			i.fa {
+				font-size: 18px;
+			}
+		}
+	}
+
+	&-xs {
+		.btn {
+			i.fa {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+
+
+
+/* pb button group  --  as on home page of SP  */
+.pb-btn-group {
+	@underline-thickness: 6px; // the fat rule for the hover state
+	@margin: 0 20px -(@underline-thickness/2); // to move the thin bottom rule up, negative margin
+	border-bottom: 1px solid #cc436e;
+	.btn {
+		font-family: @font-family-sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.1;
+		border: none;
+		border-bottom: @underline-thickness solid transparent;
+		color: @brand-primary;
+		background: transparent;
+		padding: 0 0 2px;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		margin: @margin;
+		font-size: 18px;
+		-webkit-transition: border-bottom-color .25s, color .25s;
+		-moz-transition: border-bottom-color .25s, color .25s;
+		-ms-transition: border-bottom-color .25s, color .25s;
+		-o-transition: border-bottom-color .25s, color .25s;
+		transition: border-bottom-color .25s, color .25s;
+		&.active {
+			box-shadow: none;
+			border-bottom: @underline-thickness solid darken(@brand-primary, 10%);
+			color: darken(@brand-primary, 10%);
+			&:hover {
+				background: transparent;
+				border-bottom: @underline-thickness solid darken(@brand-primary, 10%);
+			}
+		}
+		&:hover {
+			background: transparent;
+			border-bottom: @underline-thickness solid darken(@brand-primary, 10%);
+			color: darken(@brand-primary, 10%);
+		}
+	}
+}
+
+
+
+/*  --------- HEADER ----------- */
+
+// stripe below header -- colors TBD
+.stripe {
+	background-color: #f00;
+	height: 1px;
+	.lh-background-image(linear-gradient(to right, @stripe-left 0%, @stripe-right 100%));
+}
+
+
+// class needs to be set with JS
+body.fixed-header {
+	padding-top: 40px;
+	.navbar {
+		>.container-fluid {
+			padding: 0 40px;
+		}
+	}
+}
+
+header {
+    background-color: @background-color;
+    .navbar {
+    	margin-bottom: 0;
+    	li.first a {
+    		padding-left: 0;
+    	}
+    	// fixed navbar has a shadow that appears when scrolled via jQuery
+    	&.navbar-fixed-top {
+			-webkit-transition: box-shadow .3s;
+			-moz-transition: box-shadow .3s;
+			-ms-transition: box-shadow .3s;
+			-o-transition: box-shadow .3s;
+			transition: box-shadow .3s;
+			&.shadow {
+				-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.2);
+				-moz-box-shadow: 0 3px 6px rgba(0,0,0,.2);
+				box-shadow: 0 3px 6px rgba(0,0,0,.2);
+			}
+    	}
+    	&.navbar-scroll {
+
+    	}
+    	&.navbar-default {
+    		background-color: @background-color;
+    		border: none;
+    		-webkit-border-radius: 0;
+    		-moz-border-radius: 0;
+    		border-radius: 0;
+    		border-bottom: 1px solid @brand-primary;
+    		// no color behind top-level items when open
+    		& .open a {
+    			background-color: transparent;
+    			color: @brand-primary;
+    			&:hover {
+    				background-color: transparent;
+    				color: @brand-primary;
+    			}
+    		}
+    		// you can designate an LI as "active" and highlight its link
+    		& .active a {
+    			background-color: transparent;
+    			&:hover {
+    				background-color: transparent;
+    				color: @brand-primary;
+    			}
+
+    		}
+    		.navbar-brand {
+    			&.brand-text {
+	    			color: @brand-primary;
+    			}
+    		}
+    		.dropdown-menu {
+    			background-color: @gray-light;
+    			border: none;
+    			margin-top: 1px;  //enough to clear the rule below header
+    			-webkit-border-radius: 0;
+    			-moz-border-radius: 0;
+    			border-radius: 0;
+    			box-shadow: none;
+
+    			.divider {
+    				height: 1px;
+    				margin: 9px 20px;
+    				overflow: hidden;
+    				background-color: @gray;
+    			}
+    			> li {
+    				> a {
+    					// links in the dropdown
+    					padding: 6px 20px;
+    					font-weight: normal;
+    					line-height: 1.4;
+    					color: @text-color-dark;
+    					font-size: 18px;
+    					white-space: nowrap;
+    					font-family: @font-family-sans-serif;
+    				}
+    			}
+
+    		}
+    	}
+    }
+
+}
+
+
+
+
+
+/* ----- BREADCRUMBS --------- */
+.breadcrumb {
+	padding: 0;
+	background-color: transparent;
+	margin: 40px 0 0;
+	font-family: @font-family-sans-serif;
+	font-size: 14px;
+	// when a page-header follows a breadcrumb, no margin on the H1
+	& + h1 {
+		margin-top: 0;
+	}
+}
+
+
+
+
+/* --------- FOOTER ------------ */
+
+footer {
+	//padding: 50px 0 30px;
+	margin-top: 40px;
+	color: @text-color;
+	font-size: 12px;
+	font-family: @font-family-sans-serif;
+	//background-color: @brand-light-gray;
+	border-top: 1px solid @brand-primary;
+	.row {
+		padding: 40px 0;
+	}
+	ul.list-inline {
+		&.social {
+			li {
+				padding: 0;
+				&:first-child {
+					padding-right: 10px;
+				}
+				a {
+					color: @gray-mid;
+					-webkit-transition: .2s color;
+					-moz-transition: .2s color;
+					-ms-transition: .2s color;
+					-o-transition: .2s color;
+					transition: .2s color;
+					&:hover {
+						//color: @brand-primary;
+						-webkit-transform: scale(1.3);
+						-moz-transform:    scale(1.3);
+						-ms-transform:     scale(1.3);
+						-o-transform:      scale(1.3);
+						transform:         scale(1.3);
+
+						&.twitter {
+							color: #55ACEE;
+						}
+						&.facebook {
+							color: #4964A1;
+						}
+						&.linkedin {
+							color: #1A85BC;
+						}
+						&.youtube {
+							color: #CC181E;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+
+}
+
+.pb-footerlogo {
+	 background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAQCAYAAADkpAq+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExODA4Mzg1NzQ4NUFENTQyNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3MTdFOTdGQTYwMzIxMUUzOEQyMzlEN0FGMDIxOTlDMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3MTdFOTdGOTYwMzIxMUUzOEQyMzlEN0FGMDIxOTlDMyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDQ4MDExNzQwNzIwNjgxMTgwODM4NTc0ODVBRDU0MjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE4MDExNzQwNzIwNjgxMTgwODM4NTc0ODVBRDU0MjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5fOCHKAAAFV0lEQVR42uyYCWxUVRSGp1OwWhFR3IAGJS5IVIwWBSpoCxIiETBgVFTEFfc9onWptQJpIWpwI4qGxOCGpo0RglUqoNRiKRY0giLIZgFbOnShtpTa+h/yveTmOW9sYyCj6Um+zMxb7z3Lf8+dhLa2tlCnxZ91yc7J8b6HxVWir6jhmEWtXvQRG8QQ8aH4pdN1h86ys7IOBqPT4rFiqBKzBHGR2B1wrVVPkhgtBohEsVcs913XTaSJZue5DVScVV+yGMS7V4g/D+N8kxh7T+e9No5KsVE0xVNgCpzfLeLhGIHpLp52jpWLC33XnS4Ko9y/RzwmPhF54mgxUIwRi8Wr4v5DPN+TxBxxaZRz68WNzCkuApPrc75l0gViDdludoQYKjaJWaKVcztjPNvWoclk5yjxkHhS/EoAunNd4mGe81GiigRcJY4Xz4ix4jYSryYeAvNElONW0rdzvg35yYlynWXXywHP3ie+5XsJFTJFZIj94gQCPItrJoodXPuA2CUaxZ0iIrLEAq49XzzHsyKMYS7PHy9mipXiSDFNnIPzq0moJqRrM+SLK0QPmqAw1X2z6CW2U+Xv8jmA5NrGO69jPKtQjOfFavGauJs5WAP1g8gU31AAExhffxTlPTFdHPBXjGetOPI8USsqnEoJOWvHzg5o+8kExKpvMAP9WPwozkbnvyeDx5AM60SZGClm4KBK7uuJo1LEi1Tgbhy8jsCkirt4x14c3sK9k1AG+z6VNXE+gf5AXCuW8v0akqKV4I3lWgvMHeISAryaNXgSkm2BuVV8KRZxfAVrbAvjt+TOFsNIHkvG3KCKaa/FqphTxTyk41yy3OTxMyaSRAbNpVqKOTeKoBTjgBrWn3t4RldxBs6cR1XPJzNzycYRODCVjJ+DfKUQgOQoa2kh4xkNy5C27QRnCarxBkFOJxF6cf+V+HIE1RChsSonyPb7feZl7y5Cxjdy7G2CvyvaGuNWzDZfxZzWwYo5VlxNllqlfERmRAjKP1kNDvAaB7PeyJPZm+Cuj1ZNn/OeCQSmgarzxpyMZE4kw0PIy0xkqp6glhBMs59xWBqBt2ANZ2527SskxhDWYhtDP86nIqGuDUXCTCFuQg5bkf7M9qwxNqE6Mn5aByvmO3FxlOP9/kWF7neahTykphsOD5PltQT0cWTRq4RYtgjnpJPJDUhjV6Ql5CTTVgJqjc2ZyOY7Ypx4geTJJmm7EOAZrLleM3WAJLLtyWUENI2qsw38KdG6sh1ofqKTZX/QrdQhB60dXGOCLMHZT/RwqjXIfnOyLwUJ6Evl9MZZFqyvcVSIYFX65mhVdxYBPEY8ygJcSmVbG3+LWMizpqIe+VTyUpqME1kzyuhYR/IOu+cnxjsYX1ql3YcfF/OO6STYbJJgEy393yrG28eUk4HeH2nNHBtPx9SeimmPJSIXW8T1NAgLnff6zRqSt8RLjPMG59xTdEUhJGEcC/Ja3zMacegC3/FakrQQv7wuviIpk9kgP8vvIhLEnvMF9xexPypFrkMkSj6NgGdb6NqqWDfzSIxkqj/PC0yGk73DYuwrEhj8FMo5jB77bTOdUVXAc0yr7+XdjXRMw5G9PexzMpzJhVjcV5KFZo/Q0aRTccuQFM+qncx1N4xWOQ/6dv5hxrGe+YXIaBvP5aytGwhAvbPmTcaRpc6aV0xDEHHkfCAS1QffLHHkcRAdaH/krQQOOme5M8DjkIagwDRzY6w/MffRXQVZEwN2rcL3D0SF7/xWcG0N+DvBTGSoGQc3+Naote2s5t8JfpCV+X5XU2F+q2N/ErRmFgRtMP9P1kJQP6U1LfivTuQvAQYAEq2P4VOtI0IAAAAASUVORK5CYII=) no-repeat;
+	 width: 102px;
+	 height: 20px;
+	 display: inline-block;
+	 vertical-align: middle;
+	 footer & {
+ 		 margin-right: 10px;
+	 }
+ }
+
+.debug {
+	border: 1px solid red;
+	&.green {
+		border-color: green;
+	}
+	&.pink {
+		border-color: pink;
+	}
+}
+
+/* bootstrap angular switch */
+.has-switch {
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 4px;
+	border: 1px solid;
+	border-color: #cccccc;
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	line-height: 8px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	vertical-align: middle;
+	min-width: 100px;
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	input[type="checkbox"], input[type="radio"] {
+		display: none;
+	}
+	> div {
+		display: inline-block;
+		width: 150%;
+		position: relative;
+		top: 0;
+		&.switch-animate {
+			-webkit-transition: left 0.5s;
+			transition: left 0.5s;
+		}
+		&.switch-off {
+			left: -50%;
+		}
+	}
+	span, label {
+		text-align: center;
+		z-index: 1;
+		width: 33%;
+		cursor: pointer;
+		position: relative;
+		display: inline-block !important;
+		height: 100%;
+		&.switch-left {
+			color: #fff;
+			background: @brand-primary;
+			border-bottom-left-radius: 4px;
+			border-top-left-radius: 4px;
+		}
+		&.switch-right {
+			color: #000;
+			background: #eeeeee;
+		}
+		&.switch-mini {
+			padding-bottom: 4px;
+			padding-top: 4px;
+			font-size: 10px;
+			line-height: 9px;
+		}
+	}
+	label {
+		margin-top: -1px;
+		margin-bottom: -1px;
+		background-color: #fff;
+	}
+}
+
+// unsupported
+.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 15px;
+}
+
+
+
+
+  @media (max-width: @screen-xs-max) {
+
+		.xs-text-left {
+			text-align: left;
+		}
+
+		.xs-text-right {
+			text-align: right;
+		}
+
+		.footer {
+			padding: 20px 0;
+			.social {
+				text-align: left;
+				padding-top: 20px;
+			}
+		}
+
+  }
+
+
+
