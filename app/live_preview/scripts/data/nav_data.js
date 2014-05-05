@@ -18,6 +18,9 @@
         }, {
             "label": "Faceted Search",
             "value": "faceted_search"
+        }, {
+            "label": "Forms",
+            "value": "forms"
         }]
     }, {
         "label": "Components",

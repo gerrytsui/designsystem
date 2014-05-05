@@ -1,38 +1,73 @@
 'use strict';
 
 angular.module('designSystemApp')
-  .directive('menu', function() {
+  .directive('menu', function($timeout) {
     return {
-      restrict: 'A',
+      restrict: 'EA',
       link: function postLink(scope, element, attrs) {
 
-        /*$(window).on('resize', function(e) {
-          console.log('message 1', e.target.outerWidth, e.target.outerHeight);
-        });*/
-
         var $body = $('body'),
-          $menuButton = element.find('#menu-collapse'),
-          $mainNavItems = element.find('ul:first > li > a');
+          $menu = element,
+          $menuCollapse = $menu.find('.menu-collapse i.fa'),
+          $menuHeading = $menu.find('.menu-heading'),
+          $menuTitle = $menuHeading.find('.menu-title');
 
-        $menuButton.on({
-          click: function(e) {
+        if ($body.hasClass('minified')) {
+          $menuTitle.addClass('hide');
+        }
+
+        function hideSubmenus() {
+          $menuTitle.fadeOut('400', function() {
+            $menuTitle.addClass('hide');
             $body.toggleClass('minified');
+          });
+        }
+
+        $menuCollapse.on({
+          click: function(e) {
+
+            if ($body.hasClass('minified')) {
+              $body.toggleClass('minified');
+              $menuTitle.removeClass('hide').fadeIn(400);
+
+            }
+            else {
+              var $menuOpen = $menu.find('li.open'),
+                $menuOpenContent = $menuOpen.find('ul.menu-content');
+
+              if ($menuOpen.length > 0) {
+                $menuOpenContent.slideToggle('fast', hideSubmenus());
+                $menuOpen.removeClass('open');
+              }
+              else {
+                hideSubmenus();
+              }
+            }
+
           }
         });
 
-        $mainNavItems.on({
+        $menuHeading.on({
           click: function(e) {
 
             //if minified and there is a submenu, prevent the click event
-            if ($body.hasClass('minified') && $(this).parent().find('ul').length > 0) {
+            if ($body.hasClass('minified') && $(this).parent().find('ul.menu-content').length > 0) {
               return false;
             };
 
-            // collapse other containers 
-            $mainNavItems.not('.collapsed').not($(this)).click();
+            if (!$body.hasClass('minified')) {
+              var $parent = $(this).parent(),
+                $children = $parent.children('ul.menu-content'),
+                $siblings = $parent.siblings();
+
+              $children.slideToggle(400);
+              $parent.toggleClass('open');
+              $siblings.removeClass('open').children('ul.menu-content').slideUp(400);
+            }
 
           }
         });
+
 
       }
     };

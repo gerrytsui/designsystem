@@ -1,0 +1,242 @@
+<div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
+
+  <div class="row">
+    <!-- title -->
+    <div class="col-md-12">
+
+      <!-- breadcrumb -->
+      <ol class="breadcrumb">
+        <li><a href="#/">Home</a></li>
+        <li class="active">Forms</li>
+      </ol>
+      <h1 class="page-header">Forms</h1>
+
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-6">
+
+    <form>
+        <input name="authenticity_token" type="hidden">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>Text field</label>
+            <input class="form-control" placeholder="Text field" type="text">
+          </div>
+          <div class="form-group col-md-6">
+            <label>Text field</label>
+            <input class="form-control" placeholder="Text field" type="text">
+          </div>
+        </div>
+
+        <div class="form-group has-error">
+          <label>Text field with Error</label>
+          <input class="form-control" placeholder="Text field" type="text">
+          <span class="help-block text-error">Please enter a valid name.</span>
+        </div>
+
+        <div class="form-group">
+          <label>Text field with Prompt</label>
+          <input class="form-control" placeholder="Text field" type="text">
+          <span class="help-block">This is some simple help text.</span>
+        </div>
+
+
+        <div class="form-group">
+           <label>Text field with Icon</label>
+            <div class="icon-addon addon-md">
+                <input type="text" placeholder="Search" class="form-control">
+                <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="" data-original-title="email"></label>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Text field prepended and appended</label>
+            <div class="input-group">
+            <span class="input-group-addon">
+              <i class="fa fa-filter"></i>
+            </span>
+
+            <input class="form-control" placeholder="" type="text">
+            <span class="input-group-addon">
+              <i class="fa fa-user"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Text field with appended buttons</label>
+            <div class="input-group">
+            <input class="form-control" placeholder="" type="text">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                Search
+              </button>
+              <button class="btn btn-default" type="button">
+                Options
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="form-group">
+          <label>Password field</label>
+            <input class="form-control" placeholder="Password" type="password" value="mypassword">
+        </div>
+
+        <div class="form-group">
+          <label>Textarea</label>
+          <textarea class="form-control" placeholder="Textarea" rows="3"></textarea>
+        </div>
+
+        <div class="row">
+
+          <div class="form-group col-md-6">
+            <label for="">Select</label>
+            <select class="form-control">
+              <option>Amsterdam</option>
+              <option>Atlanta</option>
+              <option>Baltimore</option>
+              <option>Boston</option>
+              <option>Buenos Aires</option>
+              <option>Calgary</option>
+              <option>Chicago</option>
+              <option>Denver</option>
+              <option>Dubai</option>
+              <option>Frankfurt</option>
+              <option>Hong Kong</option>
+              <option>Honolulu</option>
+              <option>Houston</option>
+              <option>Kuala Lumpur</option>
+              <option>London</option>
+              <option>Los Angeles</option>
+              <option>Melbourne</option>
+              <option>Mexico City</option>
+              <option>Miami</option>
+              <option>Minneapolis</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label>Multi-select</label>
+            <select multiple="multiple" id="multiselect1" class="form-control custom-scroll" title="Click to Select a City">
+              <option>Amsterdam</option>
+              <option selected="selected">Atlanta</option>
+              <option>Baltimore</option>
+              <option>Boston</option>
+              <option>Buenos Aires</option>
+              <option>Calgary</option>
+              <option selected="selected">Chicago</option>
+              <option>Denver</option>
+              <option>Dubai</option>
+              <option>Frankfurt</option>
+              <option>Hong Kong</option>
+              <option>Honolulu</option>
+              <option>Houston</option>
+              <option>Kuala Lumpur</option>
+              <option>London</option>
+              <option>Los Angeles</option>
+              <option>Melbourne</option>
+              <option>Mexico City</option>
+              <option>Miami</option>
+              <option>Minneapolis</option>
+            </select>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="row">
+
+          <fieldset>
+          <legend data-toggle="collapse" data-target="#checkboxes" class="data-toggle" collapse>Checkboxes</legend>
+
+            <div id="checkboxes" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="form-group col-md-6">
+                    <label>Checkbox default</label>
+                    <div class="checkbox">
+                      <input type="checkbox" id="cb1" value="" checked="checked"><label for="cb1">Lorem ipsum dolor sit amet.</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" id="cb2" value=""><label for="cb2">Lorem ipsum dolor sit amet, consectetur adipisicing. </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" id="cb3" value=""><label for="cb3">Lorem ipsum dolor sit amet, consectetur.</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <div>
+                      <label>Checkbox Inline</label>
+                    </div>
+                      <label for="cb1" class="checkbox-inline"><input type="checkbox" id="cb1" value="" checked="checked">Lorem</label>
+                      <label for="cb2" class="checkbox-inline"><input type="checkbox" id="cb2" value="">Ipsum</label>
+                      <label for="cb3" class="checkbox-inline"><input type="checkbox" id="cb3" value="">Dolor</label>
+                  </div>
+              </div>
+            </div>
+          </fieldset>
+
+        </div>
+
+
+        <div class="row">
+          <fieldset>
+          <legend data-toggle="collapse" data-target="#radios" class="data-toggle" collapse>Radio Buttons</legend>
+
+            <div id="radios" class="panel-collapse collapse">
+              <div class="panel-body">
+
+                <div class="form-group col-md-6">
+                  <label>Radio default</label>
+                  <div class="radio">
+                    <label for="rb1"><input type="radio" name="group1" id="rb1" value="">Lorem ipsum dolor sit amet.</label>
+                  </div>
+
+                  <div class="radio">
+                    <label for="rb2"><input type="radio" name="group1" id="rb2" value="">Lorem ipsum dolor sit amet, consectetur adipisicing. </label>
+                  </div>
+
+                  <div class="radio">
+                    <label for="rb3"><input type="radio" name="group1" id="rb3" value="">Lorem ipsum dolor sit amet, consectetur.</label>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <div>
+                    <label>Radio Inline</label>
+                  </div>
+                    <label for="rb4" class="radio-inline"><input type="radio" id="rb4" name="group2" value="">Lorem</label>
+                    <label for="rb5" class="radio-inline"><input type="radio" id="rb5" name="group2" value="">Ipsum</label>
+                    <label for="rb6" class="radio-inline"><input type="radio" id="rb6" name="group2" value="">Dolor</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+
+
+
+      <div class="form-actions">
+        <button class="btn btn-default">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</div> <!-- /container -->

@@ -1,0 +1,10 @@
+{
+  "staging": {
+    "username": "design_system_staging",
+    "password": "pbdsstaging"
+  },
+  "live": {
+    "username": "design_system_live",
+    "password": "pbdslive"
+  }
+}

@@ -46,7 +46,7 @@
 
 
 		<header>
-		<nav class="navbar navbar-default" ng-class="{'navbar-fixed-top': settings.isFixed,'navbar-scroll': !settings.isFixed}" role="navigation">
+		<nav class="navbar navbar-default" ng-class="{'navbar-fixed-top': settings.isFixed,'navbar-scroll': !settings.isFixed}" role="navigation" fixednav>
 			<div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -70,9 +70,12 @@
 				  </ul>
 
 					<ul class="nav navbar-nav navbar-right">
-						<li><a ng-href="" data-toggle="popover" data-pop="#foo">
+						<!-- <li><a ng-href="" data-toggle="popover" data-pop="#foo">
 							<i class="fa fa-envelope fa-lg fa-active"></i>
 							<span class="badge">12</span></a>
+						</li> -->
+						<li>
+							<span id="activity" class="activity-dropdown"> <i class="fa fa-envelope"></i> <b class="badge"> 21 </b> </span>
 						</li>
 						<li><a href="#"><i class="fa fa-gear fa-lg"></i></a></li>
 						<li>
@@ -92,12 +95,11 @@
 			</nav>
 		</header>
 
-		<div class="pop-content hidden" id="foo">
-			<b>Messaging</b>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, voluptatem?</p>
-			<button class="btn btn-primary btn-xs" data-toggle="popover">Go</button>
-			<button class="btn btn-link btn-xs" data-toggle="popover">Cancel</button>
-		</div>
+
+
+
+
+
 
 
 		<!-- Add your site or application content here -->
@@ -210,7 +212,9 @@
 		<script src="scripts/services/NavFactory.js"></script>
 		<script src="scripts/directives/bs_popover.js"></script>
 		<script src="scripts/directives/menu.js"></script>
+		<script src="scripts/directives/fixed-header.js"></script>
 		<script src="scripts/directives/treenav.js"></script>
+		<script src="scripts/directives/form-controls.js"></script>
 		<script src="scripts/vendor/sparkline-directive.js"></script>
 		<script src="scripts/filters/capitalize.js"></script>
 		<script src="scripts/controllers/main.js"></script>
@@ -226,34 +230,9 @@
 		<script src="scripts/controllers/accordion.js"></script>
 		<script src="scripts/controllers/modal.js"></script>
 		<script src="scripts/controllers/panels.js"></script>
+		<script src="scripts/controllers/forms.js"></script>
 		<!-- endbuild -->
 
-		<script>
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 20) {
-					$('.navbar-fixed-top').addClass('shadow')
-				}
-				else {
-					$('.navbar-fixed-top').removeClass('shadow')
-				}
-			});
-
-			$(function () { $("[data-toggle='tooltip']").tooltip(); });
-
-			// $('[data-toggle="popover"]').popover({
-			//     trigger: 'click', // or hover
-			//     html: true,
-			//     'placement': 'bottom'
-			// });
-
-			$('[data-toggle="popover"]').popover({
-			    trigger: 'click',
-			    placement: 'bottom',
-			    html: true,
-			    content: function() { return $(this.dataset.pop).html(); }
-			});
-
-		</script>
 
 
 </body>

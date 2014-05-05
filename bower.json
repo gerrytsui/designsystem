@@ -29,6 +29,7 @@
     "flot": "0.8.3",
     "angular-flot": "0.0.3",
     "flot.tooltip": "*",
-    "angular-bootstrap-toggle-switch": "~0.4.0"
+    "angular-bootstrap-toggle-switch": "~0.4.0",
+    "modernizr": "~2.8.1"
   }
 }
