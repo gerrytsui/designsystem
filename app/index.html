@@ -1,14 +1,210 @@
-<script src="scripts/services/navModel.js"></script>
 <!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>PB Design System</title>
-</head>
-<body style="padding:50px">
-	<h1>
-		<a href="/docs/">Documentation</a>
-	</h1>
-	<h1><a href="/live_preview">Live Preview</a></h1>
+<!--[if IE 8]>         <html class="no-js lt-ie9" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="designSystemApp" ng-controller="MainCtrl"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="designSystemApp" ng-controller="MainCtrl"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' type='text/css'>
+
+
+    <!-- build:css({tmp,app,.tmp}) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="bower_components/leaflet-dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/ngprogress/ngProgress.css" />
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" />
+    <link rel="stylesheet" href="styles/live_preview.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/theme.css">
+  </head>
+  <body ng-cloak class="design-system" ng-class="{'fixed-header': settings.isFixed}">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- <div class="container" ng-include="'views/main.html'" ng-controller="MainCtrl"></div> -->
+
+
+    <div class="settings" ng-class="{'activate': settings.isOpen}">
+        <div class="settings-tab" ng-click="settings.show()">
+            <i class="fa fa-code fa-lg fa-fw"></i>
+        </div>
+        <div class="settings-form">
+            <h6>Options</h6>
+            <input id="isFluid" name="isFluid" type="checkbox" ng-model="settings.isFluid" /> <label for="isFluid">Fluid Containers</label><br>
+            <input id="isFixed" name="isFixed" type="checkbox" ng-model="settings.isFixed" /> <label for="isFixed">Fixed Header</label>
+        </div>
+    </div>
+
+
+
+    <header>
+    <nav class="navbar navbar-default" ng-class="{'navbar-fixed-top': settings.isFixed,'navbar-scroll': !settings.isFixed}" role="navigation" fixednav>
+        <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand brand-text" href="/#">Design System Beta</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                    <li ng-class="{'dropdown':(n.children.length)}" ng-repeat="n in navData"><a data-target="{{n.value}}" data-toggle="{{n.toggle}}">{{n.label}} <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                    <li ng-repeat="p in n.children | orderBy:predicate"><a href="#/{{p.value}}">{{p.label}}</a></li>
+                    </ul>
+                    </li>
+              </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a ng-href="" data-toggle="popover" data-pop="#foo">
+                        <i class="fa fa-envelope fa-lg fa-active"></i>
+                        <span class="badge">12</span></a>
+                    </li> -->
+                    <li>
+                        <span id="activity" class="activity-dropdown"> <i class="fa fa-envelope"></i> <b class="badge"> 21 </b> </span>
+                    </li>
+                    <li><a href="#"><i class="fa fa-gear fa-lg"></i></a></li>
+                    <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i> <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- Add your site or application content here -->
+    <div ng-view></div>
+
+
+    <!-- FOOTER -->
+    <footer>
+    <!-- <div class="stripe">&nbsp;</div> -->
+        <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
+            <div class="row">
+
+                <!-- Copyright -->
+                <div class="col-md-6">
+                    <a href="http://www.pb.com" class="pb-footerlogo"></a>&copy;2014 Pitney Bowes Inc. All rights reserved.
+                </div>
+
+                <!-- Social -->
+                <div class="col-md-6 text-right xs-text-left">
+                    <ul class="list-unstyled list-inline social">
+                        <li>Follow us:</li>
+                        <li>
+                            <a target="_blank" class="fa-stack twitter" href="https://twitter.com/pbsmallbusiness">
+                                <i class="fa fa-stop fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="fa-stack facebook" href="https://www.facebook.com/Pbsmallbusiness">
+                                <i class="fa fa-stop fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="fa-stack linkedin" href="http://www.linkedin.com/company/2503?trk=tyah">
+                                <i class="fa fa-stop fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="fa-stack youtube" href="http://www.youtube.com/pbsmallbusiness">
+                                <i class="fa fa-stop fa-stack-2x"></i>
+                                <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- build:js({.tmp,app})  scripts/vendor.js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery.easy-pie-chart/dist/angular.easypiechart.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/kapusta-jquery.sparkline/dist/jquery.sparkline.js"></script>
+    <script src="bower_components/leaflet-dist/leaflet.js"></script>
+    <script src="bower_components/angular-leaflet/dist/angular-leaflet-directive.js"></script>
+    <script src="bower_components/ngprogress/build/ngProgress.js"></script>
+    <script src="bower_components/angular-bootstrap-toggle-switch/angular-toggle-switch.js"></script>
+    <script src="bower_components/flot/jquery.flot.js"></script>
+    <script src="bower_components/flot/jquery.flot.resize.js"></script>
+    <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
+    <script src="bower_components/angular-flot/angular-flot.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/ChartFactory.js"></script>
+    <script src="scripts/services/PeopleFactory.js"></script>
+    <script src="scripts/services/InvoiceFactory.js"></script>
+    <script src="scripts/services/FaIconFactory.js"></script>
+    <script src="scripts/services/FakeNavFactory.js"></script>
+    <script src="scripts/services/NavFactory.js"></script>
+    <script src="scripts/directives/bs_popover.js"></script>
+    <script src="scripts/directives/menu.js"></script>
+    <script src="scripts/directives/fixed-header.js"></script>
+    <script src="scripts/directives/treenav.js"></script>
+    <script src="scripts/directives/form-controls.js"></script>
+    <script src="scripts/vendor/sparkline-directive.js"></script>
+    <script src="scripts/filters/capitalize.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/leftnav.js"></script>
+    <script src="scripts/controllers/two_panel_selector.js"></script>
+    <script src="scripts/controllers/elements.js"></script>
+    <script src="scripts/controllers/data_grid.js"></script>
+    <script src="scripts/controllers/maps.js"></script>
+    <script src="scripts/controllers/faceted_search.js"></script>
+    <script src="scripts/controllers/headers.js"></script>
+    <script src="scripts/controllers/accordion.js"></script>
+    <script src="scripts/controllers/modal.js"></script>
+    <script src="scripts/controllers/panels.js"></script>
+    <script src="scripts/controllers/forms.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
