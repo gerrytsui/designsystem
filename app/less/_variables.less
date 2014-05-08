@@ -54,11 +54,11 @@
 //
 
 // web font import
-@import '_fonts';
+// @import '_fonts';
 
 //## Font, line-height, and color for body text, headings, and more.
-@font-family-sans-serif:  'franklin_gothic_fs', Arial, sans-serif;
-@font-family-serif:       'Merriweather', Georgia, Times, "Times New Roman", serif;
+@font-family-sans-serif:  'franklin-gothic-urw', Arial, sans-serif;
+@font-family-serif:       Georgia, Times, "Times New Roman", serif;
 
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -82,11 +82,15 @@ h3 { font-size: @font-size-h3;}
 h4 { font-size: @font-size-h4;}
 h5 { font-size: @font-size-h5;}
 h6 { font-size: @font-size-h6;}
-h1,h2,h3,h4,h6 { font-family: 	@font-family-sans-serif; }
+h1,h2,h3,h4,h6 {
+  font-family: 	@font-family-sans-serif;
+  font-weight: @headings-font-weight;
+   }
 h5 { font-family: @font-family-serif; }
 body{
 	font-family: @font-family-base;
 	font-size: @font-size-base;
+  font-weight: 400;
 	color: @text-color;
     & .has-error {
   		color: @brand-danger;
@@ -101,7 +105,7 @@ body{
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    @font-family-sans-serif;
-@headings-font-weight:    normal;
+@headings-font-weight:    400;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
