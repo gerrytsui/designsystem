@@ -97,6 +97,11 @@ body{
   	}
 }
 
+// to make it use FG medium
+b, strong {
+  font-weight: 500;
+}
+
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
@@ -648,7 +653,7 @@ body{
 
 @alert-padding:               15px;
 @alert-border-radius:         @border-radius-base;
-@alert-link-font-weight:      bold;
+@alert-link-font-weight:      500;
 
 @alert-success-bg:            @state-success-bg;
 @alert-success-text:          @state-success-text;
@@ -791,7 +796,7 @@ body{
 //** Badge background color in active nav link
 @badge-active-bg:             #fff;
 
-@badge-font-weight:           bold;
+@badge-font-weight:           500;
 @badge-line-height:           1;
 @badge-border-radius:         10px;
 

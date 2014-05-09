@@ -945,7 +945,7 @@ body .has-error {
 }
 
 p.lead {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .grid-sample .panel {
@@ -1085,7 +1085,7 @@ ol {
 }
 
 .panel-title {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* in forms */
@@ -1201,7 +1201,7 @@ a.read-more:after {
 }
 
 .thumb-detail h4 {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .table > tbody > tr > td,
@@ -1329,7 +1329,7 @@ a.list-group-item.active:focus {
 }
 
 .media-heading {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .affix-top {
@@ -1394,7 +1394,7 @@ a.list-group-item.active:focus {
 .minified .menu > li:hover .menu-title {
   display: inline-block !important;
   background-color: #f2f2f2;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .minified .menu > li:hover .menu-title b.fa {
@@ -2014,7 +2014,7 @@ span#activity {
   border-radius: 2px;
   cursor: default !important;
   display: inline-block;
-  font-weight: bold;
+  font-weight: 500;
   height: 24px;
   width: 24px;
   padding: 2px;
@@ -2046,7 +2046,7 @@ span#activity .badge {
   display: inline-block;
   font-size: 10px;
   color: #fff;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   line-height: normal;
   transition: all .1s;
