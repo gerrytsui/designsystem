@@ -14,4 +14,4 @@ Working raw files are in `/app`.
 
 Compiled and processed files are in `/live_preview`.
 
-The Design System CSS processed and compacted CSS file is in `/dist/styles`.
+The Design System CSS processed and compacted CSS file is in `/dist/styles`. To use the design system in your project, copy `design_system.css` to your project's CSS directory.  You can then create your own CSS file to hold your project's CSS and any overrides needed.
