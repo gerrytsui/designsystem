@@ -8,27 +8,26 @@
 @background-color:     #ffffff;
 
 // define the project colors
-@brand-primary: 		   #418BC9; // used for links, buttons, accents
-@brand-success:        #61a041;
+@brand-primary: 		   #0070c4; // used for links, buttons, accents
+@brand-success:        #007d00;
 @brand-new: 			     #CB98C5;
-@brand-info:           #00ADEF;
-@brand-warning:        #FFD400;
-@brand-danger:         #A94442;
+@brand-info:           #0070c4;
+@brand-warning:        #826000;
+@brand-danger:         #cc0000; //error
 
 
 @gray-dark:            #323232;
 @gray-text:            #59595b;
-@gray-mid:             #939598;
+@gray-mid:             #767676;
 @gray:                 #d5d5d6;
 @gray-light:           #F2F2F2;
-
-@brand-light-color:    lighten(@brand-primary, 35%);
-@brand-light-gray:     @gray-light;
+@gray-disabled:        #BCBEC0;
 
 @stripe-left: 			   #AE2A90;
 @stripe-right:    		 #2583C6;
 
 @button-color:         @brand-primary;
+@disabled-button:      #afd2ec;
 
 
 
@@ -47,7 +46,7 @@
 //** Global textual link color.
 @link-color:            @brand-primary;
 @link-color-hover:      darken(@brand-primary, 19%);
-@link-color-disabled:   lighten(@brand-primary, 35%);
+@link-color-disabled:   lighten(@brand-primary, 32%);
 
 
 //== Typography
@@ -57,7 +56,7 @@
 // @import '_fonts';
 
 //## Font, line-height, and color for body text, headings, and more.
-@font-family-sans-serif:  'franklin-gothic-urw', Arial, sans-serif;
+@font-family-sans-serif:  'Open Sans', Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, Times, "Times New Roman", serif;
 
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -74,6 +73,20 @@
 @font-size-h4:            ceil((@font-size-base * 1.125));	// ~18px
 @font-size-h5:            ceil((@font-size-base * 1.125)); 	// ~18px (will be serif)
 @font-size-h6:            @font-size-base;
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    @font-family-sans-serif;
+@headings-font-weight:    400;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+.serif { font-family:     @font-family-serif; }
+.sans  { font-family:     @font-family-sans-serif; }
 
 // bs allows you to set the above variables, but does not APPLY them, hence:
 h1 { font-size: @font-size-h1;}
@@ -99,25 +112,14 @@ body{
 
 // to make it use FG medium
 b, strong {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 
-//** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
-//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
-
-//** By default, this inherits from the `<body>`.
-@headings-font-family:    @font-family-sans-serif;
-@headings-font-weight:    400;
-@headings-line-height:    1.1;
-@headings-color:          inherit;
 
 
 
-.serif { font-family:     @font-family-serif; }
-.sans  { font-family:     @font-family-sans-serif; }
+
 
 //-- Iconography
 //
@@ -193,6 +195,8 @@ b, strong {
 @table-cell-padding:            8px;
 //** Padding for cells in `.table-condensed`.
 @table-condensed-cell-padding:  5px;
+//** Padding for cells in `.table-condensed-extra`.
+@table-condensed-extra-cell-padding:  2px;
 
 //** Default background color used for all tables.
 @table-bg:                      transparent;
@@ -527,21 +531,21 @@ b, strong {
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-@state-success-text:             #3c763d;
-@state-success-bg:               #dff0d8;
-@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+@state-success-text:             @brand-success;
+@state-success-bg:               #e5f2e5;
+@state-success-border:           #bfdebf;
 
-@state-info-text:                #31708f;
+@state-info-text:                @brand-info;
 @state-info-bg:                  #d9edf7;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
-@state-warning-text:             #8a6d3b;
+@state-warning-text:             @brand-warning;
 @state-warning-bg:               #fcf8e3;
-@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+@state-warning-border:           #faebcc;
 
-@state-danger-text:              #a94442;
-@state-danger-bg:                #f2dede;
-@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+@state-danger-text:              @brand-danger;
+@state-danger-bg:                #fae6e6;
+@state-danger-border:            #f5cccc;
 
 
 //== Tooltips
@@ -670,6 +674,8 @@ b, strong {
 @alert-danger-bg:             @state-danger-bg;
 @alert-danger-text:           @state-danger-text;
 @alert-danger-border:         @state-danger-border;
+
+
 
 
 //== Progress bars
@@ -864,7 +870,7 @@ b, strong {
 //##
 
 //** Text muted color
-@text-muted:                  @gray-light;
+@text-muted:                  @gray-disabled;
 //** Abbreviations and acronyms border color
 @abbr-border-color:           @gray-light;
 //** Headings small color
@@ -952,3 +958,24 @@ b, strong {
     clear: both;
   }
 }
+
+// Contextual backgrounds
+// -------------------------
+.bg-variant(@color) {
+  background-color: @color;
+  a&:hover {
+    background-color: darken(@color, 10%);
+  }
+}
+
+
+
+// Typography
+// -------------------------
+.text-emphasis-variant(@color) {
+  color: @color;
+  a&:hover {
+    color: darken(@color, 10%);
+  }
+}
+

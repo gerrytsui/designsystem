@@ -31,6 +31,9 @@
     "flot.tooltip": "*",
     "angular-bootstrap-toggle-switch": "~0.4.0",
     "modernizr": "~2.8.1",
-    "ui.bootstrap": "~0.11.0"
+    "ui.bootstrap": "~0.11.0",
+    "splitter": "*",
+    "bg-splitter": "*",
+    "spinjs": "~2.0.1"
   }
 }

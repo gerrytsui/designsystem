@@ -71,6 +71,12 @@
         }, {
             "label": "Tables",
             "value": "elements?section=Tables"
+        }, {
+            "label": "Colors",
+            "value": "elements?section=Colors"
+        }, {
+            "label": "Other",
+            "value": "elements?section=Other"
         }]
     }]
 }

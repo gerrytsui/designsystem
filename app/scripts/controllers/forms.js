@@ -5,7 +5,7 @@ angular.module('designSystemApp').controller('FormsCtrl', ['$scope', 'PeopleFact
         // get the people data
         PeopleFactory.getPeople().then(function(response) {
             $scope.peopleData = response.data;
-        })
+        });
     }
 
 

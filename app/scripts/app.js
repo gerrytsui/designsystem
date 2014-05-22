@@ -12,7 +12,9 @@ angular.module('designSystemApp', [
     'leaflet-directive',
     'ngProgress',
     'toggle-switch',
-    'angular-flot'
+    'angular-flot',
+    'bgDirectives'
+
 ])
     .config(function($routeProvider) {
         $routeProvider
@@ -26,7 +28,8 @@ angular.module('designSystemApp', [
                 templateUrl: 'views/leftnav.html',
                 controller: 'LeftnavCtrl',
                 className: 'leftnav',
-                pageTitle: 'Left Nav'
+                pageTitle: 'Left Nav',
+                reloadOnSearch: false //prevent the controller reloading on route change
             })
             .when('/two_panel_selector', {
                 templateUrl: 'views/two_panel_selector.html',

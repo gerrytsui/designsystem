@@ -8,19 +8,25 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <script type="text/javascript" src="//use.typekit.net/ddc7jsv.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!--  <script type="text/javascript" src="//use.typekit.net/ddc7jsv.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
 
 
-    <!-- build:css({tmp,app,.tmp}) styles/main.css -->
+    <!-- build:css({tmp,app,.tmp}) styles/vendor.css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="bower_components/leaflet-dist/leaflet.css" />
     <link rel="stylesheet" href="bower_components/ngprogress/ngProgress.css" />
+    <link rel="stylesheet" href="bower_components/bg-splitter/css/style.css" />
     <link rel="stylesheet" href="bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" />
-    <link rel="stylesheet" href="styles/live_preview.css">
+    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/classic.css" />
+    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/classic.date.css" />
+    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/classic.time.css" />
     <!-- endbuild -->
-    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/design_system.css">
+    <link rel="stylesheet" href="styles/live_preview.css">
   </head>
   <body ng-cloak class="design-system" ng-class="{'fixed-header': settings.isFixed}">
     <!--[if lt IE 7]>
@@ -150,11 +156,13 @@
 
 
     <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
-
+    <!-- build:js scripts/ie8.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+    <!-- endbuild -->
+
 
     <!-- build:js({.tmp,app})  scripts/vendor.js -->
     <script src="bower_components/jquery/jquery.js"></script>
@@ -176,6 +184,11 @@
     <script src="bower_components/flot/jquery.flot.resize.js"></script>
     <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
     <script src="bower_components/angular-flot/angular-flot.js"></script>
+    <script src="bower_components/bg-splitter/js/splitter.js"></script>
+    <script src="bower_components/spinjs/spin.js"></script>
+    <script src="bower_components/pickadate/lib/picker.js"></script>
+    <script src="bower_components/pickadate/lib/picker.date.js"></script>
+    <script src="bower_components/pickadate/lib/picker.time.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -207,5 +220,7 @@
     <script src="scripts/controllers/panels.js"></script>
     <script src="scripts/controllers/forms.js"></script>
     <!-- endbuild -->
+
+
 </body>
 </html>

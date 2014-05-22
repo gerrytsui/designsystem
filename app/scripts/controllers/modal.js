@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('designSystemApp')
+angular.module('designSystemApp');
 var ModalDemoCtrl = function($scope, $modal, $log) {
 
     $scope.items = ['item1', 'item2', 'item3'];

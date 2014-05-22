@@ -1,0 +1,35 @@
+<div class="row"><div class="col-md-12"><h1>Other</h1></div></div><!-- does not work --><!-- <div class="row">
+	<h3 class="section-head">Pane Splitter</h3>
+	<div class="col-md-12">
+
+		<bg-splitter orientation="horizontal">
+		  <bg-pane min-size="100"><div class="pane-container">Pane 1</div></bg-pane>
+		  <bg-pane min-size="150">
+		    <bg-splitter orientation="vertical">
+		      <bg-pane min-size="100" class="pane-container">Pane 2</bg-pane>
+		      <bg-pane min-size="150" class="pane-container">Pane 3</bg-pane>
+		    </bg-splitter>
+		  </bg-pane>
+		</bg-splitter>
+
+	</div>
+</div> --><div class="row"><div class="col-md-6"><h3 class="section-head">Activity Spinner (plain JS)</h3><div class="spinner-holder"><div id="foo"></div></div><button class="btn btn-xs btn-default" onclick="spinner.stop()">Stop and Hide Spinner</button> <button class="btn btn-xs btn-default" onclick="spinner.spin(target)">Restart</button></div></div><!-- see http://fgnass.github.io/spin.js/ --><!-- included inline as the non-angular, non-jquery version --><!-- to hide spinner call its "stop" method --><script>var opts = {
+ 	  lines: 13, // The number of lines to draw
+ 	  length: 20, // The length of each line
+ 	  width: 10, // The line thickness
+ 	  radius: 30, // The radius of the inner circle
+ 	  corners: 1, // Corner roundness (0..1)
+ 	  rotate: 0, // The rotation offset
+ 	  direction: 1, // 1: clockwise, -1: counterclockwise
+ 	  color: '#000', // #rgb or #rrggbb or array of colors
+ 	  speed: 1, // Rounds per second
+ 	  trail: 60, // Afterglow percentage
+ 	  shadow: false, // Whether to render a shadow
+ 	  hwaccel: false, // Whether to use hardware acceleration
+ 	  className: 'spinner', // The CSS class to assign to the spinner
+ 	  zIndex: 2e9, // The z-index (defaults to 2000000000)
+ 	  top: '60%', // Top position relative to parent
+ 	  left: '50%' // Left position relative to parent
+ 	};
+ 	var target = document.getElementById('foo');
+ 	var spinner = new Spinner(opts).spin(target);</script>

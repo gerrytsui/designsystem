@@ -7,11 +7,11 @@ angular.module('designSystemApp')
             link: function postLink(scope, element, attrs) {
                 $(window).scroll(function() {
                     if ($(this).scrollTop() > 20) {
-                        element.addClass('shadow')
+                        element.addClass('shadow');
                     } else {
-                        element.removeClass('shadow')
+                        element.removeClass('shadow');
                     }
-                })
+                });
             }
-        }
+        };
     });

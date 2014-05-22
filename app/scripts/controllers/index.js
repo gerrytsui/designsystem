@@ -6,7 +6,7 @@ angular.module('designSystemApp').controller('IndexCtrl', ['$scope', '$interval'
 
         $scope.switchStatus = {
             isOn: false
-        }
+        };
 
         var pieInterval;
 
@@ -20,7 +20,7 @@ angular.module('designSystemApp').controller('IndexCtrl', ['$scope', '$interval'
             } else {
                 $interval.cancel(pieInterval);
             }
-        })
+        });
 
 
         $scope.testValidate = function() {
@@ -80,11 +80,11 @@ angular.module('designSystemApp').controller('IndexCtrl', ['$scope', '$interval'
                             'background': '#333',
                             'color': '#fff',
                             'border': 'none'
-                        })
+                        });
                     }
                 }
             }
-        }
+        };
         //end flot
 
 
