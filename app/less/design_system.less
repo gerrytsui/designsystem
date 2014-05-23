@@ -45,7 +45,7 @@ p.lead {
 /* classes per view */
 
 .headers {
-	footer { display: none;}
+	#footer { display: none;}
 }
 
 
@@ -185,7 +185,12 @@ select[disabled] {
 	}
 }
 
-.form-control[disabled].datepicker, .form-control[readonly].datepicker, fieldset[disabled] .form-control.datepicker {
+.form-control[disabled].datepicker,
+.form-control[readonly].datepicker,
+fieldset[disabled] .form-control.datepicker,
+.form-control[disabled].timepicker,
+.form-control[readonly].timepicker,
+fieldset[disabled] .form-control.timepicker  {
 cursor: pointer;
 background-color: #ffffff;
 }
@@ -1129,7 +1134,7 @@ body.fixed-header {
 	}
 }
 
-header {
+#header {
     background-color: @background-color;
     .navbar {
     	margin-bottom: 0;
@@ -1239,7 +1244,7 @@ header {
 
 /* --------- FOOTER ------------ */
 
-footer {
+#footer {
 	//padding: 50px 0 30px;
 	margin-top: 40px;
 	color: @text-color;
@@ -1300,7 +1305,7 @@ footer {
 	 height: 20px;
 	 display: inline-block;
 	 vertical-align: middle;
-	 footer & {
+	 #footer & {
  		 margin-right: 10px;
 	 }
  }

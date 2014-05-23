@@ -61,9 +61,24 @@
             <legend>Date Picker</legend>
 
             <div class="row">
-                    <div class="form-group col-md-8">
+                    <div class="form-group col-md-6">
                         <label for="">Date</label>
-                        <input class="form-control datepicker" placeholder="Choose a date" id="date1" type="text">
+                        <div class="input-group">
+                            <input class="form-control datepicker" placeholder="Choose a date" id="date1" type="text">
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="">Time</label>
+                        <div class="input-group">
+                            <input class="form-control timepicker" placeholder="Choose the time" id="date1" type="text">
+                            <span class="input-group-addon">
+                                <i class="fa fa-clock-o"></i>
+                            </span>
+                        </div>
                     </div>
             </div>
 
@@ -115,7 +130,7 @@
         	                </ul>
         	            </div>
         	            <!-- /btn-group -->
-        	            <input class="form-control" placeholder="Search" type="text">
+        	            <input class="form-control" type="text">
         	        </div>
         	    </div>
         	    <div class="form-group col-md-6">
@@ -489,6 +504,7 @@
 
 
       $('.datepicker').pickadate()
+      $('.timepicker').pickatime()
 
 
 

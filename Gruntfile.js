@@ -170,8 +170,7 @@ module.exports = function(grunt) {
             // compiles design_system.css into /live_preview/styles
             theme: {
                 options: {
-                    cleancss: true,
-                    ieCompat: true
+                    cleancss: true
                 },
                 files: [{
                     "<%= yeoman.build %>/styles/design_system.css": "<%= yeoman.less %>/design_system.less"
