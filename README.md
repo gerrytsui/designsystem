@@ -16,7 +16,7 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ##Release Notes
 
-###0.4 - May 29, 2014
+###0.3 - May 29, 2014
 
 - Inputs:
   - removed inner shadows

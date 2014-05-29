@@ -35,6 +35,7 @@
     "splitter": "*",
     "bg-splitter": "*",
     "spinjs": "~2.0.1",
-    "select2": "~3.4.8"
+    "select2": "~3.4.8",
+    "jquery.splitter": "~0.12.0"
   }
 }

@@ -1231,7 +1231,7 @@ ol {
   font-weight: 700;
 }
 /* in forms */
-/*  ACCORDION  */
+/* ACCORDION */
 div.accordion-group .panel-body {
   padding: 15px;
 }
@@ -1269,17 +1269,17 @@ div.accordion-group .panel-title:before {
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-div.accordion-group .panel-title.open:before {
+div.accordion-group .panel-title a:hover {
+  color: #0070c4;
+  text-decoration: none;
+}
+div.accordion-group .panel.active .panel-title:before {
   content: '\25B8';
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.no-csstransforms div.accordion-group .panel-title.open:before {
+.no-csstransforms div.accordion-group .panel.active:before {
   content: '\25be';
-}
-div.accordion-group .panel-title a:hover {
-  color: #0070c4;
-  text-decoration: none;
 }
 .triangle-closed {
   content: '\25B8';

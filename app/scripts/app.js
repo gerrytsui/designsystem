@@ -12,8 +12,7 @@ angular.module('designSystemApp', [
     'leaflet-directive',
     'ngProgress',
     'toggle-switch',
-    'angular-flot',
-    'bgDirectives'
+    'angular-flot'
 
 ])
     .config(function($routeProvider) {
