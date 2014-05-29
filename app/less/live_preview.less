@@ -21,11 +21,19 @@
 }
 
 h3.section-head, h3.sh {
-  margin: 30px 0 20px;
+  margin        : 30px 0 20px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #d5d5d6;
-  clear: both;
+  border-bottom : 1px solid #d5d5d6;
+  clear         : both;
 }
+
+// for the demo only
+.grid-sample .panel {
+  border       : none;
+  border-top   : 3px solid @gray;
+  border-radius: 0;
+}
+
 
 .piechart {
 
@@ -33,14 +41,14 @@ h3.section-head, h3.sh {
   display: inline-block;
 
   span {
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+    font-size  : 20px;
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    display    : block;
+    text-align : center;
+    width      : 100%;
+    height     : 100%;
     padding-top: 35%;
   }
 }
@@ -129,35 +137,33 @@ h3.section-head, h3.sh {
     }
 
     .settings-tab {
-      float: left;
-      width: 35px;
-      text: center;
-      color: #fff;
-      background: #215262;
-      padding: 5px;
-      border-top-left-radius: 5px;
+      float                    : left;
+      width                    : 35px;
+      text                     : center;
+      color                    : #fff;
+      background               : #215262;
+      padding                  : 5px;
+      border-top-left-radius   : 5px;
       border-bottom-left-radius: 5px;
-      box-shadow: 3px 5px 8px rgba(0,0,0,.3);
-
+      box-shadow               : 3px 5px 8px rgba(0,0,0,.3);
       &:hover {
         cursor: pointer;
       }
-
       &:active {
         background: #71A6B9;
       }
     }
 
     .settings-form {
-      display: none;
-      float: right;
-      background-color: #215262;
-      padding: 0px 10px 10px 15px;
-      height: 100px;
-      width: 150px;
-      color: #fff;
+      display                  : none;
+      float                    : right;
+      background-color         : #215262;
+      padding                  : 0px 10px 10px 15px;
+      height                   : 100px;
+      width                    : 150px;
+      color                    : #fff;
       border-bottom-left-radius: 5px;
-      box-shadow: 3px 5px 8px rgba(0,0,0,.3);
+      box-shadow               : 3px 5px 8px rgba(0,0,0,.3);
       label {
         font-size: 12px !important;
       }
@@ -174,18 +180,18 @@ h3.section-head, h3.sh {
 
 // only used in the design system pages
 .pb-example {
-  position: relative;
-  padding: 45px 15px 15px;
-  margin: 0 -15px 15px;
+  position  : relative;
+  padding   : 45px 15px 15px;
+  margin    : 0 -15px 15px;
   box-shadow: none;
   &:after {
-    content: "Example";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #bbb;
+    content       : "Example";
+    position      : absolute;
+    top           : 15px;
+    left          : 15px;
+    font-size     : 12px;
+    font-weight   : 700;
+    color         : #bbb;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
@@ -202,24 +208,24 @@ p[class^="bg"] {
 .color-swatches {
   .clearfix;
   margin-bottom: 100px;
-  margin-left: 0;
-  padding-left: 0;
+  margin-left  : 0;
+  padding-left : 0;
   .color-swatch {
-    width: @swatch-size;
-    height: @swatch-size;
-    display: inline-block;
-    float: left;
+    width       : @swatch-size;
+    height      : @swatch-size;
+    display     : inline-block;
+    float       : left;
     margin-right: 10px;
-    position: relative;
+    position    : relative;
     &[class*="alert"] {
        border-right-width: 16px;
        border-right-style: solid;
     }
     span {
-      position: absolute;
-      top: @swatch-size+5;
+      position : absolute;
+      top      : @swatch-size+5;
       font-size: 14px;
-      color: @gray-text;
+      color    : @gray-text;
     }
   }
 }
@@ -228,17 +234,17 @@ p[class^="bg"] {
 /* color swatch backgrounds */
 .brand-primary { background-color: @brand-primary; }
 .brand-success { background-color: @brand-success; }
-.brand-danger { background-color: @brand-danger; }
-.brand-info { background-color: @brand-info; }
+.brand-danger { background-color : @brand-danger; }
+.brand-info { background-color   : @brand-info; }
 .brand-warning { background-color: @brand-warning; }
 
-.gray-dark { background-color: @gray-dark; }
-.gray-text { background-color: @gray-text; }
-.gray-mid { background-color: @gray-mid; }
-.gray { background-color: @gray; }
-.gray-light { background-color: @gray-light; }
+.gray-dark { background-color    : @gray-dark; }
+.gray-text { background-color    : @gray-text; }
+.gray-mid { background-color     : @gray-mid; }
+.gray { background-color         : @gray; }
+.gray-light { background-color   : @gray-light; }
 .gray-disabled { background-color: @gray-disabled; }
-.link-hover { background-color: @link-color-hover; }
+.link-hover { background-color   : @link-color-hover; }
 .link-disabled { background-color: @link-color-disabled; }
 
 

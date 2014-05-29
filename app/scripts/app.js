@@ -92,6 +92,12 @@ angular.module('designSystemApp', [
                 className: 'forms',
                 pageTitle: 'Forms'
             })
+            .when('/tabs', {
+                templateUrl: 'views/tabs.html',
+                controller: 'TabsDemoCtrl',
+                className: 'tabs',
+                pageTitle: 'tabs'
+            })
             .otherwise({
                 redirectTo: '/'
             });

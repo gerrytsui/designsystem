@@ -58,9 +58,9 @@
 
 
         <fieldset>
-            <legend>Date Picker</legend>
+            <legend>Date &amp; Time Picker</legend>
 
-            <div class="row">
+            <!-- <div class="row">
                     <div class="form-group col-md-6">
                         <label for="">Date</label>
                         <div class="input-group">
@@ -80,6 +80,20 @@
                             </span>
                         </div>
                     </div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group date"  id='datetimepicker1'>
+                        <input class="form-control" placeholder="Choose or Type Date" type="text">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default"><span class="fa fa-calendar"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p><a href="http://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">More info <i class="fa fa-external-link"></i></a></p>
+                </div>
             </div>
 
         </fieldset>
@@ -97,6 +111,13 @@
         	            </span>
         	            <input class="form-control" placeholder="Search" type="text">
         	        </div>
+                    <br>
+                    <div class="input-group white before">
+                        <span class="input-group-addon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                        <input class="form-control" placeholder="Search" type="text">
+                    </div>
         	    </div>
         	    <div class="form-group col-md-6">
         	        <label for="">Text field appended</label>
@@ -106,6 +127,13 @@
         	                <i class="fa fa-user"></i>
         	            </span>
         	        </div>
+                    <br>
+                    <div class="input-group white after">
+                        <input class="form-control" placeholder="User Name" type="text">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
         	    </div>
         	</div>
 
@@ -191,56 +219,6 @@
 
         </fieldset>
 
-
-
-
-
-
-<!--         <fieldset>
-            <legend>HTML5 fields (in supported browsers)</legend>
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="searchfield">Date</label>
-                    <input type="date" class="form-control" name="datefield" id="datefield">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="searchfield">Date and Time</label>
-                    <input type="datetime-local" class="form-control" name="searchfield" id="searchfield">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="timefield">Time</label>
-                    <input type="time" min="1" max="10" class="form-control" name="timefield" id="timefield">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="weekfield">Week</label>
-                    <input type="week" class="form-control" name="weekfield" id="weekfield">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="numfield">Number</label>
-                    <input type="number" min="1" max="10" class="form-control" name="numfield" id="numfield">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="emailfield">Email</label>
-                    <input type="email" class="form-control" name="emailfield" id="emailfield">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="rangefield">Range</label>
-                    <input type="range" min="1" max="10" class="form-control" name="rangefield" id="rangefield">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="colorfield">Color</label>
-                    <input type="color" class="form-control" name="colorfield" id="colorfield" value="#ff0000">
-                </div>
-            </div>
-        </fieldset>
- -->
 
     </div>
     <!-- end left col -->
@@ -356,11 +334,9 @@
 
 
         <fieldset>
-            <legend data-toggle="collapse" data-target="#checkboxes" class="data-toggle" collapse>Checkboxes</legend>
-            <div class="row">
-                <div id="checkboxes" class="panel-collapse collapse">
-                    <!-- add class "collapse" to start out closed -->
-                    <div class="panel-body">
+            <legend>Checkboxes</legend>
+
+
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>Checkbox default</label>
@@ -392,48 +368,41 @@
                                     <input type="checkbox" id="cb6" value="">Dolor</label>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+
         </fieldset>
 
         <fieldset>
-            <legend data-toggle="collapse" data-target="#radios" class="data-toggle" collapse>Radio Buttons</legend>
-            <div id="radios" class="panel-collapse collapse">
-                <!-- add class "collapse" to start out closed -->
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label>Radio default</label>
-                            <div class="radio">
-                                <label for="rb1">
-                                    <input type="radio" name="group1" id="rb1" value="">Lorem ipsum dolor sit amet.</label>
-                            </div>
-
-                            <div class="radio">
-                                <label for="rb2">
-                                    <input type="radio" name="group1" id="rb2" value="">Lorem ipsum dolor sit amet, consectetur adipisicing.</label>
-                            </div>
-
-                            <div class="radio">
-                                <label for="rb3">
-                                    <input type="radio" name="group1" id="rb3" value="">Lorem ipsum dolor sit amet, consectetur.</label>
-                            </div>
+            <legend>Radio Buttons</legend>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label>Radio default</label>
+                        <div class="radio">
+                            <label for="rb1">
+                                <input type="radio" name="group1" id="rb1" value="">Lorem ipsum dolor sit amet.</label>
                         </div>
-                        <div class="form-group col-md-6">
-                            <div>
-                                <label>Radio inline</label>
-                            </div>
-                            <label for="rb4" class="radio-inline">
-                                <input type="radio" id="rb4" name="group2" value="">Lorem</label>
-                            <label for="rb5" class="radio-inline">
-                                <input type="radio" id="rb5" name="group2" value="">Ipsum</label>
-                            <label for="rb6" class="radio-inline">
-                                <input type="radio" id="rb6" name="group2" value="">Dolor</label>
+
+                        <div class="radio">
+                            <label for="rb2">
+                                <input type="radio" name="group1" id="rb2" value="">Lorem ipsum dolor sit amet, consectetur adipisicing.</label>
+                        </div>
+
+                        <div class="radio">
+                            <label for="rb3">
+                                <input type="radio" name="group1" id="rb3" value="">Lorem ipsum dolor sit amet, consectetur.</label>
                         </div>
                     </div>
+                    <div class="form-group col-md-6">
+                        <div>
+                            <label>Radio inline</label>
+                        </div>
+                        <label for="rb4" class="radio-inline">
+                            <input type="radio" id="rb4" name="group2" value="">Lorem</label>
+                        <label for="rb5" class="radio-inline">
+                            <input type="radio" id="rb5" name="group2" value="">Ipsum</label>
+                        <label for="rb6" class="radio-inline">
+                            <input type="radio" id="rb6" name="group2" value="">Dolor</label>
+                    </div>
                 </div>
-            </div>
         </fieldset>
 
 
@@ -502,9 +471,9 @@
 	   });
 	 });
 
-
-      $('.datepicker').pickadate()
-      $('.timepicker').pickatime()
+      $(function () {
+          $('#datetimepicker1').datetimepicker();
+      });
 
 
 

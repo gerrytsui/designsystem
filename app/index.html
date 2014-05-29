@@ -21,22 +21,15 @@
     <link rel="stylesheet" href="bower_components/leaflet-dist/leaflet.css" />
     <link rel="stylesheet" href="bower_components/ngprogress/ngProgress.css" />
     <link rel="stylesheet" href="bower_components/bg-splitter/css/style.css" />
-    <link rel="stylesheet" href="bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" />
-    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/classic.css" />
-    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/classic.date.css" />
-    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/classic.time.css" />
+    <!-- <link rel="stylesheet" href="bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" /> -->
+    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-vertical-tabs/bootstrap.vertical-tabs.min.css" />
+
     <!-- endbuild -->
     <link rel="stylesheet" href="styles/design_system.css">
     <link rel="stylesheet" href="styles/live_preview.css">
   </head>
   <body ng-cloak class="design-system" ng-class="{'fixed-header': settings.isFixed}">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <!-- <div class="container" ng-include="'views/main.html'" ng-controller="MainCtrl"></div> -->
-
 
     <div class="settings" ng-class="{'activate': settings.isOpen}">
         <div class="settings-tab" ng-click="settings.show()">
@@ -169,6 +162,7 @@
     <!-- build:js({.tmp,app})  scripts/vendor.js -->
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -188,6 +182,7 @@
     <script src="bower_components/angular-flot/angular-flot.js"></script>
     <script src="bower_components/bg-splitter/js/splitter.js"></script>
     <script src="bower_components/spinjs/spin.js"></script>
+    <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script src="bower_components/pickadate/lib/picker.js"></script>
     <script src="bower_components/pickadate/lib/picker.date.js"></script>
     <script src="bower_components/pickadate/lib/picker.time.js"></script>
@@ -205,7 +200,8 @@
     <script src="scripts/directives/menu.js"></script>
     <script src="scripts/directives/fixed-header.js"></script>
     <script src="scripts/directives/treenav.js"></script>
-    <script src="scripts/directives/form-controls.js"></script>
+    <script src="scripts/directives/collapse.js"></script>
+    <script src="scripts/directives/accordion.js"></script>
     <script src="scripts/vendor/sparkline-directive.js"></script>
     <script src="scripts/filters/capitalize.js"></script>
     <script src="scripts/controllers/main.js"></script>
@@ -221,6 +217,7 @@
     <script src="scripts/controllers/modal.js"></script>
     <script src="scripts/controllers/panels.js"></script>
     <script src="scripts/controllers/forms.js"></script>
+    <script src="scripts/controllers/tabs.js"></script>
     <!-- endbuild -->
 
 

@@ -33,6 +33,9 @@
     </div>
   </div>
 
+    <h3 class="sh">Disconnected Alert</h3>
+    <button id="alert-test-1" class="btn btn-default">Click Me</button>
+
 
 <!-- <div class="row">
   <div class="col-md-8">
@@ -119,3 +122,19 @@
   </div>
 
 
+
+
+
+<script>
+$(function() {
+   // do something on document ready
+   $('#alert-test-1').on('click', function(event) {
+     if(! $('.alert-box').length) {
+       $('<div class="alert-box success" >Message successfully sent!</div>').appendTo('body').hide().fadeIn(1000).delay(5000).fadeOut(1000, function() {
+           $('.alert-box').remove();
+         });
+     }
+   });
+ });
+
+</script>

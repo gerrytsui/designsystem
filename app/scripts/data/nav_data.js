@@ -33,11 +33,14 @@
             "label": "Headers",
             "value": "headers"
         }, {
-            "label": "Accordion & Tabs",
+            "label": "Accordion",
             "value": "accordion"
         }, {
             "label": "Panels",
             "value": "panels"
+        }, {
+            "label": "Tabs",
+            "value": "tabs"
         }]
     }, {
         "label": "Elements",

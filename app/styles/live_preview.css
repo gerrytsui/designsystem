@@ -3,72 +3,6 @@
 #71A6B9
 #215262
 */
-.serif {
-  font-family: Georgia, Times, "Times New Roman", serif;
-}
-.sans {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-h1 {
-  font-size: 32px;
-}
-h2 {
-  font-size: 28px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 18px;
-}
-h6 {
-  font-size: 16px;
-}
-h1,
-h2,
-h3,
-h4,
-h6 {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-h5 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-}
-body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 16px !important;
-  font-weight: 400;
-  color: #59595b;
-}
-body .has-error {
-  color: #cc0000;
-}
-b,
-strong {
-  font-weight: 700;
-}
-.btn-lg {
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 4px;
-}
-.btn-sm {
-  padding: 5px 10px;
-  font-size: 14px;
-  line-height: 1.5;
-  border-radius: 2px;
-}
-.btn-xs {
-  padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 2px;
-}
 /* Block Grids
    ========================================================================== */
 .block-grid-2 {
@@ -235,6 +169,11 @@ h3.sh {
   border-bottom: 1px solid #d5d5d6;
   clear: both;
 }
+.grid-sample .panel {
+  border: none;
+  border-top: 3px solid #d5d5d6;
+  border-radius: 0;
+}
 .piechart {
   position: relative;
   display: inline-block;
@@ -319,7 +258,6 @@ h3.sh {
   padding: 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  -webkit-box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
 }
 .settings .settings-tab:hover {
@@ -337,7 +275,6 @@ h3.sh {
   width: 150px;
   color: #fff;
   border-bottom-left-radius: 5px;
-  -webkit-box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
 }
 .settings .settings-form label {
@@ -354,7 +291,6 @@ h3.sh {
   position: relative;
   padding: 45px 15px 15px;
   margin: 0 -15px 15px;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .pb-example:after {

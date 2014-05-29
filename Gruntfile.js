@@ -170,7 +170,8 @@ module.exports = function(grunt) {
             // compiles design_system.css into /live_preview/styles
             theme: {
                 options: {
-                    cleancss: true
+                    cleancss: true,
+                    ieCompat: true
                 },
                 files: [{
                     "<%= yeoman.build %>/styles/design_system.css": "<%= yeoman.less %>/design_system.less"
@@ -405,7 +406,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', [
         'newer:jshint',
-        'test',
         'build'
     ]);
 };

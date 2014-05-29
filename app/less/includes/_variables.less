@@ -85,40 +85,6 @@
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
-.serif { font-family:     @font-family-serif; }
-.sans  { font-family:     @font-family-sans-serif; }
-
-// bs allows you to set the above variables, but does not APPLY them, hence:
-h1 { font-size: @font-size-h1;}
-h2 { font-size: @font-size-h2;}
-h3 { font-size: @font-size-h3;}
-h4 { font-size: @font-size-h4;}
-h5 { font-size: @font-size-h5;}
-h6 { font-size: @font-size-h6;}
-h1,h2,h3,h4,h6 {
-  font-family: 	@font-family-sans-serif;
-  font-weight: @headings-font-weight;
-   }
-h5 { font-family: @font-family-serif; }
-body{
-	font-family: @font-family-base;
-	font-size: @font-size-base !important; // for ie8
-  font-weight: 400;
-	color: @text-color;
-    & .has-error {
-  		color: @brand-danger;
-  	}
-}
-
-// to make it use FG medium
-b, strong {
-  font-weight: 700;
-}
-
-
-
-
-
 
 
 //-- Iconography
@@ -161,30 +127,6 @@ b, strong {
 @caret-width-base:          4px;
 //** Carets increase slightly in size for larger components.
 @caret-width-large:         5px;
-
-
-// Button Sizes
-// --------------------------------------------------
-
-.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
-  padding: @padding-vertical @padding-horizontal;
-  font-size: @font-size;
-  line-height: @line-height;
-  border-radius: @border-radius;
-}
-
-
-.btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
-}
-.btn-sm {
-  // line-height: ensure proper height of button next to small input
-  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
-}
-.btn-xs {
-  .button-size(@padding-xs-vertical; @padding-xs-horizontal; 12px; @line-height-small; @border-radius-small);
-}
 
 
 //== Tables

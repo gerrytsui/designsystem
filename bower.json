@@ -34,6 +34,7 @@
     "ui.bootstrap": "~0.11.0",
     "splitter": "*",
     "bg-splitter": "*",
-    "spinjs": "~2.0.1"
+    "spinjs": "~2.0.1",
+    "select2": "~3.4.8"
   }
 }
