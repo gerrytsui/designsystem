@@ -193,6 +193,11 @@ h3.sh {
   display: inline-block;
   float: left;
 }
+.sparkline .caption {
+  margin-left: 10px;
+  float: left;
+  display: inline-block;
+}
 .sparkline h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -234,6 +239,13 @@ h3.sh {
 }
 .tabbable.tabScrollSample > .tab-content {
   height: 300px;
+}
+legend .more-info,
+h3 .more-info {
+  float: right;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 10px;
 }
 .settings {
   position: fixed;

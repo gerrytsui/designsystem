@@ -2,20 +2,16 @@
 <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
 
 	<div class="row">
-			<!-- title -->
-			<div class="col-md-12">
-				<!-- breadcrumb -->
-				<ol class="breadcrumb">
-					<li><a href="#/">Home</a></li>
-					<li class="active">Faceted Search</li>
-				</ol>
-
-				<h1 class="page-header">Faceted Search</h1>
-
-
-			</div>
+		<!-- title -->
+		<div class="col-md-12">
+			<!-- breadcrumb -->
+			<ol class="breadcrumb">
+				<li><a href="#/">Home</a></li>
+				<li class="active">Faceted Search</li>
+			</ol>
+			<h1 class="page-header">Faceted Search</h1>
+		</div>
 	</div>
-
 
 	<div class="row">
 
@@ -32,15 +28,14 @@
 					<ul class="list-unstyled">
 						<li>
 							<div class="checkbox">
-				        <input id="hardware" type="checkbox" name="hardware" ng-model="search.hardware" ng-false-value="" /><label for="hardware">Hardware <span class="badge">{{products | count: 'hardware'}}</span></label>
-				      </div>
-			      </li>
-
-			      <li>
+							<input id="hardware" type="checkbox" name="hardware" ng-model="search.hardware" ng-false-value="" /><label for="hardware">Hardware <span class="badge">{{products | count: 'hardware'}}</span></label>
+							</div>
+						</li>
+						<li>
 							<div class="checkbox">
-				        <input id="software" type="checkbox" name="software" ng-model="search.software" ng-false-value="" /><label for="software">Software <span class="badge">{{products | count: 'software'}}</span></label>
-				      </div>
-			      </li>
+								<input id="software" type="checkbox" name="software" ng-model="search.software" ng-false-value="" /><label for="software">Software <span class="badge">{{products | count: 'software'}}</span></label>
+							</div>
+						</li>
 					</ul>
 				</div>
 
@@ -48,14 +43,11 @@
 					<div accordion-heading>
 						In Stock <i class="pull-right fa" ng-class="{'fa-chevron-right': !isopen.stock, 'fa-chevron-down': isopen.stock }"></i>
 					</div>
-
 					<select class="form-control">
 						<option value="available">Available</option>
 					</select>
-
 				</div>
 			</div>
-
 
 			<!-- <pre>{{search | json}}</pre> -->
 
@@ -66,8 +58,7 @@
 
 			<div class="row">
 
-
-					<form class="form-inline">
+				<form class="form-inline">
 
 					<div class="col-xs-3">
 						<div class="form-group">
@@ -109,8 +100,8 @@
 					</div>
 				</div>
 
-				</form>
-				</div>
+			</form>
+			</div>
 
 			<!-- layouts -->
 			<div ng-switch on="layout">
@@ -146,22 +137,20 @@
 
 			</div>
 
-
 			<!-- paging -->
 			<div class="row">
 				<div class="col-xs-12 text-center">
-          <ul class="pagination pagination-sm">
-            <li class="disabled"><a>&laquo;</a></li>
-            <li class="active"><a>1</a></li>
-            <li><a>2</a></li>
-            <li><a>3</a></li>
-            <li><a>4</a></li>
-            <li><a>5</a></li>
-            <li><a>&raquo;</a></li>
-            </ul>
-        </div>
+					<ul class="pagination pagination-sm">
+						<li class="disabled"><a>&laquo;</a></li>
+						<li class="active"><a>1</a></li>
+						<li><a>2</a></li>
+						<li><a>3</a></li>
+						<li><a>4</a></li>
+						<li><a>5</a></li>
+						<li><a>&raquo;</a></li>
+					</ul>
+				</div>
 			</div>
-
 	</div>
 
 </div>

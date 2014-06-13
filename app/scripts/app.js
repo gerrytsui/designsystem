@@ -95,7 +95,13 @@ angular.module('designSystemApp', [
                 templateUrl: 'views/tabs.html',
                 controller: 'TabsDemoCtrl',
                 className: 'tabs',
-                pageTitle: 'tabs'
+                pageTitle: 'Tabs'
+            })
+            .when('/gallery', {
+                templateUrl: 'views/isotope-gallery.html',
+                controller: 'IsotopeGalleryCtrl',
+                className: 'gallery',
+                pageTitle: 'Gallery'
             })
             .otherwise({
                 redirectTo: '/'

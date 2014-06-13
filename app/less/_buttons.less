@@ -1,0 +1,177 @@
+// moved to separate file to minimized scrolling in main file
+//
+/* Buttons */
+// --------------------------------------------------
+// just to remove the BS inset shadows
+ .btn:active, .btn.active {
+	outline           : 0;
+	background-image  : none;
+	-webkit-box-shadow: none;
+	box-shadow        : none;
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+	padding      : @padding-vertical @padding-horizontal;
+	font-size    : @font-size;
+	line-height  : @line-height;
+	border-radius: @border-radius;
+}
+
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.btn-xs {
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; 12px; @line-height-small; @border-radius-small);
+}
+
+
+// Button variants
+// outline and solid
+.outline-button (@color) {
+	color             : @color;
+	background-color  : transparent;
+	border-color      : @color;
+	-webkit-transition: background-color .3s, color .3s;
+	transition        : background-color .3s, color .3s;
+	&:hover {
+		color           : #fff;
+		background-color: @color;
+		border-color    : @color;
+	}
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+		color           : #fff;
+		background-color: darken(@color, 15%);
+		border-color    : darken(@color, 15%);
+        .btn-group &, .btn-group-vertical & {
+			background-color: @color;
+			border-color    : @color;
+        }
+
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:active,
+    &.active {
+		background-color: transparent;
+		border-color    : @disabled-button;
+		color           : @disabled-button;
+		opacity         : 1.0;
+    }
+  }
+}
+
+.solid-button (@color) {
+	color             : #fff;
+	background-color  : @color;
+	border-color      : @color;
+	-webkit-transition: background-color .3s, color .3s;
+	-moz-transition   : background-color .3s, color .3s;
+	-ms-transition    : background-color .3s, color .3s;
+	-o-transition     : background-color .3s, color .3s;
+	transition        : background-color .3s, color .3s;
+  &:hover {
+		color           : #fff;
+		background-color: darken(@color, 15%);
+		border-color    : darken(@color, 15%);
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+		color           : #fff;
+		background-color: darken(@color, 25%);
+		border-color    : darken(@color, 25%);
+        .btn-group & {
+			background-color: @color;
+			border-color    : @color;
+        }
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:active,
+    &.active {
+			background-color: @disabled-button;
+			border-color    : @disabled-button;
+			color           : #fff;
+			opacity         : 1;
+    }
+  }
+}
+
+.borderless-button(@color) {
+	color: @color;
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+	  &,
+	  &:hover,
+	  &:active,
+	  &.active {
+	    color: @disabled-button;
+	    text-decoration: none;
+	    opacity: 1;
+	  }
+	}
+}
+
+
+
+
+
+
+
+// set up our two types of buttons
+.btn-default {
+	.outline-button(@button-color);
+}
+
+.btn-primary {
+	.solid-button(@button-color);
+}
+.btn-link, .btn-cancel {
+	.borderless-button(@button-color);
+}
+
+
+
+// some font overrides
+.btn-group {
+	&-sm {
+		.btn {
+			i.fa {
+				font-size: 18px;
+			}
+		}
+	}
+
+	&-xs {
+		.btn {
+			i.fa {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+//  transitory alert msg next to button
+.btn-response {
+	display: inline-block;
+	margin-left: 10px;
+}

@@ -21,6 +21,9 @@
         }, {
             "label": "Forms",
             "value": "forms"
+        }, {
+            "label": "Gallery",
+            "value": "gallery"
         }]
     }, {
         "label": "Components",
@@ -29,9 +32,6 @@
         "children": [{
             "label": "Data Grid",
             "value": "data_grid"
-        }, {
-            "label": "Headers",
-            "value": "headers"
         }, {
             "label": "Accordion",
             "value": "accordion"

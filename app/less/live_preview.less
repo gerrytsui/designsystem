@@ -5,7 +5,7 @@
 #71A6B9
 #215262
 */
-@import 'includes/_variables';
+@import '_variables';
 
 .clearfix{
   zoom:1;
@@ -57,6 +57,11 @@ h3.section-head, h3.sh {
     .chart {
         display: inline-block;
         float: left;
+    }
+    .caption {
+      margin-left: 10px;
+      float: left;
+      display: inline-block;
     }
 
     h6 {
@@ -118,6 +123,13 @@ h3.section-head, h3.sh {
     &.tabScrollSample > .tab-content {
         height: 300px;
     }
+}
+
+legend .more-info, h3 .more-info {
+  float: right;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 10px;
 }
 
 .settings {

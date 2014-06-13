@@ -32,10 +32,12 @@
     "angular-bootstrap-toggle-switch": "~0.4.0",
     "modernizr": "~2.8.1",
     "ui.bootstrap": "~0.11.0",
-    "splitter": "*",
-    "bg-splitter": "*",
     "spinjs": "~2.0.1",
     "select2": "~3.4.8",
-    "jquery.splitter": "~0.12.0"
+    "jquery.splitter": "~0.12.0",
+    "Numeric-Stepper": "*",
+    "eonasdan-bootstrap-datetimepicker": "~3.0.0",
+    "bootstrap-vertical-tabs": "~1.0.1",
+    "moment": "~2.6.0"
   }
 }

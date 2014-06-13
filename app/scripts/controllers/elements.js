@@ -21,7 +21,21 @@ angular.module('designSystemApp')
             // get fontawesome icon data
             FaIconFactory.getIcons().then(function(data) {
                 $scope.icons = data;
+                $scope.predicate = 'id';
             });
+
+            $scope.getCategories = function() {
+                var categories = [];
+
+                angular.forEach($scope.icons, function(item) {
+                    angular.forEach(item.categories, function(category) {
+                        if (categories.indexOf(category) == -1) {
+                            categories.push(category);
+                        }
+                    })
+                });
+                return categories;
+            }
 
             // get the people data
             PeopleFactory.getPeople().then(function(response) {

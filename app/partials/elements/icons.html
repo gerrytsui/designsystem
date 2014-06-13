@@ -1,85 +1,57 @@
-<!-- icon sizes -->
-
-<!-- <div class="row">
-<h1 class="page-header">Icon Sizes</h1>
-
-
-  <div class="col-md-6" style="margin-bottom: 10px;" ng-repeat="i in icons" >
-    <table>
-      <tbody>
-          <tr>
-            <td style="vertical-align: middle;">
-                <i style="vertical-align: middle;" class="fa pb-{{i}}"></i>
-                <i style="vertical-align: middle;" class="fa fa-lg pb-{{i}}"></i>
-                <i style="vertical-align: middle;" class="fa fa-2x pb-{{i}}"></i>
-                <i style="vertical-align: middle;" class="fa fa-3x pb-{{i}}"></i>
-                <i style="vertical-align: middle;" class="fa fa-4x pb-{{i}}"></i>
-                <i style="vertical-align: middle;" class="fa fa-5x pb-{{i}}"></i>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-  </div>
-</div> -->
-
-<div class="row">
-  <h1>Font Awesome Icons
-    <div class="pull-right">
-      <input class="form-control" type="text" placeholder="Filter" ng-model="faIconSearch">
-    </div>
-  </h1>
-
-  <div class="col-md-4 col-sm-6 col-lg-3" ng-repeat="i in icons | filter:faIconSearch">
-    <p><i class="fa fa-fw fa-{{i.id}}"></i> fa-{{i.id}}</p>
-  </div>
-
-</div>
 
 
 <div class="row">
-
-  <h1 class="page-header">PB Icons
-    <div class="pull-right">
-      <input class="form-control" type="text" placeholder="Filter">
+    <div class="col-md-12">
+      <h1 class="page-header">Icons</h1>
     </div>
-  </h1>
-
-  <div class="col-md-4 col-sm-6 col-lg-3">
-    <i class="pbfont pb-address-book"></i> pb-address-book
-  </div>
-  <div class="col-md-4 col-sm-6 col-lg-3">
-    <i class="pbfont pb-scales"></i> pb-scales
-  </div>
-
 </div>
-
-
-
-
 
 <!-- icon buttons -->
 <div class="row">
-  <div class="page-header">
-    <h1>Icons in Buttons</h1>
-  </div>
-
   <div class="col-md-12">
-<!--     <button class="btn btn-default"><i class="fa fa-fw pb-{{i}}"></i> Button Text</button> -->
-    <button class="btn btn-default"><i class="fa fa-users"></i> Button Text</button>
-    <button class="btn btn-default"><i class="fa fa-check"></i> Button Text</button>
+    <h3 class="sh">Icons in Buttons</h3>
+  </div>
+  <div class="col-md-12">
+    <button class="btn btn-primary"><i class="fa fa-floppy-o"></i> Button Text</button>
     <button class="btn btn-default"><i class="fa fa-heart"></i> Button Text</button>
-    <button class="btn btn-default"><i class="fa fa-download"></i> Button Text</button>
+    <button class="btn btn-success"><i class="fa fa-check"></i> Button Text</button>
+    <button class="btn btn-danger"><i class="fa fa-trash-o"></i> Button Text</button>
   </div>
 </div>
 
-<!-- icon buttons -->
-<!-- <div class="row">
-  <div class="page-header">
-    <h1>Icon only Buttons</h1>
-  </div>
 
-  <div>
-    <button class="btn btn-default btn-sm"><i class="fa fa-fw pb-{{i}}"></i></button>
+
+<div class="row">
+    <div class="col-md-12">
+      <h3 class="sh">PB Icons</h3>
+    </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-md-4 col-sm-6 col-lg-3">
+      <i class="pbfont pb-address-book"></i> pb-address-book
+    </div>
+    <div class="col-md-4 col-sm-6 col-lg-3">
+      <i class="pbfont pb-scales"></i> pb-scales
+    </div>
   </div>
-</div> -->
+</div>
+
+
+
+<div class="row" ng-repeat="cat in getCategories()">
+  <div class="col-md-12">
+    <h3 class="sh">Font Awesome: {{cat}}</h3>
+    <div ng-repeat="icon in icons | filter:{categories: cat} | orderBy:predicate" class="col-md-4 col-sm-6 col-lg-3" >
+     <p><i class="fa fa-fw fa-{{icon.id}}"></i> fa-{{icon.id}}</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

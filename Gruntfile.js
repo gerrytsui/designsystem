@@ -368,7 +368,7 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean',
             'jshint',
-            'webfont',
+            //'webfont',
             'less:theme_dev',
             'less:livepreview_dev',
             // 'autoprefixer',
