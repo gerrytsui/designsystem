@@ -77,9 +77,6 @@
         }, {
             "label": "Colors",
             "value": "elements?section=Colors"
-        }, {
-            "label": "Other",
-            "value": "elements?section=Other"
         }]
     }]
 }

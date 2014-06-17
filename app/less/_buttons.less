@@ -13,6 +13,7 @@
 // Button Sizes
 // --------------------------------------------------
 
+// mixin
 .button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
 	padding      : @padding-vertical @padding-horizontal;
 	font-size    : @font-size;
@@ -20,7 +21,7 @@
 	border-radius: @border-radius;
 }
 
-
+// actual definitions here
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);

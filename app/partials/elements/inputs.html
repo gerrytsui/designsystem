@@ -67,12 +67,17 @@
                     <div class="input-group date"  id='datetimepicker1'>
                         <input class="form-control" placeholder="Choose or Type Date" type="text">
                         <span class="input-group-btn">
-                            <button class="btn btn-default"><span class="fa fa-calendar"></span></button>
+                            <button class="btn btn-primary"><span class="fa fa-calendar"></span></button>
                         </span>
                     </div>
                 </div>
                 <div class="col-md-6">
-
+                    <div class="input-group date"  id='datetimepicker2'>
+                        <input class="form-control" placeholder="Choose or Type Date" type="text">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary"><span class="fa fa-clock-o"></span></button>
+                        </span>
+                    </div>
                 </div>
             </div>
 
@@ -104,35 +109,24 @@
         <div class="row">
         	    <div class="form-group col-md-6">
         	        <label for="">Text field prepended</label>
-        	        <div class="input-group">
+        	        <div class="input-group before">
         	            <span class="input-group-addon">
         	                <i class="fa fa-search"></i>
         	            </span>
         	            <input class="form-control" placeholder="Search" type="text">
         	        </div>
-                    <br>
-                    <div class="input-group white before">
-                        <span class="input-group-addon">
-                            <i class="fa fa-search"></i>
-                        </span>
-                        <input class="form-control" placeholder="Search" type="text">
-                    </div>
+
+
         	    </div>
         	    <div class="form-group col-md-6">
         	        <label for="">Text field appended</label>
-        	        <div class="input-group">
+        	        <div class="input-group after">
         	            <input class="form-control" placeholder="User Name" type="text">
         	            <span class="input-group-addon">
         	                <i class="fa fa-user"></i>
         	            </span>
         	        </div>
-                    <br>
-                    <div class="input-group white after">
-                        <input class="form-control" placeholder="User Name" type="text">
-                        <span class="input-group-addon">
-                            <i class="fa fa-user"></i>
-                        </span>
-                    </div>
+
         	    </div>
         	</div>
 
@@ -141,7 +135,7 @@
         	        <label for="">Text field prepended with menu</label>
         	        <div class="input-group">
         	            <div class="input-group-btn">
-        	                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action
+        	                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action
         	                    <span class="caret"></span>
         	                </button>
         	                <ul class="dropdown-menu">
@@ -165,7 +159,7 @@
         	        <div class="input-group">
         	            <input class="form-control" placeholder="User Name" type="text">
         	            <span class="input-group-btn">
-        	                <button class="btn btn-default">Go</button>
+        	                <button class="btn btn-primary">Go</button>
         	            </span>
         	        </div>
         	    </div>
@@ -625,6 +619,10 @@
 
       $(function () {
           $('#datetimepicker1').datetimepicker();
+
+          $('#datetimepicker2').datetimepicker({
+            pickDate: false
+          });
 
           $("#e1").select2();
 

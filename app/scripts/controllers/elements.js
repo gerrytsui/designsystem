@@ -7,6 +7,7 @@ angular.module('designSystemApp')
             //get the subnav data
             NavFactory.getSubNav('elements').then(function(data) {
                 $scope.subnav = data;
+                $scope.predicate = 'label';
             });
 
             // hilight the correct subnav item from the route param

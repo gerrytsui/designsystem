@@ -13,11 +13,6 @@
 @import "_bootstrap-dialog";
 @import "_switches";
 
-
-
-// body {background-color: #0fe;}
-
-
 .clearfix{
   zoom:1;
       &:before, &:after {
@@ -63,7 +58,7 @@ body{
   font-weight: 400;
   color      : @text-color;
     & .has-error {
-  		color: @brand-danger;
+  		color: @brand-error;
   }
 }
 
@@ -190,13 +185,15 @@ cite    { font-style: normal; }
 }
 
 
+
+
 /* -- FORMS -- */
 
 .help-block.text-error {
 	display        : none;
 	.has-error & {
 		display    : block;
-		color      : @brand-danger;
+		color      : @brand-error;
 	}
 }
 fieldset {
@@ -218,7 +215,7 @@ select[disabled] {
 
 .has-error {
 	.form-control {
-		border-color: @brand-danger;
+		border-color: @brand-error;
 	}
 }
 
@@ -232,8 +229,11 @@ cursor: pointer;
 background-color: #ffffff;
 }
 
-
-.input-group.white {
+// this was a separate class, now modified to be the default
+.input-group {
+	// class is needed to turn off dividing border betw input and addon
+	// although with "before" we can use a "+" selector instead, see "first-child" below
+	// left before class for ie8 support
 	&.before {
 		input {
 			border-left: 1px solid transparent;
@@ -265,11 +265,22 @@ background-color: #ffffff;
 			border-bottom-left-radius: 0;
 			border-top-left-radius   : 0;
 			border-left              : none;
+			& + input {
+				//border-left : none;
+				background-color: #f00;
+			}
 		}
 		&:first-child {
 			border-bottom-right-radius: 0;
 			border-top-right-radius   : 0;
 			border-right              : none;
+			// sibling selector
+			& + input {
+				border-left : none;
+				&:focus {
+					border-left: 1px solid #66afe9;
+				}
+			}
 		}
 	}
 }
@@ -1049,13 +1060,6 @@ a.list-group-item {
 
 
 /*  --------- HEADER ----------- */
-
-// stripe below header -- colors TBD
-.stripe {
-	background-color: #f00;
-	height          : 1px;
-	.lh-background-image(linear-gradient(to right, @stripe-left 0%, @stripe-right 100%));
-}
 
 
 // class needs to be set with JS

@@ -137,11 +137,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.pb-address-book:before {
-  content: "\e001";
-}
 .pb-scales:before {
-  content: "\e002";
+  content: "\e600";
+}
+.pb-address-book:before {
+  content: "\e601";
+}
+.pb-folder-add:before {
+  content: "\e602";
 }
 /*Messagebox */
 .divMessageBox {
@@ -1381,9 +1384,9 @@ label {
   border-color: #faebcc;
 }
 .alert-info {
-  background-color: #d9edf7;
+  background-color: #bfdbf0;
   color: #0070c4;
-  border-color: #bce8f1;
+  border-color: #99c6e7;
 }
 small,
 .small {
@@ -1451,10 +1454,10 @@ a.bg-success:hover {
   background-color: #c3e1c3;
 }
 .bg-info {
-  background-color: #d9edf7;
+  background-color: #bfdbf0;
 }
 a.bg-info:hover {
-  background-color: #afd9ee;
+  background-color: #96c4e6;
 }
 .bg-warning {
   background-color: #fcf8e3;
@@ -1500,19 +1503,19 @@ fieldset[disabled] .form-control.timepicker {
   cursor: pointer;
   background-color: #ffffff;
 }
-.input-group.white.before input {
+.input-group.before input {
   border-left: 1px solid transparent;
 }
-.input-group.white.before input:focus {
+.input-group.before input:focus {
   border-left: 1px solid #66afe9;
 }
-.input-group.white.after input {
+.input-group.after input {
   border-right: 1px solid transparent;
 }
-.input-group.white.after input:focus {
+.input-group.after input:focus {
   border-right: 1px solid #66afe9;
 }
-.input-group.white .input-group-addon {
+.input-group .input-group-addon {
   padding: 6px 12px;
   font-size: 14px;
   font-weight: normal;
@@ -1523,15 +1526,24 @@ fieldset[disabled] .form-control.timepicker {
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
-.input-group.white .input-group-addon:last-child {
+.input-group .input-group-addon:last-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border-left: none;
 }
-.input-group.white .input-group-addon:first-child {
+.input-group .input-group-addon:last-child + input {
+  background-color: #f00;
+}
+.input-group .input-group-addon:first-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   border-right: none;
+}
+.input-group .input-group-addon:first-child + input {
+  border-left: none;
+}
+.input-group .input-group-addon:first-child + input:focus {
+  border-left: 1px solid #66afe9;
 }
 /* -- LISTS -- */
 ul,
@@ -1826,8 +1838,8 @@ a.list-group-item.active {
 }
 a.list-group-item.active:hover,
 a.list-group-item.active:focus {
-  background-color: #d5d5d6;
-  border-color: #d5d5d6;
+  background-color: #767676;
+  border-color: #767676;
   color: #0070c4;
 }
 /* CALLOUTS (from the BS docs, but useful) */
@@ -1837,8 +1849,8 @@ a.list-group-item.active:focus {
   border-left: 3px solid #EEE;
 }
 .bs-callout.bs-callout-info {
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+  background-color: #bfdbf0;
+  border-color: #99c6e7;
 }
 .bs-callout.bs-callout-info h4 {
   color: #0070c4;
@@ -2138,15 +2150,6 @@ a.list-group-item.active:focus {
   background: #f2f2f2;
 }
 /*  --------- HEADER ----------- */
-.stripe {
-  background-color: #f00;
-  height: 1px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNhZTJhOTAiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1ODNjNiIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
-  background-image: -webkit-linear-gradient(left, #ae2a90 0%, #2583c6 100%);
-  background-image: -moz-linear-gradient(left, #ae2a90 0%, #2583c6 100%);
-  background-image: -o-linear-gradient(left, #ae2a90 0%, #2583c6 100%);
-  background-image: linear-gradient(to right, #ae2a90 0%, #2583c6 100%);
-}
 body.fixed-header {
   padding-top: 40px;
 }
@@ -2216,7 +2219,7 @@ body.fixed-header .navbar > .container-fluid {
   height: 1px;
   margin: 9px 20px;
   overflow: hidden;
-  background-color: #d5d5d6;
+  background-color: #767676;
 }
 #header .navbar.navbar-default .dropdown-menu > li > a {
   padding: 6px 20px;

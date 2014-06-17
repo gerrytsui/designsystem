@@ -22,5 +22,13 @@ angular.module('designSystemApp')
                 $scope.items.push('Item ' + newItemNo);
             };
 
+            $('.panel-default').on('show.bs.collapse', function() {
+                $(this).addClass('active');
+            });
+
+            $('.panel-default').on('hide.bs.collapse', function() {
+                $(this).removeClass('active');
+            });
+
         }
     ]);

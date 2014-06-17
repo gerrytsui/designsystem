@@ -103,31 +103,12 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                '<%= yeoman.app %>/scripts/{,*/}*.js'
+                '<%= yeoman.app %>/scripts/{,*/}*.js',
+                '!<%= yeoman.app %>/scripts/vendor/**'
             ],
 
         },
 
-        webfont: {
-            icons: {
-                src: 'icons/*.svg',
-                dest: '<%= yeoman.app %>/fonts/',
-                hashes: false,
-                destCss: '<%= yeoman.app %>/less',
-                options: {
-                    font: 'pbfont',
-                    hashes: false,
-                    htmlDemo: false,
-                    stylesheet: 'less',
-                    relativeFontPath: '',
-                    templateOptions: {
-                        baseClass: 'pbfont',
-                        classPrefix: 'pb-',
-                        mixinPrefix: 'pb_'
-                    }
-                }
-            }
-        },
 
         // Empties folders to start fresh
         clean: {
@@ -368,7 +349,6 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean',
             'jshint',
-            //'webfont',
             'less:theme_dev',
             'less:livepreview_dev',
             // 'autoprefixer',
@@ -381,7 +361,6 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean',
             'jshint',
-            'webfont',
             'less:theme',
             'less:livepreview',
             'less:dist',

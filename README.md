@@ -16,6 +16,22 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ##Release Notes
 
+###0.4 - June 17, 2014
+
+- Colors:
+	- Added extended color palette, with colors for charts
+- Alerts:
+    - Added modal alert boxes and dialog boxes
+- Inputs:
+	- made clear prepended and appended icons the default
+	- changed button type in prepend/append to primary
+	- Added **Select2** menu and multi-picker
+- Icons: 
+	- organized FA icons by type 
+	- added "pb-folder-add" icon
+- Added **Isotope** image gallery
+- Cleaned up home page and used chart colors for charts
+
 ###0.3 - May 29, 2014
 
 - Inputs:

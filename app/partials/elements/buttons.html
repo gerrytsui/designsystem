@@ -310,7 +310,7 @@
         </div>
 
         <h3 class="sh">Transitory Message Button</h3>
-        <button type="button" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-primary">
+        <button type="button" loadingbtn id="loading-example-btn" data-loading-text="Loading..." class="btn btn-primary">
             Click to Load
         </button>
 
@@ -398,22 +398,3 @@
     </div>
 </div>
 
-<script>
-$(function() {
-    // do something on document ready
-    $('#loading-example-btn').click(function() {
-        var btn = $(this)
-        btn.button('loading')
-
-        // $.ajax(...).always(function() {
-        //     btn.button('reset')
-        // });
-
-        // simulation:
-        setTimeout(function() {
-            btn.button('reset')
-        }, 2000);
-    });
-
-});
-</script>
