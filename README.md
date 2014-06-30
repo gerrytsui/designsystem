@@ -18,6 +18,7 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ###0.5 - June 27, 2014
 
+- Removed Font Awesome from Bower, using CDN instead.
 - Alerts:
 	- updated modal dialogs
 	- finalized colors and layout
