@@ -130,8 +130,8 @@ $(function() {
     $('#modal2').on('click', function(event) {
 
         BootstrapDialog.show({
-            title: 'Button Order',
-            message: 'Here is the correct order of buttons. True modal, can only be closed by button.',
+            title: 'Modal Dialog',
+            message: 'Modal, can only be closed by button or close box.',
             type: BootstrapDialog.TYPE_DEFAULT,
             closable: true,
             closeByBackdrop: false,
@@ -143,39 +143,23 @@ $(function() {
                 action: function(dialogItself) {
                     dialogItself.close();
                 }
-            },
-            {
-                label: 'Cancel',
-                cssClass: 'btn-link',
-                action: function(dialogItself) {
-                    dialogItself.close();
-                }
             }
              ]
         });
     });
 
-    var $simpleForm = $('<div></div>');
-    $simpleForm.append('<label>Enter Your Name:&nbsp;</label>');
-    $simpleForm.append('<input type="text" id="name" placeholder="Full Name">');
+
 
 
     $('#modal3').on('click', function(event) {
         BootstrapDialog.show({
             type: BootstrapDialog.TYPE_DEFAULT,
             title: 'Name Required',
-            message: $simpleForm,
+            message: $('<div></div>').load('partials/elements/prompt.html'),
             buttons: [
             {
                 cssClass: 'btn-primary',
                 label: 'Save',
-                action: function(dialogRef){
-                    dialogRef.close();
-                }
-            },
-            {
-                cssClass: 'btn-link',
-                label: 'Cancel',
                 action: function(dialogRef){
                     dialogRef.close();
                 }
@@ -188,8 +172,8 @@ $(function() {
     $('#modal4').on('click', function(event) {
     	BootstrapDialog.show({
             type: BootstrapDialog.TYPE_DEFAULT,
-            title: 'Draggable Dialog',
-            message: 'Drag on dialog title to move your dialog.',
+            title: 'Movable Dialog',
+            message: 'Drag on dialog title to move your dialog if it is obscuring something.',
             draggable: true
         });
     });

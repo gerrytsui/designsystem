@@ -12,7 +12,9 @@ angular.module('designSystemApp', [
     'leaflet-directive',
     'ngProgress',
     'toggle-switch',
-    'angular-flot'
+    'angular-flot',
+    'ui.select2',
+    'toggle-switch'
 
 ])
     .config(function($routeProvider) {
@@ -106,8 +108,6 @@ angular.module('designSystemApp', [
             .otherwise({
                 redirectTo: '/'
             });
-
-
 
     })
 /*

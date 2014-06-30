@@ -1,4 +1,115 @@
-<div class="row"><div class="col-md-8"><h1>Alerts/Callouts</h1><h4>Danger</h4><div class="alert alert-danger"><strong>Oh snap!</strong> Change a few things up and try submitting again.</div><h4>Warning</h4><div class="alert alert-warning"><strong>Warning!</strong> Better check yourself, you're not looking too good.</div><h4>Success</h4><div class="alert alert-success"><strong>Excellent!</strong> You've finished the process.</div><h4>Info</h4><div class="alert alert-info"><strong>Note:</strong> There are many help resources available.</div><h3 class="sh">Dismissable Alert</h3><div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> If you don't want to be nagged, click the close box.</div></div></div><div class="row"><div class="col-md-8"><h3 class="sh">Transitory Alert</h3><button id="alert-test-1" class="btn btn-primary btn-lg">Click Me</button> <span class="text-success btn-response" id="msg1"><strong>Excellent!</strong> You've finished the process.</span></div></div><div class="row"><div class="col-md-8"><h3 class="sh">Dialogs <span class="more-info"><a href="http://nakupanda.github.io/bootstrap3-dialog/" target="_blank">More info <i class="fa fa-external-link"></i></a></span></h3><!-- Buttons to trigger modals --><!-- see jquery below, and see http://nakupanda.github.io/bootstrap3-dialog/ for more options --><button class="btn btn-default" id="modal1">Simplest Dialog Box</button>&nbsp; <button class="btn btn-default" id="modal2">Modal Dialog</button> <button class="btn btn-default" id="modal3">Prompt</button> <button class="btn btn-default" id="modal4">Draggable modal</button></div></div><div class="row"><div class="col-md-8"><h3 class="sh">Blockquote</h3><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p></blockquote><h3 class="sh">Callouts</h3><h4>Danger</h4><div class="bs-callout bs-callout-danger"><h4>Sample Callout</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p></div><h4>Warning</h4><div class="bs-callout bs-callout-warning"><h4>Sample Callout</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p></div><h4>Success</h4><div class="bs-callout bs-callout-success"><h4>Sample Callout</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p></div><h4>Info</h4><div class="bs-callout bs-callout-info"><h4>Sample Callout</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p></div></div></div><div class="row"><div class="col-md-8"><h3 class="sh">Contextual Color Backgrounds</h3><p class="bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, sapiente!</p><p class="bg-danger">Dolores assumenda vero tempore a deleniti perferendis veniam, exercitationem ipsa.</p><p class="bg-warning">Dolores assumenda vero tempore a deleniti perferendis veniam, exercitationem ipsa.</p><p class="bg-success">Sequi asperiores quia est, tempora recusandae, deleniti veritatis laboriosam molestiae.</p><p class="bg-info">Delectus rerum earum dolorem unde. Explicabo dolorum praesentium distinctio vel!</p></div></div><script>$(function() {
+<div class="row">
+    <div class="col-md-8">
+        <h1>Alerts/Callouts</h1>
+
+        <h4>Danger</h4>
+        <div class="alert alert-danger">
+            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </div>
+
+        <h4>Warning</h4>
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </div>
+
+        <h4>Success</h4>
+        <div class="alert alert-success">
+            <strong>Excellent!</strong> You've finished the process.
+        </div>
+
+        <h4>Info</h4>
+        <div class="alert alert-info">
+            <strong>Note:</strong> There are many help resources available.
+        </div>
+
+        <h3 class="sh">Dismissable Alert</h3>
+
+        <div class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            If you don't want to be nagged, click the close box.
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <h3 class="sh">Transitory Alert</h3>
+        <button id="alert-test-1" class="btn btn-primary btn-lg">Click Me</button>
+        <span class="text-success btn-response" id="msg1"><strong>Excellent!</strong> You've finished the process.</span>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <h3 class="sh">Dialogs <span class="more-info"><a href="http://nakupanda.github.io/bootstrap3-dialog/" target="_blank">More info <i class="fa fa-external-link"></i></a></span></h3>
+
+
+        <!-- Buttons to trigger modals -->
+        <!-- see jquery below, and see http://nakupanda.github.io/bootstrap3-dialog/ for more options -->
+        <button class="btn btn-default" id="modal1">Simplest Dialog Box</button>&nbsp;
+        <button class="btn btn-default" id="modal2">Modal Dialog</button>
+        <button class="btn btn-default" id="modal3">Prompt</button>
+        <button class="btn btn-default" id="modal4">Draggable modal</button>
+
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-8">
+        <h3 class="sh">Blockquote</h3>
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </blockquote>
+
+        <h3 class="sh">Callouts</h3>
+
+        <h4>Danger</h4>
+        <div class="bs-callout bs-callout-danger">
+            <h4>Sample Callout</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p>
+        </div>
+
+        <h4>Warning</h4>
+        <div class="bs-callout bs-callout-warning">
+            <h4>Sample Callout</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p>
+        </div>
+
+        <h4>Success</h4>
+        <div class="bs-callout bs-callout-success">
+            <h4>Sample Callout</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p>
+        </div>
+
+        <h4>Info</h4>
+        <div class="bs-callout bs-callout-info">
+            <h4>Sample Callout</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <h3 class="sh">Contextual Color Backgrounds</h3>
+        <p class="bg-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, sapiente!</p>
+        <p class="bg-danger">Dolores assumenda vero tempore a deleniti perferendis veniam, exercitationem ipsa.</p>
+        <p class="bg-warning">Dolores assumenda vero tempore a deleniti perferendis veniam, exercitationem ipsa.</p>
+        <p class="bg-success">Sequi asperiores quia est, tempora recusandae, deleniti veritatis laboriosam molestiae.</p>
+        <p class="bg-info">Delectus rerum earum dolorem unde. Explicabo dolorum praesentium distinctio vel!</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+$(function() {
 	// transitory alert msg next to button
     $('.btn-response').hide();
     $('#alert-test-1').on('click', function(event) {
@@ -19,8 +130,8 @@
     $('#modal2').on('click', function(event) {
 
         BootstrapDialog.show({
-            title: 'Button Order',
-            message: 'Here is the correct order of buttons. True modal, can only be closed by button.',
+            title: 'Modal Dialog',
+            message: 'Modal, can only be closed by button or close box.',
             type: BootstrapDialog.TYPE_DEFAULT,
             closable: true,
             closeByBackdrop: false,
@@ -32,39 +143,23 @@
                 action: function(dialogItself) {
                     dialogItself.close();
                 }
-            },
-            {
-                label: 'Cancel',
-                cssClass: 'btn-link',
-                action: function(dialogItself) {
-                    dialogItself.close();
-                }
             }
              ]
         });
     });
 
-    var $simpleForm = $('<div></div>');
-    $simpleForm.append('<label>Enter Your Name:&nbsp;</label>');
-    $simpleForm.append('<input type="text" id="name" placeholder="Full Name">');
+
 
 
     $('#modal3').on('click', function(event) {
         BootstrapDialog.show({
             type: BootstrapDialog.TYPE_DEFAULT,
             title: 'Name Required',
-            message: $simpleForm,
+            message: $('<div></div>').load('partials/elements/prompt.html'),
             buttons: [
             {
                 cssClass: 'btn-primary',
                 label: 'Save',
-                action: function(dialogRef){
-                    dialogRef.close();
-                }
-            },
-            {
-                cssClass: 'btn-link',
-                label: 'Cancel',
                 action: function(dialogRef){
                     dialogRef.close();
                 }
@@ -77,10 +172,11 @@
     $('#modal4').on('click', function(event) {
     	BootstrapDialog.show({
             type: BootstrapDialog.TYPE_DEFAULT,
-            title: 'Draggable Dialog',
-            message: 'Drag on dialog title to move your dialog.',
+            title: 'Movable Dialog',
+            message: 'Drag on dialog title to move your dialog if it is obscuring something.',
             draggable: true
         });
     });
 
-});</script>
+});
+</script>

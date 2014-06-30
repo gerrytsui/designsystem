@@ -30,13 +30,13 @@ angular.module('designSystemApp')
 
                 angular.forEach($scope.icons, function(item) {
                     angular.forEach(item.categories, function(category) {
-                        if (categories.indexOf(category) == -1) {
+                        if (categories.indexOf(category) === -1) {
                             categories.push(category);
                         }
-                    })
+                    });
                 });
                 return categories;
-            }
+            };
 
             // get the people data
             PeopleFactory.getPeople().then(function(response) {
@@ -53,15 +53,13 @@ angular.module('designSystemApp')
                 }, 1000);
             };
 
-            $scope.singleModel = 1;
+            // for the toggle buttons
 
-            $scope.radioModel = 'Middle';
+            $scope.singleModel = 0;
 
-            $scope.checkModel = {
-                left: false,
-                middle: true,
-                right: false
-            };
+            $scope.radioModel = 'Left';
+
+            $scope.checkModel = [true, false, true, false];
 
 
 

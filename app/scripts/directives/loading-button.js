@@ -14,7 +14,7 @@ angular.module('designSystemApp')
 
                     // simulation:
                     setTimeout(function() {
-                        element.button('reset')
+                        element.button('reset');
                     }, 2000);
 
                 });

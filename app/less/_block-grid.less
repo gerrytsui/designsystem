@@ -1,0 +1,30 @@
+.block-grid () {
+  padding: 0;
+
+  & > li {
+    display: block;
+    float: left;
+    list-style: none;
+  }
+}
+
+.make-block-grid (@columns, @spacing: @grid-gutter-width) when (@columns > 0) {
+  .block-grid-@{columns} {
+    &:extend(.clearfix all);
+    .block-grid();
+
+    margin: 0 (-@spacing / 2);
+
+    > li {
+      width: 100% / @columns;
+      padding: 0 (@spacing / 2) @spacing;
+
+      &:nth-of-type(1n) { clear: none; }
+      &:nth-of-type(@{columns}n+1) { clear: both; }
+    }
+  }
+
+  .make-block-grid(@columns - 1)
+}
+
+.make-block-grid(@grid-columns);

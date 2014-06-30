@@ -112,8 +112,8 @@ module.exports = function(grunt) {
 
         // Empties folders to start fresh
         clean: {
-            preview: ["build/**/*"],
-            dist: ["dist/**/*"]
+            preview: ['build/**/*'],
+            dist: ['dist/**/*']
         },
         cleanempty: {
             options: {
@@ -132,7 +132,7 @@ module.exports = function(grunt) {
                     outputSourceFiles: true
                 },
                 files: [{
-                    "<%= yeoman.app %>/styles/design_system.css": "<%= yeoman.less %>/design_system.less"
+                    '<%= yeoman.app %>/styles/design_system.css': '<%= yeoman.less %>/design_system.less'
                 }]
             },
             // compiles live_preview.css and map to /app/styles
@@ -144,7 +144,7 @@ module.exports = function(grunt) {
                     outputSourceFiles: true
                 },
                 files: [{
-                    "<%= yeoman.app %>/styles/live_preview.css": "<%= yeoman.less %>/live_preview.less"
+                    '<%= yeoman.app %>/styles/live_preview.css': '<%= yeoman.less %>/live_preview.less'
                 }]
             },
 
@@ -155,7 +155,7 @@ module.exports = function(grunt) {
                     ieCompat: true
                 },
                 files: [{
-                    "<%= yeoman.build %>/styles/design_system.css": "<%= yeoman.less %>/design_system.less"
+                    '<%= yeoman.build %>/styles/design_system.css': '<%= yeoman.less %>/design_system.less'
                 }]
             },
             // compiles live_preview.css and map to /app/styles
@@ -165,7 +165,7 @@ module.exports = function(grunt) {
                     ieCompat: true
                 },
                 files: [{
-                    "<%= yeoman.build %>/styles/live_preview.css": "<%= yeoman.less %>/live_preview.less"
+                    '<%= yeoman.build %>/styles/live_preview.css': '<%= yeoman.less %>/live_preview.less'
                 }]
             },
 
@@ -176,7 +176,7 @@ module.exports = function(grunt) {
                     outputSourceFiles: false
                 },
                 files: [{
-                    "<%= yeoman.dist %>/styles/design_system.css": "<%= yeoman.less %>/design_system.less"
+                    '<%= yeoman.dist %>/styles/design_system.css': '<%= yeoman.less %>/design_system.less'
                 }]
             }
         },
@@ -275,17 +275,13 @@ module.exports = function(grunt) {
                         'partials/{,*/}*.html',
                         'images/{,*/}*.{webp}',
                         'scripts/data/*.js',
+                        'scripts/templates/*.html',
                         'fonts/*',
                         'vendor/**'
                     ]
                 }, {
                     expand: true,
                     cwd: 'fonts',
-                    src: '*.*',
-                    dest: '<%= yeoman.build %>/fonts'
-                }, {
-                    expand: true,
-                    cwd: 'app/bower_components/font-awesome/fonts',
                     src: '*.*',
                     dest: '<%= yeoman.build %>/fonts'
                 }]
@@ -370,10 +366,11 @@ module.exports = function(grunt) {
             'concat',
             'ngmin',
             'copy:build',
+            'copy:fonts',
             'uglify',
             'cssmin',
-            'usemin',
-            'htmlmin'
+            'usemin'
+            //'htmlmin' // broken, not sure why
         ]);
 
         if (target === 'staging') {

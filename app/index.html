@@ -1,7 +1,7 @@
 <!doctype html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="designSystemApp" ng-controller="MainCtrl"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="designSystemApp" ng-controller="MainCtrl"> <![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="designSystemApp" ng-controller="MainCtrl"><!--<![endif]-->
-  <head>
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -9,28 +9,25 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!--  <script type="text/javascript" src="//use.typekit.net/ddc7jsv.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
-
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- build:css({tmp,app,.tmp}) styles/vendor.css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="bower_components/leaflet-dist/leaflet.css" />
     <link rel="stylesheet" href="bower_components/ngprogress/ngProgress.css" />
-    <!-- <link rel="stylesheet" href="bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" /> -->
     <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
     <link rel="stylesheet" href="bower_components/bootstrap-vertical-tabs/bootstrap.vertical-tabs.min.css" />
     <link rel="stylesheet" href="bower_components/select2/select2.css" />
     <link rel="stylesheet" href="scripts/vendor/select2-bootstrap.css" />
-
+    <link rel="stylesheet" href="scripts/vendor/angular-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" />
     <!-- endbuild -->
+
+
     <link rel="stylesheet" href="styles/design_system.css">
     <link rel="stylesheet" href="styles/live_preview.css">
-  </head>
-  <body ng-cloak class="design-system" ng-class="{'fixed-header': settings.isFixed}">
+</head>
+<body ng-cloak class="design-system" ng-class="{'fixed-header': settings.isFixed}">
 
     <div class="settings" ng-class="{'activate': settings.isOpen}">
         <div class="settings-tab" ng-click="settings.show()">
@@ -38,11 +35,10 @@
         </div>
         <div class="settings-form">
             <h6>Options</h6>
-            <input id="isFluid" name="isFluid" type="checkbox" ng-model="settings.isFluid" /> <label for="isFluid">Fluid Containers</label><br>
-            <input id="isFixed" name="isFixed" type="checkbox" ng-model="settings.isFixed" /> <label for="isFixed">Fixed Header</label>
+            <input id="isFluid" name="isFluid" type="checkbox" ng-model="settings.isFluid"> <label for="isFluid">Fluid Containers</label><br>
+            <input id="isFixed" name="isFixed" type="checkbox" ng-model="settings.isFixed"> <label for="isFixed">Fixed Header</label>
         </div>
     </div>
-
 
 
     <div id="header">
@@ -96,8 +92,6 @@
     </div>
 
 
-
-
     <!-- Add your site or application content here -->
     <div ng-view></div>
 
@@ -118,25 +112,31 @@
                     <ul class="list-unstyled list-inline social">
                         <li>Follow us:</li>
                         <li>
-                            <a target="_blank" class="fa-stack twitter" href="https://twitter.com/pbsmallbusiness">
+                            <a target="_blank" class="fa-stack twitter" href="https://twitter.com/pitneybowes">
                                 <i class="fa fa-stop fa-stack-2x"></i>
                                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" class="fa-stack facebook" href="https://www.facebook.com/Pbsmallbusiness">
+                            <a target="_blank" class="fa-stack facebook" href="http://www.facebook.com/pitneybowes">
                                 <i class="fa fa-stop fa-stack-2x"></i>
                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" class="fa-stack linkedin" href="http://www.linkedin.com/company/2503?trk=tyah">
+                            <a target="_blank" class="fa-stack linkedin" href="http://www.linkedin.com/company/pitney-bowes">
                                 <i class="fa fa-stop fa-stack-2x"></i>
                                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" class="fa-stack youtube" href="http://www.youtube.com/pbsmallbusiness">
+                            <a target="_blank" class="fa-stack google-plus" href="https://plus.google.com/+pitneybowes">
+                                <i class="fa fa-stop fa-stack-2x"></i>
+                                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" class="fa-stack youtube" href="http://www.youtube.com/user/PitneyBowesInc">
                                 <i class="fa fa-stop fa-stack-2x"></i>
                                 <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
                             </a>
@@ -149,7 +149,6 @@
     </div>
 
 
-
     <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
     <!-- build:js scripts/ie8.js -->
     <!--[if lt IE 9]>
@@ -158,7 +157,6 @@
     <script src="bower_components/respondJs/src/respond.js"></script>
     <![endif]-->
     <!-- endbuild -->
-
 
     <!-- build:js({.tmp,app})  scripts/vendor.js -->
     <script src="bower_components/jquery/jquery.js"></script>
@@ -176,7 +174,6 @@
     <script src="bower_components/leaflet-dist/leaflet.js"></script>
     <script src="bower_components/angular-leaflet/dist/angular-leaflet-directive.js"></script>
     <script src="bower_components/ngprogress/build/ngProgress.js"></script>
-    <script src="bower_components/angular-bootstrap-toggle-switch/angular-toggle-switch.js"></script>
     <script src="bower_components/flot/jquery.flot.js"></script>
     <script src="bower_components/flot/jquery.flot.resize.js"></script>
     <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
@@ -184,8 +181,10 @@
     <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script src="bower_components/Numeric-Stepper/stepper/jquery.stepper.js"></script>
     <script src="bower_components/select2/select2.min.js"></script>
+    <script src="bower_components/angular-ui-select2/src/select2.js"></script>
     <script src="scripts/vendor/bootstrap3-dialog-master/js/bootstrap-dialog.min.js"></script>
     <script src="scripts/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="scripts/vendor/angular-toggle-switch/angular-toggle-switch.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -203,6 +202,7 @@
     <script src="scripts/directives/collapse.js"></script>
     <script src="scripts/directives/accordion.js"></script>
     <script src="scripts/directives/loading-button.js"></script>
+    <script src="scripts/directives/prependedCheckboxField.js"></script>
     <script src="scripts/vendor/sparkline-directive.js"></script>
     <script src="scripts/filters/capitalize.js"></script>
     <script src="scripts/controllers/main.js"></script>

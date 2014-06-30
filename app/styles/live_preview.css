@@ -169,6 +169,10 @@ h3.sh {
   border-bottom: 1px solid #d5d5d6;
   clear: both;
 }
+h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 .grid-sample .panel {
   border: none;
   border-top: 3px solid #767676;
@@ -327,6 +331,13 @@ p[class^="bg"] {
   top: 115px;
   font-size: 14px;
   color: #59595b;
+}
+.glyphicons li {
+  text-align: center;
+}
+.glyphicons li .glyphicon,
+.glyphicons li .pbfont {
+  font-size: 2em;
 }
 /* color swatch backgrounds */
 .brand-primary {

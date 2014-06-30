@@ -157,7 +157,7 @@
 	&-sm {
 		.btn {
 			i.fa {
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 	}
@@ -165,9 +165,15 @@
 	&-xs {
 		.btn {
 			i.fa {
-				font-size: 12px;
+				font-size: 14px;
 			}
 		}
+	}
+}
+
+.btn-group-borderless {
+	.btn {
+		border: none;
 	}
 }
 
@@ -175,4 +181,16 @@
 .btn-response {
 	display: inline-block;
 	margin-left: 10px;
+}
+
+// overrides for bootstrap's Close button
+.close {
+	color: @gray-mid;
+	opacity: 1.0;
+	filter: alpha(opacity=1);
+	&:hover {
+		color: @link-color-hover;
+		opacity: 1.0;
+		filter: alpha(opacity=1);
+	}
 }

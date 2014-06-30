@@ -16,6 +16,23 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ##Release Notes
 
+###0.5 - June 27, 2014
+
+- Alerts:
+	- updated modal dialogs
+	- finalized colors and layout
+	- removed cancel buttons from dialogs
+- Inputs
+	- fixed angular toggle switches
+	- prepended checkbox field
+	- updated calendar picker
+	- reorganized page and support text
+- Icons
+	- Updated page layout
+- Buttons
+	- Updated page layout   
+
+
 ###0.4 - June 17, 2014
 
 - Colors:
