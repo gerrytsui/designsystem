@@ -162,22 +162,46 @@
 .panel-title a {
   cursor: pointer;
 }
+section.row {
+  margin-bottom: 60px;
+}
 h3.section-head,
 h3.sh {
-  margin: 30px 0 20px;
+  margin: 50px 0 20px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #d5d5d6;
+  border-bottom: 1px solid #f2f2f2;
   clear: both;
 }
-h4 {
+h3.section-head:first-child,
+h3.sh:first-child {
+  margin-top: 0;
+}
+h6.sh {
+  clear: both;
+  margin-top: 40px;
+}
+h6.sh:first-child {
+  margin-top: 0;
+}
+hr {
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .grid-sample .panel {
   border: none;
   border-top: 3px solid #767676;
   border-radius: 0;
 }
+/* HEADER & FOOTER EXAMPLES */
+.header-example {
+  x-margin: 0 15px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+}
+.footer-example {
+  x-margin: 0 15px;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+}
+/* Charting Demos */
 .piechart {
   position: relative;
   display: inline-block;
@@ -245,12 +269,14 @@ h4 {
   height: 300px;
 }
 legend .more-info,
-h3 .more-info {
+h3 .more-info,
+h1 .more-info {
   float: right;
   font-size: 14px;
   line-height: 1;
   margin-top: 10px;
 }
+/* the tab that pops out of the  Live Preview */
 .settings {
   position: fixed;
   top: 60px;
@@ -270,7 +296,7 @@ h3 .more-info {
   width: 35px;
   text: center;
   color: #fff;
-  background: #215262;
+  background: #333333;
   padding: 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -285,9 +311,9 @@ h3 .more-info {
 .settings .settings-form {
   display: none;
   float: right;
-  background-color: #215262;
+  background-color: #333333;
   padding: 0px 10px 10px 15px;
-  height: 100px;
+  height: 125px;
   width: 150px;
   color: #fff;
   border-bottom-left-radius: 5px;
@@ -295,6 +321,7 @@ h3 .more-info {
 }
 .settings .settings-form label {
   font-size: 12px !important;
+  color: #fff;
 }
 p[class^="bg"] {
   padding: 10px;
@@ -315,8 +342,8 @@ p[class^="bg"] {
   clear: both;
 }
 .color-swatches .color-swatch {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 50px;
   display: inline-block;
   float: left;
   margin-right: 10px;
@@ -328,7 +355,7 @@ p[class^="bg"] {
 }
 .color-swatches .color-swatch span {
   position: absolute;
-  top: 115px;
+  top: 55px;
   font-size: 14px;
   color: #59595b;
 }

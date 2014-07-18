@@ -19,7 +19,7 @@
     <!-- left column -->
     <div class="col-md-2 col-sm-3">
       <div class="list-group">
-        <a ng-href="#/elements?section={{l.label}}" class="list-group-item" ng-repeat="l in subnav.children | orderBy:predicate" ng-class="{'active': l.label == submenu}" ng-click="select(l.label)">{{l.label}}</a>
+        <a ng-href="#/elements?section={{l.label}}" class="list-group-item" ng-repeat="l in subnav.children | orderBy: 'label'" ng-class="{'active': l.label == submenu}" ng-click="select(l.label)">{{l.label}}</a>
       </div>
     </div>
 

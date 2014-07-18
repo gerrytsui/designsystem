@@ -12,6 +12,7 @@
 @import "_buttons";
 @import "_bootstrap-dialog";
 @import "_switches";
+@import "_kendoui";
 
 .clearfix{
   zoom:1;
@@ -42,12 +43,13 @@ h4 { font-size: @font-size-h4;}
 h5 { font-size: @font-size-h5;}
 h6 { font-size: @font-size-h6;}
 
-h1,h2,h3,h4,h6 {
+h1,h2,h3,h4 {
   font-family: @font-family-sans-serif;
   font-weight: @headings-font-weight;
 }
-
-h5 { font-family: @font-family-serif; }
+h5,h6 {
+	font-weight: bold;
+}
 
 .media-heading {
 	font-weight: 700;
@@ -56,6 +58,21 @@ h5 { font-family: @font-family-serif; }
 p.lead, p.lede {
 	font-weight: 700;
 }
+.text-large {
+	font-size: @font-size-large;
+}
+
+.text-small {
+	font-size: @font-size-small;
+}
+
+.text-xs {
+	font-size: @font-size-xsmall;
+}
+.text-mouse {
+	font-size: @font-size-mouse;
+}
+
 
 a {
 	color: @link-color;
@@ -81,13 +98,21 @@ b, strong {
 }
 
 /* classes per view, applied to BODY tag with JS */
+
 .headers {
 	#footer { display: none;}
 }
 dl dt {
 	margin-top: 10px;
 }
-
+ul.spaced, ol.spaced {
+	> li {
+		margin-top: 10px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
 /* -- Bootstrap overrides -- */
 
 .badge {
@@ -103,6 +128,13 @@ label {
     color      : @gray-mid;
 }
 
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid @gray-light;
+}
+
 .navbar-default .navbar-nav > li > a {
 	color: @text-color;
 }
@@ -113,10 +145,27 @@ label {
 .modal-footer {
 	text-align: left;
 	padding: 19px 15px 15px;
+
 }
 .bootstrap-dialog.type-default .bootstrap-dialog-title {
 	color: @brand-primary;
 }
+
+// ul {
+//     list-style: none;
+//     padding:0;
+//     margin:0;
+//     > li {
+//         padding-left: 1em;
+//         text-indent: -.7em;
+//         :before {
+//             content: "\002022 ";
+//             color: red; /* or whatever color you prefer */
+//         }
+//     }
+// }
+
+
 
 
 /* alerts */
@@ -139,6 +188,9 @@ label {
 	background-color: @alert-info-bg;
 	color           : @alert-info-text;
 	border-color    : @alert-info-border;
+	a {
+		color: darken(@link-color, 20%);
+	}
 }
 
 
@@ -250,6 +302,10 @@ background-color: #ffffff;
 	// class is needed to turn off dividing border betw input and addon
 	// although with "before" we can use a "+" selector instead, see "first-child" below
 	// left before class for ie8 support
+	.btn {
+		font-size: 14px; // need to make the "small" font size to match form fields
+	}
+
 	&.before {
 		input {
 			border-left: 1px solid transparent;
@@ -265,6 +321,9 @@ background-color: #ffffff;
 				border-right: 1px solid #66afe9;
 			}
 		}
+	}
+	.input-group-btn {
+		z-index: 3;
 	}
 	.input-group-addon {
 		padding         : 6px 12px;
@@ -308,7 +367,11 @@ ul, ol {
 	margin-top   : 0;
 	margin-bottom: 10px;
 	margin-left  : 0;
-	padding-left : 1em;
+	padding-left : 1.5em;
+}
+
+ul {
+	list-style-type: circle;
 }
 
 .btn:focus {
@@ -563,9 +626,6 @@ div.accordion-group {
 		font-size: 16px;
 	}
 }
-.navbar-brand {
-	padding: 15px 0;
-}
 
 
 // all paragraphs in a grouping with a "lead" paragraph
@@ -677,16 +737,16 @@ a.list-group-item {
 .bs-callout {
     margin: 20px 0px;
     padding: 20px;
-    border-left: 3px solid #EEE;
+    border-left: 4px solid #EEE;
 	&.bs-callout-info {
-		background-color: @state-info-bg;
+		background-color: lighten(@state-info-bg, 12%);
 		border-color    : @state-info-border;
 		h4 {
 			color: @state-info-text;
 		}
 	}
 	&.bs-callout-danger {
-		background-color: @state-danger-bg;
+		background-color: lighten(@state-danger-bg,2%);
 		border-color    : @state-danger-border;
 		h4 {
 			color: @state-danger-text;
@@ -1068,13 +1128,24 @@ body.fixed-header {
 	}
 }
 
-#header {
+#header, header {
     background-color: @background-color;
     .navbar {
     	margin-bottom: 0;
     	li.first a {
     		padding-left: 0;
     	}
+
+		.navbar-brand, .container .navbar-brand {
+			padding: 15px 0;
+			margin-left: 0;
+			color: @brand-primary;
+			font-weight: 700;
+			&.brand-text {
+    			color: @brand-primary;
+    			font-weight: 700;
+			}
+		}
     	// fixed navbar has a shadow that appears when scrolled via jQuery
     	&.navbar-fixed-top {
 			-webkit-transition: box-shadow .3s;
@@ -1116,12 +1187,7 @@ body.fixed-header {
     			}
 
     		}
-    		.navbar-brand {
-    			margin-left: 0;
-    			&.brand-text {
-	    			color: @brand-primary;
-    			}
-    		}
+
     		.dropdown-menu {
 				background-color     : @gray-light;
 				border               : none;
@@ -1143,7 +1209,7 @@ body.fixed-header {
 						font-weight: normal;
 						line-height: 1.4;
 						color      : @text-color-dark;
-						font-size  : 18px;
+						font-size  : 16px;
 						white-space: nowrap;
 						font-family: @font-family-sans-serif;
     				}
@@ -1152,6 +1218,24 @@ body.fixed-header {
     		}
     	}
     }
+    &.header-stacked {
+    	.nav.navbar-nav {
+    		margin-left: -15px;
+    		> li > a {
+    			padding-top: 0;
+    		}
+    	}
+    	.navbar-brand {
+    		padding-bottom: 0;
+    		margin-bottom: 0;
+    	}
+    	.activity {
+        .badge {
+          top: -20%;
+        }
+    	}
+    }
+
 
 }
 
@@ -1175,15 +1259,30 @@ body.fixed-header {
 
 /* --------- FOOTER ------------ */
 
-#footer {
+#footer, footer {
 	//padding: 50px 0 30px;
 	margin-top : 40px;
 	color      : @text-color;
 	font-size  : 12px;
 	font-family: @font-family-sans-serif;
 	border-top : 1px solid @brand-primary;
+
+  a {
+    color: @gray-mid;
+  }
+
+  &.footer-thin {
+    .row {
+      padding: 10px 0;
+    }
+    .social {
+      margin-bottom: 0;
+    }
+  }
+
 	.row {
 		padding: 40px 0;
+
 	}
 	ul.list-inline {
 		&.social {
@@ -1338,27 +1437,11 @@ body.fixed-header {
 
 //@import "_ajax-dropdown";
 
-span#activity {
-	-moz-border-radius   : 2px;
-	-webkit-border-radius: 2px;
-	border-radius        : 2px;
-	cursor               : default !important;
-	display              : inline-block;
-	font-weight          : 700;
-	height               : 24px;
-	width                : 24px;
-	padding              : 2px;
-	text-align           : center;
-	text-decoration      : none !important;
-	-moz-user-select     : none;
-	-webkit-user-select  : none;
-	color                : @text-color;
-	font-size            : 19px;
-	margin               : 10px 0 0 0;
-	position             : relative;
+.activity {
+	position: relative;
 
 	&:hover {
-		cursor: pointer !important;
+    color: @text-color !important;
 		.badge {
 			-webkit-transform: scale(1.2);
 			-ms-transform    : scale(1.2);
@@ -1369,18 +1452,12 @@ span#activity {
 
 	.badge {
 		position                : absolute;
-		top                     : -20%;
-		right                   : -50%;
-		cursor                  : pointer;
+		top                     : 15%;
+		right                   : 0;
 		background              :@brand-primary;
-		display                 : inline-block;
 		font-size               : 10px;
 		color                   : #fff;
 		font-weight             : 700;
-		// border-radius        : 50%;
-		// -moz-border-radius   : 50%;
-		// -webkit-border-radius: 50%;
-		// padding              : 2px 4px 3px 4px;
 		text-align              : center;
 		line-height             : normal;
 		-webkit-transition      : all .1s;
@@ -1436,10 +1513,115 @@ span#activity {
 }
 
 
+// Progress bars
+
+.progress-bar-variant(@color) {
+  background-color: @color;
+
+}
+
+
+.progress-bar {
+	background-color: @brand-primary;
+}
+
+
+// Variations
+// -------------------------
+
+
+.progress-bar-success {
+  .progress-bar-variant(@progress-bar-success-bg);
+}
+
+.progress-bar-info {
+  .progress-bar-variant(@progress-bar-info-bg);
+}
+
+.progress-bar-warning {
+  .progress-bar-variant(@progress-bar-warning-bg);
+}
+
+.progress-bar-danger {
+  .progress-bar-variant(@progress-bar-danger-bg);
+}
+
+// stacked
+.progress-bar-green {
+	.progress-bar-variant(@chart-green);
+}
+.progress-bar-blue {
+	.progress-bar-variant(@chart-blue);
+}
+.progress-bar-purple {
+	.progress-bar-variant(@chart-purple);
+}
+.progress-bar-yellow {
+	.progress-bar-variant(@chart-yellow);
+}
+.progress-bar-orange {
+	.progress-bar-variant(@chart-orange);
+}
+.progress-bar-red {
+	.progress-bar-variant(@chart-red);
+}
+.progress-bar-blue1 {
+	.progress-bar-variant(@blue1);
+}
+.progress-bar-blue2 {
+	.progress-bar-variant(@blue2);
+}
+.progress-bar-blue3 {
+	.progress-bar-variant(@blue3);
+}
+.progress-bar-blue4 {
+	.progress-bar-variant(@blue4);
+}
+.progress-bar-blue5 {
+	.progress-bar-variant(@blue5);
+}
+.progress-bar-blue6 {
+	.progress-bar-variant(@blue6);
+}
+
+
+.ngrs-range-slider {
+	@bar-height: 14px;
+	@handle-size: 12px;
+	box-shadow: none;
+	border: 1px solid @gray-light;
+	.ngrs-join {
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 0;
+		right: 100%;
+		height: @bar-height;
+		margin: -(@bar-height/2) 0 0 0;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+		border-radius: 4px;
+		background-color: @brand-primary;
+		background-image: none;
+	}
+	.ngrs-handle {
+		position: absolute;
+		z-index: 2;
+		height: 100%;
+		width: @handle-size;
+		margin: 0 0 0 -(@handle-size/2);
+		background: #fff;
+		border: 1px solid @brand-primary;
+		// border-radius: (@handle-size/2);
+		border-radius: 0;
+
+	}
+}
+
+
 /* NUMERIC STEPPER */
-
-
-
 .stepper-wrap {
     position: relative;
     display: inline-block;
@@ -1650,6 +1832,10 @@ span#activity {
 	.xs-text-right {
 		text-align: right;
 	}
+
+  .activity {
+    display: inline-block !important;
+  }
 
 	.footer {
 		padding: 20px 0;

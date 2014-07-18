@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         watch: {
             theme: {
                 files: ['<%= yeoman.app %>/{,*/}*.less'],
-                tasks: ['less:theme_dev', 'less:livepreview_dev']
+                tasks: ['less:theme_dev', 'less:livepreview_dev', 'less:kendo_dev']
             },
 
             js: {
@@ -145,6 +145,18 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     '<%= yeoman.app %>/styles/live_preview.css': '<%= yeoman.less %>/live_preview.less'
+                }]
+            },
+            // compiles live_preview.css and map to /app/styles
+            kendo_dev: {
+                options: {
+                    sourceMap: true,
+                    sourceMapFilename: '<%= yeoman.app %>/styles/kendo.boostrap.css.map',
+                    sourceMapURL: 'kendo.boostrap.css.map',
+                    outputSourceFiles: true
+                },
+                files: [{
+                    '<%= yeoman.app %>/styles/kendo.bootstrap.css': '<%= yeoman.less %>/kendo.bootstrap.less'
                 }]
             },
 
@@ -278,12 +290,23 @@ module.exports = function(grunt) {
                         'scripts/templates/*.html',
                         'fonts/*',
                         'vendor/**'
+
                     ]
                 }, {
                     expand: true,
                     cwd: 'fonts',
                     src: '*.*',
                     dest: '<%= yeoman.build %>/fonts'
+                }, {
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/less/kendo/kendobootstrap',
+                    src: '*',
+                    dest: '<%= yeoman.build %>/styles/kendobootstrap'
+                }, {
+                    expand: true,
+                    cwd: '<%= yeoman.build %>/styles',
+                    src: 'vendor.css',
+                    dest: '<%= yeoman.dist %>/styles'
                 }]
             }
         },

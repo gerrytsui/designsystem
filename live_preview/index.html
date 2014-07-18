@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html class="no-js" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="designSystemApp" ng-controller="MainCtrl"><!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>{{pgTitle}}</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/design_system.css">
     <link rel="stylesheet" href="styles/live_preview.css">
 </head>
-<body ng-cloak class="design-system" ng-class="{'fixed-header': settings.isFixed}">
+<body ng-cloak ng-class="{'fixed-header': settings.isFixed}">
 
     <div class="settings" ng-class="{'activate': settings.isOpen}">
         <div class="settings-tab" ng-click="settings.show()">
@@ -26,14 +26,17 @@
         </div>
         <div class="settings-form">
             <h6>Options</h6>
-            <input id="isFluid" name="isFluid" type="checkbox" ng-model="settings.isFluid"> <label for="isFluid">Fluid Containers</label><br>
+            <input id="isFluid" name="isFluid" type="checkbox" ng-model="settings.isFluid"> <label for="isFluid">Fluid Containers</label>
+            <br>
             <input id="isFixed" name="isFixed" type="checkbox" ng-model="settings.isFixed"> <label for="isFixed">Fixed Header</label>
+            <br>
+            <input id="isThinFooter" name="isThinFooter" type="checkbox" ng-model="settings.isThinFooter"> <label for="isThinFooter">Thin Footer</label>
         </div>
     </div>
 
 
     <div id="header">
-    <div class="navbar navbar-default" ng-class="{'navbar-fixed-top': settings.isFixed,'navbar-scroll': !settings.isFixed}" role="navigation" fixednav>
+    <div class="navbar navbar-default" ng-class="{'navbar-fixed-top': settings.isFixed,'navbar-scroll': !settings.isFixed}" role="navigation" pb-fixed-navbar>
         <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -57,22 +60,16 @@
               </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li><a ng-href="" data-toggle="popover" data-pop="#foo">
-                        <i class="fa fa-envelope fa-lg fa-active"></i>
-                        <span class="badge">12</span></a>
-                    </li> -->
                     <li>
-                        <span id="activity" class="activity-dropdown"> <i class="fa fa-envelope"></i> <b class="badge"> 21 </b> </span>
+                        <a class="activity"><i class="fa fa-envelope fa-lg"></i> <b class="badge"> 21 </b></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-gear fa-lg"></i></a></li>
                     <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i> <i class="fa fa-angle-down"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;Walter Arthur&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#"><i class="fa fa-cogs"></i>&nbsp;&nbsp;My Account</a></li>
+                            <li><a href="#"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Dashboard</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Sign Out</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -88,14 +85,14 @@
 
 
     <!-- FOOTER -->
-    <div id="footer">
+    <div id="footer" ng-class="{'footer-thin': settings.isThinFooter}">
     <!-- <div class="stripe">&nbsp;</div> -->
         <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
             <div class="row">
 
                 <!-- Copyright -->
                 <div class="col-md-6">
-                    <a href="http://www.pb.com" class="pb-footerlogo"></a>&copy;2014 Pitney Bowes Inc. All rights reserved.
+                    <a href="http://www.pb.com" class="pb-footerlogo" target="_blank"></a>&copy;2014 Pitney Bowes Inc. All rights reserved.
                 </div>
 
                 <!-- Social -->

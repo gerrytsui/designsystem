@@ -12,7 +12,7 @@ angular.module('designSystemApp').controller('MainCtrl', ['$scope', 'NavFactory'
             if (oldVal !== newVal) {
                 $scope.routeClassName = $route.current.className;
                 $scope.pgTitle = $route.current.pageTitle;
-                //console.log('page title is:' + $scope.pgTitle);
+                // console.log('page title is:' + $scope.pgTitle);
             }
         });
 
@@ -23,11 +23,11 @@ angular.module('designSystemApp').controller('MainCtrl', ['$scope', 'NavFactory'
         // });
 
 
-
         $scope.settings = {
-            isFluid: true,
+            isFluid: false,
             isFixed: true,
             isOpen: false,
+            isThinFooter: false,
             show: function() {
                 $scope.settings.isOpen = ($scope.settings.isOpen) ? false : true;
             }

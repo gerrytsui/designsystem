@@ -14,7 +14,9 @@ angular.module('designSystemApp', [
     'toggle-switch',
     'angular-flot',
     'ui.select2',
-    'toggle-switch'
+    'toggle-switch',
+    'kendo.directives',
+    'ui-rangeSlider'
 
 ])
     .config(function($routeProvider) {
@@ -104,6 +106,12 @@ angular.module('designSystemApp', [
                 controller: 'IsotopeGalleryCtrl',
                 className: 'gallery',
                 pageTitle: 'Gallery'
+            })
+            .when('/kendo', {
+                templateUrl: 'views/kendo.html',
+                controller: 'KendoDemoCtrl',
+                className: 'kendo',
+                pageTitle: 'Kendo'
             })
             .otherwise({
                 redirectTo: '/'

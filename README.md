@@ -16,6 +16,23 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ##Release Notes
 
+###0.6 - July 18, 2014
+
+- Updated to use Bootstrap 3.2
+- Added Kendo UI splitter
+- Added range slider
+- Added animated progress button
+- Added thin footer and footer without social icons
+- Added stacked 2-row header
+- Fixes to the "user menu" at the top right
+- Other menu fixes
+- Fine-tuned several colors
+- Added vendor.css to the DIST folder.  This compressed css file includes all the css from the various vendor add-ons used in the DS
+- Fixes to state colors in toggle buttons
+- Updated the angular code for the prepended checkbox
+- Much cleanup done to the Live Preview
+- Cleanup to naming and organization in Angular files
+
 ###0.5 - June 27, 2014
 
 - Removed Font Awesome from Bower, using CDN instead.

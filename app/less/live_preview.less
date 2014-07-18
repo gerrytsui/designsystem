@@ -14,24 +14,39 @@
 }
 
 
+
 // Bootstrap UI (required)
 
 .nav, .pagination, .carousel, .panel-title a {
 		cursor: pointer;
 }
 
-h3.section-head, h3.sh {
-	margin        : 30px 0 20px;
-	padding-bottom: 5px;
-	border-bottom : 1px solid #d5d5d6;
-	clear         : both;
-}
-h4 {
-	margin-top: 30px;
-	margin-bottom: 15px;
-}
 
-// for the demo only
+
+// spacing and page layout mods for the design system pages
+section.row {
+	margin-bottom: 60px;
+}
+h3.section-head, h3.sh {
+	margin        : 50px 0 20px;
+	padding-bottom: 5px;
+	border-bottom : 1px solid @gray-light;
+	clear         : both;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+h6.sh {
+	clear: both;
+	margin-top: 40px;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 .grid-sample .panel {
 	border       : none;
 	border-top   : 3px solid @gray;
@@ -39,8 +54,20 @@ h4 {
 }
 
 
-.piechart {
+/* HEADER & FOOTER EXAMPLES */
+.header-example {
+	x-margin: 0 15px;
+	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+}
+.footer-example {
+	x-margin: 0 15px;
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+}
 
+
+/* Charting Demos */
+
+.piechart {
 	position: relative;
 	display: inline-block;
 
@@ -129,12 +156,17 @@ h4 {
 		}
 }
 
-legend .more-info, h3 .more-info {
+legend .more-info, h3 .more-info, h1 .more-info {
 	float: right;
 	font-size: 14px;
 	line-height: 1;
 	margin-top: 10px;
 }
+
+
+/* the tab that pops out of the  Live Preview */
+
+@tab-color: #333;
 
 .settings {
 		position: fixed;
@@ -157,7 +189,7 @@ legend .more-info, h3 .more-info {
 			width                    : 35px;
 			text                     : center;
 			color                    : #fff;
-			background               : #215262;
+			background               : @tab-color;
 			padding                  : 5px;
 			border-top-left-radius   : 5px;
 			border-bottom-left-radius: 5px;
@@ -173,15 +205,16 @@ legend .more-info, h3 .more-info {
 		.settings-form {
 			display                  : none;
 			float                    : right;
-			background-color         : #215262;
+			background-color         : @tab-color;
 			padding                  : 0px 10px 10px 15px;
-			height                   : 100px;
+			height                   : 125px;
 			width                    : 150px;
 			color                    : #fff;
 			border-bottom-left-radius: 5px;
 			box-shadow               : 3px 5px 8px rgba(0,0,0,.3);
 			label {
 				font-size: 12px !important;
+				color: #fff;
 			}
 		}
 }
@@ -194,7 +227,7 @@ p[class^="bg"] {
 
 /* Color swatches */
 
-@swatch-size: 110px;
+@swatch-size: 100px;
 
 .color-swatches {
 	.clearfix;
@@ -203,7 +236,7 @@ p[class^="bg"] {
 	padding-left : 0;
 	.color-swatch {
 		width       : @swatch-size;
-		height      : @swatch-size;
+		height      : @swatch-size/2;
 		display     : inline-block;
 		float       : left;
 		margin-right: 10px;
@@ -214,7 +247,7 @@ p[class^="bg"] {
 		}
 		span {
 			position : absolute;
-			top      : @swatch-size+5;
+			top      : (@swatch-size/2)+5;
 			font-size: 14px;
 			color    : @gray-text;
 		}

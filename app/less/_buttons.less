@@ -13,7 +13,7 @@
 // Button Sizes
 // --------------------------------------------------
 
-// mixin
+// -- mixin
 .button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
 	padding      : @padding-vertical @padding-horizontal;
 	font-size    : @font-size;
@@ -21,22 +21,22 @@
 	border-radius: @border-radius;
 }
 
-// actual definitions here
+// -- sizing definitions
+.btn {
+  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+}
 .btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
   .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
 }
 .btn-sm {
-  // line-height: ensure proper height of button next to small input
   .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
 }
 .btn-xs {
-  .button-size(@padding-xs-vertical; @padding-xs-horizontal; 12px; @line-height-small; @border-radius-small);
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-xsmall; @line-height-small; @border-radius-small);
 }
 
+// -- Button variants outline and solid
 
-// Button variants
-// outline and solid
 .outline-button (@color) {
 	color             : @color;
 	background-color  : transparent;
@@ -50,13 +50,18 @@
 	}
   &:active,
   &.active,
+  &:focus,
   .open .dropdown-toggle& {
 		color           : #fff;
 		background-color: darken(@color, 15%);
 		border-color    : darken(@color, 15%);
         .btn-group &, .btn-group-vertical & {
-			background-color: @color;
-			border-color    : @color;
+			background-color: darken(@color, 15%);
+			border-color    : darken(@color, 15%);
+        }
+        &:hover {
+        	background-color: darken(@color, 25%);
+        	border-color    : darken(@color, 25%);
         }
 
   }
@@ -86,8 +91,8 @@
 	transition        : background-color .3s, color .3s;
   &:hover {
 		color           : #fff;
-		background-color: darken(@color, 15%);
-		border-color    : darken(@color, 15%);
+		background-color: darken(@color, 10%);
+		border-color    : darken(@color, 10%);
   }
   &:active,
   &.active,
@@ -96,11 +101,10 @@
 		background-color: darken(@color, 25%);
 		border-color    : darken(@color, 25%);
         .btn-group & {
-			background-color: @color;
-			border-color    : @color;
+			background-color: darken(@color, 15%);
+			border-color    : darken(@color, 15%);
         }
   }
-
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
@@ -131,10 +135,6 @@
 	  }
 	}
 }
-
-
-
-
 
 
 
@@ -169,6 +169,8 @@
 			}
 		}
 	}
+
+
 }
 
 .btn-group-borderless {
@@ -176,6 +178,34 @@
 		border: none;
 	}
 }
+
+.btn-group-justified {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  > .btn,
+  > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%;
+  }
+  > .btn-group .btn {
+    width: 100%;
+  }
+  // correct the "double borders"
+  > .btn-group:not(:first-child) > .btn {
+	border-left: none;
+  }
+
+  > .btn-group .dropdown-menu {
+    left: auto;
+  }
+}
+
+
+
+
 
 //  transitory alert msg next to button
 .btn-response {
@@ -185,12 +215,37 @@
 
 // overrides for bootstrap's Close button
 .close {
-	color: @gray-mid;
+	// color: @gray-mid;
+	transition: color .5s;
 	opacity: 1.0;
 	filter: alpha(opacity=1);
 	&:hover {
-		color: @link-color-hover;
+		// color: @link-color-hover;
 		opacity: 1.0;
 		filter: alpha(opacity=1);
 	}
+}
+
+
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+
+// Success appears as green
+.btn-success {
+  .solid-button(@brand-success);
+}
+// Info appears as blue-green
+.btn-info {
+  .solid-button(@brand-info);
+}
+// Warning appears as orange
+.btn-warning {
+  .solid-button(@brand-warning);
+}
+// Danger and error appear as red
+.btn-danger {
+  .solid-button(@brand-danger);
 }

@@ -41,6 +41,12 @@
         }, {
             "label": "Tabs",
             "value": "tabs"
+        }, {
+            "label": "Headers & Footers",
+            "value": "headers"
+        }, {
+            "label": "Kendo UI",
+            "value": "kendo"
         }]
     }, {
         "label": "Elements",
