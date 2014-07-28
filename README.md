@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/PBGUX/designsystem.png?label=ready&title=Ready)](https://waffle.io/PBGUX/designsystem)
 PB Design System
 ================
 Download Zip file or Git Clone.
@@ -16,6 +15,10 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 
 ##Release Notes
+
+###0.71 July 28,2014
+
+- Small update to fix the CSS file from Bootstrap UI not being compiled into vendor.css
 
 ###0.7 July 28, 2014
 
