@@ -9,17 +9,16 @@
 //PRIMARY
 @gray-dark: #323232;
 @gray-text: #59595B;
-@gray-mid: #767676;
-@gray: @gray-mid; // to line up our terminology with bootstrap's
+@gray: #e1e1e1;
 @gray-light: #F2F2F2;
 @brand-primary: #0070C4;
 
 // SECONDARY
-@gray-disabled: #BCBEC0;
+@gray-disabled: #BFBFBF;
 @link-color: @brand-primary;
 @link-color-hover: #00487F;
-
-
+@link-hover-color: @link-color-hover; // the bootstrap name
+@link-color-disabled: #AFD2EC;
 
 //TERTIARY
 @brand-error: #CC0000; //error
@@ -30,19 +29,19 @@
 
 // CHART COLORS
 @chart-green: #00CB74;
-@chart-blue: #0070C4;
+@chart-blue: #3366ff;
 @chart-purple: #8106A9;
-@chart-yellow: #FFBF00;
+@chart-yellow: #ffcc00;
 @chart-orange: #FF9200;
 @chart-red: #FF4900;
 
 // BLUE TINTS (monochrome charts)
-@blue1: #00487F;
-@blue2: #185994;
-@blue3: #0070C4;
-@blue4: #4094D3;
-@blue5: #7FB7E1;
-@blue6: #BFDBF0;
+@blue1: #3322aa;
+@blue2: #3344cc;
+@blue3: #3366ff;
+@blue4: #668cff;
+@blue5: #99b2ff;
+@blue6: #ccd9ff;
 
 // GRAY TINTS (grayscale charts)
 @gray1: #323232;
@@ -64,11 +63,7 @@
 @text-color: @gray-text; // #555
 @text-color-dark: @gray-dark; //#333
 
-//** Global textual link color.
-@link-color:            @brand-primary;
-//** Link hover color.
-@link-hover-color:      #00487F;
-@link-color-disabled: #AFD2EC;
+
 
 @button-color: @link-color;
 @disabled-button: @link-color-disabled;
@@ -846,70 +841,3 @@
 @container-large-desktop: ((1140px + @grid-gutter-width));
 //** For `@screen-lg-min` and up.
 @container-lg: @container-large-desktop;
-
-
-
-
-// Creates a wrapper for a series of columns
-.make-row(@gutter: @grid-gutter-width) {
-  margin-left: (@gutter / -2);
-  margin-right: (@gutter / -2);
-  &:extend(.clearfix all);
-}
-// Box sizing
-.box-sizing(@boxmodel) {
-  -webkit-box-sizing: @boxmodel;
-     -moz-box-sizing: @boxmodel;
-          box-sizing: @boxmodel;
-}
-@grid-column-padding: 15px;
-
-
-/* Block Grids
-   ========================================================================== */
-.block-grid-2 { .block-grid(2); }
-.block-grid-3 { .block-grid(3); }
-.block-grid-4 { .block-grid(4); }
-.block-grid-5 { .block-grid(5); }
-.block-grid-6 { .block-grid(6); }
-.block-grid-7 { .block-grid(7); }
-
-/* Block Grids Mixins
-   ========================================================================== */
-.block-grid(@columns) {
-  .make-row();
-  padding-left: 0;
-  list-style: none;
-  li {
-    float: left;
-    min-height: 1px;
-    padding-left: @grid-column-padding;
-    padding-right: @grid-column-padding;
-    .box-sizing(border-box);
-    width: percentage(1 / @columns);
-  }
-  li:nth-of-type(@{columns}n+1) {
-    clear: both;
-  }
-}
-
-// Contextual backgrounds
-// -------------------------
-.bg-variant(@color) {
-  background-color: @color;
-  a&:hover {
-    background-color: darken(@color, 10%);
-  }
-}
-
-
-
-// Typography
-// -------------------------
-.text-emphasis-variant(@color) {
-  color: @color;
-  a&:hover {
-    color: darken(@color, 10%);
-  }
-}
-

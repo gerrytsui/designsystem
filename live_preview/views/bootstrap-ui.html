@@ -1,0 +1,153 @@
+<div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
+
+<div class="row">
+  <div class="col-md-12">
+    <!-- breadcrumb -->
+    <ol class="breadcrumb">
+      <li><a href="#/">Home</a></li>
+      <li class="active">Bootstrap UI</li>
+    </ol>
+
+    <h1 class="page-header">Bootstrap UI <span class="more-info"><a href="http://angular-ui.github.io/bootstrap" target="_blank">More Info <i class="fa fa-external-link"></i></a></span></h1>
+
+    <div class="bs-callout bs-callout-info">
+      <p>The angular-ui bootstrap components require the <strong>design_system_bootstrap_ui.css</strong> stylesheet to be included in your project. Due to limitations in the bootstrap-ui directives and templates, additional classes may be required on components for proper styling using <em>ng-class</em>.</p>
+
+      <p>Some variations of components may not be available and are noted in the examples below.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- MODAL -->
+<section class="row">
+
+  <div class="col-xs-12">
+
+    <h3 class="sh">Dialogs</h3>
+
+    <button class="btn btn-default" ng-click="modals.simple()">Simplest Dialog Box</button>
+    <button class="btn btn-default" ng-click="modals.modal()">Modal Dialog</button>
+    <button class="btn btn-default" ng-click="modals.prompt()">Prompt</button>
+    <button class="btn btn-default" ng-click="modals.draggable()">Draggable modal</button>
+
+    <p class="alert alert-info" ng-show="fullname" style="margin-top: 20px; margin-bottom: 20px;">Thanks for the feedback <strong>{{fullname}}</strong>!</p>
+
+  </div>
+
+</section>
+
+
+<!-- DATE PICKER -->
+<section class="row">
+
+  <div class="col-xs-12">
+    <h3 class="sh">Date Picker</h3>
+
+    <div class="input-group col-xs-4">
+      <input type="text" class="form-control" datepicker-popup="{{calendar.format}}" ng-model="dt" is-open="calendar.opened" datepicker-options="{{calendar.options}}" close-text="Close" show-button-bar="false" ng-click="calendar.open($event)" />
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default" ng-click="calendar.open($event)"><i class="fa fa-calendar"></i></button>
+      </span>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- TIMEPICKER -->
+<section class="row">
+  <div class="col-xs-12">
+    <h3 class="sh">Time Picker</h3>
+
+    <div class="input-group col-xs-3">
+      <input type="text" class="form-control" value="{{mytime | date:'shortTime' }}" readonly />
+      <span class="input-group-btn" dropdown>
+        <button type="button" class="btn btn-default dropdown-toggle"><i class="fa fa-clock-o"></i></button>
+          <div class="dropdown-menu dropdown-menu-right" ng-click="time.menuClick($event)">
+            <div ng-model="mytime" show-meridian="true" timepicker></div>
+          </div>
+      </span>
+      
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- TABS -->
+<section class="row">
+  <div class="col-xs-12">
+    <h3 class="sh">Tabs</h3>
+
+      <section class="row">
+
+        <div class="col-xs-6">
+          <tabset>
+            <tab heading="Static title">Static content</tab>
+            <tab ng-repeat="tab in tabs.tabset01" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
+              {{tab.content}}
+            </tab>
+            <tab ng-click="tabs.alert($event)">
+              <tab-heading>
+                <i class="glyphicon glyphicon-bell"></i> Alert!
+              </tab-heading>
+              I've got an HTML heading, and a select callback. Pretty cool!
+            </tab>
+          </tabset>
+        </div>
+
+        <div class="col-xs-6">
+          <tabset ng-class="'tab-content-bordered'">
+            <tab heading="Static title">Static content</tab>
+            <tab ng-repeat="tab in tabs.tabset02" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
+              {{tab.content}}
+            </tab>
+            <tab ng-click="tabs.alert($event)">
+              <tab-heading>
+                <i class="glyphicon glyphicon-bell"></i> Alert!
+              </tab-heading>
+              I've got an HTML heading, and a select callback. Pretty cool!
+            </tab>
+          </tabset>
+        </div>
+
+      </section>
+
+      <div class="row">
+
+        <div class="col-xs-6">
+          <div class="bs-callout bs-callout-danger">
+            <p>Vertical tabs are not supported due to limitation in the default template.</p>
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <tabset type="pills">
+            <tab heading="Static title">Static content</tab>
+            <tab ng-repeat="tab in tabs.tabset03" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">
+              {{tab.content}}
+            </tab>
+            <tab ng-click="tabs.alert($event)">
+              <tab-heading>
+                <i class="glyphicon glyphicon-bell"></i> Alert!
+              </tab-heading>
+              I've got an HTML heading, and a select callback. Pretty cool!
+            </tab>
+          </tabset>
+        </div>
+
+      </div>
+
+  </div>
+</section>
+
+
+
+
+</div> <!-- /container -->

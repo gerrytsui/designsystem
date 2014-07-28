@@ -1,4 +1,7 @@
-
+  <!--
+    note: for the dummy headers here, disabled the dropdowns by commenting out.
+    also, see the ng-class on the top-level menu items that will show the drop-arrow icon only if there are children
+  -->
 
 
 <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
@@ -13,16 +16,17 @@
 			<h1 class="page-header">Headers &amp; Footers</h1>
 		</div>
 	</div>
+</div>
 
-	<div class="row" style="padding:20px 0;">
+
+
+<!-- STANDARD HEADER -->
+<div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
+	<div class="row header-title">
 		<div class="col-md-12"><h3>Standard Header</h3></div>
 	</div>
 </div>
 
-<!--
-    note: for the dummy headers here, disabled the dropdowns by commenting out.
-    also, see the ng-class on the top-level menu items that will show the drop-arrow icon only if there are children
--->
 <div class="header-example clearfix">
   <div id="header">
   <div class="navbar navbar-default"  role="navigation" fixednav>
@@ -90,8 +94,10 @@
   </div>
 </div>
 
+
+<!-- TWO ROW HEADER -->
 <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
-	<div class="row" style="padding:40px 0;">
+	<div class="row header-title">
 		<div class="col-md-12"><h3>Two-row Header</h3></div>
 	</div>
 </div>
@@ -192,9 +198,10 @@
   </div>
 </div>
 
+
 <!-- FOOTER WITHOUT SOCIAL LINKS -->
 <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
-  <div class="row" style="padding:40px 0;">
+  <div class="row footer-title">
     <div class="col-md-12"><h3>Footer Without Social Links</h3></div>
   </div>
 </div>
@@ -218,7 +225,7 @@
 
 <!-- FOOTER WITH LEGAL LINKS -->
 <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
-    <div class="row" style="padding:40px 0;">
+    <div class="row footer-title">
         <div class="col-md-12"><h3>Footer With Legal Links</h3></div>
     </div>
 </div>
@@ -290,16 +297,15 @@
 </div>
 
 
-
 <!-- FOOTER THIN -->
 <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
-    <div class="row" style="padding:40px 0;">
-        <div class="col-md-12"><h3>Footer Thin</h3></div>
-    </div>
+  <div class="row footer-title">
+    <div class="col-md-12"><h3>Footer Thin</h3></div>
+  </div>
 </div>
 
 <!-- FOOTER -->
-<div class="footer-example clearfix">
+<div class="footer-example footer-last clearfix">
   <div id="footer" class="footer-thin">
       <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
           <div class="row">

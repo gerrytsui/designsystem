@@ -27,6 +27,7 @@
 
 
     <link rel="stylesheet" href="styles/design_system.css">
+    <link rel="stylesheet" href="styles/design_system_bootstrap_ui.css">
     <link rel="stylesheet" href="styles/live_preview.css">
 </head>
 <body ng-cloak ng-class="{'fixed-header': settings.isFixed}">
@@ -75,12 +76,12 @@
                         <a class="activity"><i class="fa fa-envelope fa-lg"></i> <b class="badge"> 21 </b></a>
                     </li>
                     <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;Walter Arthur&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-lg"></i>&nbsp;&nbsp;Walter Arthur&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#"><i class="fa fa-cogs"></i>&nbsp;&nbsp;My Account</a></li>
-                            <li><a href="#"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Dashboard</a></li>
+                            <li><a href><i class="fa fa-cogs"></i>&nbsp;&nbsp;My Account</a></li>
+                            <li><a><i class="fa fa-desktop"></i>&nbsp;&nbsp;Dashboard</a></li>
                             <li class="divider"></li>
-                            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Sign Out</a></li>
+                            <li><a><i class="fa fa-power-off"></i>&nbsp;&nbsp;Sign Out</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -174,6 +175,7 @@
     <script src="bower_components/angular-leaflet/dist/angular-leaflet-directive.js"></script>
     <script src="bower_components/ngprogress/build/ngProgress.js"></script>
     <script src="bower_components/flot/jquery.flot.js"></script>
+    <script src="bower_components/flot/jquery.flot.pie.js"></script>
     <script src="bower_components/flot/jquery.flot.resize.js"></script>
     <script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
     <script src="bower_components/angular-flot/angular-flot.js"></script>
@@ -185,7 +187,6 @@
     <script src="bower_components/kendo-ui/js/kendo.ui.core.min.js"></script>
     <script src="bower_components/angular-kendo-ui/angular-kendo.js"></script>
     <script src="bower_components/angular-rangeslider/angular.rangeSlider.js"></script>
-    <script src="scripts/vendor/bootstrap3-dialog-master/js/bootstrap-dialog.min.js"></script>
     <script src="scripts/vendor/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="scripts/vendor/angular-toggle-switch/angular-toggle-switch.js"></script>
     <!-- endbuild -->
@@ -221,6 +222,16 @@
     <script src="scripts/controllers/kendo.js"></script>
     <script src="scripts/controllers/isotope-gallery.js"></script>
     <script src="scripts/directives/pb-button-progress.js"></script>
+    <script src="scripts/directives/pb-datetimepicker.js"></script>
+    <script src="scripts/directives/pb-numeric-stepper.js"></script>
+    <script src="scripts/directives/pb-reveal-password.js"></script>
+    <script src="scripts/directives/pb-transitory-alert.js"></script>
+    <script src="scripts/directives/pb-modal-draggable.js"></script>
+    <script src="scripts/controllers/bootstrap-ui.js"></script>
+    <script src="scripts/controllers/bootstrap-ui-simple-modal.js"></script>
+    <script src="scripts/controllers/bootstrap-ui-modal.js"></script>
+    <script src="scripts/controllers/bootstrap-ui-prompt-modal.js"></script>
+    <script src="scripts/controllers/bootstrap-ui-draggable-modal.js"></script>
     <!-- endbuild -->
 
 

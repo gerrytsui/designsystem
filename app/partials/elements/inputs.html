@@ -75,7 +75,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <div class="input-group date"  id='datetimepicker1'>
+                    <div class="input-group" ng-model="datetimepicker1" pb-datetimepicker>
                         <input class="form-control" type="text">
                         <span class="input-group-btn">
                             <button class="btn btn-default"><span class="fa fa-calendar"></span></button>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="input-group date"  id='datetimepicker2'>
+                    <div class="input-group" ng-model="datetimepicker2" pb-datetimepicker>
                         <input class="form-control"  type="text">
                         <span class="input-group-btn">
                             <button class="btn btn-default"><span class="fa fa-clock-o"></span></button>
@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" class="form-control numeric" value="10">
+                        <input type="text" class="form-control" value="10" options="numericStepper" pb-numeric-stepper>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -209,9 +209,9 @@
                 <div class="form-group col-md-6">
                     <label for="">Password (with "show" toggle)</label>
                     <div class="input-group">
-                        <input class="form-control" placeholder="Enter Password" type="password" id="pwd">
+                        <input id="pwd" class="form-control" placeholder="Enter Password" type="password" />
                         <span class="input-group-btn">
-                            <button class="btn btn-default" id="reveal"><span>Show</span></button>
+                            <button class="btn btn-default" pb-reveal-password password="'pwd'" hide-label="'Hide'"><span>Show</span></button>
                         </span>
                     </div>
                 </div>
@@ -659,41 +659,3 @@
 
     </div>
 </div>
-
-
-<script>
-	$(function() {
-	   $('#reveal').on('click', function(event) {
-	   	//	event.preventDefault();
-	   		if ($('#pwd').attr('type') == 'password') {
-				$('#pwd').attr('type', 'text');
-				$(this).find('span').text('Hide');
-	   		} else {
-				$('#pwd').attr('type', 'password');
-				$(this).find('span').text('Show');
-	   		}
-	   });
-	 });
-
-      $(function () {
-          $('#datetimepicker1').datetimepicker({
-            pickTime: false
-          });
-
-          $('#datetimepicker2').datetimepicker({
-            pickDate: false
-          });
-      });
-
-      $(function() {
-        // more info at https://github.com/xFlatlinex/Numeric-Stepper
-         $('.numeric').stepper({
-            limit: [0,],        // no negative numbers
-            wheel_step:1       // Wheel increment is 1
-         });
-       });
-
-
-
-
-</script>

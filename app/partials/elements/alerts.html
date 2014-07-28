@@ -2,22 +2,29 @@
     <div class="col-md-10">
         <h1>Alerts/Callouts</h1>
 
+        <h3 class="sh">"Spot" Alerts</h3>
+        <p>Use inline on page where important info needs to be shown to user.</p>
         <h4>Danger</h4>
         <div class="alert alert-danger">
-            <strong>Oh snap!</strong> Change a few things up and try submitting again. <a href="#" class="alert-link">Click here!</a>
+            <strong>Oh snap!</strong> Change a few things up and try submitting again.
         </div>
 
         <h4>Warning</h4>
         <div class="alert alert-warning">
-            <strong>Warning!</strong> Better check yourself, you're not looking too good. <a href="#" class="alert-link">Click here!</a>
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
         </div>
 
         <h4>Success</h4>
         <div class="alert alert-success">
-            <strong>Excellent!</strong> You've finished the process. <a href="#" class="alert-link">Click here!</a>
+            <strong>Excellent!</strong> You've finished the process.
         </div>
 
         <h4>Info</h4>
+        <div class="alert alert-info">
+            <strong>Note:</strong> There are many help resources available.
+        </div>
+
+        <h3 class="sh">Alert with Link</h3>
         <div class="alert alert-info">
             <strong>Note:</strong> There are many help resources available. <a href="#" class="alert-link">Click here!</a>
         </div>
@@ -31,26 +38,28 @@
     </div>
 </section>
 
+
 <section class="row">
     <div class="col-md-10">
         <h3 class="sh">Transitory Alert</h3>
-        <button id="alert-test-1" class="btn btn-primary btn-lg">Click Me</button>
-        <span class="text-success btn-response" id="msg1"><strong>Excellent!</strong> You've finished the process.</span>
+        <span ng-model="transitoryAlert" pb-transitory-alert>
+        <button class="btn btn-primary btn-lg"
+            ng-click="setMessage()">Click Me</button>
+        </span>
     </div>
 </section>
 
 
 <section class="row">
     <div class="col-md-10">
-        <h3 class="sh">Dialogs <span class="more-info"><a href="http://nakupanda.github.io/bootstrap3-dialog/" target="_blank">More info <i class="fa fa-external-link"></i></a></span></h3>
+        <h3 class="sh">Dialogs</h3>
 
 
         <!-- Buttons to trigger modals -->
-        <!-- see jquery below, and see http://nakupanda.github.io/bootstrap3-dialog/ for more options -->
-        <button class="btn btn-default" id="modal1">Simplest Dialog Box</button>&nbsp;
-        <button class="btn btn-default" id="modal2">Modal Dialog</button>
-        <button class="btn btn-default" id="modal3">Prompt</button>
-        <button class="btn btn-default" id="modal4">Draggable modal</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal-01">Simplest Dialog Box</button>&nbsp;
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal-02">Modal Dialog</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal-03">Prompt</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal-04">Draggable modal</button>
 
     </div>
 </section>
@@ -67,25 +76,25 @@
         <h3 class="sh">Callouts</h3>
 
         <h4>Danger</h4>
-        <div class="bs-callout bs-callout-danger">
+        <div class="callout callout-danger">
             <h4>Sample Callout</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p>
         </div>
 
         <h4>Warning</h4>
-        <div class="bs-callout bs-callout-warning">
+        <div class="callout callout-warning">
             <h4>Sample Callout</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p>
         </div>
 
         <h4>Success</h4>
-        <div class="bs-callout bs-callout-success">
+        <div class="callout callout-success">
             <h4>Sample Callout</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p>
         </div>
 
         <h4>Info</h4>
-        <div class="bs-callout bs-callout-info">
+        <div class="callout callout-info">
             <h4>Sample Callout</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quasi, eaque, debitis, voluptatum iure ad corrupti praesentium magnam odit suscipit quam neque consectetur placeat consequatur ducimus sunt? Eaque sequi aperiam atque beatae fugiat aliquid inventore molestiae corrupti deleniti omnis.</p>
         </div>
@@ -106,77 +115,103 @@
 
 
 
+<!-- MODAL 01 -->
+<div id="modal-01" class="modal fade">
+  <div class="modal-dialog">
 
+    <div class="modal-content">
 
-<script>
-$(function() {
-	// transitory alert msg next to button
-    $('.btn-response').hide();
-    $('#alert-test-1').on('click', function(event) {
-        $(this).blur();
-        $('#msg1').fadeIn(500).delay(2000).fadeOut(1000);
-    });
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Simple Dialog Box</h4>
+      </div>
 
-    // modals, see http://nakupanda.github.io/bootstrap3-dialog/
+      <div class="modal-body">
+        For basic information. Can be closed with close X, ESC key, or clicking on background.
+      </div>
 
-    $('#modal1').on('click', function(event) {
-        BootstrapDialog.show({
-            type: BootstrapDialog.TYPE_DEFAULT,
-            title: 'Simple Dialog Box',
-            message: 'For basic information.  Can be closed with close X, ESC key, or clicking on background.'
-        });
-    });
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
 
-    $('#modal2').on('click', function(event) {
+    </div>
 
-        BootstrapDialog.show({
-            title: 'Modal Dialog',
-            message: 'Modal, can only be closed by button or close box.',
-            type: BootstrapDialog.TYPE_DEFAULT,
-            closable: true,
-            closeByBackdrop: false,
-            closeByKeyboard: false,
-            buttons: [
-            {
-                label: 'OK',
-                cssClass: 'btn-primary',
-                action: function(dialogItself) {
-                    dialogItself.close();
-                }
-            }
-             ]
-        });
-    });
+  </div>
+</div>
 
 
 
+<!-- MODAL 02 -->
+<div id="modal-02" class="modal fade" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog">
 
-    $('#modal3').on('click', function(event) {
-        BootstrapDialog.show({
-            type: BootstrapDialog.TYPE_DEFAULT,
-            title: 'Name Required',
-            message: $('<div></div>').load('partials/elements/prompt.html'),
-            buttons: [
-            {
-                cssClass: 'btn-primary',
-                label: 'Save',
-                action: function(dialogRef){
-                    dialogRef.close();
-                }
-            }
-            ]
-        });
-    });
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal Dialog</h4>
+      </div>
+
+      <div class="modal-body">
+        Modal, can only be closed by button or close box.
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
 
-    $('#modal4').on('click', function(event) {
-    	BootstrapDialog.show({
-            type: BootstrapDialog.TYPE_DEFAULT,
-            title: 'Movable Dialog',
-            message: 'Drag on dialog title to move your dialog if it is obscuring something.',
-            draggable: true
-        });
-    });
 
-});
-</script>
+<!-- MODAL 03 -->
+<div id="modal-03" class="modal fade" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Name Required</h4>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Please enter your name:</label>
+          <input type="text" name="fullname" id="fullname" class="form-control">
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- MODAL 04 -->
+<div id="modal-04" class="modal fade" pb-modal-draggable>
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Movable Dialog</h4>
+      </div>
+
+      <div class="modal-body">
+        Drag on dialog title to move your dialog if it is obscuring something.
+      </div>
+
+    </div>
+
+  </div>
+</div>

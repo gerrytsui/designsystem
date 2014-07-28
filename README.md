@@ -16,6 +16,19 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ##Release Notes
 
+###0.7 July 28, 2014
+
+- Updates to color palette for accessibility
+  - Eliminated "gray-mid" and moved some text objects, such as labels, to "gray-text".
+  - New "gray" added for elements such as rules and borders
+  - Revised Blue and Yellow
+  - Adjusted Blues
+- Added separate page with alternative Angular Bootstrap UI components.  The layout of this section is still being worked on.
+- Overrode some Bootstrap colors and styles that still persisted
+- Clarified Alerts pages a bit more
+- Most, if not all, JS code converted to Angular JS directives
+
+
 ###0.6 - July 18, 2014
 
 - Updated to use Bootstrap 3.2
@@ -31,7 +44,6 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 - Fixes to state colors in toggle buttons
 - Updated the angular code for the prepended checkbox
 - Much cleanup done to the Live Preview
-- Cleanup to naming and organization in Angular files
 
 ###0.5 - June 27, 2014
 

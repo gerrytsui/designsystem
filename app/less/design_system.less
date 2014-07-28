@@ -4,25 +4,17 @@
 // --------------------------------------------------
 
 @import "_variables.less";
+@import "_mixins";
 @import "_lesshat-prefixed";
 @import "_pbfont.less";
 @import "_notifications";
 @import "_form-icons";
 @import "_progress";
 @import "_buttons";
-@import "_bootstrap-dialog";
 @import "_switches";
 @import "_kendoui";
 
-.clearfix{
-  zoom:1;
-      &:before, &:after {
-        content:""; display:table;
-    }
-    &:after {
-        clear: both;
-    }
-}
+
 .container-fluid {
   padding-left : 40px;
   padding-right: 40px;
@@ -125,14 +117,14 @@ ul.spaced, ol.spaced {
 label {
     font-size  : 14px;
     font-weight: normal;
-    color      : @gray-mid;
+    color      : @gray-text;
 }
 
 hr {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border: 0;
-	border-top: 1px solid @gray-light;
+	border-top: 1px solid @gray;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -142,14 +134,58 @@ hr {
 	color: @brand-primary;
 }
 
-.modal-footer {
-	text-align: left;
-	padding: 19px 15px 15px;
+.nav-tabs {
+border-color: @gray;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	background-color: @brand-primary;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: @gray;
+}
+
+
+.modal {
+
+  &.draggable {
+    .modal-header {
+      cursor: move;
+      border-radius: 4px 4px 0 0;
+
+      &:hover {
+        background-color: @gray-light;
+      }
+      &:active {
+        background-color: darken(@gray-light, 10%);
+      }
+    }
+  }
+
+ .modal-header {
+    border-bottom: 0;
+
+    .modal-title {
+        font-size: 16px;
+        color: @brand-primary;
+    }
+    .close {
+      font-size: 20px;
+    }
+  }
+
+  .modal-body {
+    font-size: 14px;
+  }
+
+  .modal-footer {
+    text-align: left;
+    border-top: 0;
+  }
 
 }
-.bootstrap-dialog.type-default .bootstrap-dialog-title {
-	color: @brand-primary;
-}
+
+
 
 // ul {
 //     list-style: none;
@@ -270,6 +306,7 @@ fieldset {
 
 .form-control {
 	box-shadow     : none;
+	border: 1px solid @gray;
 }
 
 select[disabled] {
@@ -463,7 +500,7 @@ ul {
 		display: inline-block;
 		float: right;
 		cursor: pointer;
-		color: @gray-mid;
+		color: @gray;
 		&:hover {
 			color: @brand-primary;
 		}
@@ -643,7 +680,7 @@ div.accordion-group {
 }
 th {
 	font-weight: normal;
-	color: @gray-mid;
+	color: @gray;
 }
 
 
@@ -671,6 +708,13 @@ a.read-more {
 	.panel-body {
 		padding: 0;
 	}
+}
+
+.tab-content {
+  &.tab-content-bordered {
+    border: 1px solid @gray;
+    border-top: 0;
+  }
 }
 
 .thumb-detail h4 {
@@ -734,32 +778,32 @@ a.list-group-item {
 
 
 /* CALLOUTS (from the BS docs, but useful) */
-.bs-callout {
+.callout {
     margin: 20px 0px;
     padding: 20px;
     border-left: 4px solid #EEE;
-	&.bs-callout-info {
+	&.callout-info {
 		background-color: lighten(@state-info-bg, 12%);
 		border-color    : @state-info-border;
 		h4 {
 			color: @state-info-text;
 		}
 	}
-	&.bs-callout-danger {
+	&.callout-danger {
 		background-color: lighten(@state-danger-bg,2%);
 		border-color    : @state-danger-border;
 		h4 {
 			color: @state-danger-text;
 		}
 	}
-	&.bs-callout-warning {
+	&.callout-warning {
 		background-color: @state-warning-bg;
 		border-color    : @state-warning-border;
 		h4 {
 			color: @state-warning-text;
 		}
 	}
-	&.bs-callout-success {
+	&.callout-success {
 		background-color: @state-success-bg;
 		border-color    : @state-success-border;
 		h4 {
@@ -1268,7 +1312,7 @@ body.fixed-header {
 	border-top : 1px solid @brand-primary;
 
   a {
-    color: @gray-mid;
+    color: @gray-text;
   }
 
   &.footer-thin {
@@ -1292,7 +1336,7 @@ body.fixed-header {
 					padding-right: 10px;
 				}
 				a {
-					color: @gray-mid;
+					color: @gray-text;
 					-webkit-transition: .2s color;
 					-moz-transition   : .2s color;
 					-ms-transition    : .2s color;
@@ -1674,6 +1718,16 @@ body.fixed-header {
 
 /* Select2 overrides */
 
+.select2-drop-active {
+	border: 1px solid @brand-primary;
+	border-top: none;
+}
+.select2-results .select2-highlighted {
+	background-color: @brand-primary;
+}
+.select2-drop {
+	border: 1px solid @gray;
+}
 .select2-search input,
 .select2-search-choice-close,
 .select2-container .select2-choice abbr,
@@ -1707,6 +1761,15 @@ body.fixed-header {
 
 }
 
+// toggle switch
+.ats-switch {
+	border-color: @gray;
+}
+
+// date picker
+.bootstrap-datetimepicker-widget td.active, .bootstrap-datetimepicker-widget td.active:hover {
+background-color: @brand-primary;
+}
 
 
 
@@ -1849,3 +1912,30 @@ body.fixed-header {
 
 
 
+// Block Grids
+//   ==========================================================================
+// .block-grid-2 { .block-grid(2); }
+// .block-grid-3 { .block-grid(3); }
+// .block-grid-4 { .block-grid(4); }
+// .block-grid-5 { .block-grid(5); }
+// .block-grid-6 { .block-grid(6); }
+// .block-grid-7 { .block-grid(7); }
+
+// Block Grids Mixins
+//   ==========================================================================
+// .block-grid(@columns) {
+//   .make-row();
+//   padding-left: 0;
+//   list-style: none;
+//   li {
+//     float: left;
+//     min-height: 1px;
+//     padding-left: @grid-column-padding;
+//     padding-right: @grid-column-padding;
+//     .box-sizing(border-box);
+//     width: percentage(1 / @columns);
+//   }
+//   li:nth-of-type(@{columns}n+1) {
+//     clear: both;
+//   }
+// }
