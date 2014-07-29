@@ -16,6 +16,10 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ##Release Notes
 
+###0.72 July 29, 2014
+
+- Updates to fix a couple of styling bugs introduced when changing the Gray color.
+
 ###0.71 July 28,2014
 
 - Small update to fix the CSS file from Bootstrap UI not being compiled into vendor.css
