@@ -126,40 +126,6 @@ hr {
   margin-top: 0;
   margin-bottom: 0;
 }
-.panel.panel-block {
-  display: inline-block;
-  margin-right: 10px;
-}
-.panel-block {
-  display: inline-block;
-  margin-right: 10px;
-}
-.panel-body.panel-scroll-v {
-  overflow-y: scroll;
-  padding: 0;
-}
-.panel-body.panel-scroll-h {
-  overflow-x: scroll;
-  white-space: nowrap;
-  padding: 0;
-}
-.thumbnail.thumbnail-block {
-  margin-bottom: 10px;
-  margin-right: 10px;
-  display: inline-block;
-}
-.tabbable.scroll {
-  x-border: 1px solid red;
-}
-.tabbable.scroll > .tab-content {
-  padding: 10px;
-  overflow-y: scroll;
-  border: 1px solid #dddedf;
-  border-top: none;
-}
-.tabbable.tabScrollSample > .tab-content {
-  height: 300px;
-}
 legend .more-info,
 h3 .more-info,
 h1 .more-info {

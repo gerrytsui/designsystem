@@ -22,14 +22,19 @@
     <link rel="stylesheet" href="bower_components/angular-rangeslider/angular.rangeSlider.css" />
     <link rel="stylesheet" href="scripts/vendor/select2-bootstrap.css" />
     <link rel="stylesheet" href="scripts/vendor/angular-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" />
-    <link rel="stylesheet" href="styles/kendo.bootstrap.css" />
-    <link rel="stylesheet" href="styles/design_system_bootstrap_ui.css">
+    <!-- include next line if using Kendo UI package -->
+        <link rel="stylesheet" href="styles/kendo.bootstrap.css" />
+    <!-- include next line if using Angular Bootstrap UI package -->
+        <link rel="stylesheet" href="styles/design_system_bootstrap_ui.css">
     <!-- endbuild -->
 
 
     <link rel="stylesheet" href="styles/design_system.css">
+    <!-- next line only needed for live preview, not for production environments -->
     <link rel="stylesheet" href="styles/live_preview.css">
 </head>
+
+
 <body ng-cloak ng-class="{'fixed-header': settings.isFixed}">
 
     <div class="settings" ng-class="{'activate': settings.isOpen}">
