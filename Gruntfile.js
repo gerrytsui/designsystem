@@ -29,37 +29,55 @@ module.exports = function(grunt) {
         },
 
         // Watches files for changes and runs tasks based on the changed files
+        // modified 7/29/14 to reload css without a page reload
         watch: {
-            theme: {
-                files: ['<%= yeoman.app %>/less/{,*/}*.less'],
-                tasks: ['less:theme_dev', 'less:livepreview_dev', 'less:kendo_dev', 'less:bootstrap_ui_dev']
+            options: {
+                livereload: true,
             },
-
-            js: {
-                files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-                tasks: ['newer:jshint:all'],
+            html: {
+                files: [
+                    '<%= yeoman.app %>/partials/{,*/}*.html',
+                    '<%= yeoman.app %>/views/{,*/}*.html'
+                ]
+            },
+            less: {
+                files: ['<%= yeoman.app %>/less/{,*/}*.less'],
+                tasks: ['less:theme_dev', 'less:livepreview_dev', 'less:kendo_dev', 'less:bootstrap_ui_dev'],
                 options: {
-                    livereload: true
+                    livereload: false
                 }
             },
-            jsTest: {
-                files: ['test/spec/{,*/}*.js'],
-                tasks: ['newer:jshint:test', 'karma']
+            js: {
+                files: ['<%= yeoman.app %>/scripts/{,*/}*.js']
+                // tasks: ['newer:jshint:all']
+            },
+            css: {
+                files: ['app/styles/*.css'],
             },
             gruntfile: {
                 files: ['Gruntfile.js']
-            },
-            livereload: {
-                options: {
-                    livereload: '<%= connect.options.livereload %>'
-                },
-                files: [
-                    '<%= yeoman.app %>/partials/{,*/}*.html',
-                    '<%= yeoman.app %>/views/{,*/}*.html',
-                    '<%= yeoman.app %>/styles/**/*.css',
-                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-                ]
             }
+            // this not needed:
+            // jsTest: {
+            //     files: ['test/spec/{,*/}*.js'],
+            //     tasks: ['newer:jshint:test', 'karma']
+            // },
+            // gruntfile: {
+            //     files: ['Gruntfile.js']
+            // },
+
+            // livereload: {
+            //     options: {
+            //         livereload: true
+            //     },
+            //     files: [
+            //         '<%= yeoman.app %>/partials/{,*/}*.html',
+            //         '<%= yeoman.app %>/views/{,*/}*.html',
+            //         '<%= yeoman.app %>/styles/**/*.css',
+            //         '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+            //     ]
+            // }
+
         },
 
         // The actual grunt server settings
@@ -147,18 +165,18 @@ module.exports = function(grunt) {
                     '<%= yeoman.app %>/styles/live_preview.css': '<%= yeoman.less %>/live_preview.less'
                 }]
             },
-            // compiles live_preview.css and map to /app/styles
-            kendo_dev: {
-                options: {
-                    sourceMap: true,
-                    sourceMapFilename: '<%= yeoman.app %>/styles/kendo.boostrap.css.map',
-                    sourceMapURL: 'kendo.boostrap.css.map',
-                    outputSourceFiles: true
-                },
-                files: [{
-                    '<%= yeoman.app %>/styles/kendo.bootstrap.css': '<%= yeoman.less %>/kendo.bootstrap.less'
-                }]
-            },
+
+            // kendo_dev: {
+            //     options: {
+            //         sourceMap: true,
+            //         sourceMapFilename: '<%= yeoman.app %>/styles/kendo.boostrap.css.map',
+            //         sourceMapURL: 'kendo.boostrap.css.map',
+            //         outputSourceFiles: true
+            //     },
+            //     files: [{
+            //         '<%= yeoman.app %>/styles/kendo.bootstrap.css': '<%= yeoman.less %>/kendo.bootstrap.less'
+            //     }]
+            // },
             bootstrap_ui_dev: {
                 options: {
                     sourceMap: true,

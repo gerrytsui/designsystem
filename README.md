@@ -16,6 +16,10 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ##Release Notes
 
+###0.73 July 29,2014
+- Fixed styling buf on home page of live preview
+- updated Grunt serve command to inject css on recompile rather than force a reload.  Finally.
+
 ###0.72 July 29, 2014
 
 - Updates to fix a couple of styling bugs introduced when changing the Gray color.

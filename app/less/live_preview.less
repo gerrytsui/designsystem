@@ -29,8 +29,8 @@ section.row {
 }
 h3.section-head, h3.sh {
 	margin        : 50px 0 20px;
-	padding-bottom: 5px;
-	border-bottom : 1px solid @gray-light;
+	// padding-bottom: 5px;
+	// border-bottom : 1px solid @gray-light;
 	clear         : both;
 	&:first-child {
 		margin-top: 0;
@@ -144,40 +144,40 @@ hr {
 }
 
 
-// there are too many actual style definitions in this file
-// if components need these styles to look correct, the code should be in main file
+// home page "file icon" thumbnails
+.panel {
+	&.panel-block {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
+.panel-block {
+		display: inline-block;
+		margin-right: 10px;
+}
 
-// .panel {
-// 	&.panel-block {
-// 		display: inline-block;
-// 		margin-right: 10px;
-// 	}
-// }
-// .panel-block {
-// 		display: inline-block;
-// 		margin-right: 10px;
-// }
+.panel-body {
+	&.panel-scroll-v {
+		overflow-y: scroll;
+		padding: 0;
+	}
+	&.panel-scroll-h {
+		overflow-x: scroll;
+		white-space: nowrap;
+		padding: 0;
+	}
+}
 
-// .panel-body {
-// 	&.panel-scroll-v {
-// 		overflow-y: scroll;
-// 		padding: 0;
-// 	}
-// 	&.panel-scroll-h {
-// 		overflow-x: scroll;
-// 		white-space: nowrap;
-// 		padding: 0;
-// 	}
-// }
+.thumbnail {
+		&.thumbnail-block {
+			margin-bottom: 10px;
+			margin-right: 10px;
+			display: inline-block;
+		}
 
-// .thumbnail {
-// 		&.thumbnail-block {
-// 			margin-bottom: 10px;
-// 			margin-right: 10px;
-// 			display: inline-block;
-// 		}
+}
 
-// }
+
 
 // .tabbable {
 // 		&.scroll {
