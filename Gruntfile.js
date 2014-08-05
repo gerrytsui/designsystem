@@ -23,6 +23,7 @@ module.exports = function(grunt) {
             // configurable paths
             app: require('./bower.json').appPath || 'app',
             less: '<%= yeoman.app %>/less',
+            sass: '<%= yeoman.app %>/sass',
             dist: 'dist',
             build: 'live_preview'
 
@@ -40,9 +41,9 @@ module.exports = function(grunt) {
                     '<%= yeoman.app %>/views/{,*/}*.html'
                 ]
             },
-            less: {
-                files: ['<%= yeoman.app %>/less/{,*/}*.less'],
-                tasks: ['less:theme_dev', 'less:livepreview_dev', 'less:kendo_dev', 'less:bootstrap_ui_dev'],
+            sass: {
+            files: ['<%= yeoman.app %>/sass/{,*/}*.scss'],
+                tasks: ['sass:app'],
                 options: {
                     livereload: false
                 }
@@ -57,27 +58,37 @@ module.exports = function(grunt) {
             gruntfile: {
                 files: ['Gruntfile.js']
             }
-            // this not needed:
-            // jsTest: {
-            //     files: ['test/spec/{,*/}*.js'],
-            //     tasks: ['newer:jshint:test', 'karma']
-            // },
-            // gruntfile: {
-            //     files: ['Gruntfile.js']
-            // },
+        },
 
-            // livereload: {
-            //     options: {
-            //         livereload: true
-            //     },
-            //     files: [
-            //         '<%= yeoman.app %>/partials/{,*/}*.html',
-            //         '<%= yeoman.app %>/views/{,*/}*.html',
-            //         '<%= yeoman.app %>/styles/**/*.css',
-            //         '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-            //     ]
-            // }
+        sass: {
+          app: {
+            options: {
+              style: 'expanded',
+              sourcemap: true
+            },
+            files: {
+              '<%= yeoman.app %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss',
+              '<%= yeoman.app %>/styles/live_preview.css': '<%= yeoman.sass %>/live_preview.scss'
 
+            }
+          },
+          livepreview: {
+            options: {
+              style: 'compact'
+            },
+            files: {
+              '<%= yeoman.build %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss',
+              '<%= yeoman.build %>/styles/live_preview.css': '<%= yeoman.sass %>/live_preview.scss'
+            }
+          },
+          dist: {
+            options: {
+              style: 'compressed'
+            },
+            files: {
+              '<%= yeoman.dist %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss'
+            }
+          }
         },
 
         // The actual grunt server settings
@@ -140,87 +151,7 @@ module.exports = function(grunt) {
             src: ['build/**', 'tmp/**']
         },
 
-        less: {
-            // compiles design_system.css and maps into /app/styles
-            theme_dev: {
-                options: {
-                    sourceMap: true,
-                    sourceMapFilename: '<%= yeoman.app %>/styles/design_system.css.map',
-                    sourceMapURL: 'design_system.css.map',
-                    outputSourceFiles: true
-                },
-                files: [{
-                    '<%= yeoman.app %>/styles/design_system.css': '<%= yeoman.less %>/design_system.less'
-                }]
-            },
-            // compiles live_preview.css and map to /app/styles
-            livepreview_dev: {
-                options: {
-                    sourceMap: true,
-                    sourceMapFilename: '<%= yeoman.app %>/styles/live_preview.css.map',
-                    sourceMapURL: 'live_preview.css.map',
-                    outputSourceFiles: true
-                },
-                files: [{
-                    '<%= yeoman.app %>/styles/live_preview.css': '<%= yeoman.less %>/live_preview.less'
-                }]
-            },
 
-            // kendo_dev: {
-            //     options: {
-            //         sourceMap: true,
-            //         sourceMapFilename: '<%= yeoman.app %>/styles/kendo.boostrap.css.map',
-            //         sourceMapURL: 'kendo.boostrap.css.map',
-            //         outputSourceFiles: true
-            //     },
-            //     files: [{
-            //         '<%= yeoman.app %>/styles/kendo.bootstrap.css': '<%= yeoman.less %>/kendo.bootstrap.less'
-            //     }]
-            // },
-            bootstrap_ui_dev: {
-                options: {
-                    sourceMap: true,
-                    sourceMapFilename: '<%= yeoman.app %>/styles/design_system_boostrap_ui.css.map',
-                    sourceMapURL: 'design_system_boostrap_ui.css.map',
-                    outputSourceFiles: true
-                },
-                files: [{
-                    '<%= yeoman.app %>/styles/design_system_bootstrap_ui.css': '<%= yeoman.less %>/design_system_bootstrap_ui.less'
-                }]
-            },
-
-            // compiles design_system.css into /live_preview/styles
-            theme: {
-                options: {
-                    cleancss: true,
-                    ieCompat: true
-                },
-                files: [{
-                    '<%= yeoman.build %>/styles/design_system.css': '<%= yeoman.less %>/design_system.less'
-                }]
-            },
-            // compiles live_preview.css and map to /app/styles
-            livepreview: {
-                options: {
-                    cleancss: true,
-                    ieCompat: true
-                },
-                files: [{
-                    '<%= yeoman.build %>/styles/live_preview.css': '<%= yeoman.less %>/live_preview.less'
-                }]
-            },
-
-            dist: {
-                options: {
-                    cleancss: true,
-                    sourceMap: false,
-                    outputSourceFiles: false
-                },
-                files: [{
-                    '<%= yeoman.dist %>/styles/design_system.css': '<%= yeoman.less %>/design_system.less'
-                }]
-            }
-        },
 
         // Reads HTML for usemin blocks to enable smart builds that automatically
         // concat, minify and revision files. Creates configurations in memory so
@@ -279,6 +210,18 @@ module.exports = function(grunt) {
             }
         },
 
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 version', 'ie 8', 'ie 9']
+            },
+            all_css: {
+                expand: true,
+                flatten: true,
+                src: '<%= yeoman.app %>/styles/*.css',
+                dest: '<%= yeoman.build %> /styles/'
+            },
+        },
+
         // ngmin tries to make the code safe for minification automatically by
         // using the Angular long form for dependency injection. It doesn't work on
         // things like resolve or inject so those have to be done manually.
@@ -317,9 +260,9 @@ module.exports = function(grunt) {
                         'images/{,*/}*.{webp}',
                         'scripts/data/*.js',
                         'scripts/templates/*.html',
+                        'scripts/controllers/templates/**/*.html',
                         'fonts/*',
                         'vendor/**'
-
                     ]
                 }, {
                     expand: true,
@@ -328,14 +271,9 @@ module.exports = function(grunt) {
                     dest: '<%= yeoman.build %>/fonts'
                 }, {
                     expand: true,
-                    cwd: '<%= yeoman.app %>/less/kendo/kendobootstrap',
+                    cwd: '<%= yeoman.app %>/styles/Bootstrap',
                     src: '*',
-                    dest: '<%= yeoman.build %>/styles/kendobootstrap'
-                }, {
-                    expand: true,
-                    cwd: '<%= yeoman.build %>/styles',
-                    src: '*.css',
-                    dest: '<%= yeoman.dist %>/styles'
+                    dest: '<%= yeoman.build %>/styles/Bootstrap'
                 }]
             }
         },
@@ -397,10 +335,7 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean',
             'jshint',
-            'less:theme_dev',
-            'less:livepreview_dev',
-            'less:bootstrap_ui_dev',
-            // 'autoprefixer',
+            'sass:app',
             'connect:livereload',
             'watch'
         ]);
@@ -410,20 +345,18 @@ module.exports = function(grunt) {
         grunt.task.run([
             'clean',
             'jshint',
-            'less:theme',
-            'less:livepreview',
-            'less:dist',
+            'sass:livepreview',
+            'sass:dist',
             'useminPrepare',
             'concurrent:build',
-            // 'autoprefixer',
             'concat',
             'ngmin',
             'copy:build',
             'copy:fonts',
             'uglify',
             'cssmin',
-            'usemin'
-            //'htmlmin' // broken, not sure why
+            'usemin',
+            'htmlmin'
         ]);
 
         if (target === 'staging') {

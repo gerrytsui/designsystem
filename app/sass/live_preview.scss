@@ -1,0 +1,366 @@
+
+
+/*
+#D0E1E7
+#71A6B9
+#215262
+*/
+@import '_variables';
+
+.clearfix{
+	zoom:1;
+	&:before, &:after{ content:""; display:table; }
+	&:after{ clear: both; }
+}
+
+
+
+// Bootstrap UI (required)
+
+.nav, .pagination, .carousel, .panel-title a {
+		cursor: pointer;
+}
+
+
+
+// spacing and page layout mods for the design system pages
+section.row {
+	margin-bottom: 60px;
+}
+h3.section-head, h3.sh {
+	margin        : 50px 0 20px;
+	// padding-bottom: 5px;
+	// border-bottom : 1px solid $gray-light;
+	clear         : both;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+h6.sh {
+	clear: both;
+	margin-top: 40px;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.grid-sample .panel {
+	border       : none;
+	border-top   : 3px solid $gray;
+	border-radius: 0;
+}
+
+
+/* HEADER & FOOTER EXAMPLES */
+.header-title {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.footer-title {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.header-example {
+	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+.footer-example {
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+
+	&.footer-last {
+		margin-bottom: 120px;
+	}
+}
+
+/* Liner Gradients & Pseudo Element */
+.pseudo {
+  position: relative;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  border-bottom: 10px solid transparent;
+  z-index: 2;
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0px 1px 2px);
+  background-color: #fff;
+}
+.pseudo:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 10px;
+  bottom: -10px;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 33.333%, #ffffff 33.333%, #ffffff 66.667%, rgba(0, 0, 0, 0) 66.667%), linear-gradient(-45deg, rgba(0, 0, 0, 0) 33.333%, #ffffff 33.333%, #ffffff 66.667%, rgba(0, 0, 0, 0) 66.667%);
+  background-size: 20px 40px;
+  background-position: 50% -30px;
+  background-repeat: repeat-x;
+  z-index: 1;
+}
+
+
+
+/* Charting Demos */
+
+.piechart {
+	position: relative;
+	display: inline-block;
+
+	span {
+		font-size  : 20px;
+		position   : absolute;
+		top        : 0;
+		left       : 0;
+		display    : block;
+		text-align : center;
+		width      : 100%;
+		height     : 100%;
+		padding-top: 35%;
+	}
+}
+
+.sparkline {
+		.chart {
+				display: inline-block;
+				float: left;
+		}
+		.caption {
+			margin-left: 10px;
+			float: left;
+			display: inline-block;
+		}
+
+		h6 {
+				margin-top: 0;
+				margin-bottom: 0;
+		}
+
+		h2 {
+				margin-top: 0;
+				margin-bottom: 0;
+		}
+}
+
+
+// home page "file icon" thumbnails
+.panel {
+	&.panel-block {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
+.panel-block {
+		display: inline-block;
+		margin-right: 10px;
+}
+
+.panel-body {
+	&.panel-scroll-v {
+		overflow-y: scroll;
+		padding: 0;
+	}
+	&.panel-scroll-h {
+		overflow-x: scroll;
+		white-space: nowrap;
+		padding: 0;
+	}
+}
+
+.thumbnail {
+		&.thumbnail-block {
+			margin-bottom: 10px;
+			margin-right: 10px;
+			display: inline-block;
+		}
+
+}
+
+
+
+// .tabbable {
+// 		&.scroll {
+// 				x-border: 1px solid red;
+
+// 				> .tab-content {
+// 						padding: 10px;
+// 						overflow-y: scroll;
+// 						border: 1px solid #dddedf;
+// 						border-top: none;
+// 				}
+// 		}
+
+// 		&.tabScrollSample > .tab-content {
+// 				height: 300px;
+// 		}
+// }
+
+legend .more-info, h3 .more-info, h1 .more-info {
+	float: right;
+	font-size: 14px;
+	line-height: 1;
+	margin-top: 10px;
+}
+
+
+/* the tab that pops out of the  Live Preview */
+
+$tab-color: #333;
+
+.settings {
+		position: fixed;
+		top: 60px;
+		right: -150px;
+		width: 185px;
+		height: 100px;
+		z-index: 2000;
+		transition: all .3s;
+
+		&.activate {
+			width: 185px;
+			right: 0px;
+		}
+
+		.settings-tab {
+			float                    : left;
+			width                    : 35px;
+			text                     : center;
+			color                    : #fff;
+			background               : $tab-color;
+			padding                  : 5px;
+			border-top-left-radius   : 5px;
+			border-bottom-left-radius: 5px;
+			box-shadow               : 3px 5px 8px rgba(0,0,0,.3);
+			&:hover {
+				cursor: pointer;
+			}
+			&:active {
+				background: #71A6B9;
+			}
+		}
+
+		.settings-form {
+			float                    : right;
+			background-color         : $tab-color;
+			padding                  : 0px 10px 10px 15px;
+			height                   : 125px;
+			width                    : 150px;
+			color                    : #fff;
+			border-bottom-left-radius: 5px;
+			box-shadow               : 3px 5px 8px rgba(0,0,0,.3);
+			label {
+				font-size: 12px !important;
+				color: #fff;
+			}
+		}
+}
+
+
+
+p[class^="bg"] {
+	padding: 10px;
+}
+
+/* Color swatches */
+
+.color-swatches {
+	margin-bottom: 20px;
+	.color-swatch {
+		width       : 100%; // set them to use the BS grid
+		height      : 72px;
+		display: block;
+		margin-bottom: 5px;
+		&[class*="alert"] {
+			 border-right-width: 16px;
+			 border-right-style: solid;
+		}
+	}
+	p {
+		font-size: 14px;
+		color    : $gray-text;
+		small {
+			font-size: 11px;
+			line-height: 1.2;
+		}
+	}
+}
+
+
+/* color charts */
+.color-chart-nested {
+	position: relative;
+	float: left;
+	margin-right: 30px;
+
+	.pie {
+		position: absolute;
+		top: 86px;
+		left: 86px;
+	}
+}
+.color-blocks {
+
+	li {
+		margin-bottom: 7px;
+
+		span {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			vertical-align: middle;
+			margin-right: 15px;
+		}
+	}
+}
+.donut-varied-padded {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+
+.glyphicons {
+	li {
+		text-align: center;
+		.glyphicon, .pbfont {
+			font-size: 2em;
+		}
+	}
+}
+
+
+/* color swatch backgrounds */
+.brand-primary { background-color: $brand-primary; }
+.brand-success { background-color: $brand-success; }
+.brand-danger { background-color : $brand-error; }
+.brand-info { background-color   : $brand-info; }
+.brand-warning { background-color: $brand-warning; }
+
+.gray-dark { background-color    : $gray-dark; }
+.gray-text { background-color    : $gray-text; }
+.gray-mid { background-color     : $gray; }
+.gray-light { background-color   : $gray-light; }
+.gray-disabled { background-color: $gray-disabled; }
+.link-hover { background-color   : $link-color-hover; }
+.link-disabled { background-color: $link-color-disabled; }
+
+.chart-green { background-color  : $chart-green; }
+.chart-blue { background-color   : $chart-blue; }
+.chart-purple { background-color : $chart-purple; }
+.chart-yellow { background-color : $chart-yellow; }
+.chart-orange { background-color : $chart-orange; }
+.chart-red { background-color    : $chart-red; }
+
+.blue1 { background-color: $blue1; }
+.blue2 { background-color: $blue2; }
+.blue3 { background-color: $blue3; }
+.blue4 { background-color: $blue4; }
+.blue5 { background-color: $blue5; }
+.blue6 { background-color: $blue6; }
+
+.gray1 { background-color: $gray1; }
+.gray2 { background-color: $gray2; }
+.gray3 { background-color: $gray3; }
+.gray4 { background-color: $gray4; }
+.gray5 { background-color: $gray5; }
+.gray6 { background-color: $gray6; }

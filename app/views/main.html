@@ -45,7 +45,7 @@
 	</div>
 
 
-	<div class="row" style="padding-top: 20px;">
+	<div class="row" style="padding-top: 20px;padding-bottom: 30px;">
 		<div class="col-md-3 col-sm-4 col-xs-4 sparkline">
 			<div class="chart" jq-sparkline ng-model="sparkline" data="sparkline.data" options="sparkline.options" ></div>
 			<div class="caption">
@@ -86,7 +86,7 @@
 
 	<div class="row">
 	<div class="col-md-8">
-		<h3 class="sh">User List</h3>
+		<h3 class="sh">The Team</h3>
 		<div class="table-responsive">
 		<table class="table table-hover table-striped table-condensed">
 			<thead>
@@ -118,7 +118,11 @@
 	<div class="col-md-4">
 		<div class="row">
 			<div class="col-md-12">
-				<h3 class="sh">Team Leaders</h3>
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+					Team Leaders
+				  </div>
+
 					<table class="table table-hover">
 					<thead>
 					<tr>
@@ -134,6 +138,8 @@
 
 					 </tbody>
 					</table>
+				</div>
+
 			</div>
 		</div>
 
@@ -151,7 +157,7 @@
 						</div>
 						<div id="collapseOne2" class="panel-collapse collapse">
 							<div class="panel-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id modi sunt quibusdam obcaecati eveniet reiciendis facilis libero voluptatem distinctio vitae delectus suscipit odit quo sit unde nesciunt veritatis eligendi, dolorum, earum quas numquam exercitationem accusamus, expedita atque! Nesciunt expedita enim ad accusantium?
 							</div>
 						</div>
 					</div>
@@ -165,7 +171,7 @@
 						</div>
 						<div id="collapseTwo2" class="panel-collapse collapse in">
 							<div class="panel-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quibusdam doloremque, autem, ex suscipit quas harum ipsa, dicta fuga eos obcaecati maxime adipisci magnam qui ratione blanditiis id commodi dignissimos? Quae quidem impedit iste commodi accusamus tempora at quos, labore!
 							</div>
 						</div>
 					</div>
@@ -179,7 +185,7 @@
 						</div>
 						<div id="collapseThree2" class="panel-collapse collapse">
 							<div class="panel-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur temporibus laudantium voluptatum similique voluptate cumque eos unde, asperiores accusantium, nisi dolorem ipsam distinctio dignissimos, adipisci exercitationem odit omnis aliquam optio. Accusamus asperiores libero quaerat, optio, laboriosam saepe numquam eveniet ipsam. Esse, excepturi, nostrum. Ad quas tempora fugit, dolores quae voluptatum.
 							</div>
 						</div>
 					</div>
@@ -198,14 +204,6 @@
 	<div class="col-md-6">
 
 		<h3 class="sh">Carousel</h3>
-			<!-- <div class="panel-body panel-scroll-h">
-			<div ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]" class="thumbnail thumbnail-block text-center">
-				<img class="img-responsive" src="http://placehold.it/150x150" alt="" />
-				<strong>Saved File Title</strong><br />
-				<span class="small">Lorem ipsum dolor</span>
-			</div>
-			</div> -->
-
 		<div carousel interval="3000">
 		<div slide>
 			<img src="images/carousel2.jpg" alt="" />
@@ -233,52 +231,6 @@
 
 		</div>
 
-	</div>
-
-	<!-- scrolling panel: vertical-->
-	<div class="col-md-6">
-
-		<h3 class="sh">Thumbnail Grid</h3>
-		<div class="panel">
-		<div class="panel-body panel-scroll-v" style="height: 308px;">
-			<div ng-repeat="i in [1,2,3,4,5,6,7,8]" class="thumbnail thumbnail-block text-center">
-			<img ng-src="images/icon_{{i}}.png" width="100" height="100" alt="" />
-				<strong>Saved File Title</strong><br />
-				<span class="small">Lorem ipsum dolor</span>
-			</div>
-		</div>
-		</div>
-
-	</div>
-
-	</div><!-- /row -->
-
-	<div class="row">
-	<!-- panel-tabbed-->
-	<div class="col-md-8 col-sm-8">
-		<h3 class="sh">Tabset</h3>
-		<div tabset ng-class="{scroll:true, tabScrollSample: true}" >
-		<div tab class="tab-scrollable" heading="Tab 1">
-			<div class="media" ng-repeat="i in [1,2,3,4,5,6,7,8]" ng-class="{first:$first}">
-				<a class="pull-left" href="#">
-				<img class="media-object" data-src="holder.js/80x80" alt="80x80" src="https://s3.amazonaws.com/uifaces/faces/twitter/ooomz/128.jpg" style="width: 80px;height: 80px;">
-				</a>
-				<div class="media-body">
-					<h4 class="media-heading">Media heading</h4>
-					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-				</div>
-			</div>
-
-		</div>
-		<div tab heading="Tab 2">
-			<p>Nam interdum augue arcu, non dapibus odio interdum non. Aliquam ligula neque, scelerisque eget tempus et, vulputate semper arcu. Quisque eu dignissim ligula. Integer rutrum rhoncus dui a aliquam. Quisque venenatis ornare nibh, quis consequat nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sit amet sodales tortor. Aenean vitae eros quis est molestie rhoncus. Fusce auctor feugiat orci, quis lacinia metus sagittis sed. Morbi mollis quam nisl, et iaculis leo aliquam ut.</p>
-		</div>
-		</div>
-
-	</div>
-
-	<!-- panel: form -->
-		<div class="col-md-4 col-sm-4">
 
 		<h3 class="sh">Sample Form</h3>
 
@@ -297,13 +249,51 @@
 			<span class="help-block" ng-show="name.lastName.$error.required && name.lastName.$dirty">Please enter a last name</span>
 			</div>
 
-			<a class="btn btn-default" ng-click="nameValidate()">Default Button</a>
+			<a class="btn btn-default" ng-click="nameValidate()">Submit</a><a href="#" class="btn btn-link">Reset</a>
 
 		</div>
 
-		</div>
+	</div><!-- /col-md-6 -->
+
+	<div class="col-md-6">
+
+		<h3 class="sh">Tabset</h3>
+
+		<ul class="nav nav-tabs">
+	      <li class="active"><a data-target="#home" data-toggle="tab">Media</a></li>
+	      <li class=""><a data-target="#profile" data-toggle="tab">Notes</a></li>
+	    </ul>
+	    <div class="tab-content">
+
+	      <div class="tab-pane fade active in" id="home">
+	      	<div class="media" ng-repeat="i in [1,2,3]" ng-class="{first:$first}">
+	      		<a class="pull-left" href="#">
+	      		<img class="media-object" data-src="holder.js/80x80" alt="80x80" src="http://placehold.it/80" style="width: 80px;height: 80px;">
+	      		</a>
+	      		<div class="media-body">
+	      			<h4 class="media-heading">Media heading</h4>
+	      			<p>Cras sit amet nibh libero, in gravida nulla. Nullam vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputaunc ac nisi vulputate fringilla. </p>
+	      		</div>
+	      	</div>
+	      </div><!-- /tab 1 -->
+
+	      <div class="tab-pane fade" id="profile">
+	      	<h5>Heading 5</h5>
+	      	<p>Nam interdum augue arcu, non dapibus odio interdum non. Aliquam ligula neque, scelerisque eget tempus et, vulputate semper arcu. Quisque eu dignissim ligula. Integer rutrum rhoncus dui a aliquam. Quisque venenatis ornare nibh, quis consequat nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sit amet sodales tortor. Aenean vitae eros quis est molestie rhoncus. Fusce auctor feugiat orci, quis lacinia metus sagittis sed. Morbi mollis quam nisl, et iaculis leo aliquam ut.</p>
+	      	<div class="callout callout-info">
+	      		<h4>An Info Type Callout</h4>
+	      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus adipisci, doloremque earum magnam eligendi cumque iste pariatur sapiente aliquam quod.</p>
+	      	</div>
+
+	      </div><!-- /tab 2 -->
+
+	    </div><!-- /tab-content -->
+
+	</div><!-- /col-md-6 -->
 
 	</div><!-- /row -->
+
+
 
 
 	</div><!-- /container -->

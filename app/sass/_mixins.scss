@@ -1,0 +1,66 @@
+@mixin clearfix{
+  zoom:1;
+      &:before, &:after {
+        content:""; display:table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+
+
+
+
+// Required mixins pulled from Bootstrap's mixins.scss
+// Creates a wrapper for a series of columns
+@mixin make-row($gutter: $grid-gutter-width) {
+  margin-left:  ($gutter / -2);
+  margin-right: ($gutter / -2);
+  @include clearfix();
+}
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+$grid-column-padding: 15px;
+
+
+// Contextual backgrounds
+
+// [converter] $parent hack
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color;
+  }
+  a#{$parent}:hover {
+    background-color: darken($color, 10%);
+  }
+}
+
+
+// Typography
+// [converter] $parent hack
+@mixin text-emphasis-variant($parent, $color) {
+  #{$parent} {
+    color: $color;
+  }
+  a#{$parent}:hover {
+    color: darken($color, 10%);
+  }
+}
+
+@mixin triangle-closed {
+  content          : '\25B8'; // triangle right
+  -webkit-transform: rotate(0deg);
+  transform        : rotate(0deg);
+}
+@mixin triangle-opened {
+  content          : '\25B8'; // triangle right
+  -webkit-transform: rotate(90deg);
+  transform        : rotate(90deg);
+}

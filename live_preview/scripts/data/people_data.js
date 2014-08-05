@@ -39,25 +39,5 @@
         "image": "avatar100_f01.jpg",
         "address": "1500 Southwest 10th Avenue<br/>Topeka, KS 66606<br/>(785) 354-6000",
         "isChecked": true
-    }, {
-        "id": 5,
-        "firstName": "Anthony",
-        "lastName": "Nelson",
-        "userName": "ANelson",
-        "status": "",
-        "type": "leaf",
-        "image": "avatar100_m04.jpg",
-        "address": "2400 South Avenue A<br/>Yuma, AZ 85364<br/>(928) 336-2000",
-        "isChecked": false
-    }, {
-        "id": 6,
-        "firstName": "Thurston",
-        "lastName": "Howell",
-        "userName": "THowell",
-        "status": "",
-        "type": "leaf",
-        "image": "avatar100_m06.jpg",
-        "address": "1600 Park Avenue<br/>New York, NY 10010<br/>(212) 336-2000",
-        "isChecked": false
     }]
 }

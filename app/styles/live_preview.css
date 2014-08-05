@@ -6,32 +6,30 @@
 .clearfix {
   zoom: 1;
 }
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 .clearfix:after {
   clear: both;
 }
-.nav,
-.pagination,
-.carousel,
-.panel-title a {
+
+.nav, .pagination, .carousel, .panel-title a {
   cursor: pointer;
 }
+
 section.row {
   margin-bottom: 60px;
 }
-h3.section-head,
-h3.sh {
+
+h3.section-head, h3.sh {
   margin: 50px 0 20px;
   clear: both;
 }
-h3.section-head:first-child,
-h3.sh:first-child {
+h3.section-head:first-child, h3.sh:first-child {
   margin-top: 0;
 }
+
 h6.sh {
   clear: both;
   margin-top: 40px;
@@ -39,34 +37,41 @@ h6.sh {
 h6.sh:first-child {
   margin-top: 0;
 }
+
 hr {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .grid-sample .panel {
   border: none;
   border-top: 3px solid #e1e1e1;
   border-radius: 0;
 }
+
 /* HEADER & FOOTER EXAMPLES */
 .header-title {
   margin-top: 40px;
   margin-bottom: 20px;
 }
+
 .footer-title {
   margin-top: 60px;
   margin-bottom: 20px;
 }
+
 .header-example {
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
+
 .footer-example {
   box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
 }
 .footer-example.footer-last {
   margin-bottom: 120px;
 }
+
 /* Liner Gradients & Pseudo Element */
 .pseudo {
   position: relative;
@@ -77,6 +82,7 @@ hr {
   -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0px 1px 2px);
   background-color: #fff;
 }
+
 .pseudo:after {
   content: '';
   position: absolute;
@@ -85,12 +91,13 @@ hr {
   height: 10px;
   bottom: -10px;
   left: 0;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 33.333%, #ffffff 33.333%, #ffffff 66.667%, rgba(0, 0, 0, 0) 66.667%), linear-gradient(-45deg, rgba(0, 0, 0, 0) 33.333%, #ffffff 33.333%, #ffffff 66.667%, rgba(0, 0, 0, 0) 66.667%);
+  background-image: linear-gradient(45deg, transparent 33.333%, white 33.333%, white 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, white 33.333%, white 66.667%, transparent 66.667%);
   background-size: 20px 40px;
   background-position: 50% -30px;
   background-repeat: repeat-x;
   z-index: 1;
 }
+
 /* Charting Demos */
 .piechart {
   position: relative;
@@ -107,6 +114,7 @@ hr {
   height: 100%;
   padding-top: 35%;
 }
+
 .sparkline .chart {
   display: inline-block;
   float: left;
@@ -124,14 +132,17 @@ hr {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .panel.panel-block {
   display: inline-block;
   margin-right: 10px;
 }
+
 .panel-block {
   display: inline-block;
   margin-right: 10px;
 }
+
 .panel-body.panel-scroll-v {
   overflow-y: scroll;
   padding: 0;
@@ -141,19 +152,20 @@ hr {
   white-space: nowrap;
   padding: 0;
 }
+
 .thumbnail.thumbnail-block {
   margin-bottom: 10px;
   margin-right: 10px;
   display: inline-block;
 }
-legend .more-info,
-h3 .more-info,
-h1 .more-info {
+
+legend .more-info, h3 .more-info, h1 .more-info {
   float: right;
   font-size: 14px;
   line-height: 1;
   margin-top: 10px;
 }
+
 /* the tab that pops out of the  Live Preview */
 .settings {
   position: fixed;
@@ -199,9 +211,11 @@ h1 .more-info {
   font-size: 12px !important;
   color: #fff;
 }
+
 p[class^="bg"] {
   padding: 10px;
 }
+
 /* Color swatches */
 .color-swatches {
   margin-bottom: 20px;
@@ -224,6 +238,7 @@ p[class^="bg"] {
   font-size: 11px;
   line-height: 1.2;
 }
+
 /* color charts */
 .color-chart-nested {
   position: relative;
@@ -235,6 +250,7 @@ p[class^="bg"] {
   top: 86px;
   left: 86px;
 }
+
 .color-blocks li {
   margin-bottom: 7px;
 }
@@ -245,106 +261,138 @@ p[class^="bg"] {
   vertical-align: middle;
   margin-right: 15px;
 }
+
 .donut-varied-padded {
   margin-left: 25px;
   margin-right: 25px;
 }
+
 .glyphicons li {
   text-align: center;
 }
-.glyphicons li .glyphicon,
-.glyphicons li .pbfont {
+.glyphicons li .glyphicon, .glyphicons li .pbfont {
   font-size: 2em;
 }
+
 /* color swatch backgrounds */
 .brand-primary {
   background-color: #0070c4;
 }
+
 .brand-success {
   background-color: #007d00;
 }
+
 .brand-danger {
   background-color: #cc0000;
 }
+
 .brand-info {
   background-color: #0070c4;
 }
+
 .brand-warning {
   background-color: #826000;
 }
+
 .gray-dark {
   background-color: #323232;
 }
+
 .gray-text {
   background-color: #59595b;
 }
+
 .gray-mid {
   background-color: #e1e1e1;
 }
+
 .gray-light {
   background-color: #f2f2f2;
 }
+
 .gray-disabled {
   background-color: #bfbfbf;
 }
+
 .link-hover {
   background-color: #00487f;
 }
+
 .link-disabled {
   background-color: #afd2ec;
 }
+
 .chart-green {
   background-color: #00cb74;
 }
+
 .chart-blue {
   background-color: #3366ff;
 }
+
 .chart-purple {
   background-color: #8106a9;
 }
+
 .chart-yellow {
   background-color: #ffcc00;
 }
+
 .chart-orange {
   background-color: #ff9200;
 }
+
 .chart-red {
   background-color: #ff4900;
 }
+
 .blue1 {
   background-color: #3322aa;
 }
+
 .blue2 {
   background-color: #3344cc;
 }
+
 .blue3 {
   background-color: #3366ff;
 }
+
 .blue4 {
   background-color: #668cff;
 }
+
 .blue5 {
   background-color: #99b2ff;
 }
+
 .blue6 {
   background-color: #ccd9ff;
 }
+
 .gray1 {
   background-color: #323232;
 }
+
 .gray2 {
   background-color: #474748;
 }
+
 .gray3 {
   background-color: #59595b;
 }
+
 .gray4 {
   background-color: #838384;
 }
+
 .gray5 {
   background-color: #acacad;
 }
+
 .gray6 {
   background-color: #d5d5d6;
 }
+
 /*# sourceMappingURL=live_preview.css.map */

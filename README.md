@@ -16,6 +16,11 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ##Release Notes
 
+###0.75 August 5, 2014
+- Converted project to use SASS instead of LESS.  Updated Gruntfile to compile SASS files, removed LESS code.  Please be sure to run npm install if downloading entire package.
+- This **does not affect** the CSS file in /dist
+- Made some other fixes to clean up paths
+
 ###0.73 July 29,2014
 - Fixed styling buf on home page of live preview
 - updated Grunt serve command to inject css on recompile rather than force a reload.  Finally.
