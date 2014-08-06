@@ -19,7 +19,7 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ---
 
-If you'd like to view the "Live Preview" locally, or run the source file to make edits to source:
+If you'd like to view the "Live Preview" locally, or run the source files to make edits to source:
 
 In your Terminal, navigate (`cd`) into project folder and run `npm install`, then `bower install`.
 
