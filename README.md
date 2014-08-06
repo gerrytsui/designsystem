@@ -2,15 +2,37 @@ PB Design System
 ================
 Download Zip file or Git Clone.
 
-CD into folder and run `npm install`, then `bower install`, then `grunt serve:livepreview`.
+---
+###TL;DR:
 
-Home page of live preview should open in default browser.
+Production-ready compacted CSS file is in `/dist`.
 
-Working raw files are in `/app`.
+Compiled and processed site files are in `/live_preview`.
 
-Compiled and processed files are in `/live_preview`.
+Source files are in `/app`.
+
+
+---
+###Details
 
 The Design System CSS processed and compacted CSS file is in `/dist/styles`. To use the design system in your project, copy `design_system.css` to your project's CSS directory.  You can then create your own CSS file to hold your project's CSS and any overrides needed.
+
+---
+
+If you'd like to view the "Live Preview" locally:
+
+In your Terminal, navigate (`cd`) into project folder and run `npm install`, then `bower install`.
+
+To simply view the Live Preview at this point, run `grunt serve:livepreview`. The home page of live preview should open in default browser.
+
+---
+
+To run and view the source files, if you want to edit them further, run `grunt serve`.  The project will then run out of the `/app` directory.
+
+
+
+---
+
 
 
 
