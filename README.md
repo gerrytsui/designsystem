@@ -19,15 +19,12 @@ The Design System CSS processed and compacted CSS file is in `/dist/styles`. To 
 
 ---
 
-If you'd like to view the "Live Preview" locally:
+If you'd like to view the "Live Preview" locally, or run the source file to make edits to source:
 
 In your Terminal, navigate (`cd`) into project folder and run `npm install`, then `bower install`.
 
-To simply view the Live Preview at this point, run `grunt serve:livepreview`. The home page of live preview should open in default browser.
-
----
-
-To run and view the source files, if you want to edit them further, run `grunt serve`.  The project will then run out of the `/app` directory.
+- To simply view the Live Preview at this point, run `grunt serve:livepreview`. The home page of live preview should open in default browser.
+- To run and view the source files, if you want to edit them further, run `grunt serve`.  The project will then run out of the `/app` directory.
 
 
 
