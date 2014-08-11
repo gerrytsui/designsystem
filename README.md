@@ -35,6 +35,9 @@ In your Terminal, navigate (`cd`) into project folder and run `npm install`, the
 
 ##Release Notes
 
+###0.8 August 11, 2014
+- Fixes to Colors page, added sample charts in all colors
+
 ###0.75 August 5, 2014
 - Converted project to use SASS instead of LESS.  Updated Gruntfile to compile SASS files, removed LESS code.  Please be sure to run npm install if downloading entire package.
 - This **does not affect** the CSS file in /dist
@@ -96,7 +99,7 @@ In your Terminal, navigate (`cd`) into project folder and run `npm install`, the
 - Icons
 	- Updated page layout
 - Buttons
-	- Updated page layout   
+	- Updated page layout
 
 
 ###0.4 - June 17, 2014
@@ -109,8 +112,8 @@ In your Terminal, navigate (`cd`) into project folder and run `npm install`, the
 	- made clear prepended and appended icons the default
 	- changed button type in prepend/append to primary
 	- Added **Select2** menu and multi-picker
-- Icons: 
-	- organized FA icons by type 
+- Icons:
+	- organized FA icons by type
 	- added "pb-folder-add" icon
 - Added **Isotope** image gallery
 - Cleaned up home page and used chart colors for charts

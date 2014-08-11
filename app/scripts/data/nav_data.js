@@ -4,37 +4,37 @@
         "value": "#",
         "toggle": "dropdown",
         "children": [{
-            "label": "Home",
-            "value": "home"
-        }, {
-            "label": "Left Nav",
-            "value": "leftnav"
-        }, {
-            "label": "Two-Panel Selector",
-            "value": "two_panel_selector"
-        }, {
-            "label": "Maps",
-            "value": "maps"
-        }, {
             "label": "Faceted Search",
             "value": "faceted_search"
         }, {
             "label": "Forms",
             "value": "forms"
         }, {
+            "label": "Left Nav",
+            "value": "leftnav"
+        }, {
+            "label": "Maps",
+            "value": "maps"
+        }, {
             "label": "Gallery",
             "value": "gallery"
+        }, {
+            "label": "Two-Panel Selector",
+            "value": "two_panel_selector"
         }]
     }, {
         "label": "Components",
         "value": "#",
         "toggle": "dropdown",
         "children": [{
+            "label": "Accordion",
+            "value": "accordion"
+        }, {
             "label": "Data Grid",
             "value": "data_grid"
         }, {
-            "label": "Accordion",
-            "value": "accordion"
+            "label": "Headers & Footers",
+            "value": "headers"
         }, {
             "label": "Panels",
             "value": "panels"
@@ -42,9 +42,13 @@
             "label": "Tabs",
             "value": "tabs"
         }, {
-            "label": "Headers & Footers",
-            "value": "headers"
-        }, {
+          "type":"divider",
+          "divider": true
+        },{
+          "label": "Other Directives",
+          "type":"header",
+          "header": true
+        },{
             "label": "Kendo UI",
             "value": "kendo"
         }, {
@@ -56,36 +60,36 @@
         "value": "#",
         "toggle": "dropdown",
         "children": [{
-            "label": "Text",
-            "value": "elements?section=Text"
+            "label": "Alerts",
+            "value": "elements?section=Alerts"
         }, {
             "label": "Buttons",
             "value": "elements?section=Buttons"
         }, {
-            "label": "Alerts",
-            "value": "elements?section=Alerts"
-        }, {
-            "label": "Inputs",
-            "value": "elements?section=Inputs"
-        }, {
-            "label": "Icons",
-            "value": "elements?section=Icons"
+            "label": "Colors",
+            "value": "elements?section=Colors"
         }, {
             "label": "Grid",
             "value": "elements?section=Grid"
         }, {
-            "label": "Progress",
-            "value": "elements?section=Progress"
+            "label": "Icons",
+            "value": "elements?section=Icons"
+        }, {
+            "label": "Inputs",
+            "value": "elements?section=Inputs"
         }, {
             "label": "Popovers",
             "value": "elements?section=Popovers",
             "className": "popovers"
         }, {
+            "label": "Progress",
+            "value": "elements?section=Progress"
+        }, {
             "label": "Tables",
             "value": "elements?section=Tables"
         }, {
-            "label": "Colors",
-            "value": "elements?section=Colors"
+            "label": "Text",
+            "value": "elements?section=Text"
         }]
     }]
 }

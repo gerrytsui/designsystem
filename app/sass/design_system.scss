@@ -187,23 +187,6 @@ border-color: $gray;
 
 
 
-// ul {
-//     list-style: none;
-//     padding:0;
-//     margin:0;
-//     > li {
-//         padding-left: 1em;
-//         text-indent: -.7em;
-//         :before {
-//             content: "\002022 ";
-//             color: red; /* or whatever color you prefer */
-//         }
-//     }
-// }
-
-
-
-
 /* alerts */
 .alert-danger {
 	background-color: $alert-danger-bg;
@@ -246,7 +229,6 @@ cite    { font-style: normal; }
 .text-justify        { text-align: justify; }
 
 // Contextual colors
-
 @include text-emphasis-variant('.text-primary', $brand-primary);
 
 @include text-emphasis-variant('.text-muted', $text-muted);
@@ -502,13 +484,7 @@ ul {
 	background: #f0f0f0;
 	border:1px dashed #ddd;
 }
-// .dragbox h2.collapse{
-// 	background:#f0f0f0 url('collapse.png') no-repeat top right;
-// }
-// .dragbox h2 .configure{
-// 	font-size:11px; font-weight:normal;
-// 	margin-right:30px; float:right;
-// }
+
 
 
 /* -- ACCORDION -- */

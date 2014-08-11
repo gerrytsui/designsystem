@@ -170,7 +170,6 @@
   100% { opacity: 0; transform: translateX(-20px); } }
 .fadeOutLeft { -webkit-animation-name: fadeOutLeft; -moz-animation-name: fadeOutLeft; -o-animation-name: fadeOutLeft; animation-name: fadeOutLeft; }
 
-/* FORMS: INPUT WITH ICONS */
 .input-group .icon-addon .form-control { border-radius: 0; }
 
 .icon-addon { position: relative; color: #555; display: block; }

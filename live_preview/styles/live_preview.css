@@ -1,8 +1,3 @@
-/*
-#D0E1E7
-#71A6B9
-#215262
-*/
 .clearfix { zoom: 1; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
@@ -45,15 +40,37 @@ hr { margin-top: 30px; margin-bottom: 30px; }
 .sparkline h6 { margin-top: 0; margin-bottom: 0; }
 .sparkline h2 { margin-top: 0; margin-bottom: 0; }
 
-.panel.panel-block { display: inline-block; margin-right: 10px; }
+/* .panel {
+	&.panel-block {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
+.panel-block {
+		display: inline-block;
+		margin-right: 10px;
+}
 
-.panel-block { display: inline-block; margin-right: 10px; }
+.panel-body {
+	&.panel-scroll-v {
+		overflow-y: scroll;
+		padding: 0;
+	}
+	&.panel-scroll-h {
+		overflow-x: scroll;
+		white-space: nowrap;
+		padding: 0;
+	}
+}
 
-.panel-body.panel-scroll-v { overflow-y: scroll; padding: 0; }
-.panel-body.panel-scroll-h { overflow-x: scroll; white-space: nowrap; padding: 0; }
+.thumbnail {
+		&.thumbnail-block {
+			margin-bottom: 10px;
+			margin-right: 10px;
+			display: inline-block;
+		}
 
-.thumbnail.thumbnail-block { margin-bottom: 10px; margin-right: 10px; display: inline-block; }
-
+} */
 legend .more-info, h3 .more-info, h1 .more-info { float: right; font-size: 14px; line-height: 1; margin-top: 10px; }
 
 /* the tab that pops out of the  Live Preview */
@@ -68,9 +85,12 @@ legend .more-info, h3 .more-info, h1 .more-info { float: right; font-size: 14px;
 p[class^="bg"] { padding: 10px; }
 
 /* Color swatches */
+.row-left-border { border-left: 1px solid #e1e1e1; }
+
 .color-swatches { margin-bottom: 20px; }
 .color-swatches .color-swatch { width: 100%; height: 72px; display: block; margin-bottom: 5px; }
 .color-swatches .color-swatch[class*="alert"] { border-right-width: 16px; border-right-style: solid; }
+.color-swatches .color-swatch.color-swatch-small { height: 33px; width: 33px; display: inline-block; }
 .color-swatches p { font-size: 14px; color: #59595b; }
 .color-swatches p small { font-size: 11px; line-height: 1.2; }
 
@@ -101,7 +121,7 @@ p[class^="bg"] { padding: 10px; }
 
 .gray-text { background-color: #59595b; }
 
-.gray-mid { background-color: #e1e1e1; }
+.gray { background-color: #e1e1e1; }
 
 .gray-light { background-color: #f2f2f2; }
 

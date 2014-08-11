@@ -9,11 +9,9 @@
 }
 
 
-
-
-
-
 // Required mixins pulled from Bootstrap's mixins.scss
+
+
 // Creates a wrapper for a series of columns
 @mixin make-row($gutter: $grid-gutter-width) {
   margin-left:  ($gutter / -2);
