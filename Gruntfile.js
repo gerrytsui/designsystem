@@ -68,7 +68,9 @@ module.exports = function(grunt) {
             },
             files: {
               '<%= yeoman.app %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss',
-              '<%= yeoman.app %>/styles/live_preview.css': '<%= yeoman.sass %>/live_preview.scss'
+              '<%= yeoman.app %>/styles/live_preview.css': '<%= yeoman.sass %>/live_preview.scss',
+              '<%= yeoman.app %>/styles/ui-bootstrap.css': '<%= yeoman.sass %>/ui-bootstrap.scss',
+              '<%= yeoman.app %>/styles/kendoui.css': '<%= yeoman.sass %>/kendoui.scss'
 
             }
           },
@@ -78,7 +80,9 @@ module.exports = function(grunt) {
             },
             files: {
               '<%= yeoman.build %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss',
-              '<%= yeoman.build %>/styles/live_preview.css': '<%= yeoman.sass %>/live_preview.scss'
+              '<%= yeoman.build %>/styles/live_preview.css': '<%= yeoman.sass %>/live_preview.scss',
+              '<%= yeoman.build %>/styles/ui-bootstrap.css': '<%= yeoman.sass %>/ui-bootstrap.scss',
+              '<%= yeoman.build %>/styles/kendoui.css': '<%= yeoman.sass %>/kendoui.scss'
             }
           },
           dist: {
@@ -86,7 +90,9 @@ module.exports = function(grunt) {
               style: 'compressed'
             },
             files: {
-              '<%= yeoman.dist %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss'
+              '<%= yeoman.dist %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss',
+              '<%= yeoman.dist %>/styles/ui-bootstrap.css': '<%= yeoman.sass %>/ui-bootstrap.scss',
+              '<%= yeoman.dist %>/styles/kendoui.css': '<%= yeoman.sass %>/kendoui.scss'
             }
           }
         },

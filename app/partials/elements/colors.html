@@ -115,61 +115,62 @@
 	</section>
 
 	<section class="row">
-		<div class="col-xs-12 col-lg-6 text-center">
+		<div class="col-md-6 text-center">
 			<div class="chart" jq-sparkline ng-model="sparkline" data="colorCharts.grayscale.bar.data" options="colorCharts.grayscale.bar.options" ></div>
 		</div>
 
-		<div class="col-xs-12 col-lg-6 text-center">
+		<div class="col-md-6 text-center">
 			<div class="chart" jq-sparkline ng-model="sparkline" data="colorCharts.blue.bar.data" options="colorCharts.blue.bar.options" ></div>
 		</div>
 	</section>
 
 
 		<section class="row">
-		<!-- simplified and redid columns for these donuts -->
-			<div class="col-xs-6 col-md-2">
-				<div dataset="donutsVaried.donut01.data" options="donutsVaried.donut01.options" width="140px" height="140px" flot></div>
-			</div>
-			<div class="col-xs-6 col-md-2">
-				<div dataset="donutsVaried.donut02.data" options="donutsVaried.donut02.options" width="140px" height="140px" flot></div>
-			</div>
-			<div class="col-xs-6 col-md-2">
-				<div dataset="donutsVaried.donut03.data" options="donutsVaried.donut03.options" width="140px" height="140px" flot></div>
-			</div>
-
-			<div class="col-xs-6 col-md-2 text-center">
-				<div class="piechart" ng-model="radial_01">
-					<div easypiechart options="radial_01.options" percent="radial_01.percent"></div>
-					<span>{{radial_01.percent}}%</span>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4 col-xs-4">
+						<div dataset="donutsVaried.donut01.data" options="donutsVaried.donut01.options" width="140px" height="140px" flot></div>
+					</div>
+					<div class="col-md-4 col-xs-4">
+						<div dataset="donutsVaried.donut02.data" options="donutsVaried.donut02.options" width="140px" height="140px" flot></div>
+					</div>
+					<div class="col-md-4 col-xs-4">
+						<div dataset="donutsVaried.donut03.data" options="donutsVaried.donut03.options" width="140px" height="140px" flot></div>
+					</div>
 				</div>
 			</div>
 
-			<div class="col-xs-6 col-md-2 text-center">
-				<div class="piechart" ng-model="radial_02">
-					<div easypiechart options="radial_02.options" percent="radial_02.percent"></div>
-					<span>{{radial_02.percent}}%</span>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4 col-xs-4">
+						<div class="piechart text-center" ng-model="radial_01">
+							<div easypiechart options="radial_01.options" percent="radial_01.percent"></div>
+							<span>{{radial_01.percent}}%</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-4">
+						<div class="piechart tetext-center" ng-model="radial_02">
+							<div easypiechart options="radial_02.options" percent="radial_02.percent"></div>
+							<span>{{radial_02.percent}}%</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-4">
+						<div class="piechart tetext-center" ng-model="radial_03">
+							<div easypiechart options="radial_03.options" percent="radial_03.percent"></div>
+							<span>{{radial_03.percent}}%</span>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="col-xs-6 col-md-2 text-center">
-				<div class="piechart" ng-model="radial_03">
-					<div easypiechart options="radial_03.options" percent="radial_03.percent"></div>
-					<span>{{radial_03.percent}}%</span>
-				</div>
-			</div>
+
 		</section>
 
 
-		<div class="row">
-			<div class="col-xs-12 col-md-3"><hr/></div>
-		</div>
-
-
 		<section class="row">
-			<div class="col-xs-12 col-md-3">
+			<div class="col-md-6 text-center">
 				<p>Color Order 2: Success Rate</p>
-
-				<div class=" color-swatches ">
+				<div class="color-swatches ">
 						<span class="color-swatch color-swatch-small chart-green"></span>
 						<span class="color-swatch color-swatch-small chart-blue"></span>
 						<span class="color-swatch color-swatch-small chart-purple"></span>
@@ -177,130 +178,128 @@
 						<span class="color-swatch color-swatch-small chart-orange"></span>
 						<span class="color-swatch color-swatch-small chart-red"></span>
 				</div>
+			</div>
+			<div class="col-md-6 text-center">
+				<p>Color Order 2: Bar Graph</p>
+				<div class="chart" data="bar_chart_01.data" options="bar_chart_01.options" jq-sparkline></div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+		<section class="row">
+			<div class="col-md-6 text-center">
+					<p>Color Order 2: Percentage Charts</p>
+					<section class="row">
+						<div class="col-md-4 col-xs-4 text-center">
+							<div class="piechart" ng-model="percentage_01">
+								<div easypiechart options="percentage_01.options" percent="percentage_01.percent"></div>
+								<span>{{percentage_01.percent}}%</span>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-xs-4 text-center">
+							<div class="piechart" ng-model="percentage_02">
+								<div easypiechart options="percentage_02.options" percent="percentage_02.percent"></div>
+								<span>{{percentage_02.percent}}%</span>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-xs-4 text-center">
+							<div class="piechart" ng-model="percentage_03">
+								<div easypiechart options="percentage_03.options" percent="percentage_03.percent"></div>
+								<span>{{percentage_03.percent}}%</span>
+							</div>
+						</div>
+					</section>
+
+
+					<section class="row">
+						<div class="col-md-4 col-xs-4 text-center">
+							<div class="piechart" ng-model="percentage_04">
+								<div easypiechart options="percentage_04.options" percent="percentage_04.percent"></div>
+								<span>{{percentage_04.percent}}%</span>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-xs-4 text-center">
+							<div class="piechart" ng-model="percentage_05">
+								<div easypiechart options="percentage_05.options" percent="percentage_05.percent"></div>
+								<span>{{percentage_05.percent}}%</span>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-xs-4 text-center">
+							<div class="piechart" ng-model="percentage_06">
+								<div easypiechart options="percentage_06.options" percent="percentage_06.percent"></div>
+								<span>{{percentage_06.percent}}%</span>
+							</div>
+						</div>
+					</section>
+
+
+					<section class="row">
+						<div class="col-md-6 col-xs-6 text-center">
+							<p>Color Order 1:<br>Donut Chart</p>
+							<div class="donut" dataset="donut_chart.data" options="donut_chart.options" width="100px" height="100px" flot></div>
+						</div>
+
+						<div class="col-md-6 col-xs-6 text-center">
+							<p>Color Order 2:<br>Pie Chart</p>
+							<div class="pie" dataset="pie_chart.data" options="pie_chart.options" width="100px" height="100px" flot></div>
+						</div>
+					</section>
 
 			</div>
 
-			<div class="col-xs-12 col-md-9">
 
-				<div class="row row-left-border">
-						<div class="col-xs-12 col-md-6 col-md-offset-1">
-							<p class="text-mouse">Color Order 2: Percentage Charts</p>
 
-							<section class="row">
+			<div class="col-md-6">
 
-								<div class="col-xs-6 col-md-4 text-center">
-									<div class="piechart" ng-model="percentage_01">
-										<div easypiechart options="percentage_01.options" percent="percentage_01.percent"></div>
-										<span>{{percentage_01.percent}}%</span>
-									</div>
-								</div>
+				<div class="row">
+					<div class="col-md-6 col-xs-6 text-center">
+            <p>Every Other 1</p>
+						<div class="pie" dataset="tri_pie_01.data" options="tri_pie_01.options" width="100px" height="100px" flot></div>
+					</div>
 
-								<div class="col-xs-6 col-md-4 text-center">
-									<div class="piechart" ng-model="percentage_02">
-										<div easypiechart options="percentage_02.options" percent="percentage_02.percent"></div>
-										<span>{{percentage_02.percent}}%</span>
-									</div>
-								</div>
+					<div class="col-md-6 col-xs-6 text-center">
+            <p>Every Other 2</p>
+						<div class="pie" dataset="tri_pie_02.data" options="tri_pie_02.options" width="100px" height="100px" flot></div>
+					</div>
+				</div>
 
-								<div class="col-xs-6 col-md-4 text-center">
-									<div class="piechart" ng-model="percentage_03">
-										<div easypiechart options="percentage_03.options" percent="percentage_03.percent"></div>
-										<span>{{percentage_03.percent}}%</span>
-									</div>
-								</div>
+				<div class="row">
+					<div class="col-md-6 col-xs-6 text-center">
+            <p>First Three</p>
+						<div class="pie" dataset="tri_pie_03.data" options="tri_pie_03.options" width="100px" height="100px" flot></div>
+					</div>
 
-								<div class="col-xs-6 col-md-4 text-center">
-									<div class="piechart" ng-model="percentage_04">
-										<div easypiechart options="percentage_04.options" percent="percentage_04.percent"></div>
-										<span>{{percentage_04.percent}}%</span>
-									</div>
-								</div>
+					<div class="col-md-6 col-xs-6 text-center">
+            <p>Last Three</p>
+						<div class="pie" dataset="tri_pie_04.data" options="tri_pie_04.options" width="100px" height="100px" flot></div>
+					</div>
+				</div>
 
-								<div class="col-xs-6 col-md-4 text-center">
-									<div class="piechart" ng-model="percentage_05">
-										<div easypiechart options="percentage_05.options" percent="percentage_05.percent"></div>
-										<span>{{percentage_05.percent}}%</span>
-									</div>
-								</div>
+				<div class="row">
+					<div class="col-md-6 col-xs-6 text-center">
+            <p>Traffic Light</p>
+						<div class="pie" dataset="tri_pie_05.data" options="tri_pie_05.options" width="100px" height="100px" flot></div>
+					</div>
 
-								<div class="col-xs-6 col-md-4 text-center">
-									<div class="piechart" ng-model="percentage_06">
-										<div easypiechart options="percentage_06.options" percent="percentage_06.percent"></div>
-										<span>{{percentage_06.percent}}%</span>
-									</div>
-								</div>
-							</section>
-
-							<div class="row">
-								<div class="col-xs-6 col-md-6">
-									<p class="text-mouse">Color Order 1: Donut Chart</p>
-									<div dataset="donut_chart.data" options="donut_chart.options" width="140px" height="140px" flot></div>
-								</div>
-
-								<div class="col-xs-6 col-md-6">
-									<p class="text-mouse">Color Order 2: Pie Chart</p>
-									<div class="pie" dataset="pie_chart.data" options="pie_chart.options" width="100px" height="100px" flot></div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-xs-12 col-md-4 col-md-offset-1">
-
-							<div class="row">
-
-								<div class="col-xs-6 col-md-6">
-									<p class="text-mouse">Every Other 1</p>
-									<div class="pie" dataset="tri_pie_01.data" options="tri_pie_01.options" width="80px" height="80px" flot></div>
-								</div>
-
-								<div class="col-xs-6 col-md-6">
-									<p class="text-mouse">Every Other 2</p>
-									<div class="pie" dataset="tri_pie_02.data" options="tri_pie_02.options" width="80px" height="80px" flot></div>
-								</div>
-
-							</div>
-
-							<div class="row">
-
-								<div class="col-xs-6 col-md-6">
-									<p class="text-mouse">First Three</p>
-									<div class="pie" dataset="tri_pie_03.data" options="tri_pie_03.options" width="80px" height="80px" flot></div>
-								</div>
-
-								<div class="col-xs-6 col-md-6">
-									<p class="text-mouse">Last Three</p>
-									<div class="pie" dataset="tri_pie_04.data" options="tri_pie_04.options" width="80px" height="80px" flot></div>
-								</div>
-
-							</div>
-
-							<section class="row">
-
-								<div class="col-xs-6 col-md-6">
-									<p class="text-mouse">Traffic Light</p>
-									<div class="pie" dataset="tri_pie_05.data" options="tri_pie_05.options" width="80px" height="80px" flot></div>
-								</div>
-
-								<div class="col-xs-6 col-md-6">
-									<p class="text-mouse">Monochrome</p>
-									<div class="pie" dataset="tri_pie_06.data" options="tri_pie_06.options" width="80px" height="80px" flot></div>
-								</div>
-
-							</section>
-
-							<div class="row">
-								<div class="col-xs-12">
-									<p class="text-mouse">Color Order 2: Bar Graph</p>
-									<div class="chart" data="bar_chart_01.data" options="bar_chart_01.options" jq-sparkline></div>
-								</div>
-							</div>
-
-						</div>
+					<div class="col-md-6 col-xs-6 text-center">
+            <p>Monochrome</p>
+						<div class="pie" dataset="tri_pie_06.data" options="tri_pie_06.options" width="100px" height="100px" flot></div>
+					</div>
 				</div>
 
 			</div>
 		</section>
+
 
 
 

@@ -103,8 +103,12 @@ p[class^="bg"] { padding: 10px; }
 
 .donut-varied-padded { margin-left: 25px; margin-right: 25px; }
 
+.fpo-grad { background-color: #aaa; padding: 10px; }
+
 .glyphicons li { text-align: center; }
 .glyphicons li .glyphicon, .glyphicons li .pbfont { font-size: 2em; }
+
+.text-center .pie, .text-center .donut { margin: 0 auto 20px; width: 100px; }
 
 /* color swatch backgrounds */
 .brand-primary { background-color: #0070c4; }

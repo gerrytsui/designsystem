@@ -1,6 +1,9 @@
 
-/* slider */
+/* kendo UI */
 
+@import "variables";
+
+// slider
 .k-slider-track {
 	background-color: $gray-light;
 	box-shadow: none;
@@ -8,14 +11,6 @@
 .k-slider-selection {
 	background-color: $brand-primary;
 }
-// .k-draghandle {
-// 	border: 1px solid $brand-primary;
-// 	box-shadow: none;
-// 	&:hover {
-// 		color: $brand-primary;
-// 		border-color: $brand-primary;
-// 	}
-// }
 .k-button {
 	border: 1px solid $brand-primary;
 	background-color: transparent;
