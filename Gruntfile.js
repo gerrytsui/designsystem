@@ -342,6 +342,7 @@ module.exports = function(grunt) {
             'clean',
             'jshint',
             'sass:app',
+            'sass:dist',
             'connect:livereload',
             'watch'
         ]);
