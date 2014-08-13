@@ -371,3 +371,35 @@ p[class^="bg"] {
 .gray4 { background-color: $gray4; }
 .gray5 { background-color: $gray5; }
 .gray6 { background-color: $gray6; }
+
+
+
+/* panels page */
+  .list-group-details .form-group {
+    margin-bottom: 0;
+  }
+  .list-group-details .control-label {
+    padding-top: 3px;
+		padding-right: 0;
+		text-align: left;
+
+		strong {
+			background-color: #fff;
+			padding-right: .3em;
+		}
+
+		&:before {
+			content: "..........................................";
+			float: left;
+			white-space: nowrap;
+			width: 0;
+			color: $gray;
+		}
+  }
+  .list-group-details .form-control-static {
+		background-color: #fff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+		padding-left: .3em;
+		word-wrap: break-word;
+  }

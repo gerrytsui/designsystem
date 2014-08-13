@@ -415,4 +415,34 @@ p[class^="bg"] {
   background-color: #d5d5d6;
 }
 
+/* panels page */
+.list-group-details .form-group {
+  margin-bottom: 0;
+}
+
+.list-group-details .control-label {
+  padding-top: 3px;
+  padding-right: 0;
+  text-align: left;
+}
+.list-group-details .control-label strong {
+  background-color: #fff;
+  padding-right: .3em;
+}
+.list-group-details .control-label:before {
+  content: "..........................................";
+  float: left;
+  white-space: nowrap;
+  width: 0;
+  color: #e1e1e1;
+}
+
+.list-group-details .form-control-static {
+  background-color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: .3em;
+  word-wrap: break-word;
+}
+
 /*# sourceMappingURL=live_preview.css.map */

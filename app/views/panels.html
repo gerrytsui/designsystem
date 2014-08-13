@@ -104,6 +104,72 @@
 </section>
 
 
+<!-- miller columns with spectrum data -->
+<section class="row flush-panel-group" ng-style="{height:panelHeight}">
+
+  <!-- top level -->
+  <div class="col-md-4 alpha">
+
+    <div class="panel panel-default">
+      <div class="list-group">
+        <a href="" class="list-group-item" ng-class="{active: $index === millercolumn.dataSelected}" ng-click="getSublevel1($index)" ng-repeat="d in millercolumn.data">
+          {{d.name}} <i class="pull-right fa fa-angle-right fa-lg"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- level1 -->
+    <div class="col-md-3 inner">
+      <div class="panel panel-default">
+        <div class="list-group">
+          <a href="" class="list-group-item" ng-class="{active: $index === millercolumn.level1Selected && l.versionInfos.length > 0}" ng-click="getSublevel2($index)" ng-repeat="l in millercolumn.level1">
+            {{l.name}} <i ng-show="l.versionInfos" class="pull-right fa fa-angle-right fa-lg"></i> <span class="badge">{{l.versionInfos.length}}</span></a>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- level 2 -->
+  <div class="col-md-5 omega">
+    <div class="panel panel-default">
+
+      <ul class="list-group list-group-details">
+        <li ng-repeat="l in millercolumn.level2" class="list-group-item">
+
+          <div class="form-horizontal">
+
+						<h4 class="text-primary">{{l.name}}</h4>
+
+            <div ng-show="l.version" class="form-group">
+              <label class="col-md-4 control-label"><strong>Version</strong></label>
+              <div class="col-md-8">
+                <p>{{l.version}}</p>
+              </div>
+            </div>
+
+            <!-- attributes -->
+            <div ng-repeat="a in l.attributes">
+              <div class="form-group">
+                <label class="col-md-4 control-label"><strong>{{a.label}}</strong></label>
+                <p class="col-md-8 form-control-static">{{a.value}}</p>
+              </div>
+            </div>
+
+          </div>
+
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
 
 
 <div class="row">
