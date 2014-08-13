@@ -36,15 +36,15 @@
 }
 
 // -- Button variants outline and solid
-
-@mixin outline-button ($color) {
+// outline button, we added a knockout one, hence the added params
+@mixin outline-button ($color: $c, $foreground: white, $disabled: $disabled-button ) {
 	color             : $color;
 	background-color  : transparent;
 	border-color      : $color;
 	-webkit-transition: background-color .3s, color .3s;
 	transition        : background-color .3s, color .3s;
 	&:hover {
-		color           : #fff;
+		color           : $foreground;
 		background-color: $color;
 		border-color    : $color;
 	}
@@ -52,7 +52,7 @@
   &.active,
   &:focus,
   .open .dropdown-toggle & {
-		color           : #fff;
+		color           : $foreground;
 		background-color: darken($color, 15%);
 		border-color    : darken($color, 15%);
         .btn-group &, .btn-group-vertical & {
@@ -73,8 +73,8 @@
     &:active,
     &.active {
 		background-color: transparent;
-		border-color    : $disabled-button;
-		color           : $disabled-button;
+		border-color    : $disabled;
+		color           : $disabled;
 		opacity         : 1.0;
     }
   }
@@ -137,10 +137,12 @@
 }
 
 
-
 // set up our two types of buttons
 .btn-default {
 	@include outline-button($button-color);
+}
+.btn-default-ko {
+	@include outline-button(white, $brand-primary, $gray);
 }
 
 .btn-primary {

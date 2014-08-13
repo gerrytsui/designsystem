@@ -313,6 +313,11 @@ p[class^="bg"] {
 	margin-right: 25px;
 }
 
+.fpo-grad {
+	background-color: #aaa;
+	padding: 10px;
+}
+
 
 .glyphicons {
 	li {
@@ -320,6 +325,13 @@ p[class^="bg"] {
 		.glyphicon, .pbfont {
 			font-size: 2em;
 		}
+	}
+}
+
+.text-center {
+	.pie, .donut {
+		margin: 0 auto 20px;
+		width: 100px;
 	}
 }
 

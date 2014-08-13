@@ -35,6 +35,10 @@ In your Terminal, navigate (`cd`) into project folder and run `npm install`, the
 
 ##Release Notes
 
+###0.85 August 12, 2014
+- Separated Kendo UI and UI-Bootstrap into their own CSS files
+- Fixed Knockout button bug
+
 ###0.8 August 11, 2014
 - Fixes to Colors page, added sample charts in all colors
 

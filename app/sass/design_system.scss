@@ -3,17 +3,14 @@
 // Load core variables and mixins
 // --------------------------------------------------
 
-@import "_variables";
-@import "_mixins";
-@import "_pbfont";
-@import "_notifications";
-@import "_form-icons";
-@import "_progress";
-@import "_buttons";
-@import "_switches";
-@import "_ui-bootstrap";
-@import "_kendoui";
-
+@import "variables";
+@import "mixins";
+@import "pbfont";
+@import "notifications";
+@import "form-icons";
+@import "progress";
+@import "buttons";
+@import "switches";
 
 
 .container-fluid {

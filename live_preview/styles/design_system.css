@@ -226,11 +226,18 @@
 .btn-xs { padding: 1px 5px; font-size: 12px; line-height: 1.5; border-radius: 2px; }
 
 .btn-default { color: #0070c4; background-color: transparent; border-color: #0070c4; -webkit-transition: background-color .3s, color .3s; transition: background-color .3s, color .3s; }
-.btn-default:hover { color: #fff; background-color: #0070c4; border-color: #0070c4; }
-.btn-default:active, .btn-default.active, .btn-default:focus, .open .dropdown-toggle .btn-default { color: #fff; background-color: #004478; border-color: #004478; }
+.btn-default:hover { color: white; background-color: #0070c4; border-color: #0070c4; }
+.btn-default:active, .btn-default.active, .btn-default:focus, .open .dropdown-toggle .btn-default { color: white; background-color: #004478; border-color: #004478; }
 .btn-group .btn-default:active, .btn-group-vertical .btn-default:active, .btn-group .btn-default.active, .btn-group-vertical .btn-default.active, .btn-group .btn-default:focus, .btn-group-vertical .btn-default:focus, .btn-group .open .dropdown-toggle .btn-default, .btn-group-vertical .open .dropdown-toggle .btn-default { background-color: #004478; border-color: #004478; }
 .btn-default:active:hover, .btn-default.active:hover, .btn-default:focus:hover, .open .dropdown-toggle .btn-default:hover { background-color: #002745; border-color: #002745; }
 .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active { background-color: transparent; border-color: #afd2ec; color: #afd2ec; opacity: 1.0; }
+
+.btn-default-ko { color: white; background-color: transparent; border-color: white; -webkit-transition: background-color .3s, color .3s; transition: background-color .3s, color .3s; }
+.btn-default-ko:hover { color: #0070c4; background-color: white; border-color: white; }
+.btn-default-ko:active, .btn-default-ko.active, .btn-default-ko:focus, .open .dropdown-toggle .btn-default-ko { color: #0070c4; background-color: #d9d9d9; border-color: #d9d9d9; }
+.btn-group .btn-default-ko:active, .btn-group-vertical .btn-default-ko:active, .btn-group .btn-default-ko.active, .btn-group-vertical .btn-default-ko.active, .btn-group .btn-default-ko:focus, .btn-group-vertical .btn-default-ko:focus, .btn-group .open .dropdown-toggle .btn-default-ko, .btn-group-vertical .open .dropdown-toggle .btn-default-ko { background-color: #d9d9d9; border-color: #d9d9d9; }
+.btn-default-ko:active:hover, .btn-default-ko.active:hover, .btn-default-ko:focus:hover, .open .dropdown-toggle .btn-default-ko:hover { background-color: #bfbfbf; border-color: #bfbfbf; }
+.btn-default-ko.disabled, .btn-default-ko.disabled:hover, .btn-default-ko.disabled:active, .btn-default-ko.disabled.active, .btn-default-ko[disabled], .btn-default-ko[disabled]:hover, .btn-default-ko[disabled]:active, .btn-default-ko[disabled].active, fieldset[disabled] .btn-default-ko, fieldset[disabled] .btn-default-ko:hover, fieldset[disabled] .btn-default-ko:active, fieldset[disabled] .btn-default-ko.active { background-color: transparent; border-color: #e1e1e1; color: #e1e1e1; opacity: 1.0; }
 
 .btn-primary { color: #fff; background-color: #0070c4; border-color: #0070c4; -webkit-transition: background-color .3s, color .3s; -moz-transition: background-color .3s, color .3s; -ms-transition: background-color .3s, color .3s; -o-transition: background-color .3s, color .3s; transition: background-color .3s, color .3s; }
 .btn-primary:hover { color: #fff; background-color: #005391; border-color: #005391; }
@@ -303,34 +310,6 @@ input.cmn-toggle-round-flat + label:after { top: 4px; left: 4px; bottom: 4px; wi
 input.cmn-toggle-round-flat:checked + label { background-color: #0070c4; }
 
 input.cmn-toggle-round-flat:checked + label:after { margin-left: 50px; background-color: #0070c4; }
-
-/* added per bootstrap-ui documentation */
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
-
-/* DATEPICKER */
-ul[datepicker-popup-wrap] { padding: 15px 10px; }
-ul[datepicker-popup-wrap] table:focus { outline: none; }
-ul[datepicker-popup-wrap] thead tr th button { border: none; }
-ul[datepicker-popup-wrap] tbody tr td { padding-right: 1px; padding-left: 1px; border: red; }
-ul[datepicker-popup-wrap] tbody tr td button { border: none; }
-ul[datepicker-popup-wrap] tbody tr td button.active { background: #0070c4; }
-ul[datepicker-popup-wrap] tbody tr td button.active span { color: #fff; }
-
-/* TIMEPICKER */
-table[timepicker] tbody tr td { padding-left: 3px; padding-right: 3px; }
-table[timepicker] tbody tr td input { padding: 0; }
-.dropdown-menu table[timepicker] { margin: 10px; }
-
-/* TABS */
-.tab-content-bordered .tab-content { border: 1px solid #ddd; border-top: none; border-radius: 0px 0px 4px 4px; }
-
-/* slider */
-.k-slider-track { background-color: #f2f2f2; box-shadow: none; }
-
-.k-slider-selection { background-color: #0070c4; }
-
-.k-button { border: 1px solid #0070c4; background-color: transparent; color: #0070c4; }
-.k-button:hover { border-color: #0070c4; background-color: #0070c4; color: #fff; }
 
 .container-fluid { padding-left: 40px; padding-right: 40px; margin-left: auto; margin-right: auto; }
 

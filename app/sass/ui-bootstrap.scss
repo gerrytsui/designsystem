@@ -1,5 +1,7 @@
+@import "variables";
 
-/* added per bootstrap-ui documentation */
+
+// added per bootstrap-ui documentation */
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 /* DATEPICKER */
@@ -23,22 +25,17 @@ ul[datepicker-popup-wrap]{
       padding-right: 1px;
       padding-left: 1px;
       border: red;
-
       button {
         border: none;
-
         &.active {
           background: $brand-primary;
-
           span {
             color: #fff;
           }
-
         }
       }
     }
   }
-
 }
 
 
@@ -48,12 +45,10 @@ table[timepicker]{
   tbody tr td {
     padding-left: 3px;
     padding-right: 3px;
-
     input {
       padding: 0;
     }
   }
-
   .dropdown-menu & {
     margin: 10px;
   }
@@ -62,11 +57,9 @@ table[timepicker]{
 
 /* TABS */
 .tab-content-bordered {
-
   .tab-content {
     border: 1px solid #ddd;
     border-top: none;
     border-radius: 0px 0px 4px 4px;
   }
-
 }
