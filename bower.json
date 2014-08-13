@@ -43,8 +43,8 @@
     "spinjs": "~2.0.1"
   },
   "resolutions": {
-    "angular": "~1.2.2",
     "bootstrap": "~3.2.0",
-    "select2": "~3.5.0"
+    "select2": "~3.5.0",
+    "moment": ">=2.8.0"
   }
 }

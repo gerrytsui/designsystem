@@ -1,2 +1,4 @@
 /.sublime-grunt.cache
 app/bower_components
+.sass-cache
+node_modules
