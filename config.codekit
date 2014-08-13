@@ -724,15 +724,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/partials\/elements\/buttons.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/partials\/elements\/buttons.html",
+=======
+	"\/app\/partials\/elements\/alerts.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/alerts.html",
+>>>>>>> Stashed changes
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/partials\/elements\/carousel.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -874,14 +883,139 @@
 		"useLibsass": 0
 		},
 	"\/app\/sass\/_mixins.scss": {
+=======
+	"\/app\/partials\/elements\/buttons.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/buttons.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/carousel.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/carousel.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/colors.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/colors.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/grid.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/grid.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/icons.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/icons.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/images.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/images.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/inputs.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/inputs.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/other.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/other.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/popovers.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/popovers.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/progress.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/progress.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/prompt.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/prompt.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/tables.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/tables.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/partials\/elements\/text.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/partials\/elements\/text.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/sass\/_buttons.scss": {
+>>>>>>> Stashed changes
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
 		"inputAbbreviatedPath": "\/app\/sass\/_mixins.scss",
 		"outputAbbreviatedPath": "\/app\/css\/_mixins.css",
+=======
+		"inputAbbreviatedPath": "\/app\/sass\/_buttons.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/_buttons.css",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -889,15 +1023,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/sass\/_notifications.scss": {
+=======
+	"\/app\/sass\/_form-icons.scss": {
+>>>>>>> Stashed changes
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
 		"inputAbbreviatedPath": "\/app\/sass\/_notifications.scss",
 		"outputAbbreviatedPath": "\/app\/css\/_notifications.css",
+=======
+		"inputAbbreviatedPath": "\/app\/sass\/_form-icons.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/_form-icons.css",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -905,15 +1048,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/sass\/_pbfont.scss": {
+=======
+	"\/app\/sass\/_mixins.scss": {
+>>>>>>> Stashed changes
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
 		"inputAbbreviatedPath": "\/app\/sass\/_pbfont.scss",
 		"outputAbbreviatedPath": "\/app\/css\/_pbfont.css",
+=======
+		"inputAbbreviatedPath": "\/app\/sass\/_mixins.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/_mixins.css",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -921,15 +1073,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/sass\/_progress.scss": {
+=======
+	"\/app\/sass\/_notifications.scss": {
+>>>>>>> Stashed changes
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
 		"inputAbbreviatedPath": "\/app\/sass\/_progress.scss",
 		"outputAbbreviatedPath": "\/app\/css\/_progress.css",
+=======
+		"inputAbbreviatedPath": "\/app\/sass\/_notifications.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/_notifications.css",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -937,15 +1098,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/sass\/_switches.scss": {
+=======
+	"\/app\/sass\/_pbfont.scss": {
+>>>>>>> Stashed changes
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
 		"inputAbbreviatedPath": "\/app\/sass\/_switches.scss",
 		"outputAbbreviatedPath": "\/app\/css\/_switches.css",
+=======
+		"inputAbbreviatedPath": "\/app\/sass\/_pbfont.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/_pbfont.css",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -953,15 +1123,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/sass\/_variables.scss": {
+=======
+	"\/app\/sass\/_progress.scss": {
+>>>>>>> Stashed changes
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
 		"inputAbbreviatedPath": "\/app\/sass\/_variables.scss",
 		"outputAbbreviatedPath": "\/app\/css\/_variables.css",
+=======
+		"inputAbbreviatedPath": "\/app\/sass\/_progress.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/_progress.css",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -969,15 +1148,26 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/sass\/design_system.scss": {
+=======
+	"\/app\/sass\/_switches.scss": {
+>>>>>>> Stashed changes
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
+<<<<<<< Updated upstream
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/sass\/design_system.scss",
 		"outputAbbreviatedPath": "\/app\/css\/design_system.css",
+=======
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/sass\/_switches.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/_switches.css",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -985,21 +1175,33 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/sass\/kendoui.scss": {
+=======
+	"\/app\/sass\/_variables.scss": {
+>>>>>>> Stashed changes
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
+<<<<<<< Updated upstream
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/sass\/kendoui.scss",
 		"outputAbbreviatedPath": "\/app\/css\/kendoui.css",
+=======
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/sass\/_variables.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/_variables.css",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+<<<<<<< Updated upstream
 		},
 	"\/app\/sass\/ui-bootstrap.scss": {
 		"createSourceMap": 1,
@@ -1058,6 +1260,114 @@
 		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/bootstrap-ui-modal-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
+=======
+		},
+	"\/app\/sass\/design_system.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/sass\/design_system.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/design_system.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/app\/sass\/kendoui.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/sass\/kendoui.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/kendoui.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/app\/sass\/live_preview.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/sass\/live_preview.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/live_preview.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/app\/sass\/ui-bootstrap.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/sass\/ui-bootstrap.scss",
+		"outputAbbreviatedPath": "\/app\/styles\/ui-bootstrap.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/app\/scripts\/app.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/app.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/min\/app-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/controllers\/accordion.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/accordion.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/accordion-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/controllers\/bootstrap-ui-draggable-modal.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/bootstrap-ui-draggable-modal.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/bootstrap-ui-draggable-modal-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/controllers\/bootstrap-ui-modal.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/bootstrap-ui-modal.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/bootstrap-ui-modal-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+>>>>>>> Stashed changes
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
@@ -1097,9 +1407,9 @@
 	"\/app\/scripts\/controllers\/data_grid.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/data_grid.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/data_grid-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/data_grid-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1108,9 +1418,9 @@
 	"\/app\/scripts\/controllers\/elements.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/elements.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/elements-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/elements-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1119,9 +1429,9 @@
 	"\/app\/scripts\/controllers\/faceted_search.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/faceted_search.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/faceted_search-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/faceted_search-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1130,9 +1440,9 @@
 	"\/app\/scripts\/controllers\/forms.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/forms.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/forms-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/forms-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1141,9 +1451,9 @@
 	"\/app\/scripts\/controllers\/headers.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/headers.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/headers-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/headers-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1152,15 +1462,40 @@
 	"\/app\/scripts\/controllers\/index.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/index.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/index-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/index-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
 	"\/app\/scripts\/controllers\/isotope-gallery.js": {
+<<<<<<< Updated upstream
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/isotope-gallery.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/isotope-gallery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/controllers\/kendo.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/kendo.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/kendo-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/controllers\/leftnav.js": {
+=======
+>>>>>>> Stashed changes
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
@@ -1185,9 +1520,9 @@
 	"\/app\/scripts\/controllers\/leftnav.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/leftnav.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/leftnav-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/leftnav-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1196,31 +1531,114 @@
 	"\/app\/scripts\/controllers\/main.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/main.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/main-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/main-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+<<<<<<< Updated upstream
+	"\/app\/scripts\/controllers\/tabs.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/tabs.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/tabs-min.js",
+=======
 	"\/app\/scripts\/controllers\/maps.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/maps.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/maps-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/maps-min.js",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+<<<<<<< Updated upstream
+	"\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/draggable-window-template.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/draggable-window-template.html",
+		"outputAbbreviatedPath": "No Output Path",
+=======
 	"\/app\/scripts\/controllers\/modal.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/modal.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/modal-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/modal-min.js",
+>>>>>>> Stashed changes
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+<<<<<<< Updated upstream
+	"\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/draggable.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/draggable.html",
+		"outputAbbreviatedPath": "No Output Path",
+=======
+	"\/app\/scripts\/controllers\/panels.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/panels.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/panels-min.js",
+>>>>>>> Stashed changes
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/modal.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/modal.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/prompt.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/prompt.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/simple.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/templates\/bootstrap-ui\/modals\/simple.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/controllers\/two_panel_selector.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/two_panel_selector.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/two_panel_selector-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/data\/d3_example_data.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/app\/scripts\/data\/d3_example_data.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/d3_example_data-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1285,9 +1703,9 @@
 	"\/app\/scripts\/controllers\/two_panel_selector.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/controllers\/two_panel_selector.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/two_panel_selector-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/controllers\/min\/two_panel_selector-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1296,9 +1714,9 @@
 	"\/app\/scripts\/data\/d3_example_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/data\/d3_example_data.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/d3_example_data-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/d3_example_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1307,9 +1725,9 @@
 	"\/app\/scripts\/data\/fa_icons.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/data\/fa_icons.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/fa_icons-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/fa_icons-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1318,9 +1736,9 @@
 	"\/app\/scripts\/data\/flot_example_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/data\/flot_example_data.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/flot_example_data-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/flot_example_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1329,9 +1747,9 @@
 	"\/app\/scripts\/data\/invoice_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/data\/invoice_data.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/invoice_data-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/invoice_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1340,9 +1758,9 @@
 	"\/app\/scripts\/data\/nav_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/data\/nav_data.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/nav_data-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/nav_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1351,9 +1769,9 @@
 	"\/app\/scripts\/data\/people_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/data\/people_data.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/people_data-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/data\/min\/people_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1431,6 +1849,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/directives\/pb-numeric-stepper.js",
 		"outputAbbreviatedPath": "\/app\/scripts\/directives\/min\/pb-numeric-stepper-min.js",
+<<<<<<< Updated upstream
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1453,11 +1872,14 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/directives\/pb-transitory-alert.js",
 		"outputAbbreviatedPath": "\/app\/scripts\/directives\/min\/pb-transitory-alert-min.js",
+=======
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+<<<<<<< Updated upstream
 	"\/app\/scripts\/directives\/pb-tree-nav.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1470,11 +1892,69 @@
 		"syntaxCheckerStyle": 0
 		},
 	"\/app\/scripts\/filters\/capitalize.js": {
+=======
+	"\/app\/scripts\/directives\/pb-reveal-password.js": {
+>>>>>>> Stashed changes
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
 		"inputAbbreviatedPath": "\/app\/scripts\/filters\/capitalize.js",
 		"outputAbbreviatedPath": "\/app\/scripts\/filters\/min\/capitalize-ck.js",
+=======
+		"inputAbbreviatedPath": "\/app\/scripts\/directives\/pb-reveal-password.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/directives\/min\/pb-reveal-password-min.js",
+>>>>>>> Stashed changes
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+<<<<<<< Updated upstream
+	"\/app\/scripts\/services\/ChartFactory.js": {
+=======
+	"\/app\/scripts\/directives\/pb-transitory-alert.js": {
+>>>>>>> Stashed changes
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
+		"inputAbbreviatedPath": "\/app\/scripts\/services\/ChartFactory.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/ChartFactory-ck.js",
+=======
+		"inputAbbreviatedPath": "\/app\/scripts\/directives\/pb-transitory-alert.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/directives\/min\/pb-transitory-alert-min.js",
+>>>>>>> Stashed changes
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+<<<<<<< Updated upstream
+	"\/app\/scripts\/services\/FaIconFactory.js": {
+=======
+	"\/app\/scripts\/directives\/pb-tree-nav.js": {
+>>>>>>> Stashed changes
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
+		"inputAbbreviatedPath": "\/app\/scripts\/services\/FaIconFactory.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/FaIconFactory-ck.js",
+=======
+		"inputAbbreviatedPath": "\/app\/scripts\/directives\/pb-tree-nav.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/directives\/min\/pb-tree-nav-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/filters\/capitalize.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/filters\/capitalize.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/filters\/min\/capitalize-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1482,10 +1962,10 @@
 		},
 	"\/app\/scripts\/services\/ChartFactory.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/services\/ChartFactory.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/ChartFactory-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/ChartFactory-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1493,10 +1973,11 @@
 		},
 	"\/app\/scripts\/services\/FaIconFactory.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/services\/FaIconFactory.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/FaIconFactory-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/FaIconFactory-min.js",
+>>>>>>> Stashed changes
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1504,10 +1985,10 @@
 		},
 	"\/app\/scripts\/services\/FakeNavFactory.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/services\/FakeNavFactory.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/FakeNavFactory-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/FakeNavFactory-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1515,10 +1996,10 @@
 		},
 	"\/app\/scripts\/services\/InvoiceFactory.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/services\/InvoiceFactory.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/InvoiceFactory-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/InvoiceFactory-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1526,10 +2007,10 @@
 		},
 	"\/app\/scripts\/services\/NavFactory.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/services\/NavFactory.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/NavFactory-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/NavFactory-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1537,19 +2018,75 @@
 		},
 	"\/app\/scripts\/services\/PeopleFactory.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/services\/PeopleFactory.js",
-		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/PeopleFactory-ck.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/PeopleFactory-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+<<<<<<< Updated upstream
+	"\/app\/scripts\/services\/PeopleFactory.js": {
+=======
 	"\/app\/scripts\/services\/tabledata.js": {
+>>>>>>> Stashed changes
 		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/services\/tabledata.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/tabledata-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/angular-toggle-switch-bootstrap-3.css": {
+		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
+		"inputAbbreviatedPath": "\/app\/scripts\/services\/PeopleFactory.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/PeopleFactory-ck.js",
+=======
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/angular-toggle-switch-bootstrap-3.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/angular-toggle-switch.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/angular-toggle-switch.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/min\/angular-toggle-switch-min.js",
+>>>>>>> Stashed changes
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+<<<<<<< Updated upstream
+	"\/app\/scripts\/services\/tabledata.js": {
+=======
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/angular-toggle-switch.min.js": {
+>>>>>>> Stashed changes
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/angular-toggle-switch.min.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/min\/angular-toggle-switch.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/example\/bootstrap-2.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+<<<<<<< Updated upstream
 		"inputAbbreviatedPath": "\/app\/scripts\/services\/tabledata.js",
 		"outputAbbreviatedPath": "\/app\/scripts\/services\/min\/tabledata-ck.js",
 		"outputPathIsOutsideProject": 0,
@@ -1592,6 +2129,8 @@
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
+=======
+>>>>>>> Stashed changes
 		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/example\/bootstrap-2.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
@@ -1621,6 +2160,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/Gruntfile.js",
 		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/min\/Gruntfile-min.js",
+<<<<<<< Updated upstream
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1966,6 +2506,380 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/styles\/kendoui.css",
 		"outputAbbreviatedPath": "No Output Path",
+=======
+>>>>>>> Stashed changes
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+<<<<<<< Updated upstream
+	"\/app\/styles\/select2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 613,
+		"inputAbbreviatedPath": "\/app\/styles\/select2.png",
+		"outputAbbreviatedPath": "\/app\/styles\/select2.png",
+=======
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/karma.conf.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/karma.conf.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/min\/karma.conf-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/README.md",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/angular-toggle-switch-bootstrap-2.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/angular-toggle-switch-bootstrap-2.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/angular-toggle-switch-bootstrap-2.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/angular-toggle-switch-bootstrap-2.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/angular-toggle-switch-bootstrap-2.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/mixins.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/mixins.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/mixins.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/toggle-switch.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/toggle-switch.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/toggle-switch.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/variables.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap2\/variables.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/angular-toggle-switch-bootstrap-3.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/angular-toggle-switch-bootstrap-3.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/angular-toggle-switch-bootstrap-3.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/angular-toggle-switch-bootstrap-3.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/angular-toggle-switch-bootstrap-3.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/mixins.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/mixins.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/mixins.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/toggle-switch.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/toggle-switch.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/toggle-switch.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/variables.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/bootstrap3\/variables.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/angular-toggle-switch-bootstrap-3.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/angular-toggle-switch-bootstrap-3.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/default\/angular-toggle-switch.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/default\/angular-toggle-switch.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/style\/default\/angular-toggle-switch.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/default\/angular-toggle-switch.less",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/style\/css\/angular-toggle-switch.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/app\/scripts\/vendor\/angular-toggle-switch\/test\/angular-toggle-switch.spec.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/test\/angular-toggle-switch.spec.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/angular-toggle-switch\/test\/min\/angular-toggle-switch.spec-min.js",
+>>>>>>> Stashed changes
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+<<<<<<< Updated upstream
+	"\/app\/styles\/select2x2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 845,
+		"inputAbbreviatedPath": "\/app\/styles\/select2x2.png",
+		"outputAbbreviatedPath": "\/app\/styles\/select2x2.png",
+=======
+	"\/app\/scripts\/vendor\/jquery-ui-1.10.4.custom.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/jquery-ui-1.10.4.custom.min.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/min\/jquery-ui-1.10.4.custom.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/app\/scripts\/vendor\/select2-bootstrap.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/select2-bootstrap.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/scripts\/vendor\/sparkline-directive.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/scripts\/vendor\/sparkline-directive.js",
+		"outputAbbreviatedPath": "\/app\/scripts\/vendor\/min\/sparkline-directive-min.js",
+>>>>>>> Stashed changes
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+<<<<<<< Updated upstream
+=======
+	"\/app\/styles\/Bootstrap\/editor.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2873,
+		"inputAbbreviatedPath": "\/app\/styles\/Bootstrap\/editor.png",
+		"outputAbbreviatedPath": "\/app\/styles\/Bootstrap\/editor.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/styles\/Bootstrap\/imagebrowser.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4740,
+		"inputAbbreviatedPath": "\/app\/styles\/Bootstrap\/imagebrowser.png",
+		"outputAbbreviatedPath": "\/app\/styles\/Bootstrap\/imagebrowser.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/styles\/Bootstrap\/sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11890,
+		"inputAbbreviatedPath": "\/app\/styles\/Bootstrap\/sprite.png",
+		"outputAbbreviatedPath": "\/app\/styles\/Bootstrap\/sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/styles\/Bootstrap\/sprite_2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30874,
+		"inputAbbreviatedPath": "\/app\/styles\/Bootstrap\/sprite_2x.png",
+		"outputAbbreviatedPath": "\/app\/styles\/Bootstrap\/sprite_2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/styles\/design_system.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/styles\/design_system.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/styles\/kendoui.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/styles\/kendoui.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/styles\/live_preview.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/styles\/live_preview.css",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -1991,6 +2905,7 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+>>>>>>> Stashed changes
 	"\/app\/styles\/ui-bootstrap.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -2144,6 +3059,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/app\/views\/tabs.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/views\/tabs.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/app\/views\/temp.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2192,9 +3116,9 @@
 	"\/Gruntfile.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Gruntfile.js",
-		"outputAbbreviatedPath": "\/min\/Gruntfile-ck.js",
+		"outputAbbreviatedPath": "\/min\/Gruntfile-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2203,9 +3127,9 @@
 	"\/karma-e2e.conf.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/karma-e2e.conf.js",
-		"outputAbbreviatedPath": "\/min\/karma-e2e.conf-ck.js",
+		"outputAbbreviatedPath": "\/min\/karma-e2e.conf-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2214,9 +3138,9 @@
 	"\/karma.conf.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/karma.conf.js",
-		"outputAbbreviatedPath": "\/min\/karma.conf-ck.js",
+		"outputAbbreviatedPath": "\/min\/karma.conf-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3140,9 +4064,9 @@
 	"\/live_preview\/scripts\/data\/d3_example_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/data\/d3_example_data.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/d3_example_data-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/d3_example_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3151,9 +4075,9 @@
 	"\/live_preview\/scripts\/data\/fa_icons.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/data\/fa_icons.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/fa_icons-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/fa_icons-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3162,9 +4086,9 @@
 	"\/live_preview\/scripts\/data\/flot_example_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/data\/flot_example_data.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/flot_example_data-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/flot_example_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3173,9 +4097,9 @@
 	"\/live_preview\/scripts\/data\/invoice_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/data\/invoice_data.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/invoice_data-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/invoice_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3184,9 +4108,9 @@
 	"\/live_preview\/scripts\/data\/nav_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/data\/nav_data.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/nav_data-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/nav_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3195,9 +4119,9 @@
 	"\/live_preview\/scripts\/data\/people_data.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/data\/people_data.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/people_data-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/data\/min\/people_data-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3206,9 +4130,9 @@
 	"\/live_preview\/scripts\/ie8.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/ie8.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/min\/ie8-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/min\/ie8-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3217,9 +4141,9 @@
 	"\/live_preview\/scripts\/scripts.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/scripts.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/min\/scripts-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/min\/scripts-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3228,9 +4152,9 @@
 	"\/live_preview\/scripts\/vendor.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/live_preview\/scripts\/vendor.js",
-		"outputAbbreviatedPath": "\/live_preview\/scripts\/min\/vendor-ck.js",
+		"outputAbbreviatedPath": "\/live_preview\/scripts\/min\/vendor-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3564,9 +4488,9 @@
 	"\/test\/spec\/controllers\/main.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/test\/spec\/controllers\/main.js",
-		"outputAbbreviatedPath": "\/test\/spec\/controllers\/min\/main-ck.js",
+		"outputAbbreviatedPath": "\/test\/spec\/controllers\/min\/main-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3579,9 +4503,9 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"bowerAbbreviatedPath": "",
+	"bowerAbbreviatedPath": "\/app",
 	"displayValue": "design_system",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_yellow"
 	},
 "projectSettings": {
@@ -3715,7 +4639,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "127.0.0.1:9000",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
@@ -3739,7 +4663,11 @@
 	"jadeAutoOutputPathStyle": 0,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
+<<<<<<< Updated upstream
 	"javascriptAutoOutputPathEnabled": 1,
+=======
+	"javascriptAutoOutputPathEnabled": 0,
+>>>>>>> Stashed changes
 	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
@@ -4154,16 +5082,20 @@
 	"reloadFileURLs": 0,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
+<<<<<<< Updated upstream
 	"sassAutoOutputPathRelativePath": "..\/css",
+=======
+	"sassAutoOutputPathRelativePath": "..\/styles",
+>>>>>>> Stashed changes
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
-	"sassCreateSourceMap": 0,
+	"sassCreateSourceMap": 1,
 	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 5,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 0,
-	"shouldRunAutoprefixer": 0,
+	"shouldRunAutoprefixer": 1,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules, .js, bower_components",
 	"slimAutoOutputPathEnabled": 1,
