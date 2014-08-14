@@ -428,6 +428,8 @@ p[class^="bg"] {
 .list-group-details .control-label strong {
   background-color: #fff;
   padding-right: .3em;
+  color: #59595b;
+  font-weight: normal;
 }
 .list-group-details .control-label:before {
   content: "..........................................";

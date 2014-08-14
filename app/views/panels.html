@@ -65,30 +65,6 @@
 	</div>
 	</div>
 </div>
-<section class="row flush-panel-group" ng-style="{height:panelHeight}">
-	<div class="col-md-4 alpha">
-		<div class="panel panel-default ">
-			<div class="panel-body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, quis impedit molestiae tempore aliquid sed corporis provident earum iusto qui! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aperiam, reprehenderit, voluptates eveniet consequatur obcaecati delectus rem quia magnam laudantium adipisci voluptatum unde maxime architecto perferendis molestiae asperiores iusto voluptas vitae quaerat earum quis laboriosam dicta! Sit, modi architecto quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-4 inner">
-		<div class="panel panel-default">
-			<div class="panel-body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eius animi explicabo optio tenetur cupiditate ad pariatur ipsa dolores itaque.</p>
-			</div>
-		</div>
-	</div>
-	<div class="col-md-4 omega">
-		<div class="panel panel-default">
-			<div class="panel-body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eius animi explicabo optio tenetur cupiditate ad pariatur ipsa dolores itaque.</p>
-			</div>
-		</div>
-	</div>
-</section>
-
 
 <!-- miller columns with spectrum data -->
 <section class="row flush-panel-group" ng-style="{height:panelHeight}">
@@ -111,7 +87,7 @@
       <div class="panel panel-default">
         <div class="list-group">
           <a href="" class="list-group-item" ng-class="{active: $index === millercolumn.level1Selected && l.versionInfos.length > 0}" ng-click="getSublevel2($index)" ng-repeat="l in millercolumn.level1">
-            {{l.name}} <i ng-show="l.versionInfos" class="pull-right fa fa-angle-right fa-lg"></i> <span class="badge">{{l.versionInfos.length}}</span></a>
+            {{l.name}} <i ng-show="l.versionInfos" class="pull-right fa fa-angle-right fa-lg"></i> <span class="badge badge-gray-dark">{{l.versionInfos.length}}</span></a>
           </a>
         </div>
       </div>

@@ -386,6 +386,8 @@ p[class^="bg"] {
 		strong {
 			background-color: #fff;
 			padding-right: .3em;
+			color: $gray-text;
+			font-weight: normal;
 		}
 
 		&:before {

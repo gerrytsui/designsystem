@@ -20,18 +20,18 @@ angular.module('designSystemApp').controller('PanelsCtrl', ['$scope', '$log', 'P
           $scope.millercolumn.data = response.versionInfos;
         });
 
-      	$scope.getSublevel1 = function(index){
-      		$scope.millercolumn.level1 = $scope.millercolumn.data[index].versionInfos;
-      		$scope.millercolumn.dataSelected = index;
-      		$scope.millercolumn.level2 = null;
-      		$scope.millercolumn.level1Selected = null;
-      		//$log.log($scope.level1);
-      	};
+        $scope.getSublevel1 = function(index){
+          $scope.millercolumn.level1 = $scope.millercolumn.data[index].versionInfos;
+          $scope.millercolumn.dataSelected = index;
+          $scope.millercolumn.level2 = null;
+          $scope.millercolumn.level1Selected = null;
+          //$log.log($scope.level1);
+        };
 
-      	$scope.getSublevel2 = function(index){
-      		$scope.millercolumn.level2 = $scope.millercolumn.level1[index].versionInfos;
-      		$scope.millercolumn.level1Selected = index;
-      	};
+        $scope.getSublevel2 = function(index){
+          $scope.millercolumn.level2 = $scope.millercolumn.level1[index].versionInfos;
+          $scope.millercolumn.level1Selected = index;
+        };
 
 
         // THIS NEEDS TO BE TURNED INTO DIRECTIVE(S)
