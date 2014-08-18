@@ -449,39 +449,30 @@ ul {
 
 /* draggable */
 .column{
-	// width:49%;
-	// margin-right:.5%;
-	min-height:300px;
-	// background:#fff;
-	// float:left;
-}
-.column .dragbox{
-	margin:5px 2px  20px;
-	background:#fff;
-	position:relative;
-	border:1px solid #ddd;
-	border-radius:5px;
-}
-.column .dragbox .panel-heading {
-	cursor:move;
-	.collapse-btn {
-		display: inline-block;
-		float: right;
-		cursor: pointer;
-		color: $gray;
-		&:hover {
-			color: $brand-primary;
-		}
-	}
-}
-.dragbox-content{
-	min-height:100px;
-}
-.column .placeholder{
-	background: #f0f0f0;
-	border:1px dashed #ddd;
+	min-height: 300px;
+
+  .panel-heading {
+    cursor: move;
+  }
+
+  .placeholder{
+    background: #f0f0f0;
+    border: 1px dashed #ddd;
+  }
 }
 
+
+/* collapsible */
+.collapse-btn {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  color: $gray;
+
+  &:hover {
+    color: $brand-primary;
+  }
+}
 
 
 /* -- ACCORDION -- */

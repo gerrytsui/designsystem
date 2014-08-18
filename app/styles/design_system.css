@@ -1746,35 +1746,23 @@ ul {
 .column {
   min-height: 300px;
 }
-
-.column .dragbox {
-  margin: 5px 2px  20px;
-  background: #fff;
-  position: relative;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.column .dragbox .panel-heading {
+.column .panel-heading {
   cursor: move;
 }
-.column .dragbox .panel-heading .collapse-btn {
+.column .placeholder {
+  background: #f0f0f0;
+  border: 1px dashed #ddd;
+}
+
+/* collapsible */
+.collapse-btn {
   display: inline-block;
   float: right;
   cursor: pointer;
   color: #e1e1e1;
 }
-.column .dragbox .panel-heading .collapse-btn:hover {
+.collapse-btn:hover {
   color: #0070c4;
-}
-
-.dragbox-content {
-  min-height: 100px;
-}
-
-.column .placeholder {
-  background: #f0f0f0;
-  border: 1px dashed #ddd;
 }
 
 /* -- ACCORDION -- */

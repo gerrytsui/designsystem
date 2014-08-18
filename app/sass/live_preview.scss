@@ -375,11 +375,14 @@ p[class^="bg"] {
 
 
 /* panels page */
-  .list-group-details .form-group {
-    margin-bottom: 0;
-  }
-  .list-group-details .control-label {
-    padding-top: 3px;
+.list-group-details {
+
+	.form-group {
+		margin-bottom:0;
+	}
+
+	.control-label {
+		padding-top: 3px;
 		padding-right: 0;
 		text-align: left;
 
@@ -397,11 +400,13 @@ p[class^="bg"] {
 			width: 0;
 			color: $gray;
 		}
-  }
-  .list-group-details .form-control-static {
+	}
+
+	.form-control-static {
 		background-color: #fff;
-    padding-top: 2px;
-    padding-bottom: 2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
 		padding-left: .3em;
 		word-wrap: break-word;
-  }
+	}
+}
