@@ -1509,6 +1509,16 @@ body.fixed-header {
     background-color: $brand-success;
 }
 
+.sequence-map {
+  .complete {
+    color:$brand-success;
+    fill: $brand-success;
+  }
+  .dot {
+    fill: $gray-text;
+  }
+}
+
 
 // Progress bars
 
