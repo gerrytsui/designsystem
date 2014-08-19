@@ -179,8 +179,8 @@
 .bs-wizard .bs-wizard-step { padding: 0; position: relative; }
 .bs-wizard .bs-wizard-step .bs-wizard-stepnum { color: #59595b; font-size: 16px; margin-bottom: 5px; }
 .bs-wizard .bs-wizard-step .bs-wizard-info { color: #59595b; font-size: 12px; }
-.bs-wizard .bs-wizard-step .bs-wizard-dot { position: absolute; width: 28px; height: 28px; display: block; background: #c8c8c8; top: -6px; left: 55%; margin-left: -28px; border: 2px solid white; }
-.bs-wizard .bs-wizard-step .progress { position: relative; border-radius: 0px; height: 16px; -webkit-box-shadow: none; box-shadow: none; left: 50%; }
+.bs-wizard .bs-wizard-step .bs-wizard-dot { position: absolute; width: 14px; height: 14px; display: block; background: #c8c8c8; top: -3px; left: 55%; margin-left: -14px; border: 2px solid white; }
+.bs-wizard .bs-wizard-step .progress { position: relative; border-radius: 0px; height: 8px; -webkit-box-shadow: none; box-shadow: none; left: 50%; }
 .bs-wizard .bs-wizard-step .progress .progress-bar { width: 0px; -webkit-box-shadow: none; box-shadow: none; background: #e1e1e1; }
 .bs-wizard .bs-wizard-step.complete > .progress > .progress-bar { width: 100%; background-color: #00cb74; }
 .bs-wizard .bs-wizard-step.complete .bs-wizard-stepnum { color: #00cb74; }
@@ -490,16 +490,12 @@ ul { list-style-type: circle; }
 
 /* draggable */
 .column { min-height: 300px; }
-
-.column .dragbox { margin: 5px 2px  20px; background: #fff; position: relative; border: 1px solid #ddd; border-radius: 5px; }
-
-.column .dragbox .panel-heading { cursor: move; }
-.column .dragbox .panel-heading .collapse-btn { display: inline-block; float: right; cursor: pointer; color: #e1e1e1; }
-.column .dragbox .panel-heading .collapse-btn:hover { color: #0070c4; }
-
-.dragbox-content { min-height: 100px; }
-
+.column .panel-heading { cursor: move; }
 .column .placeholder { background: #f0f0f0; border: 1px dashed #ddd; }
+
+/* collapsible */
+.collapse-btn { display: inline-block; float: right; cursor: pointer; color: #e1e1e1; }
+.collapse-btn:hover { color: #0070c4; }
 
 /* -- ACCORDION -- */
 div.accordion-group .panel-body { padding: 15px; }

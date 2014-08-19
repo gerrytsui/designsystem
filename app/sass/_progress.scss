@@ -1,7 +1,7 @@
 .bs-wizard {
   $track-color: $gray;
   $dot-color: $text-color;
-  $bar-height: 16px;
+  $bar-height: 8px;
   $offset: 1.75; // amount larger the dots should be than bar
   $dot-size: $bar-height * $offset;
      .bs-wizard-step {
