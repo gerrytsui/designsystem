@@ -6,3 +6,4 @@ node_modules
 config.codekit
 .ftppass
 .tmp
+app/styles/design_system.css
