@@ -2,53 +2,6 @@
         "label": "Component Information",
         "versionInfos": [
             {
-                "name": "Centrus Database Resources",
-                "attributes": [],
-                "versionInfos": [
-                    {
-                        "name": "Fema",
-                        "version": "Spatial+ v31.04",
-                        "attributes": [],
-                        "versionInfos": []
-                    },
-                    {
-                        "name": "Coasts",
-                        "version": "Spatial+ v31.04",
-                        "attributes": [],
-                        "versionInfos": []
-                    }
-                ]
-            },
-            {
-                "name": "Loqate Address Coders",
-                "attributes": [],
-                "versionInfos": [
-                    {
-                        "name": "US_LOQ",
-                        "version": "2.10.0.6326",
-                        "attributes": [],
-                        "versionInfos": []
-                    }
-                ]
-            },
-            {
-                "name": "Canada Address Coders",
-                "attributes": [],
-                "versionInfos": [
-                    {
-                        "name": "UAM_CAN",
-                        "version": "R03.3M01",
-                        "attributes": [
-                            {
-                                "label": "Database Version",
-                                "value": "JUNE      2013"
-                            }
-                        ],
-                        "versionInfos": []
-                    }
-                ]
-            },
-            {
                 "name": "Spatial Database Resources",
                 "attributes": [],
                 "versionInfos": [
@@ -56,13 +9,58 @@
                         "name": "spatial.mapping",
                         "version": "N/A",
                         "attributes": [],
-                        "versionInfos": []
+                        "versionInfos": [
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          }
+                        ]
                     },
                     {
                         "name": "spatial.feature",
                         "version": "N/A",
                         "attributes": [],
-                        "versionInfos": []
+                        "versionInfos": [
+                          
+                        ]
                     }
                 ]
             },
@@ -194,7 +192,48 @@
                                 "value": "MAPMARKER_ARG_TomTom_2013.03"
                             }
                         ],
-                        "versionInfos": []
+                        "versionInfos": [
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          }
+                        ]
                     },
                     {
                         "name": "HKG_DB",
@@ -212,7 +251,22 @@
                                 "value": "MAPMARKER_HK_2013_03"
                             }
                         ],
-                        "versionInfos": []
+                        "versionInfos": [
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          }
+                        ]
                     }
                 ]
             },
@@ -276,7 +330,61 @@
                                 "value": "MAPMARKER_GB_2013_09"
                             }
                         ],
-                        "versionInfos": []
+                        "versionInfos": [
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          }
+                        ]
                     }
                 ]
             },
@@ -308,7 +416,61 @@
                                 "value": "MAPMARKER_XW_Europe_2011_06"
                             }
                         ],
-                        "versionInfos": []
+                        "versionInfos": [
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          }
+                        ]
                     }
                 ]
             },
@@ -414,7 +576,74 @@
                                 "value": "Not avaliable"
                             }
                         ],
-                        "versionInfos": []
+                        "versionInfos": [
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },{
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          }
+                        ]
                     },
                     {
                         "name": "NAVTEQ",
@@ -485,7 +714,50 @@
                                 "value": "Not avaliable"
                             }
                         ],
-                        "versionInfos": []
+                        "versionInfos": [
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "Sample Data",
+                            "version": "1.0.0",
+                            "attributes": [
+                              {
+                                "label": "attribute code 1",
+                                "value": "sample code 1"
+                              },
+                              {
+                                "label": "attribute code 2",
+                                "value": "sample code 2"
+                              }
+                            ]
+                          }
+                        ]
                     }
                 ]
             },
@@ -5876,27 +6148,7 @@
                         ]
                     }
                 ]
-            },
-            {
-                "name": "International Address Coders",
-                "attributes": [],
-                "versionInfos": [
-                    {
-                        "name": "UAM_INT",
-                        "version": "R01.8M00",
-                        "attributes": [
-                            {
-                                "label": "UPU Database Release",
-                                "value": "01.8"
-                            },
-                            {
-                                "label": "UPU Database Date",
-                                "value": "20130319"
-                            }
-                        ],
-                        "versionInfos": []
-                    }
-                ]
             }
+
         ]
     }

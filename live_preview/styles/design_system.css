@@ -361,6 +361,23 @@ ul.spaced > li:first-child, ol.spaced > li:first-child { margin-top: 0; }
 /* -- Bootstrap overrides -- */
 .badge { background-color: #0070c4; }
 
+/* badge contextual alternatives */
+.badge-gray { background-color: #e1e1e1 !important; }
+
+.badge-gray-light { background-color: #f2f2f2 !important; }
+
+.badge-gray-text { background-color: #59595b !important; }
+
+.badge-gray-dark { background-color: #323232 !important; }
+
+.badge-brand-danger { background-color: #cc0000 !important; }
+
+.badge-brand-warning { background-color: #826000 !important; }
+
+.badge-brand-success { background-color: #007d00 !important; }
+
+.badge-brand-info { background-color: #0070c4 !important; }
+
 .fa-active { color: #0070c4; }
 
 label { font-size: 14px; font-weight: normal; color: #59595b; }
@@ -584,6 +601,7 @@ a.list-group-item:hover { color: #0070c4; background-color: #f2f2f2; }
 a.list-group-item:first-child { border-top-left-radius: 0; border-top-right-radius: 0; }
 a.list-group-item.active { background-color: #f2f2f2; border-color: #f2f2f2; color: #0070c4; }
 a.list-group-item.active:hover, a.list-group-item.active:focus { background-color: #e1e1e1; border-color: #e1e1e1; color: #0070c4; }
+a.list-group-item.active .badge { color: #fff; background-color: #0070c4; }
 
 /* CALLOUTS (from the BS docs, but useful) */
 .callout { margin: 20px 0px; padding: 20px; border-left: 4px solid #EEE; }
