@@ -87,7 +87,8 @@
       <div class="panel panel-default">
         <div class="list-group">
           <a href="" class="list-group-item" ng-class="{active: $index === millercolumn.level1Selected && l.versionInfos.length > 0}" ng-click="getSublevel2($index)" ng-repeat="l in millercolumn.level1">
-            {{l.name}} <i ng-show="l.versionInfos" class="pull-right fa fa-angle-right fa-lg"></i> <span class="badge badge-gray-dark">{{l.versionInfos.length}}</span></a>
+            {{l.name}}
+						<i class="pull-right fa fa-fw fa-angle-right fa-lg"></i> <span class="badge" >{{l.versionInfos.length}}</span></a>
           </a>
         </div>
       </div>
