@@ -12,12 +12,15 @@ angular.module('designSystemApp', [
   'leaflet-directive',
   'ngProgress',
   'angular-flot',
-  'ui.select2',
+  'ui.select',
   'toggle-switch',
   'kendo.directives',
   'ui-rangeSlider'
 
 ])
+  .config(function(uiSelectConfig) {
+    uiSelectConfig.theme = 'bootstrap';
+  })
   .config(function($routeProvider) {
     $routeProvider
       .when('/', {

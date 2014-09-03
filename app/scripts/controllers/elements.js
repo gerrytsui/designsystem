@@ -25,43 +25,20 @@ angular.module('designSystemApp')
                 $scope.predicate = 'id';
             });
 
-            $scope.getCategories = function() {
-                var categories = [];
+            // no longer used, but please keep around
+            // $scope.getCategories = function() {
+            //     var categories = [];
+            //
+            //     angular.forEach($scope.icons, function(item) {
+            //         angular.forEach(item.categories, function(category) {
+            //             if (categories.indexOf(category) === -1) {
+            //                 categories.push(category);
+            //             }
+            //         });
+            //     });
+            //     return categories;
+            // };
 
-                angular.forEach($scope.icons, function(item) {
-                    angular.forEach(item.categories, function(category) {
-                        if (categories.indexOf(category) === -1) {
-                            categories.push(category);
-                        }
-                    });
-                });
-                return categories;
-            };
-
-
-            $scope.buttonLoading = {
-                isLoading: false,
-                text: 'Saving',
-                load: function() {
-                    $scope.buttonLoading.isLoading = true;
-                    $timeout(function() {
-                        $scope.buttonLoading.isLoading = false;
-                    }, 2000);
-                }
-            };
-
-            $scope.buttonLoading2 = {
-                isLoading: false,
-                text: 'Updating',
-                speed: 0.75,
-                iconClass: 'fa-refresh',
-                load: function() {
-                    $scope.buttonLoading2.isLoading = true;
-                    $timeout(function() {
-                        $scope.buttonLoading2.isLoading = false;
-                    }, 3000);
-                }
-            };
 
             // get the people data
             PeopleFactory.getPeople().then(function(response) {
@@ -124,23 +101,23 @@ angular.module('designSystemApp')
 
             $scope.colors = {
               blues: {
-                $blue1: '#3322aa',
-                $blue2: '#3344cc',
-                $blue3: '#3366ff',
-                $blue4: '#668cff',
-                $blue5: '#99b2ff',
-                $blue6: '#ccd9ff',
+                '$blue1': '#3322aa',
+                '$blue2': '#3344cc',
+                '$blue3': '#3366ff',
+                '$blue4': '#668cff',
+                '$blue5': '#99b2ff',
+                '$blue6': '#ccd9ff',
                 all: function(){
                   return [this.$blue1, this.$blue2, this.$blue3, this.$blue4, this.$blue5, this.$blue6];
                 }
               },
               grays: {
-                $gray1: '#323232',
-                $gray2: '#474748',
-                $gray3: '#59595B',
-                $gray4: '#838384',
-                $gray5: '#ACACAD',
-                $gray6: '#D5D5D6',
+                '$gray1': '#323232',
+                '$gray2': '#474748',
+                '$gray3': '#59595B',
+                '$gray4': '#838384',
+                '$gray5': '#ACACAD',
+                '$gray6': '#D5D5D6',
                 all: function(){
                   return [this.$gray1, this.$gray2, this.$gray3, this.$gray4, this.$gray5, this.$gray6];
                 }
