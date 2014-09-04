@@ -18,8 +18,10 @@ angular.module('designSystemApp', [
   'ui-rangeSlider'
 
 ])
-  .config(function(uiSelectConfig) {
-    uiSelectConfig.theme = 'bootstrap';
+  .constant('uiSelectConfig', {
+    theme: 'bootstrap',
+    placeholder: '', // Empty by default, like HTML tag <select>
+    refreshDelay: 1000 // In milliseconds
   })
   .config(function($routeProvider) {
     $routeProvider

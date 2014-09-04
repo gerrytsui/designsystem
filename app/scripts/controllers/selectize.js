@@ -21,10 +21,10 @@ angular.module('designSystemApp')
   $scope.someGroupFn = function (item){
 
     if (item.name[0] >= 'A' && item.name[0] <= 'M')
-      {  return 'From A - M';}
+      { return 'From A - M';}
 
     if (item.name[0] >= 'N' && item.name[0] <= 'Z')
-    {    return 'From N - Z';}
+       {return 'From N - Z';}
 
   };
 
@@ -323,4 +323,6 @@ angular.module('designSystemApp')
     {name: 'Zambia', code: 'ZM'},
     {name: 'Zimbabwe', code: 'ZW'}
   ];
+
+
 });
