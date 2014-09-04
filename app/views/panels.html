@@ -45,7 +45,7 @@
 
 <div class="row">
 	<div class="col-md-12">
-		<h3 class="sh">Flush panel group</h3>
+		<h3 class="sh">Miller columns</h3>
 	</div>
 </div>
 
@@ -67,10 +67,10 @@
 </div>
 
 <!-- miller columns with spectrum data -->
-<section class="row flush-panel-group" ng-style="{height:panelHeight}">
+<section class="row miller-columns" ng-style="{height:panelHeight}">
 
   <!-- top level -->
-  <div class="col-md-4 alpha">
+  <div class="col-md-4 first-column">
 
     <div class="panel panel-default">
       <div class="list-group">
@@ -83,7 +83,7 @@
   </div>
 
   <!-- level1 -->
-    <div class="col-md-3 inner">
+    <div class="col-md-3 inner-column">
       <div class="panel panel-default">
         <div class="list-group">
           <a href="" class="list-group-item" ng-class="{active: $index === millercolumn.level1Selected && l.versionInfos.length > 0}" ng-click="getSublevel2($index)" ng-repeat="l in millercolumn.level1">
@@ -95,7 +95,7 @@
     </div>
 
   <!-- level 2 -->
-  <div class="col-md-5 omega">
+  <div class="col-md-5 last-column">
     <div class="panel panel-default">
 
       <ul class="list-group list-group-details">

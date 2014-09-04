@@ -1702,55 +1702,52 @@ ul {
 }
 
 /* -- PANELS -- */
-.flush-panel-group {
+/* Miller Columns */
+.miller-columns {
   margin-bottom: 20px;
-  height: 300px;
 }
-.flush-panel-group .panel {
+.miller-columns .panel {
   height: 100%;
   overflow-y: auto;
 }
-
-.alpha {
+.miller-columns .first-column {
   padding-right: 0;
   height: 100%;
 }
-.alpha .panel-default {
+.miller-columns .first-column .panel-default {
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.alpha .panel-default .panel-heading {
+.miller-columns .first-column .panel-default .panel-heading {
   border-top-right-radius: 0;
 }
-
-.omega {
-  padding-left: 0;
-  height: 100%;
-}
-.omega .panel-default {
-  border-left: none;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.omega .panel-default .panel-heading {
-  border-top-left-radius: 0;
-}
-
-.inner {
+.miller-columns .inner-column {
   padding-left: 0;
   padding-right: 0;
   height: 100%;
 }
-.inner .panel-default {
+.miller-columns .inner-column .panel-default {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.inner .panel-default .panel-heading {
+.miller-columns .inner-column .panel-default .panel-heading {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+.miller-columns .last-column {
+  padding-left: 0;
+  height: 100%;
+}
+.miller-columns .last-column .panel-default {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.miller-columns .last-column .panel-default .panel-heading {
+  border-top-left-radius: 0;
 }
 
 .panel-title {
