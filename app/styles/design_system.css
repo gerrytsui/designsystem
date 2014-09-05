@@ -792,12 +792,12 @@
   position: relative;
 }
 .bs-wizard .bs-wizard-step .bs-wizard-stepnum {
-  color: #59595b;
+  color: #59595a;
   font-size: 16px;
   margin-bottom: 5px;
 }
 .bs-wizard .bs-wizard-step .bs-wizard-info {
-  color: #59595b;
+  color: #59595a;
   font-size: 12px;
 }
 .bs-wizard .bs-wizard-step .bs-wizard-dot {
@@ -1323,7 +1323,7 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px !important;
   font-weight: 400;
-  color: #59595b;
+  color: #59595a;
 }
 body .has-error {
   color: #cc0000;
@@ -1364,7 +1364,7 @@ ul.spaced > li:first-child, ol.spaced > li:first-child {
 }
 
 .badge-gray-text {
-  background-color: #59595b !important;
+  background-color: #59595a !important;
 }
 
 .badge-gray-dark {
@@ -1394,7 +1394,7 @@ ul.spaced > li:first-child, ol.spaced > li:first-child {
 label {
   font-size: 14px;
   font-weight: normal;
-  color: #59595b;
+  color: #59595a;
 }
 
 hr {
@@ -1405,7 +1405,7 @@ hr {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #59595b;
+  color: #59595a;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -1615,7 +1615,7 @@ fieldset {
 }
 
 select[disabled] {
-  color: #a6a6a7 !important;
+  color: #a6a6a6 !important;
 }
 
 .widget-header h3 {
@@ -1808,7 +1808,7 @@ div.accordion-group .panel-title:hover:before {
 div.accordion-group .panel-title:before {
   display: inline-block;
   margin-right: 5px;
-  color: #59595b;
+  color: #59595a;
   -webkit-transition: all .2s;
   transition: all .2s;
   content: '\25B8';
@@ -1840,7 +1840,7 @@ div.accordion-group .panel.active .panel-title:before {
 .collapse-button:before {
   display: inline-block;
   margin-right: 5px;
-  color: #59595b;
+  color: #59595a;
   -webkit-transition: all .2s;
   transition: all .2s;
   content: '\25B8';
@@ -2132,7 +2132,7 @@ a.list-group-item.active .badge {
 .menu .menu-heading {
   white-space: nowrap;
   padding: 5px 3px 5px 3px;
-  color: #59595b;
+  color: #59595a;
   text-decoration: none;
   display: block;
   cursor: pointer;
@@ -2159,7 +2159,7 @@ a.list-group-item.active .badge {
   color: #0070c4;
 }
 .menu .menu-content li a {
-  color: #59595b;
+  color: #59595a;
   text-decoration: none;
   padding-left: 41px;
   padding-top: 5px;
@@ -2256,7 +2256,7 @@ a.list-group-item.active .badge {
   transform: rotate(90deg);
 }
 .nav.nav-list.tree-menu a {
-  color: #59595b;
+  color: #59595a;
 }
 .nav.nav-list.tree-menu a:hover {
   color: #0070c4;
@@ -2414,13 +2414,13 @@ body.fixed-header .navbar > .container-fluid {
 /* --------- FOOTER ------------ */
 #footer, footer {
   margin-top: 40px;
-  color: #59595b;
+  color: #59595a;
   font-size: 12px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   border-top: 1px solid #0070c4;
 }
 #footer a, footer a {
-  color: #59595b;
+  color: #59595a;
 }
 #footer.footer-thin .row, footer.footer-thin .row {
   padding: 10px 0;
@@ -2438,7 +2438,7 @@ body.fixed-header .navbar > .container-fluid {
   padding-right: 10px;
 }
 #footer ul.list-inline.social li a, footer ul.list-inline.social li a {
-  color: #59595b;
+  color: #59595a;
   -webkit-transition: .2s color;
   -moz-transition: .2s color;
   -ms-transition: .2s color;
@@ -2570,7 +2570,7 @@ body.fixed-header .navbar > .container-fluid {
   position: relative;
 }
 .activity:hover {
-  color: #59595b !important;
+  color: #59595a !important;
 }
 .activity:hover .badge {
   -webkit-transform: scale(1.2);
@@ -2599,7 +2599,7 @@ body.fixed-header .navbar > .container-fluid {
   overflow-y: scroll;
 }
 .checkboxList label {
-  color: #59595b;
+  color: #59595a;
   margin-bottom: 0;
 }
 .checkboxList .ms-checkboxitem {
@@ -2636,7 +2636,7 @@ body.fixed-header .navbar > .container-fluid {
   fill: #007d00;
 }
 .sequence-map .dot {
-  fill: #59595b;
+  fill: #59595a;
 }
 
 .progress-bar {
