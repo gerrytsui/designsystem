@@ -588,7 +588,7 @@ a.read-more:after { content: '\2026'; }
 .thumb-detail h4 { font-weight: 700; }
 
 /* TABLES */
-.table > tbody > tr > td, .table > tbody > tr > th { -webkit-transition: background-color .3s; -moz-transition: background-color .3s; -ms-transition: background-color .3s; -o-transition: background-color .3s; transition: background-color .3s; }
+.table > tbody > tr > td, .table > tbody > tr > th { -webkit-transition: background-color .3s; transition: background-color .3s; }
 
 .table-condensed-extra { font-size: 14px; }
 .table-condensed-extra > thead > tr > th, .table-condensed-extra > thead > tr > td, .table-condensed-extra > tbody > tr > th, .table-condensed-extra > tbody > tr > td, .table-condensed-extra > tfoot > tr > th, .table-condensed-extra > tfoot > tr > td { padding: 2px; }

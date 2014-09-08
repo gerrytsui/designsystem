@@ -110,14 +110,14 @@ ul.spaced, ol.spaced {
 
 /* badge contextual alternatives */
 $badges: (
-  gray: $gray,
-  gray-light: $gray-light,
-  gray-text: $gray-text,
-  gray-dark: $gray-dark,
-  brand-danger: $brand-danger,
-  brand-warning: $brand-warning,
-  brand-success: $brand-success,
-  brand-info: $brand-info
+  'gray': $gray,
+  'gray-light': $gray-light,
+  'gray-text': $gray-text,
+  'gray-dark': $gray-dark,
+  'brand-danger': $brand-danger,
+  'brand-warning': $brand-warning,
+  'brand-success': $brand-success,
+  'brand-info': $brand-info
 );
 
 @each $badge, $color in $badges {
@@ -689,9 +689,6 @@ a.read-more {
 // table transitions for hovers
 .table> tbody > tr > td, .table > tbody > tr > th {
 	-webkit-transition: background-color .3s;
-	-moz-transition   : background-color .3s;
-	-ms-transition    : background-color .3s;
-	-o-transition     : background-color .3s;
 	transition        : background-color .3s;
 }
 
