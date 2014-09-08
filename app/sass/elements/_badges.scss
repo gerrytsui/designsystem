@@ -1,0 +1,21 @@
+.badge {
+  background-color: $brand-primary;
+}
+
+/* badge contextual alternatives */
+$badges: (
+  'gray': $gray,
+  'gray-light': $gray-light,
+  'gray-text': $gray-text,
+  'gray-dark': $gray-dark,
+  'brand-danger': $brand-danger,
+  'brand-warning': $brand-warning,
+  'brand-success': $brand-success,
+  'brand-info': $brand-info
+);
+
+@each $badge, $color in $badges {
+  .badge-#{$badge}{
+    background-color: $color !important;
+  }
+}

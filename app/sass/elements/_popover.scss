@@ -1,0 +1,27 @@
+// popover
+.popover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow   : none;
+  box-shadow        : none;
+  border-radius     : 0;
+  background-color  : white;
+  &.bottom .arrow:after {
+    border-bottom-color: white;
+  }
+  &.top .arrow:after {
+    border-top-color: white;
+  }
+
+}
+.panel {
+  -webkit-box-shadow: none;
+  -moz-box-shadow   : none;
+  box-shadow        : none;
+}
+
+.navbar-form .input-group {
+  max-width: 220px;
+  .fa-search {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,91 @@
+
+/* -- ACCORDION -- */
+
+// default
+div.accordion-group {
+    .panel-body {
+        padding: 15px;
+    }
+    // compact
+    &.compact {
+        .panel-default {
+            border: none;
+            border-radius: 0;
+            .panel-heading {
+                border: none;
+                border-radius: 0 !important;
+                & + .panel-collapse {
+                    .panel-body {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+        .panel + .panel {
+            margin-top: 0;
+        }
+    }
+    .panel-title {
+        cursor: pointer;
+        font-weight: 400;
+        &:hover {
+            color: $brand-primary;
+            &:before {
+                color: $brand-primary;
+            }
+        }
+        &:before {
+            display           : inline-block;
+            margin-right      : 5px;
+            color             : $gray-text;
+            -webkit-transition: all .2s;
+            transition        : all .2s;
+            @include triangle-closed;
+        }
+        a {
+            &:hover {
+                color: $brand-primary;
+                text-decoration: none;
+            }
+        }
+    }
+    .panel.active {
+        .panel-title {
+            &:before {
+                @include triangle-opened;
+            }
+        }
+        // for IE8
+        .no-csstransforms &:before {
+            content: '\25be';
+        }
+    }
+
+}
+
+
+
+.collapse-button {
+  cursor: pointer;
+  &:hover {
+    color: $brand-primary;
+    &:before {
+      color: $brand-primary;
+    }
+  }
+  &:before {
+    display           : inline-block;
+    margin-right      : 5px;
+    color             : $gray-text;
+    -webkit-transition: all .2s;
+    transition        : all .2s;
+    @include triangle-closed;
+  }
+  &.open:before {
+    @include triangle-opened;
+  }
+  // for IE8
+  .no-csstransforms &.open:before {
+    content: '\25be'; // triangle down
+  }
+}

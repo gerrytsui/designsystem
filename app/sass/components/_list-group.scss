@@ -1,0 +1,32 @@
+/* LIST GROUP */
+a.list-group-item {
+  border            : none;
+  border-radius     : 0;
+  -webkit-transition: background-color .3s, color .2s;
+  -moz-transition   : background-color .3s, color .2s;
+  -ms-transition    : background-color .3s, color .2s;
+  -o-transition     : background-color .3s, color .2s;
+  transition        : background-color .3s, color .2s;
+  &:hover {
+    color           : $brand-primary;
+    background-color: $gray-light;
+  }
+  &:first-child {
+    border-top-left-radius : 0;
+    border-top-right-radius: 0;
+  }
+  &.active {
+    background-color: $gray-light;
+    border-color    : $gray-light;
+    color           : $brand-primary;
+    &:hover, &:focus {
+      background-color: $gray;
+      border-color    : $gray;
+      color           : $brand-primary;
+    }
+    .badge {
+      color: #fff;
+      background-color: $brand-primary;
+    }
+  }
+}

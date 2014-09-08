@@ -1,0 +1,13 @@
+// only place I found these being used is faceted search
+
+
+.thumbnail {
+  display         : block;
+  padding         : 0;
+  background-color: transparent;
+  border          : none;
+  border-radius   : 0;
+  & > img {
+    margin-bottom: 5px;
+  }
+}

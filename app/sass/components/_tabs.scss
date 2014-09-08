@@ -1,0 +1,28 @@
+/* TABS */
+
+.tab-pane {
+  padding: 15px;
+
+}
+.tabbable.scroll>.tab-content {
+  padding: 20px;
+}
+.tab-content .panel-default {
+  border   : none;
+  max-width: 90%;
+  padding  : 0;
+  .panel-body {
+    padding: 0;
+  }
+
+}
+.tab-content {
+  &.tab-content-bordered {
+    border: 1px solid $gray;
+    border-top: 0;
+  }
+
+}
+.thumb-detail h4 {
+  font-weight: 700;
+}

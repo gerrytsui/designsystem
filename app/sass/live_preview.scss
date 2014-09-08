@@ -12,6 +12,16 @@
 		cursor: pointer;
 }
 
+.debug {
+	border: 1px solid red;
+	&.green {
+		border-color: green;
+	}
+	&.pink {
+		border-color: pink;
+	}
+}
+
 
 // spacing and page layout mods for the design system pages
 section.row {

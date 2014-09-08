@@ -71,7 +71,6 @@ module.exports = function(grunt) {
               '<%= yeoman.app %>/styles/live_preview.css': '<%= yeoman.sass %>/live_preview.scss',
               '<%= yeoman.app %>/styles/ui-bootstrap.css': '<%= yeoman.sass %>/ui-bootstrap.scss',
               '<%= yeoman.app %>/styles/kendoui.css': '<%= yeoman.sass %>/kendoui.scss'
-
             }
           },
           livepreview: {

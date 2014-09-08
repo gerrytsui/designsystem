@@ -1,0 +1,107 @@
+
+
+/* -- FORMS -- */
+
+.help-block.text-error {
+  display        : none;
+  .has-error & {
+    display    : block;
+    color      : $brand-error;
+  }
+}
+fieldset {
+  margin-top     : 20px;
+}
+
+.form-control {
+  box-shadow     : none;
+  border: 1px solid $gray;
+}
+
+select[disabled] {
+  color          : lighten($text-color, 30%) !important;
+}
+.widget-header {
+  h3 {
+    font-family: $font-family-sans-serif;
+  }
+}
+
+.has-error {
+  .form-control {
+    border-color: $brand-error;
+  }
+}
+
+.form-control[disabled].datepicker,
+.form-control[readonly].datepicker,
+fieldset[disabled] .form-control.datepicker,
+.form-control[disabled].timepicker,
+.form-control[readonly].timepicker,
+fieldset[disabled] .form-control.timepicker  {
+cursor: pointer;
+background-color: #ffffff;
+}
+
+// this was a separate class, now modified to be the default
+.input-group {
+  // class is needed to turn off dividing border betw input and addon
+  // although with "before" we can use a "+" selector instead, see "first-child" below
+  // left before class for ie8 support
+  .btn {
+    font-size: 14px; // need to make the "small" font size to match form fields
+  }
+
+  &.before {
+    input {
+      border-left: 1px solid transparent;
+      &:focus {
+        border-left: 1px solid #66afe9;
+      }
+    }
+  }
+  &.after {
+    input {
+      border-right: 1px solid transparent;
+      &:focus {
+        border-right: 1px solid #66afe9;
+      }
+    }
+  }
+  .input-group-btn {
+    z-index: 3;
+  }
+  .input-group-addon {
+    padding         : 6px 12px;
+    font-size       : 14px;
+    font-weight     : normal;
+    line-height     : 1;
+    color           : #555555;
+    text-align      : center;
+    background-color: #fff;
+    border          : 1px solid #cccccc;
+    border-radius   : 4px;
+
+    &:last-child {
+      border-bottom-left-radius: 0;
+      border-top-left-radius   : 0;
+      border-left              : none;
+      & + input {
+        //border-left : none;
+        background-color: #f00;
+      }
+    }
+    &:first-child {
+      border-bottom-right-radius: 0;
+      border-top-right-radius   : 0;
+      border-right              : none;
+      // sibling selector
+      & + input {
+        border-left : none;
+        &:focus {
+          border-left: 1px solid #66afe9;
+        }
+      }
+    }
+  }
+}
