@@ -1,11 +1,7 @@
-/* LIST GROUP */
 a.list-group-item {
   border            : none;
   border-radius     : 0;
   -webkit-transition: background-color .3s, color .2s;
-  -moz-transition   : background-color .3s, color .2s;
-  -ms-transition    : background-color .3s, color .2s;
-  -o-transition     : background-color .3s, color .2s;
   transition        : background-color .3s, color .2s;
   &:hover {
     color           : $brand-primary;

@@ -101,17 +101,6 @@ p.lead, p.lede {
 .text-center         { text-align: center; }
 .text-justify        { text-align: justify; }
 
-.xs-text-left {
-  @media (max-width: $screen-xs-max) {
-    text-align: left;
-  }
-}
-
-.xs-text-right {
-  @media (max-width: $screen-xs-max) {
-    text-align: right;
-  }
-}
 
 // Contextual colors
 @include text-emphasis-variant('.text-primary', $brand-primary);

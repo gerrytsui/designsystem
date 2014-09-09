@@ -1,9 +1,3 @@
-
-/*
-  TREE MENU
-*/
-
-
 .nav.nav-list.tree-menu {
   $indent: 10px;
   a {
@@ -36,23 +30,14 @@
       display                 : inline-block;
       color                   : $brand-primary;
       -webkit-transition      : all .3s;
-      -moz-transition         : all .3s;
-      -ms-transition          : all .3s;
-      -o-transition           : all .3s;
       transition              : all .3s;
       -webkit-transform-origin: 40% center;
-      -moz-transform-origin   : 40% center;
-      -ms-transform-origin    : 40% center;
-      -o-transform-origin     : 40% center;
       transform-origin        : 40% center;
     }
     &.open {
       &:before {
         color            : $brand-primary;
         -webkit-transform: rotate(90deg);
-        -moz-transform   : rotate(90deg);
-        -ms-transform    : rotate(90deg);
-        -o-transform     : rotate(90deg);
         transform        : rotate(90deg);
       }
     }

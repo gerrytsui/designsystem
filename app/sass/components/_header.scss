@@ -1,4 +1,4 @@
-/*  --------- HEADER ----------- */
+//  --------- HEADER ----------- */
 
 
 // class needs to be set with JS
@@ -18,7 +18,6 @@ body.fixed-header {
       li.first a {
         padding-left: 0;
       }
-
     .navbar-brand, .container .navbar-brand {
       padding: 15px 0;
       margin-left: 0;
@@ -32,9 +31,6 @@ body.fixed-header {
       // fixed navbar has a shadow that appears when scrolled via jQuery
       &.navbar-fixed-top {
       -webkit-transition: box-shadow .3s;
-      -moz-transition   : box-shadow .3s;
-      -ms-transition    : box-shadow .3s;
-      -o-transition     : box-shadow .3s;
       transition        : box-shadow .3s;
       &.shadow {
         -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.2);
@@ -42,9 +38,8 @@ body.fixed-header {
         box-shadow        : 0 3px 6px rgba(0,0,0,.2);
       }
       }
-      &.navbar-scroll {
-
-      }
+      // &.navbar-scroll {
+      // }
       &.navbar-default {
       background-color     : $background-color;
       border               : none;
@@ -68,9 +63,7 @@ body.fixed-header {
             background-color: transparent;
             color: $brand-primary;
           }
-
         }
-
         .dropdown-menu {
         background-color     : $gray-light;
         border               : none;
@@ -123,17 +116,10 @@ body.fixed-header {
 }
 
 
-
-
-
-
-/* MEDIA QUERIES */
+// MEDIA QUERIES */
 
 @media (max-width: $screen-xs-max) {
-
   .activity {
     display: inline-block !important;
   }
-
-
 }

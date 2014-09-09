@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         sass: {
           app: {
             options: {
-              style: 'expanded',
+              style: 'compact',
               sourcemap: true
             },
             files: {

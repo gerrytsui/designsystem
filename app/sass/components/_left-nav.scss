@@ -1,22 +1,12 @@
-
-/*
- Menu Columns
-*/
 .nav-left {
   position                : absolute;
   width                   : 275px;
   top                     : 80px;
   padding                 : 10px;
   z-index                 : 100;
-  -webkit-transition      : width .8s;
-  -moz-transition         : width .8s;
-  -ms-transition          : width .8s;
-  -o-transition           : width .8s;
+  -webkit-transition      : width .8s;;
   transition              : width .8s;
   -webkit-transition-delay: width .3s;
-  -moz-transition-delay   : width .3s;
-  -ms-transition-delay    : width .3s;
-  -o-transition-delay     : width .3s;
   transition-delay        : width .3s;
 
   .minified & {
@@ -60,9 +50,6 @@
 
         .menu-heading {
             -webkit-transition: none;
-            -moz-transition   : none;
-            -ms-transition    : none;
-            -o-transition     : none;
             transition        : none;
             background-color  : $gray-light;
             width             : 200px;
@@ -75,7 +62,6 @@
         }
         .menu-content {
           -webkit-transition: all .3s;
-          -o-transition     : all .3s;
           transition        : all .3s;
           background-color  : $gray-light;
           position          : absolute;
@@ -110,7 +96,6 @@
     &:hover {
     background-color  : transparent;
     -webkit-transition: all .3s;
-    -o-transition     : all .3s;
     transition        : all .3s;
     color             : $brand-primary;
     }
@@ -150,12 +135,10 @@
     i.fa {
     cursor            : pointer;
     -webkit-transition: all .3s;
-    -o-transition     : all .3s;
     transition        : all .3s;
 
       &:hover {
     -webkit-transition: all .3s;
-    -o-transition     : all .3s;
     transition        : all .3s;
     color             : $brand-primary;
       }
@@ -170,8 +153,6 @@
     -o-transition     : all .3s;
     transition        : all .3s;
     -webkit-transform : rotate(180deg);
-    -ms-transform     : rotate(180deg);
-    -o-transform      : rotate(180deg);
     transform         : rotate(180deg);
       }
       // ie8

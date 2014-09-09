@@ -4,6 +4,10 @@
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
+.debug { border: 1px solid red; }
+.debug.green { border-color: green; }
+.debug.pink { border-color: pink; }
+
 section.row { margin-bottom: 60px; }
 
 h3.section-head, h3.sh { margin: 50px 0 20px; clear: both; }
