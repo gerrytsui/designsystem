@@ -28,8 +28,10 @@
         }
         a {
           color: $gray-text;
+          -webkit-transition        : .2s color;
           transition        : .2s color;
           &:hover {
+            -webkit-transform        : scale(1.3);
             transform        : scale(1.3);
             // see variables.scss
             @each $service, $color in $social-colors {

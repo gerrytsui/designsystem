@@ -631,8 +631,8 @@ div.accordion-group .panel.active .panel-title:before { content: '\25B8'; -webki
 #footer .row, footer .row { padding: 40px 0; }
 #footer ul.list-inline.social li, footer ul.list-inline.social li { padding: 0; }
 #footer ul.list-inline.social li:first-child, footer ul.list-inline.social li:first-child { padding-right: 10px; }
-#footer ul.list-inline.social li a, footer ul.list-inline.social li a { color: #59595a; transition: .2s color; }
-#footer ul.list-inline.social li a:hover, footer ul.list-inline.social li a:hover { transform: scale(1.3); }
+#footer ul.list-inline.social li a, footer ul.list-inline.social li a { color: #59595a; -webkit-transition: .2s color; transition: .2s color; }
+#footer ul.list-inline.social li a:hover, footer ul.list-inline.social li a:hover { -webkit-transform: scale(1.3); transform: scale(1.3); }
 #footer ul.list-inline.social li a:hover.twitter, footer ul.list-inline.social li a:hover.twitter { color: #55acee; }
 #footer ul.list-inline.social li a:hover.facebook, footer ul.list-inline.social li a:hover.facebook { color: #4964a1; }
 #footer ul.list-inline.social li a:hover.linkedin, footer ul.list-inline.social li a:hover.linkedin { color: #1a85bc; }
