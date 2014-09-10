@@ -1,6 +1,15 @@
 
 /* TABLES */
 
+
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+    background-color: $table-bg-hover;
+}
+th {
+  font-weight: normal;
+
+}
+
 // table transitions for hovers
 .table> tbody > tr > td, .table > tbody > tr > th {
   -webkit-transition: background-color .3s;

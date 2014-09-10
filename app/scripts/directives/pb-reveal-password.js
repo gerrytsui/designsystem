@@ -17,7 +17,7 @@ angular.module('designSystemApp')
       link: function postLink(scope, element, attrs) {
 
         var $password = $('#' + scope.password),
-          hideLabel = scope.hideLabel || 'Hide';
+          hideLabel = scope.hideLabel || 'Show';
 
         element.on({
           click: function() {

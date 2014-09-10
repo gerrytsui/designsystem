@@ -98,10 +98,6 @@ ul { list-style-type: circle; }
 
 .serif, .serif p { font-family: Georgia, Times, "Times New Roman", serif; }
 
-.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th { background-color: #e7f0f8; }
-
-th { font-weight: normal; }
-
 .help-block { font-size: 14px; }
 
 a.read-more { font-size: 14px; white-space: nowrap; }
@@ -757,6 +753,10 @@ a.list-group-item.active .badge { color: #fff; background-color: #0070c4; }
 .collapse-btn:hover { color: #0070c4; }
 
 /* TABLES */
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th { background-color: #e7f0f8; }
+
+th { font-weight: normal; }
+
 .table > tbody > tr > td, .table > tbody > tr > th { -webkit-transition: background-color .3s; transition: background-color .3s; }
 
 .table-condensed-extra { font-size: 14px; }
