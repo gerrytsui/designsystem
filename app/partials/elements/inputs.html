@@ -333,23 +333,21 @@
 
              <div class="row" ng-controller="SelectizeCtrl">
             <div class="form-group col-md-12">
-
-                <div class="form-group row">
-                  <label class="col-sm-3 control-label">Default</label>
-                  <div class="col-sm-6">
-
-
-
- <ui-select ng-model="person.selected" theme="bootstrap">
-                      <ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
-                      <ui-select-choices repeat="item in people | filter: $select.search">
-                        <div ng-bind-html="item.name | highlight: $select.search"></div>
-                        <small ng-bind-html="item.email | highlight: $select.search"></small>
-                      </ui-select-choices>
-                    </ui-select>
-
-                  </div>
-              </div>
+              <!-- <p>Selected: {{person.selected.name}}</p> -->
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-sm-1 control-label">Addressee: </label>
+                    <div class="col-md-5">
+                      <ui-select ng-model="person.selected" theme="bootstrap">
+                        <ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+                        <ui-select-choices repeat="item in people | filter: $select.search">
+                          <div ng-bind-html="item.name | highlight: $select.search"></div>
+                          <small ng-bind-html="item.email | highlight: $select.search"></small>
+                        </ui-select-choices>
+                      </ui-select>
+                    </div>
+                </div>
+              </form>
             </div>
 
 
