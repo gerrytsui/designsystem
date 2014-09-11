@@ -343,56 +343,22 @@
 
         <div class="row">
 
-          <div class="col-md-6">
-
-            <div class="form-group">
-              <label class="control-label">Default</label>
-              <ui-select ng-model="person.selected" theme="selectize">
-                <ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
-                <ui-select-choices repeat="item in people | filter: $select.search">
-                  <div ng-bind-html="item.name | highlight: $select.search"></div>
-                  <small ng-bind-html="item.email | highlight: $select.search"></small>
-                </ui-select-choices>
-              </ui-select>
-
+          <div class="row" ng-controller="SelectizeCtrl">
+            <div class="form-group col-md-4">
+              <label>People</label>
+              <select selectize="peopleSelect.options" options="people" ng-model="person.selected"></select>
             </div>
+
+            <div class="form-group col-md-4">
+              <label>Countries</label>
+              <input type="text" selectize="countrySelect.options" options="countries" ng-model="country.selected" />
+            </div>
+
           </div>
-          <!-- end col6 -->
+          <!-- end row -->
 
-          <div class="col-md-6">
-
-            <label>Default with clear button:</label>
-            <div class="input-group">
-              <ui-select ng-model="person.selected" theme="selectize">
-                <ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
-                <ui-select-choices repeat="item in people | filter: $select.search">
-                  <span ng-bind-html="item.name | highlight: $select.search"></span>
-                  <small ng-bind-html="item.email | highlight: $select.search"></small>
-                </ui-select-choices>
-              </ui-select>
-              <span class="input-group-btn">
-                          <button ng-click="person.selected = undefined" class="btn btn-default">
-                            <span class="glyphicon glyphicon-trash"></span>
-              </button>
-              </span>
-            </div>
-
-      <div class="row" ng-controller="SelectizeCtrl">
-        <div class="form-group col-md-4">
-          <label>People</label>
-          <select selectize="peopleSelect.options" options="people" ng-model="person.selected"></select>
         </div>
-          <!-- end col6 -->
-
-
-        <div class="form-group col-md-4">
-          <label>Countries</label>
-          <input type="text" selectize="countrySelect.options" options="countries" ng-model="country.selected" />
-        </div>
-        <!-- end row -->
-
-      </div>
-      <!-- end ngcontroller -->
+        <!-- end ngcontroller -->
 
     </fieldset>
 
@@ -510,13 +476,13 @@
         <div class="col-md-12">
           <h4>CSS-only switch <small>IE9+</small></h4>
 
-        <div class="onoffswitch">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-          <label class="onoffswitch-label" for="myonoffswitch">
-            <span class="onoffswitch-inner"></span>
-            <span class="onoffswitch-switch"></span>
-          </label>
-        </div>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+            </label>
+          </div>
         </div>
       </div>
 
@@ -534,5 +500,5 @@
       </div>
     </fieldset>
 
+    </div>
   </div>
-</div>
