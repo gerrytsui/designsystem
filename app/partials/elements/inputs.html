@@ -323,6 +323,8 @@
                 </div>
             </div>
         </div>
+
+
         <fieldset>
             <legend>Selectize select menu
                 <span class="more-info">
@@ -331,31 +333,49 @@
                 </span>
             </legend>
 
-             <div class="row" ng-controller="SelectizeCtrl">
-            <div class="form-group col-md-12">
-              <!-- <p>Selected: {{person.selected.name}}</p> -->
-                <form class="form-horizontal">
-                  <div class="form-group">
-                    <label class="col-sm-1 control-label">Addressee: </label>
-                    <div class="col-md-5">
-                      <ui-select ng-model="person.selected" theme="bootstrap">
-                        <ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
-                        <ui-select-choices repeat="item in people | filter: $select.search">
-                          <div ng-bind-html="item.name | highlight: $select.search"></div>
-                          <small ng-bind-html="item.email | highlight: $select.search"></small>
-                        </ui-select-choices>
-                      </ui-select>
-                    </div>
-                </div>
-              </form>
-            </div>
+             <div ng-controller="SelectizeCtrl">
+
+                  <div class="row">
+
+                    <div class="col-md-6">
+
+                      <div class="form-group">
+                        <label class="control-label">Default</label>
+                          <ui-select ng-model="person.selected" theme="selectize">
+                            <ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+                            <ui-select-choices repeat="item in people | filter: $select.search">
+                              <div ng-bind-html="item.name | highlight: $select.search"></div>
+                              <small ng-bind-html="item.email | highlight: $select.search"></small>
+                            </ui-select-choices>
+                          </ui-select>
+
+                      </div>
+                    </div><!-- end col6 -->
+
+                    <div class="col-md-6">
+
+                      <label>Default with clear button: </label>
+                      <div class="input-group">
+                        <ui-select ng-model="person.selected" theme="selectize">
+                          <ui-select-match placeholder="Select or search a person in the list...">{{$select.selected.name}}</ui-select-match>
+                          <ui-select-choices repeat="item in people | filter: $select.search">
+                            <span ng-bind-html="item.name | highlight: $select.search"></span>
+                            <small ng-bind-html="item.email | highlight: $select.search"></small>
+                          </ui-select-choices>
+                        </ui-select>
+                        <span class="input-group-btn">
+                          <button ng-click="person.selected = undefined" class="btn btn-default">
+                            <span class="glyphicon glyphicon-trash"></span>
+                          </button>
+                        </span>
+                      </div>
+
+                    </div><!-- end col6 -->
 
 
+                  </div><!-- end row -->
 
-          </div>
-
-
-
+          </div><!-- end ngcontroller -->
 
         </fieldset>
 
@@ -463,14 +483,6 @@
                 </div>
             </div>
 
-            <div class="form-group switches row">
-                <div class="col-md-3">
-                    <div toggle-switch class="switch-primary switch-large" html="true" knob-label="Vote" on-label='<i class="fa fa-thumbs-up"></i>' off-label='<i class="fa fa-thumbs-down"></i>' model="htmlSwitchStatus1"></div>
-                </div>
-                <div class="col-md-3">
-                    <div toggle-switch class="switch-primary switch-large" html="true"  on-label='<i class="fa fa-circle-o-notch"></i>' off-label='<i class="fa fa-power-off"></i>' model="htmlSwitchStatus2"></div>
-                </div>
-            </div>
 
         </fieldset>
 
