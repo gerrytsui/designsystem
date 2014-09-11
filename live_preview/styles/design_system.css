@@ -596,6 +596,8 @@ input.cmn-toggle-round-flat:checked + label:after { margin-left: 50px; backgroun
 
 .ats-switch { border-color: #e1e1e1; }
 
+.selectize-control.single .selectize-input { border-color: #e1e1e1; }
+
 /* -- ACCORDION -- */
 div.accordion-group .panel-body { padding: 15px; }
 div.accordion-group.compact .panel-default { border: none; border-radius: 0; }

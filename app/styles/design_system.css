@@ -576,10 +576,33 @@ input.cmn-toggle-round-flat:checked + label:after { margin-left: 50px; backgroun
 
 .ats-switch { border-color: #e1e1e1; }
 
-.ui-select-bootstrap .btn-default, .ui-select-bootstrap .btn-default:hover, .ui-select-bootstrap .btn-default:active, .ui-select-bootstrap .btn-default.active, .ui-select-bootstrap .btn-default:focus, .open .dropdown-toggle .ui-select-bootstrap .btn-default { color: #59595A; background-color: transparent; border-color: #e1e1e1; }
+.switch { border-color: #e1e1e1; -o-border-radius: 5px; border-radius: 5px; }
+.switch * { background-image: none !important; }
+.switch .knob { background-color: #F2F2F2; border-color: #e1e1e1; }
+.switch .switch-left { background-color: #0070C4; border-color: #e1e1e1; }
+.switch .switch-right { background-color: #e1e1e1; border-color: #e1e1e1; }
 
-.ui-select-bootstrap .ui-select-choices-row.active > a { color: #fff; text-decoration: none; outline: 0; background-color: #0070C4; }
-.ui-select-bootstrap .btn-default.disabled, .ui-select-bootstrap .btn-default.disabled:hover, .ui-select-bootstrap .btn-default.disabled:active, .ui-select-bootstrap .btn-default.disabled.active, .ui-select-bootstrap .btn-default[disabled], .ui-select-bootstrap .btn-default[disabled]:hover, .ui-select-bootstrap .btn-default[disabled]:active, .ui-select-bootstrap .btn-default[disabled].active, fieldset[disabled] .ui-select-bootstrap .btn-default, fieldset[disabled] .ui-select-bootstrap .btn-default:hover, fieldset[disabled] .ui-select-bootstrap .btn-default:active, fieldset[disabled] .ui-select-bootstrap .btn-default.active { background-color: transparent; border-color: #e1e1e1; color: #e1e1e1; opacity: 1.0; }
+.selectize-control.single .selectize-input { border-color: #e1e1e1; }
+
+.onoffswitch { -moz-user-select: none; -ms-user-select: none; -webkit-user-select: none; position: relative; width: 90px; }
+
+.onoffswitch-checkbox { display: none; }
+
+.onoffswitch-label { border: 1px solid #e1e1e1; border-radius: 5px; cursor: pointer; display: block; overflow: hidden; }
+
+.onoffswitch-inner { -webkit-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s; display: block; margin-left: -100%; width: 200%; }
+
+.onoffswitch-inner:before, .onoffswitch-inner:after { -moz-box-sizing: border-box; box-sizing: border-box; color: white; display: block; float: left; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; height: 30px; line-height: 30px; padding: 0; width: 50%; }
+
+.onoffswitch-inner:before { background-color: #0070C4; color: #fff; content: ""; padding-left: 10px; }
+
+.onoffswitch-inner:after { background-color: #f2f2f2; color: #59595a; content: ""; padding-right: 10px; text-align: right; }
+
+.onoffswitch-switch { -webkit-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; background: #fff; background-image: -webkit-linear-gradient(center top, rgba(0, 0, 0, 0.1) 0%, transparent 100%); border: 2px solid #e1e1e1; border-radius: 5px; bottom: 0; display: block; margin: 0; position: absolute; right: 55px; top: 0; width: 35px; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner { margin-left: 0; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch { right: 0; }
 
 /* -- ACCORDION -- */
 div.accordion-group .panel-body { padding: 15px; }

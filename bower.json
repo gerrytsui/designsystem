@@ -11,7 +11,8 @@
     "es5-shim": "3.4.0",
     "jquery": "1.10.2",
     "json3": "3.3.2",
-    "selectize": "~0.11.0"
+    "selectize": "~0.11.0",
+    "angular-toggle-switch": "~0.3.2"
   },
   "devDependencies": {
     "angular-bootstrap": "0.11.0",
