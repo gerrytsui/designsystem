@@ -1,19 +1,19 @@
+
 <div ng-class="{'container-fluid': settings.isFluid, 'container': !settings.isFluid}">
 
-  <div class="row">
-    <div class="col-md-3">
-      <!-- breadcrumb -->
-      <ol class="breadcrumb">
-        <li><a href="#/">Home</a>
-        </li>
-        <li class="active">Kendo UI</li>
-      </ol>
+<div class="row">
+	<div class="col-md-3">
+		<!-- breadcrumb -->
+		<ol class="breadcrumb">
+		  <li><a href="#/">Home</a></li>
+		  <li class="active">Kendo UI</li>
+		</ol>
 
-      <h1 class="page-header">Kendo UI <span class="more-info"><a href="http://kendo-labs.github.io/angular-kendo/#/" target="_blank">More Info <i class="fa fa-external-link"></i></a></span></h1>
-    </div>
-  </div>
+		<h1 class="page-header">Kendo UI <span class="more-info"><a href="http://kendo-labs.github.io/angular-kendo/#/" target="_blank">More Info <i class="fa fa-external-link"></i></a></span></h1>
+	</div>
+</div>
 
-  <!--
+<!--
 <section class="row">
     <div class="col-md-6">
     <h3 class="sh">Slider</h3>
@@ -35,40 +35,41 @@
 
  -->
 
-  <section class="row">
-    <div class="col-md-12">
-      <h3 class="sh">Splitter</h3>
+<section class="row">
+	<div class="col-md-12">
+		<h3 class="sh">Splitter</h3>
 
-      <div>
-        <div class="form-group">
-          <label>Orientation:</label>
-          <select kendo-drop-down-list k-ng-model="orientation">
-            <option value="horizontal">Horizontal</option>
-            <option value="vertical">Vertical</option>
-          </select>
-        </div>
+		<div>
+			<form class="form-inline" style="margin-bottom:20px;">
+		  <div class="form-group">
+		    <label class="control-label">Orientation:
+		      <select kendo-drop-down-list  k-ng-model="orientation">
+		        <option value="horizontal">Horizontal</option>
+		        <option value="vertical">Vertical</option>
+		      </select>
+		    </label>
+		  </div>
+		</form>
 
-        <div kendo-splitter k-panes="[ null, { contentUrl: 'views/loremipsum.html', collapsible: true }]" k-orientation="orientation" k-rebind="orientation">
-          <div>
-            <p>Content on the left.</p>
-            <p>On the other side we have remote-loaded content.</p>
-            <p>The other pane can also be collapsed by clicking the divider bar.</p>
+		  <div kendo-splitter
+		       k-panes="[ null, { contentUrl: 'views/loremipsum.html', collapsible: true }]"
+		       k-orientation="orientation"
+		       k-rebind="orientation">
+		    <div>
+		      <p>Content on the left.</p>
+		      <p>On the other side we have remote-loaded content.</p>
+		      <p>The other pane can also be collapsed by clicking the divider bar.</p>
+		    </div>
+		    <div>
+		      <!-- AJAX content -->
+		    </div>
+		  </div>
 
-            <div class="form-group">
-              <label>Sample field</label>
-              <input class="form-control" type="text" value="Sample value" />
-            </div>
-          </div>
-          <div>
-            <!-- AJAX content -->
-          </div>
-        </div>
+		</div>
+	</div>
+</section>
 
-      </div>
-    </div>
-  </section>
-
-  <!--
+<!--
 
 <section class="row">
 	<div class="col-md-6">
