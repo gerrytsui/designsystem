@@ -12,7 +12,8 @@ angular.module('designSystemApp', [
   'leaflet-directive',
   'ngProgress',
   'angular-flot',
-  'ui.select',
+  'selectize-ng',
+  /*'ui.select',*/
   'toggle-switch',
   'kendo.directives',
   'ui-rangeSlider'
