@@ -576,10 +576,7 @@ input.cmn-toggle-round-flat:checked + label:after { margin-left: 50px; backgroun
 
 .ats-switch { border-color: #e1e1e1; }
 
-.ui-select-bootstrap .btn-default, .ui-select-bootstrap .btn-default:hover, .ui-select-bootstrap .btn-default:active, .ui-select-bootstrap .btn-default.active, .ui-select-bootstrap .btn-default:focus, .open .dropdown-toggle .ui-select-bootstrap .btn-default { color: #59595A; background-color: transparent; border-color: #e1e1e1; }
-
-.ui-select-bootstrap .ui-select-choices-row.active > a { color: #fff; text-decoration: none; outline: 0; background-color: #0070C4; }
-.ui-select-bootstrap .btn-default.disabled, .ui-select-bootstrap .btn-default.disabled:hover, .ui-select-bootstrap .btn-default.disabled:active, .ui-select-bootstrap .btn-default.disabled.active, .ui-select-bootstrap .btn-default[disabled], .ui-select-bootstrap .btn-default[disabled]:hover, .ui-select-bootstrap .btn-default[disabled]:active, .ui-select-bootstrap .btn-default[disabled].active, fieldset[disabled] .ui-select-bootstrap .btn-default, fieldset[disabled] .ui-select-bootstrap .btn-default:hover, fieldset[disabled] .ui-select-bootstrap .btn-default:active, fieldset[disabled] .ui-select-bootstrap .btn-default.active { background-color: transparent; border-color: #e1e1e1; color: #e1e1e1; opacity: 1.0; }
+.selectize-control.single .selectize-input { border-color: #e1e1e1; }
 
 /* -- ACCORDION -- */
 div.accordion-group .panel-body { padding: 15px; }
