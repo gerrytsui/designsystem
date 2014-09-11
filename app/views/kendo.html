@@ -40,14 +40,16 @@
 		<h3 class="sh">Splitter</h3>
 
 		<div>
-		  <p>
-		    <label>Orientation:
-		      <select kendo-drop-down-list k-ng-model="orientation">
+			<form class="form-inline" style="margin-bottom:20px;">
+		  <div class="form-group">
+		    <label class="control-label">Orientation:
+		      <select kendo-drop-down-list  k-ng-model="orientation">
 		        <option value="horizontal">Horizontal</option>
 		        <option value="vertical">Vertical</option>
 		      </select>
 		    </label>
-		  </p>
+		  </div>
+		</form>
 
 		  <div kendo-splitter
 		       k-panes="[ null, { contentUrl: 'views/loremipsum.html', collapsible: true }]"
