@@ -12,7 +12,8 @@
     "jquery": "1.10.2",
     "json3": "3.3.2",
     "angular-ui-select": "~0.7.0",
-    "selectize": "~0.11.0"
+    "selectize": "~0.11.0",
+    "angular-toggle-switch": "~0.3.2"
   },
   "devDependencies": {
     "angular-bootstrap": "0.11.0",

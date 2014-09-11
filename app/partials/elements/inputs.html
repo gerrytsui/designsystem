@@ -467,7 +467,13 @@
 
 
         <fieldset>
-            <legend>Switches</legend>
+            <legend>
+              Switches
+              <span class="more-info">
+              <a href="http://www.bootstrap-switch.org" target="_blank">Basic info <i class="fa fa-external-link"></i></a>
+              <a href="http://cgarvis.github.io/angular-toggle-switch/" target="_blank">Angular info <i class="fa fa-external-link"></i></a>
+              </span>
+            </legend>
             <div class="form-group switches row">
                 <div class="col-md-3">
                     <div toggle-switch model="switchStatus1"></div>
@@ -476,10 +482,10 @@
                     <div toggle-switch model="switchStatus2" disabled="disabled"></div>
                 </div>
                 <div class="col-md-3">
-                    <div toggle-switch model="switchStatus3" class="switch-small"></div>
+                    <div toggle-switch model="switchStatus3" data-size="small" state="true"></div>
                 </div>
                 <div class="col-md-3">
-                <div toggle-switch model="switchStatus4" class="switch-mini"></div>
+                <div toggle-switch model="switchStatus4" on-label="" off-label="" class="switch-mini"></div>
                 </div>
             </div>
 

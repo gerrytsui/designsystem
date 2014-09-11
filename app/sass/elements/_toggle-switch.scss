@@ -4,10 +4,36 @@
   border-color: $gray;
 }
 
+.switch {
+    border-color: $gray;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    * {
+        background-image: none !important;;
+    }
+    .knob {
+        background-color: $gray-light;
+        border-color: $gray;
+      }
+    .switch-left {
+        background-color: $brand-primary;
+        border-color: $gray;
+    }
+    .switch-right {
+        background-color: $gray;
+        border-color: $gray;
+    }
+}
+
+
+
+
+
+
 
 //are we using this one or not?
-//
-// / bootstrap angular switch /
+
+// bootstrap angular switch /
 // .has-switch {
 //   display            : inline-block;
 //   cursor             : pointer;
