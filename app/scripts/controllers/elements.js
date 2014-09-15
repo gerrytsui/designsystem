@@ -46,15 +46,7 @@ angular.module('designSystemApp')
             });
 
 
-            //datetimepicker1
-            $scope.datetimepicker1 = {
-                pickTime: false
-            };
 
-            //datetimepicker2
-            $scope.datetimepicker2 = {
-                pickDate: false
-            };
 
             //numeric stepper
             $scope.numericStepper = {
@@ -99,6 +91,6 @@ angular.module('designSystemApp')
                 max: 80
             };
 
-      
+
         }
     ]);

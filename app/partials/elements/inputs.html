@@ -68,7 +68,7 @@
 
 
 
-    <fieldset>
+    <fieldset ng-controller="DatePickerCtrl">
       <legend>Date &amp; time picker
         <a href="http://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank"><span class="more-info">More info <i class="fa fa-external-link"></i></span></a>
       </legend>
@@ -78,8 +78,7 @@
           <div class="input-group" ng-model="datetimepicker1" pb-datetimepicker>
             <input class="form-control" type="text">
             <span class="input-group-btn">
-                            <button class="btn btn-default"><span class="fa fa-calendar"></span>
-            </button>
+              <button class="btn btn-default"><span class="fa fa-calendar"></span></button>
             </span>
           </div>
         </div>
@@ -87,8 +86,7 @@
           <div class="input-group" ng-model="datetimepicker2" pb-datetimepicker>
             <input class="form-control" type="text">
             <span class="input-group-btn">
-                            <button class="btn btn-default"><span class="fa fa-clock-o"></span>
-            </button>
+                <button class="btn btn-default"><span class="fa fa-clock-o"></span></button>
             </span>
           </div>
         </div>
