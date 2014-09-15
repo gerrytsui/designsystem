@@ -28,6 +28,14 @@ module.exports = function(grunt) {
             build: 'live_preview'
 
         },
+        pkg: grunt.file.readJSON('package.json'),
+        banner: '/*!\n' +
+            '* <%= pkg.name %> - v<%= pkg.version %> - ' +
+            '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
+            '* http://<%= pkg.homepage %>/\n' +
+            '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
+            '<%= pkg.author.name %>; All Rights Reserved\n' + '*/',
+
 
         // Watches files for changes and runs tasks based on the changed files
         // modified 7/29/14 to reload css without a page reload
@@ -86,7 +94,8 @@ module.exports = function(grunt) {
           },
           dist: {
             options: {
-              style: 'compressed'
+              style: 'compressed',
+              banner: '<%= banner %>'
             },
             files: {
               '<%= yeoman.dist %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss',
