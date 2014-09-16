@@ -12,11 +12,12 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+    <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+
     <!-- build:css({tmp,app,.tmp}) styles/vendor.css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/leaflet-dist/leaflet.css" />
     <link rel="stylesheet" href="bower_components/ngprogress/ngProgress.css" />
     <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
@@ -32,7 +33,7 @@
 
     <link rel="stylesheet" href="styles/design_system.css">
 
-    <!-- include next line if using Kendo UI -->
+    <!-- include next line if using Kendo UI :: Also include JS at end of BODY -->
     <link rel="stylesheet" href="styles/kendoui.css">
     <!-- include next line if using ui-bootstrap -->
     <link rel="stylesheet" href="styles/ui-bootstrap.css">
@@ -170,7 +171,6 @@
       </div>
     </div>
 
-
     <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
     <!-- build:js scripts/ie8.js -->
     <!--[if lt IE 9]>
@@ -181,10 +181,10 @@
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app})  scripts/vendor.js -->
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/moment/min/moment.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -203,15 +203,21 @@
     <script src="bower_components/angular-flot/angular-flot.js"></script>
     <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script src="bower_components/Numeric-Stepper/stepper/jquery.stepper.js"></script>
-    <script src="bower_components/kendo-ui/js/kendo.core.min.js"></script>
-    <script src="bower_components/kendo-ui/js/kendo.ui.core.min.js"></script>
-    <script src="bower_components/angular-kendo-ui/angular-kendo.js"></script>
     <script src="bower_components/angular-rangeslider/angular.rangeSlider.js"></script>
     <script src="bower_components/selectize/dist/js/standalone/selectize.js"></script>
     <script src="bower_components/selectize-ng/dist/selectize-ng.min.js"></script>
     <script src="scripts/vendor/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="bower_components/angular-toggle-switch/angular-toggle-switch.js"></script>
     <!-- endbuild -->
+
+
+    <!--<script src="bower_components/kendo-ui/js/kendo.core.min.js"></script>-->
+    <!--<script src="bower_components/kendo-ui/js/kendo.ui.core.min.js"></script>-->
+    <!--<script src="bower_components/angular-kendo-ui/angular-kendo.js"></script>-->
+
+    <!-- pre-built kendo.js at end of document -->
+
+
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
@@ -262,6 +268,9 @@
     <script src="scripts/directives/pb-panel-draggable.js"></script>
     <script src="scripts/directives/pb-panel-collapsible.js"></script>
     <!-- endbuild -->
+
+    <!-- include following line if using kendo ui -->
+    <script src="scripts/vendor/kendo.js"></script>
 
 
   </body>
