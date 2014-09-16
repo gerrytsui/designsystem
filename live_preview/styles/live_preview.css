@@ -1,3 +1,8 @@
+/*!
+* DesignSystem - v0.8.6 - 2014-09-16
+* http://http://guxstaging.pbi.global.pvt/design_system/
+* Copyright (c) 2014 ; All Rights Reserved
+*/
 .clearfix { zoom: 1; }
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }

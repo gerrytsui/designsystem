@@ -83,7 +83,8 @@ module.exports = function(grunt) {
       },
       livepreview: {
         options: {
-          style: 'compact'
+              style: 'compact',
+              banner: '<%= banner %>'
         },
         files: {
           '<%= yeoman.build %>/styles/design_system.css': '<%= yeoman.sass %>/design_system.scss',
