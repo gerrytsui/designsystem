@@ -1,5 +1,5 @@
 /*!
-* DesignSystem - v0.8.6 - 2014-09-16
+* DesignSystem - v0.8.6 - 2014-09-23
 * http://http://guxstaging.pbi.global.pvt/design_system/
 * Copyright (c) 2014 ; All Rights Reserved
 */
@@ -628,6 +628,23 @@ input.cmn-toggle-round-flat:checked + label:after { margin-left: 50px; backgroun
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner { margin-left: 0; }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch { right: 0; }
+
+/* experimental block grid code, will not work in IE8  */
+[class*="block-grid-"] { display: block; padding: 0; margin: 0 -0.55556rem; zoom: 1; }
+[class*="block-grid-"]:before, [class*="block-grid-"]:after { content: ""; display: table; }
+[class*="block-grid-"]:after { clear: both; }
+
+[class*="block-grid-"] > li { display: block; height: auto; float: left; padding: 0 0.55556rem 1.11111rem; }
+
+.block-grid-6 > li { width: 16.66666%; }
+
+.small-block-grid-3 > li { width: 33.33333%; list-style: none; }
+
+.small-block-grid-3 > li { width: 33.33333%; list-style: none; }
+
+.small-block-grid-3 > li:nth-of-type(1n) { clear: none; }
+
+.small-block-grid-3 > li:nth-of-type(3n+1) { clear: both; }
 
 /* -- ACCORDION -- */
 div.accordion-group .panel-body { padding: 15px; }
