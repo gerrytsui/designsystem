@@ -1,6 +1,6 @@
 // moved to separate file to minimized scrolling in main file
 //
-/* Buttons */
+//*/ Buttons */
 // --------------------------------------------------
 // just to remove the BS inset shadows
  .btn:active, .btn.active {
@@ -37,7 +37,7 @@
 
 // -- Button variants outline and solid
 // outline button, we added a knockout one, hence the added params
-@mixin outline-button ($color: $c, $foreground: white, $disabled: $disabled-button ) {
+@mixin outline-button($color: $c, $foreground: white, $disabled: $disabled-button) {
 	color             : $color;
 	background-color  : transparent;
 	border-color      : $color;
@@ -75,7 +75,7 @@
 		background-color: transparent;
 		border-color    : $disabled;
 		color           : $disabled;
-		opacity         : 1.0;
+		opacity         : 1;
     }
   }
 }
@@ -178,7 +178,7 @@
 
 .btn-group-borderless {
 	.btn {
-		border: none;
+		border: 0;
 	}
 }
 
@@ -198,7 +198,7 @@
   }
   // correct the "double borders"
   > .btn-group:not(:first-child) > .btn {
-	border-left: none;
+	border-left: 0;
   }
 
   > .btn-group .dropdown-menu {

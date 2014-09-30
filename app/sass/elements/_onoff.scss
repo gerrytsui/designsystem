@@ -19,8 +19,8 @@
 
 }
 .onoffswitch-inner {
-  -webkit-transition: margin 0.3s ease-in 0s;
-  transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin .3s ease-in 0s;
+  transition: margin .3s ease-in 0s;
   display: block;
   margin-left: -100%;
   width: 200%;
@@ -45,24 +45,24 @@
 .onoffswitch-inner:before {
   background-color: $brand-primary;
   color: #fff;
-  content: "";
+  content: '';
   padding-left: 10px;
 
 }
 .onoffswitch-inner:after {
   background-color: #f2f2f2;
   color: #59595a;
-  content: "";
+  content: '';
   padding-right: 10px;
   text-align: right;
 
 }
 .onoffswitch-switch {
-  -webkit-transition: all 0.3s ease-in 0s;
-  transition        : all 0.3s ease-in 0s;
+  -webkit-transition: all .3s ease-in 0s;
+  transition        : all .3s ease-in 0s;
   background        : #fff;
-  background-image  : -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
-  background-image  : -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+  background-image  : -webkit-linear-gradient(center top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image  : -o-linear-gradient(center top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 0) 100%);
   border            : 2px solid #e1e1e1;
   border-radius     : 5px;
   bottom            : 0;

@@ -1,31 +1,31 @@
 
-/* TODO:  Need IE8 fallback */
-/* ============================================================
-  COMMON
-============================================================ */
+//* TODO:  Need IE8 fallback */
+// ============================================================
+// COMMON
+// ============================================================
 .cmn-toggle {
   position: absolute;
   margin-left: -9999px;
   visibility: hidden;
-}
-.cmn-toggle + label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 }
 
 .cmn-switch {
   display: inline-block;
 }
 
-/* ============================================================
-  SWITCH 2 - ROUND FLAT
-============================================================ */
+// ============================================================
+//  SWITCH 2 - ROUND FLAT
+// ============================================================
 $radius: 50px;
 $inset: $radius * .2;
 
@@ -37,13 +37,13 @@ input.cmn-toggle-round-flat + label {
   background-color: #dddddd;
   -o-border-radius: $radius;
   border-radius: $radius;
-  -webkit-transition: background 0.4s;
-  transition: background 0.4s;
+  -webkit-transition: background .4s;
+  transition: background .4s;
 }
 input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
   display: block;
   position: absolute;
-  content: "";
+  content: '';
 }
 input.cmn-toggle-round-flat + label:before {
   top: 2px;
@@ -53,8 +53,8 @@ input.cmn-toggle-round-flat + label:before {
   background-color: #fff;
   -o-border-radius: $radius;
   border-radius: $radius;
-  -webkit-transition: background 0.4s;
-  transition: background 0.4s;
+  -webkit-transition: background .4s;
+  transition: background .4s;
 }
 input.cmn-toggle-round-flat + label:after {
   top: 4px;
@@ -64,8 +64,8 @@ input.cmn-toggle-round-flat + label:after {
   background-color: #dddddd;
   -o-border-radius: $radius - $inset;
   border-radius: $radius - $inset;
-  -webkit-transition: margin 0.4s, background 0.4s;
-  transition: margin 0.4s, background 0.4s;
+  -webkit-transition: margin .4s, background .4s;
+  transition: margin .4s, background .4s;
 }
 input.cmn-toggle-round-flat:checked + label {
   background-color: $brand-primary;

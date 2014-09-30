@@ -2,7 +2,7 @@
 
 .clearfix{
 	zoom:1;
-	&:before, &:after{ content:""; display:table; }
+	&:before, &:after{ content:''; display:table; }
 	&:after{ clear: both; }
 }
 
@@ -13,12 +13,12 @@
 }
 
 .debug {
-	border: 1px solid red;
+	border: 1px solid #f00;
 	&.green {
-		border-color: green;
+		border-color: #008000;
 	}
 	&.pink {
-		border-color: pink;
+		border-color: #ffc0b0;
 	}
 }
 
@@ -46,13 +46,13 @@ hr {
 	margin-bottom: 30px;
 }
 .grid-sample .panel {
-	border       : none;
+	border       : 0;
 	border-top   : 3px solid $gray;
 	border-radius: 0;
 }
 
 
-/* HEADER & FOOTER EXAMPLES */
+//* HEADER & FOOTER EXAMPLES */
 .header-title {
 	margin-top: 40px;
 	margin-bottom: 20px;
@@ -62,25 +62,25 @@ hr {
 	margin-bottom: 20px;
 }
 .header-example {
-	box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 	margin-bottom: 20px;
 }
 .footer-example {
-	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 
 	&.footer-last {
 		margin-bottom: 120px;
 	}
 }
 
-/* Linear Gradients & Pseudo Element */
+//* Linear Gradients & Pseudo Element */
 .pseudo {
   position: relative;
   box-sizing: border-box;
   background-clip: padding-box;
   border-bottom: 10px solid transparent;
   z-index: 2;
-  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0px 1px 2px);
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0 1px 2px);
   background-color: #fff;
 }
 .pseudo:after {
@@ -100,7 +100,7 @@ hr {
 
 
 
-/* Charting Demos */
+//* Charting Demos */
 
 .piechart {
 	position: relative;
@@ -150,7 +150,7 @@ legend .more-info, h3 .more-info, h1 .more-info {
 }
 
 
-/* the tab that pops out of the  Live Preview */
+//* the tab that pops out of the  Live Preview */
 
 $tab-color: #333;
 
@@ -165,7 +165,7 @@ $tab-color: #333;
 
 		&.activate {
 			width: 185px;
-			right: 0px;
+			right: 0;
 		}
 
 		.settings-tab {
@@ -189,7 +189,7 @@ $tab-color: #333;
 		.settings-form {
 			float                    : right;
 			background-color         : $tab-color;
-			padding                  : 0px 10px 10px 15px;
+			padding                  : 0 10px 10px 15px;
 			height                   : 125px;
 			width                    : 150px;
 			color                    : #fff;
@@ -206,7 +206,7 @@ p[class^="bg"] {
 	padding: 10px;
 }
 
-/* Color swatches */
+//* Color swatches */
 .row-left-border {
 	border-left: 1px solid $gray;
 }
@@ -238,7 +238,7 @@ p[class^="bg"] {
 }
 
 
-/* color charts */
+//* color charts */
 .color-chart-nested {
 	position: relative;
 	float: left;
@@ -292,7 +292,7 @@ p[class^="bg"] {
 }
 
 
-/* color swatch backgrounds */
+//* color swatch backgrounds */
 .brand-primary { background-color: $brand-primary; }
 .brand-success { background-color: $brand-success; }
 .brand-danger { background-color : $brand-error; }
@@ -330,7 +330,7 @@ p[class^="bg"] {
 
 
 
-/* panels page */
+//* panels page */
 .list-group-details {
 
 	.form-group {
@@ -350,7 +350,7 @@ p[class^="bg"] {
 		}
 
 		&:before {
-			content: "..........................................";
+			content: '..........................................';
 			float: left;
 			white-space: nowrap;
 			width: 0;

@@ -80,7 +80,7 @@
 
   .menu-heading {
   white-space    : nowrap;
-  padding        : 5px 3px 5px 3px;
+  padding        : 5px 3px;
   color          : $text-color;
   text-decoration: none;
   display        : block;
@@ -141,7 +141,7 @@
     color             : $brand-primary;
       }
       &:before {
-        content: "\f0a8";
+        content: '\f0a8';
       }
     }
 
@@ -155,7 +155,7 @@
       // ie8
       .no-csstransforms & {
         i.fa:before {
-        content: "\f0a9";
+        content: '\f0a9';
       }
     }
     }

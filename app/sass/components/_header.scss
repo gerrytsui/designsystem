@@ -42,7 +42,7 @@ body.fixed-header {
       // }
       &.navbar-default {
       background-color     : $background-color;
-      border               : none;
+      border               : 0;
       -webkit-border-radius: 0;
       -moz-border-radius   : 0;
       border-radius        : 0;

@@ -28,14 +28,21 @@ a {
   &:hover {
     color: $link-color-hover;
   }
+  &.read-more {
+    font-size: $font-size-base - 2; // 2 px smaller
+    white-space: nowrap;
+    &:after {
+      content: '\2026'; // ellipsis
+    }
+  }
 }
 
-body{
+body {
   font-family: $font-family-base;
   font-size  : $font-size-base !important; // for ie8
   font-weight: 400;
   color      : $text-color;
-    & .has-error {
+     .has-error {
       color: $brand-error;
   }
 }
@@ -131,13 +138,7 @@ ul {
   font-size: $font-size-small;
 }
 
-a.read-more {
-  font-size: $font-size-base - 2; // 2 px smaller
-  white-space: nowrap;
-  &:after {
-    content: '\2026'; // ellipsis
-  }
-}
+
 
 .fa-active {
   color: $brand-primary;

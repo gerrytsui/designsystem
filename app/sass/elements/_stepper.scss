@@ -1,15 +1,15 @@
-/* NUMERIC STEPPER */
+//* NUMERIC STEPPER */
 .stepper-wrap {
     position: relative;
     display: inline-block;
     font: 11px Arial, sans-serif;
+    input {
+        text-align: right;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }
 
-.stepper-wrap input {
-    text-align: right;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
 
 .stepper-btn-wrap {
     position: absolute;
@@ -29,22 +29,20 @@
     .stepper-btn-down {
       padding-top: 2px;
     }
-}
+    a {
+        display: block;
+        height: 50%;
+        overflow: hidden;
+        line-height: 100%;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: #666;
+        font-size: 10px;
+        &:hover {
+            background-color: $brand-primary;
+            color: white;
+        }
+    }
 
-
-.stepper-btn-wrap a {
-    display: block;
-    height: 50%;
-    overflow: hidden;
-    line-height: 100%;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    color: #666;
-    font-size: 10px;
-}
-
-.stepper-btn-wrap a:hover {
-    background-color: $brand-primary;
-    color: white;
 }

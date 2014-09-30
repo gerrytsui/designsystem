@@ -25,16 +25,16 @@
             top: -(($dot-size/2)-($bar-height/2));
             left: 55%;
             margin-left: -$dot-size;
-            border: 2px solid white;
+            border: 2px solid #fff;
         }
         .progress {
            position: relative;
-            border-radius: 0px;
+            border-radius: 0;
             height: $bar-height;
             box-shadow: none;
             left: 50%;
             .progress-bar {
-                width:0px;
+                width:0;
                 box-shadow: none;
                 background: $track-color;
             }

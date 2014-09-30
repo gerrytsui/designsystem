@@ -1,17 +1,17 @@
 /*!
-* DesignSystem - v0.8.9 - 2014-09-29
+* DesignSystem - v0.8.9 - 2014-09-30
 * http://http://guxstaging.pbi.global.pvt/design_system/
 * Copyright (c) 2014 ; All Rights Reserved
 */
 .clearfix { zoom: 1; }
-.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
-.debug { border: 1px solid red; }
-.debug.green { border-color: green; }
-.debug.pink { border-color: pink; }
+.debug { border: 1px solid #f00; }
+.debug.green { border-color: #008000; }
+.debug.pink { border-color: #ffc0b0; }
 
 section.row { margin-bottom: 60px; }
 
@@ -23,24 +23,21 @@ h6.sh:first-child { margin-top: 0; }
 
 hr { margin-top: 30px; margin-bottom: 30px; }
 
-.grid-sample .panel { border: none; border-top: 3px solid #e1e1e1; border-radius: 0; }
+.grid-sample .panel { border: 0; border-top: 3px solid #e1e1e1; border-radius: 0; }
 
-/* HEADER & FOOTER EXAMPLES */
 .header-title { margin-top: 40px; margin-bottom: 20px; }
 
 .footer-title { margin-top: 60px; margin-bottom: 20px; }
 
-.header-example { box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1); margin-bottom: 20px; }
+.header-example { box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); margin-bottom: 20px; }
 
-.footer-example { box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2); }
+.footer-example { box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
 .footer-example.footer-last { margin-bottom: 120px; }
 
-/* Linear Gradients & Pseudo Element */
-.pseudo { position: relative; box-sizing: border-box; background-clip: padding-box; border-bottom: 10px solid transparent; z-index: 2; -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0px 1px 2px); background-color: #fff; }
+.pseudo { position: relative; box-sizing: border-box; background-clip: padding-box; border-bottom: 10px solid transparent; z-index: 2; -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0 1px 2px); background-color: #fff; }
 
 .pseudo:after { content: ''; position: absolute; display: block; width: 100%; height: 10px; bottom: -10px; left: 0; background-image: linear-gradient(45deg, transparent 33.333%, white 33.333%, white 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, white 33.333%, white 66.667%, transparent 66.667%); background-size: 20px 40px; background-position: 50% -30px; background-repeat: repeat-x; z-index: 1; }
 
-/* Charting Demos */
 .piechart { position: relative; display: inline-block; }
 .piechart span { font-size: 20px; position: absolute; top: 0; left: 0; display: block; text-align: center; width: 100%; height: 100%; padding-top: 35%; }
 
@@ -51,18 +48,16 @@ hr { margin-top: 30px; margin-bottom: 30px; }
 
 legend .more-info, h3 .more-info, h1 .more-info { float: right; font-size: 14px; line-height: 1; margin-top: 10px; }
 
-/* the tab that pops out of the  Live Preview */
 .settings { position: fixed; top: 60px; right: -150px; width: 185px; height: 100px; z-index: 2000; transition: all .3s; }
-.settings.activate { width: 185px; right: 0px; }
+.settings.activate { width: 185px; right: 0; }
 .settings .settings-tab { float: left; width: 35px; text-align: center; color: #fff; background: #333333; padding: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3); }
 .settings .settings-tab:hover { cursor: pointer; }
 .settings .settings-tab:active { background: #71A6B9; }
-.settings .settings-form { float: right; background-color: #333333; padding: 0px 10px 10px 15px; height: 125px; width: 150px; color: #fff; border-bottom-left-radius: 5px; box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3); }
+.settings .settings-form { float: right; background-color: #333333; padding: 0 10px 10px 15px; height: 125px; width: 150px; color: #fff; border-bottom-left-radius: 5px; box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3); }
 .settings .settings-form label { font-size: 12px !important; color: #fff; }
 
 p[class^="bg"] { padding: 10px; }
 
-/* Color swatches */
 .row-left-border { border-left: 1px solid #e1e1e1; }
 
 .color-swatches { margin-bottom: 20px; }
@@ -72,7 +67,6 @@ p[class^="bg"] { padding: 10px; }
 .color-swatches p { font-size: 14px; color: #59595a; }
 .color-swatches p small { font-size: 11px; line-height: 1.2; }
 
-/* color charts */
 .color-chart-nested { position: relative; float: left; margin-right: 30px; }
 .color-chart-nested .pie { position: absolute; top: 86px; left: 86px; }
 
@@ -88,7 +82,6 @@ p[class^="bg"] { padding: 10px; }
 
 .text-center .pie, .text-center .donut { margin: 0 auto 20px; width: 100px; }
 
-/* color swatch backgrounds */
 .brand-primary { background-color: #0070c4; }
 
 .brand-success { background-color: #007d00; }
@@ -149,9 +142,8 @@ p[class^="bg"] { padding: 10px; }
 
 .gray6 { background-color: #d5d5d6; }
 
-/* panels page */
 .list-group-details .form-group { margin-bottom: 0; }
 .list-group-details .control-label { padding-top: 3px; padding-right: 0; text-align: left; }
 .list-group-details .control-label strong { background-color: #fff; padding-right: .3em; color: #59595a; font-weight: normal; }
-.list-group-details .control-label:before { content: ".........................................."; float: left; white-space: nowrap; width: 0; color: #e1e1e1; }
+.list-group-details .control-label:before { content: '..........................................'; float: left; white-space: nowrap; width: 0; color: #e1e1e1; }
 .list-group-details .form-control-static { background-color: #fff; padding-top: 2px; padding-bottom: 2px; padding-left: .3em; word-wrap: break-word; }

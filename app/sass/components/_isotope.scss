@@ -1,5 +1,13 @@
 // Isotope */
 .isotope {
+    @extend %isotope-transition-duration;
+    -webkit-transition-property: height, width;
+    transition-property: height, width;
+    .item {
+      @extend %isotope-transition-duration;
+      -webkit-transition-property: -webkit-transform, opacity;
+      transition-property:         transform, opacity;
+    }
     .row {
        margin-left:0;
        margin-right:0;
@@ -25,19 +33,10 @@
 
 // Isotope Transitions
 %isotope-transition-duration {
-  -webkit-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
 }
-.isotope {
-  -webkit-transition-property: height, width;
-  transition-property: height, width;
-  @extend %isotope-transition-duration;
-  .item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    transition-property:         transform, opacity;
-    @extend %isotope-transition-duration;
-  }
-}
+
 
 
 // responsive media queries */
@@ -52,7 +51,7 @@
   }
   .isotope .item {
     position: static !important;
-    -webkit-transform: translate(0px, 0px) !important;
-            transform: translate(0px, 0px) !important;
+    -webkit-transform: translate(0p, 0) !important;
+            transform: translate(0, 0) !important;
   }
 }

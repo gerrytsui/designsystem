@@ -1,6 +1,6 @@
 
 
-/* -- FORMS -- */
+//* -- FORMS -- */
 
 .help-block.text-error {
   display        : none;
@@ -80,14 +80,14 @@ background-color: #ffffff;
     color           : #555555;
     text-align      : center;
     background-color: #fff;
-    border          : 1px solid #cccccc;
+    border          : 1px solid #ccc;
     border-radius   : 4px;
 
     &:last-child {
       border-bottom-left-radius: 0;
       border-top-left-radius   : 0;
-      border-left              : none;
-      & + input {
+      border-left              : 0;
+      + input {
         //border-left : none;
         background-color: #f00;
       }
@@ -95,10 +95,10 @@ background-color: #ffffff;
     &:first-child {
       border-bottom-right-radius: 0;
       border-top-right-radius   : 0;
-      border-right              : none;
+      border-right              : 0;
       // sibling selector
-      & + input {
-        border-left : none;
+      + input {
+        border-left : 0;
         &:focus {
           border-left: 1px solid #66afe9;
         }

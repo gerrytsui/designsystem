@@ -4,12 +4,12 @@
   -moz-box-shadow   : none;
   box-shadow        : none;
   border-radius     : 0;
-  background-color  : white;
+  background-color  : #fff;
   &.bottom .arrow:after {
-    border-bottom-color: white;
+    border-bottom-color: #fff;
   }
   &.top .arrow:after {
-    border-top-color: white;
+    border-top-color: #fff;
   }
 
 }
