@@ -11,22 +11,19 @@ var gulp = require('gulp'),
 /**
  * Task to delete the dist folder
  */
-gulp.task('delete-dist', function (cb) {
+gulp.task('clean', function (cb) {
   return del(['output'], cb);
 });
 
 /**
  * Task to compile sass, and minimize it, then copy it all to the dist folder
  */
-gulp.task('css', function() {
+gulp.task('sass', function() {
   gulp.src('./src/sass/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./src/css'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(cssmin())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./src/css'));
-
-  gulp.src('./src/css/**/*')
     .pipe(gulp.dest('./dist/css'));
 });
 
@@ -51,7 +48,7 @@ gulp.task('fonts', function() {
  * Task to run task(s) when watched files change
  */
 gulp.task('watch', function() {
-  gulp.watch('src/sass/**/*.scss', ['test', 'css']);
+  gulp.watch('src/sass/**/*.scss', ['test', 'sass']);
 });
 
 /**
@@ -65,7 +62,7 @@ gulp.task('test', function() {
 /**
  * Buld task
  */
-gulp.task('build', ['delete-dist', 'css', 'fonts']);
+gulp.task('build', ['clean', 'sass', 'fonts']);
 /**
  * Default task
  */
