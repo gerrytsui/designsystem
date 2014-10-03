@@ -1,8 +1,8 @@
 /.sublime-grunt.cache
 bower_components
 node_modules
-.DS_Store
 config.codekit
 .ftppass
 .tmp
+.DS_Store
 npm-debug.log
