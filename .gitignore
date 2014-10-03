@@ -1,10 +1,8 @@
 /.sublime-grunt.cache
-app/bower_components
-.sass-cache
+bower_components
 node_modules
 .DS_Store
 config.codekit
 .ftppass
 .tmp
-app/styles/design_system.css
 npm-debug.log

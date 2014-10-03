@@ -1,0 +1,69 @@
+// Color Settings
+// ========================================
+
+// Primary
+// ========================================
+
+$gray-dark: #323232;
+$gray-text: #59595A;
+$gray: #e1e1e1;
+$gray-light: #F2F2F2;
+$brand-primary: #0070C4;
+
+// Secondary
+// ========================================
+
+$gray-disabled: #BFBFBF;
+$link-color: $brand-primary;
+$link-color-hover: #00487F;
+$link-hover-color: $link-color-hover; // the bootstrap name
+$link-color-disabled: #AFD2EC;
+
+// Tertiary
+// ========================================
+
+$brand-error: #CC0000; //error
+$brand-danger: $brand-error;
+$brand-success: #007D00;
+$brand-info: $brand-primary;
+$brand-warning: #826000;
+
+// Char Colors
+// ========================================
+
+$chart-green: #00CB74;
+$chart-blue: #3366ff;
+$chart-purple: #8106A9;
+$chart-yellow: #ffcc00;
+$chart-orange: #FF9200;
+$chart-red: #FF4900;
+
+// Blue Tints (monochrome charts)
+// ========================================
+
+$blue1: #3322aa;
+$blue2: #3344cc;
+$blue3: #3366ff;
+$blue4: #668cff;
+$blue5: #99b2ff;
+$blue6: #ccd9ff;
+
+// Gray Tints (grayscale charts)
+// ========================================
+
+$gray1: #323232;
+$gray2: #474748;
+$gray3: #59595B;
+$gray4: #838384;
+$gray5: #ACACAD;
+$gray6: #d5d5d6;
+
+// Social Colors
+// ========================================
+
+$social-colors:
+  ('twitter' #55ACEE)
+  ('facebook' #4964A1)
+  ('linkedin' #1A85BC)
+  ('youtube' #CC181E)
+  ('google-plus' #D94E40);

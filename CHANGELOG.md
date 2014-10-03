@@ -3,6 +3,11 @@
 
 ##Release Notes
 
+###0.9.0
+- Pulled out live preview to put it its own repo
+- Refactor sass into different structure
+- Switched to Gulp from Grunt
+
 ###0.8.8  September 23, 2014
 - Refactored Sass into separate files using manifest files.  Will be easier to locate specific sass for a page
 - Updates and improvements to gruntfile
@@ -130,5 +135,3 @@
 - Tabs
    - switched to Bootstrap tabs
    - added better vertical variant
-
-
