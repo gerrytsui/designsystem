@@ -66,7 +66,7 @@ hr {
 	margin-bottom: 20px;
 }
 .footer-example {
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 6px rgba(0, 0, 0, .2);
 
 	&.footer-last {
 		margin-bottom: 120px;
@@ -80,7 +80,7 @@ hr {
   background-clip: padding-box;
   border-bottom: 10px solid transparent;
   z-index: 2;
-  -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0 1px 2px);
+  -webkit-filter: drop-shadow(rgba(0, 0, 0, .55) 0 1px 2px);
   background-color: #fff;
 }
 .pseudo:after {
@@ -91,7 +91,7 @@ hr {
   height: 10px;
   bottom: -10px;
   left: 0;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 33.333%, #ffffff 33.333%, #ffffff 66.667%, rgba(0, 0, 0, 0) 66.667%), linear-gradient(-45deg, rgba(0, 0, 0, 0) 33.333%, #ffffff 33.333%, #ffffff 66.667%, rgba(0, 0, 0, 0) 66.667%);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0) 33.333%, #fff 33.333%, #fff 66.667%, rgba(0, 0, 0, 0) 66.667%), linear-gradient(-45deg, rgba(0, 0, 0, 0) 33.333%, #fff 33.333%, #fff 66.667%, rgba(0, 0, 0, 0) 66.667%);
   background-size: 20px 40px;
   background-position: 50% -30px;
   background-repeat: repeat-x;
@@ -177,12 +177,12 @@ $tab-color: #333;
 			padding                  : 5px;
 			border-top-left-radius   : 5px;
 			border-bottom-left-radius: 5px;
-			box-shadow               : 3px 5px 8px rgba(0,0,0,.3);
+			box-shadow               : 3px 5px 8px rgba(0, 0, 0, .3);
 			&:hover {
 				cursor: pointer;
 			}
 			&:active {
-				background: #71A6B9;
+				background: #71a6b9;
 			}
 		}
 
@@ -194,7 +194,7 @@ $tab-color: #333;
 			width                    : 150px;
 			color                    : #fff;
 			border-bottom-left-radius: 5px;
-			box-shadow               : 3px 5px 8px rgba(0,0,0,.3);
+			box-shadow               : 3px 5px 8px rgba(0, 0, 0, .3);
 			label {
 				font-size: 12px !important;
 				color: #fff;
