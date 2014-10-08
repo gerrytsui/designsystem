@@ -10,11 +10,7 @@
     left: 0;
     right: 100%;
     height: $bar-height;
-    margin: -($bar-height/2) 0 0 0;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    margin: -($bar-height/2) 0 0;
     border-radius: 4px;
     background-color: $brand-primary;
     background-image: none;

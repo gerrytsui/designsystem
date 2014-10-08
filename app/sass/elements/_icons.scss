@@ -1,27 +1,21 @@
-/* experimental block grid code, will not work in IE8  */
+//* experimental block grid code, will not work in IE8  */
 [class*="block-grid-"] {
     display: block;
     padding: 0;
-    margin: 0 -0.55556rem;
+    margin: 0 -.55556rem;
     @include clearfix;
-}
-
-[class*="block-grid-"] > li {
-    display: block;
-    height: auto;
-    float: left;
-    padding: 0 0.55556rem 1.11111rem;
+    > li {
+        display: block;
+        height: auto;
+        float: left;
+        padding: 0 .55556rem 1.11111rem;
+    }
 }
 
 .block-grid-6 > li {
   width: 16.66666%;
 }
 
-
-.small-block-grid-3 > li {
-    width: 33.33333%;
-    list-style: none;
-}
 .small-block-grid-3 > li {
     width: 33.33333%;
     list-style: none;

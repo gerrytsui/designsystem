@@ -37,7 +37,7 @@
 
 // -- Button variants outline and solid
 // outline button, we added a knockout one, hence the added params
-@mixin outline-button($color: $c, $foreground: white, $disabled: $disabled-button) {
+@mixin outline-button($color: $c, $foreground: #fff, $disabled: $disabled-button) {
 	color             : $color;
 	background-color  : transparent;
 	border-color      : $color;
@@ -142,7 +142,7 @@
 	@include outline-button($button-color);
 }
 .btn-default-ko {
-	@include outline-button(white, $brand-primary, $gray);
+	@include outline-button(#fff, $brand-primary, $gray);
 }
 
 .btn-primary {
