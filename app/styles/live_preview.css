@@ -29,9 +29,9 @@ hr { margin-top: 30px; margin-bottom: 30px; }
 .footer-example { box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
 .footer-example.footer-last { margin-bottom: 120px; }
 
-.pseudo { position: relative; -moz-box-sizing: border-box; box-sizing: border-box; background-clip: padding-box; border-bottom: 10px solid transparent; z-index: 2; -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0 1px 2px); background-color: #fff; }
+.pseudo { position: relative; box-sizing: border-box; background-clip: padding-box; border-bottom: 10px solid transparent; z-index: 2; -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.55) 0 1px 2px); background-color: #fff; }
 
-.pseudo:after { content: ''; position: absolute; display: block; width: 100%; height: 10px; bottom: -10px; left: 0; background-image: -webkit-linear-gradient(45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%); background-image: linear-gradient(45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%); background-size: 20px 40px; background-position: 50% -30px; background-repeat: repeat-x; z-index: 1; }
+.pseudo:after { content: ''; position: absolute; display: block; width: 100%; height: 10px; bottom: -10px; left: 0; background-image: linear-gradient(45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%); background-size: 20px 40px; background-position: 50% -30px; background-repeat: repeat-x; z-index: 1; }
 
 .piechart { position: relative; display: inline-block; }
 .piechart span { font-size: 20px; position: absolute; top: 0; left: 0; display: block; text-align: center; width: 100%; height: 100%; padding-top: 35%; }
@@ -43,7 +43,7 @@ hr { margin-top: 30px; margin-bottom: 30px; }
 
 legend .more-info, h3 .more-info, h1 .more-info { float: right; font-size: 14px; line-height: 1; margin-top: 10px; }
 
-.settings { position: fixed; top: 60px; right: -150px; width: 185px; height: 100px; z-index: 2000; -webkit-transition: all .3s; transition: all .3s; }
+.settings { position: fixed; top: 60px; right: -150px; width: 185px; height: 100px; z-index: 2000; transition: all .3s; }
 .settings.activate { width: 185px; right: 0; }
 .settings .settings-tab { float: left; width: 35px; text-align: center; color: #fff; background: #333; padding: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3); }
 .settings .settings-tab:hover { cursor: pointer; }
