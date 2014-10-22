@@ -4,37 +4,36 @@
   <div class="col-md-12">
     <!-- left col -->
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="form-group">
-          <label>Text input</label>
-          <input class="form-control" type="text" name="text1" placeholder="Placeholder text in supported browsers" />
-        </div>
+    <fieldset>
+      <legend>This page is divided by fieldsets.  This text is a legend.</legend>
 
-        <div class="form-group">
-          <label>Text input disabled</label>
-          <input class="form-control" type="text" name="text1" disabled="disabled" />
-        </div>
+      <p>Fieldsets are for grouping of for elements. The section title, or Legend, has a gray rule under it.</p>
 
-        <div class="form-group has-error">
-          <label>Text field with error</label>
-          <input class="form-control" placeholder="Text field" type="text">
-          <span class="help-block text-error">Please enter a valid name.</span>
-        </div>
+      <div class="form-group">
+        <label>Text input</label>
+        <input class="form-control" type="text" name="text1" placeholder="Placeholder text in supported browsers" />
       </div>
-    </div>
 
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="form-group">
-          <label>Textarea</label>
-          <textarea class="form-control" type="textarea" name="textarea1" placeholder="Placeholder text in supported browsers"></textarea>
-          <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-        </div>
-
+      <div class="form-group">
+        <label>Text input disabled</label>
+        <input class="form-control" type="text" name="text1" disabled="disabled" />
       </div>
-    </div>
+
+      <div class="form-group has-error">
+        <label>Text field with error</label>
+        <input class="form-control" placeholder="Text field" type="text">
+        <span class="help-block text-error">Please enter a valid name.</span>
+      </div>
+
+      <div class="form-group">
+        <label>Textarea</label>
+        <textarea class="form-control" type="textarea" name="textarea1" placeholder="Placeholder text in supported browsers"></textarea>
+        <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+      </div>
+
+    </fieldset>
+
+
 
     <fieldset>
       <legend>Column sizing</legend>
@@ -122,10 +121,10 @@
       <div class="row">
         <div class="form-group col-md-6">
           <label for="">Text field prepended</label>
-          <div class="input-group before">
+          <div class="input-group">
             <span class="input-group-addon">
-        	                <i class="fa fa-search"></i>
-        	            </span>
+              <i class="fa fa-search"></i>
+        	  </span>
             <input class="form-control" placeholder="Search" type="text">
           </div>
 
@@ -133,11 +132,11 @@
         </div>
         <div class="form-group col-md-6">
           <label for="">Text field appended</label>
-          <div class="input-group after">
+          <div class="input-group">
             <input class="form-control" placeholder="User Name" type="text">
-            <span class="input-group-addon">
-        	                <i class="fa fa-user"></i>
-        	            </span>
+              <span class="input-group-addon">
+        	     <i class="fa fa-user"></i>
+              </span>
           </div>
 
         </div>
@@ -365,9 +364,17 @@
 
         <div class="row">
 
-          <div class="form-group col-md-4 col-md-offset-8">
-            <label>Countries</label>
+          <div class="form-group col-md-4 col-md-offset-4">
+            <label>Large Size</label>
             <div class="input-group input-group-lg">
+              <input type="text" selectize="countrySelect.options" options="countries" ng-model="country.selected" />
+              <span class="input-group-addon">@</span>
+            </div>
+          </div>
+
+          <div class="form-group col-md-4 ">
+            <label>Small Size</label>
+            <div class="input-group input-group-sm">
               <input type="text" selectize="countrySelect.options" options="countries" ng-model="country.selected" />
               <span class="input-group-addon">@</span>
             </div>

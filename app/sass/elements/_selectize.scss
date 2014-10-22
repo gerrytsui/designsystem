@@ -9,8 +9,7 @@
       border-bottom-right-radius: 0;
     }
     @at-root .input-group-lg .selectize-input{
-        height: 46px;
-        padding: 10px 16px;
+        padding: $padding-large-vertical $padding-large-horizontal;
         font-size: 18px;
         line-height: 1.33;
         border-radius: $border-radius-large;

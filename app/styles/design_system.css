@@ -586,42 +586,32 @@ fieldset[disabled] .form-control.timepicker {
   cursor: pointer;
   background-color: #fff; }
 
-.input-group .btn {
-  font-size: 14px; }
-.input-group.before input {
-  border-left: 1px solid transparent; }
-  .input-group.before input:focus {
-    border-left: 1px solid #66afe9; }
-.input-group.after input {
-  border-right: 1px solid transparent; }
-  .input-group.after input:focus {
-    border-right: 1px solid #66afe9; }
-.input-group .input-group-btn {
-  z-index: 3; }
+.input-group .form-control:first-child {
+  border-right: 0; }
+.input-group .form-control:last-child {
+  border-left: 0; }
 .input-group .input-group-addon {
   padding: 6px 12px;
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555;
+  color: #59595A;
   text-align: center;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px; }
-  .input-group .input-group-addon:last-child {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    border-left: 0; }
-    .input-group .input-group-addon:last-child + input {
-      background-color: #f00; }
+  border: 1px solid #e1e1e1;
+  border-radius: 3px; }
   .input-group .input-group-addon:first-child {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-right: 0; }
-    .input-group .input-group-addon:first-child + input {
-      border-left: 0; }
-      .input-group .input-group-addon:first-child + input:focus {
-        border-left: 1px solid #66afe9; }
+  .input-group .input-group-addon:last-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: 0; }
+.input-group .btn {
+  font-size: 14px; }
+.input-group .input-group-btn {
+  z-index: 3; }
 
 .ngrs-range-slider {
   box-shadow: none;
@@ -1562,7 +1552,6 @@ input.cmn-toggle-round-flat:checked + label:after {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 .input-group-lg .selectize-input {
-  height: 46px;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
