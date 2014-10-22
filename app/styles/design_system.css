@@ -582,6 +582,9 @@ input.cmn-toggle-round-flat:checked + label:after { margin-left: 50px; backgroun
 
 .small-block-grid-3 > li:nth-of-type(3n+1) { clear: both; }
 
+.input-group .selectize-control .selectize-input { overflow: initial; border-bottom-left-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 0; border-bottom-right-radius: 0; }
+.input-group .input-group-addon:first-child ~ .selectize-control .selectize-input { border-bottom-left-radius: 0; border-top-left-radius: 0; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+
 div.accordion-group .panel-body { padding: 15px; }
 div.accordion-group.compact .panel-default { border: 0; border-radius: 0; }
 div.accordion-group.compact .panel-default .panel-heading { border: 0; border-radius: 0 !important; }

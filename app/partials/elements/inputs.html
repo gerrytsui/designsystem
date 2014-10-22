@@ -78,7 +78,8 @@
           <div class="input-group" ng-model="datetimepicker1" pb-datetimepicker>
             <input class="form-control" type="text">
             <span class="input-group-btn">
-              <button class="btn btn-default"><span class="fa fa-calendar"></span></button>
+              <button class="btn btn-default"><span class="fa fa-calendar"></span>
+            </button>
             </span>
           </div>
         </div>
@@ -86,7 +87,8 @@
           <div class="input-group" ng-model="datetimepicker2" pb-datetimepicker>
             <input class="form-control" type="text">
             <span class="input-group-btn">
-                <button class="btn btn-default"><span class="fa fa-clock-o"></span></button>
+                <button class="btn btn-default"><span class="fa fa-clock-o"></span>
+            </button>
             </span>
           </div>
         </div>
@@ -332,31 +334,50 @@
     <fieldset>
       <legend>Selectize select menu
         <span class="more-info">
-                <a href="http://brianreavis.github.io/selectize.js/" target="_blank">Basic info <i class="fa fa-external-link"></i></a>
-                <a href="https://github.com/kbanman/selectize-ng" target="_blank">Angular info <i class="fa fa-external-link"></i></a>
-                </span>
+          <a href="http://brianreavis.github.io/selectize.js/" target="_blank">Basic info <i class="fa fa-external-link"></i></a>
+          <a href="https://github.com/kbanman/selectize-ng" target="_blank">Angular info <i class="fa fa-external-link"></i></a>
+        </span>
       </legend>
 
       <div ng-controller="SelectizeCtrl">
 
         <div class="row">
 
-          <div class="row" ng-controller="SelectizeCtrl">
-            <div class="form-group col-md-4">
-              <label>People</label>
-              <select selectize="peopleSelect.options" options="people" ng-model="person.selected"></select>
-            </div>
+          <div class="form-group col-md-4">
+            <label>People</label>
+            <select selectize="peopleSelect.options" options="people" ng-model="person.selected"></select>
+          </div>
 
-            <div class="form-group col-md-4">
-              <label>Countries</label>
+          <div class="form-group col-md-4">
+            <label>Countries</label>
+            <input type="text" selectize="countrySelect.options" options="countries" ng-model="country.selected" />
+          </div>
+
+          <div class="form-group col-md-4">
+            <label>Countries</label>
+            <div class="input-group">
+              <span class="input-group-addon">@</span>
               <input type="text" selectize="countrySelect.options" options="countries" ng-model="country.selected" />
             </div>
-
           </div>
-          <!-- end row -->
 
         </div>
-        <!-- end ngcontroller -->
+
+        <div class="row">
+
+          <div class="form-group col-md-4 col-md-offset-8">
+            <label>Countries</label>
+            <div class="input-group">
+              <input type="text" selectize="countrySelect.options" options="countries" ng-model="country.selected" />
+              <span class="input-group-addon">@</span>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- end ngcontroller -->
 
     </fieldset>
 
@@ -498,5 +519,5 @@
       </div>
     </fieldset>
 
-    </div>
   </div>
+</div>

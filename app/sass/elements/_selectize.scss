@@ -1,0 +1,27 @@
+.input-group {
+  .selectize-control {
+
+    .selectize-input {
+      overflow: initial;
+      border-bottom-left-radius: $border-radius-base;
+      border-top-left-radius: $border-radius-base;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+  }
+  .input-group-addon {
+    &:first-child {
+
+      ~ .selectize-control {
+
+        .selectize-input {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: $border-radius-base;
+          border-bottom-right-radius: $border-radius-base;
+        }
+      }
+    }
+  }
+}
