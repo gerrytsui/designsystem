@@ -10,7 +10,7 @@
   }
 }
 fieldset {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .form-control {
@@ -45,9 +45,9 @@ background-color: #fff;
 }
 
 .input-group {
-
   // first the input fields
   .form-control {
+    width: 100%;
     &:first-child {
       border-right: 0;
     }
@@ -55,8 +55,6 @@ background-color: #fff;
       border-left: 0;
     }
   }
-
-
   // now the "add-on"
   .input-group-addon {
     padding         : $padding-base-vertical  $padding-base-horizontal;
@@ -84,20 +82,28 @@ background-color: #fff;
     }
   }
 
-
-
-
-
-
-
+  // when the add-on is a button
   .btn {
     // need to make the "small" font size to match form fields
     font-size: $font-size-small;
   }
-
-
   .input-group-btn {
     z-index: 3;
   }
+
+  // large
+  &.input-group-lg {
+    font-size       : $font-size-base;
+    border-radius   : $border-radius-large;
+  }
+
+  // small
+  &.input-group-sm{
+    font-size: $font-size-xsmall;
+    border-radius: $border-radius-small;
+  }
+
+
+
 
 }

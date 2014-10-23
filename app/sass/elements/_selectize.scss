@@ -1,31 +1,48 @@
+.selectize-input {
+  border-color: $gray;
+}
+
+
 .input-group {
   .selectize-control {
-
     .selectize-input {
       overflow: initial;
-      border-bottom-left-radius: $border-radius-base;
-      border-top-left-radius: $border-radius-base;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+      border-color: $gray;
+      @include flat-right;
     }
-    @at-root .input-group-lg .selectize-input{
-        padding: $padding-large-vertical $padding-large-horizontal;
-        font-size: 18px;
-        line-height: 1.33;
-        border-radius: $border-radius-large;
-      }
+
   }
   .input-group-addon {
     &:first-child {
-
       ~ .selectize-control {
-
         .selectize-input {
-          border-bottom-left-radius: 0;
-          border-top-left-radius: 0;
-          border-top-right-radius: $border-radius-base;
-          border-bottom-right-radius: $border-radius-base;
+          @include flat-left;
         }
+      }
+    }
+
+  }
+  &.input-group-lg {
+    .selectize-control {
+      .selectize-input {
+        padding: $padding-large-vertical $padding-large-horizontal;
+        line-height: 1.5;
+        font-size: $font-size-base;
+        @include flat-right($border-radius-large);
+        .has-items {
+          padding: $padding-large-vertical $padding-large-horizontal;
+        }
+      }
+    }
+
+  }
+  &.input-group-sm {
+    .selectize-control {
+      .selectize-input {
+        padding: $padding-small-vertical $padding-small-horizontal;
+        line-height: 1;
+        font-size: $font-size-xsmall;
+        border-radius: $border-radius-small;
       }
     }
   }

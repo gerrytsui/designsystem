@@ -562,7 +562,7 @@ ul {
     color: #CC0000; }
 
 fieldset {
-  margin-top: 20px; }
+  margin-top: 40px; }
 
 .form-control {
   box-shadow: none;
@@ -586,10 +586,12 @@ fieldset[disabled] .form-control.timepicker {
   cursor: pointer;
   background-color: #fff; }
 
-.input-group .form-control:first-child {
-  border-right: 0; }
-.input-group .form-control:last-child {
-  border-left: 0; }
+.input-group .form-control {
+  width: 100%; }
+  .input-group .form-control:first-child {
+    border-right: 0; }
+  .input-group .form-control:last-child {
+    border-left: 0; }
 .input-group .input-group-addon {
   padding: 6px 12px;
   font-size: 14px;
@@ -612,6 +614,12 @@ fieldset[disabled] .form-control.timepicker {
   font-size: 14px; }
 .input-group .input-group-btn {
   z-index: 3; }
+.input-group.input-group-lg {
+  font-size: 16px;
+  border-radius: 4px; }
+.input-group.input-group-sm {
+  font-size: 12px;
+  border-radius: 2px; }
 
 .ngrs-range-slider {
   box-shadow: none;
@@ -1545,22 +1553,36 @@ input.cmn-toggle-round-flat:checked + label:after {
 .small-block-grid-3 > li:nth-of-type(3n+1) {
   clear: both; }
 
+.selectize-input {
+  border-color: #e1e1e1; }
+
 .input-group .selectize-control .selectize-input {
   overflow: initial;
+  border-color: #e1e1e1;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
-.input-group-lg .selectize-input {
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 4px; }
 .input-group .input-group-addon:first-child ~ .selectize-control .selectize-input {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px; }
+.input-group.input-group-lg .selectize-control .selectize-input {
+  padding: 10px 16px;
+  line-height: 1.5;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+  .input-group.input-group-lg .selectize-control .selectize-input .has-items {
+    padding: 10px 16px; }
+.input-group.input-group-sm .selectize-control .selectize-input {
+  padding: 5px 10px;
+  line-height: 1;
+  font-size: 12px;
+  border-radius: 2px; }
 
 div.accordion-group .panel-body {
   padding: 15px; }

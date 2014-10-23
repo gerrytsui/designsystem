@@ -1,7 +1,7 @@
 @mixin clearfix{
   zoom:1;
       &:before, &:after {
-        content:''; 
+        content:'';
         display:table;
     }
     &:after {
@@ -62,4 +62,20 @@ $grid-column-padding: 15px;
   content          : '\25B8'; // triangle right
   -webkit-transform: rotate(90deg);
   transform        : rotate(90deg);
+}
+
+
+
+@mixin flat-right($r: $border-radius-base) {
+  border-bottom-left-radius: $r;
+  border-top-left-radius: $r;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@mixin flat-left ($r: $border-radius-base){
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: $r;
+  border-bottom-right-radius: $r;
 }
