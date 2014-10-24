@@ -1,24 +1,23 @@
 /*!
-* DesignSystem - v0.8.9 - 2014-09-30
+* DesignSystem - v0.8.9 - 2014-10-23
 * http://http://guxstaging.pbi.global.pvt/design_system/
 * Copyright (c) 2014 ; All Rights Reserved
 */
-/* kendo UI */
-.k-slider-track { background-color: #f2f2f2; box-shadow: none; }
+.k-slider-track { background-color: #F2F2F2; box-shadow: none; }
 
-.k-slider-selection { background-color: #0070c4; }
+.k-slider-selection { background-color: #0070C4; }
 
-.k-button { border: 1px solid #0070c4; background-color: transparent; color: #0070c4; }
-.k-button:hover { border-color: #0070c4; background-color: #0070c4; color: #fff; }
+.k-button { border: 1px solid #0070C4; background-color: transparent; color: #0070C4; }
+.k-button:hover { border-color: #0070C4; background-color: #0070C4; color: #fff; }
 
 .k-widget, .k-button { box-shadow: none; }
 
 .k-widget { border-color: #e1e1e1; }
 
-.k-splitbar { background-color: #f2f2f2; }
+.k-splitbar { background-color: #F2F2F2; }
 .k-splitbar:hover { background-color: #e1e1e1; }
 
-.k-block, .k-widget, .k-popup, .k-content, .k-dropdown .k-input { color: #59595a; }
+.k-block, .k-widget, .k-popup, .k-content, .k-dropdown .k-input { color: #59595A; }
 
 .k-widget *, .k-animation-container *, .k-widget *:before, .k-animation-container *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -27,3 +26,5 @@
 
 .k-dropdown-wrap .k-input { padding: 0; }
 .k-dropdown-wrap .k-i-arrow-s { background-position: 0 -34px; }
+
+/*# sourceMappingURL=kendoui.css.map */

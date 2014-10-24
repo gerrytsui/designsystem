@@ -366,3 +366,15 @@ p[class^="bg"] {
 		word-wrap: break-word;
 	}
 }
+
+.view-animate {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	&.ng-enter, &.ng-leave {
+		opacity: 1;
+	}
+	&.ng-enter, &.ng-leave-active, &.ng-hide {
+		opacity: 0;
+		height: 0;
+	}
+}

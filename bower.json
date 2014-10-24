@@ -41,11 +41,11 @@
     "Numeric-Stepper": "*",
     "respondJs": "1.4.2",
     "spinjs": "~2.0.1",
-    "selectize-ng": "~0.1.0"
+    "selectize-ng": "~0.1.0",
+    "angular-animate": "~1.2.26"
   },
   "resolutions": {
     "bootstrap": "~3.2.0",
-    "moment": ">=2.8.0",
-    "angular": "1.2.23"
+    "moment": ">=2.8.0"
   }
 }
