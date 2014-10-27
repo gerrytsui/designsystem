@@ -1,5 +1,5 @@
 /*!
-* DesignSystem - v0.8.9 - 2014-10-23
+* DesignSystem - v0.8.9 - 2014-10-27
 * http://http://guxstaging.pbi.global.pvt/design_system/
 * Copyright (c) 2014 ; All Rights Reserved
 */
@@ -147,5 +147,9 @@ p[class^="bg"] { padding: 10px; }
 .list-group-details .control-label strong { background-color: #fff; padding-right: .3em; color: #59595A; font-weight: normal; }
 .list-group-details .control-label:before { content: '..........................................'; float: left; white-space: nowrap; width: 0; color: #e1e1e1; }
 .list-group-details .form-control-static { background-color: #fff; padding-top: 2px; padding-bottom: 2px; padding-left: .3em; word-wrap: break-word; }
+
+.view-animate { -webkit-transition: all .3s; transition: all .3s; }
+.view-animate.ng-enter, .view-animate.ng-leave { opacity: 1; }
+.view-animate.ng-enter, .view-animate.ng-leave-active, .view-animate.ng-hide { opacity: 0; height: 0; }
 
 /*# sourceMappingURL=live_preview.css.map */
