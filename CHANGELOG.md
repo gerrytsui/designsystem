@@ -3,13 +3,6 @@
 
 ##Release Notes
 
-###0.9 October 27, 2014
-- Updated sass-grunt
-- Added ng-animate fades to main view
-- Fixes to `selectize` menu, primarily in LG and SM versions
-- input page cleanup
-- Added fixed width class for PB font
-- Much cleanup and drying of sass
 
 
 ###0.8.8  September 23, 2014
@@ -139,5 +132,3 @@
 - Tabs
    - switched to Bootstrap tabs
    - added better vertical variant
-
-
