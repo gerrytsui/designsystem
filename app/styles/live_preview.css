@@ -206,7 +206,8 @@ p[class^="bg"] {
   padding: 10px; }
 
 .glyphicons li {
-  text-align: center; }
+  text-align: center;
+  font-size: .9em; }
   .glyphicons li .glyphicon, .glyphicons li .pbfont {
     font-size: 2em; }
 

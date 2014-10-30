@@ -1,5 +1,5 @@
 /*!
-* DesignSystem - v0.9.1 - 2014-10-27
+* DesignSystem - v0.9.1 - 2014-10-30
 * http://http://guxstaging.pbi.global.pvt/design_system/
 * Copyright (c) 2014 ; All Rights Reserved
 */
@@ -77,7 +77,7 @@ p[class^="bg"] { padding: 10px; }
 
 .fpo-grad { background-color: #aaa; padding: 10px; }
 
-.glyphicons li { text-align: center; }
+.glyphicons li { text-align: center; font-size: .9em; }
 .glyphicons li .glyphicon, .glyphicons li .pbfont { font-size: 2em; }
 
 .text-center .pie, .text-center .donut { margin: 0 auto 20px; width: 100px; }
